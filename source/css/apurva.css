@@ -1546,12 +1546,6 @@ canvas {
   }
 }
 
-/* @media screen and (max-width: 550px) {
-  section.communities {
-    background-size: 75%;
-  }
-} */
-
 @media screen and (max-width: 844px) {
   .introLogo {
     text-align: left;
