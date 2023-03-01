@@ -252,8 +252,7 @@ section.communities {
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
   width: 100%;
-  /* background-size: contain; */
-  height: 60vh !important;
+  background-size: 400px, auto;
 }
 
 .insights .topline {
@@ -1547,11 +1546,11 @@ canvas {
   }
 }
 
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
   section.communities {
     background-size: 75%;
   }
-}
+} */
 
 @media screen and (max-width: 844px) {
   .introLogo {
