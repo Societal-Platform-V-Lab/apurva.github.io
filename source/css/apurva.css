@@ -1462,9 +1462,9 @@ canvas {
     top: 0;
     height: 7rem;
   }
-  @media screen and (min-width: 901px){.bottom-nav {
+  /* @media screen and (min-width: 901px){.bottom-nav {
     padding: 1% 0% 1% 0%;
-}}
+}} */
 
   .header-appear .navbar-top-default {
     height: 7rem;
@@ -1789,3 +1789,12 @@ ul.social_icon li a {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+@media screen and (min-width: 901px) and (max-width:1200px){
+  .bottom-nav {
+    padding: 1% 5% 1% 5%;
+  }
+  img.logo-img{
+    width: 14.375rem !important;
+  }
+}
+

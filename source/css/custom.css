@@ -1,1 +1,77 @@
 /*-- Use For Custom Styling --*/
+#testimonialSection.flex-row-block{
+    min-height: 42.25rem !important;
+  }
+  #testimonialSection .dropdown-divider{
+    border-top: 0.0625rem solid #9fffac;
+  }
+  .carousel-inner{
+    min-height: 30.25rem !important;
+  }
+  .carousel-indicators li  {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-top: 1.25rem;
+    border-radius: 100%;
+    /* background-image: url("/source/img/Apurva-logo-final.svg"); */
+  }
+  .carousel-indicators li img {
+    width: 100%;
+  }
+  #testimonialSection .introTitle {
+    transform: translateX(0%);
+  }
+  .testimonial img {
+    width: 11.875rem;
+    height: 11.875rem;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 0.3125rem solid #fff;
+  }
+  
+  .testimonial-body {
+    font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2rem !important;
+  text-align: left;
+  }
+  #Network img{
+    height: 5rem !important;
+    object-fit: contain;
+  }
+  
+  @media screen and (max-width: 550px) {
+    #testimonialSection.flex-row-block{
+        height: 100rem !important;
+      }
+      #Network.flex-row-block{
+        height: 58rem !important;
+      }
+      .testimonial img {
+        width: 9.0625rem;
+        height: 9.0625rem;
+        object-fit: cover;
+  }
+  .carousel-indicators li  {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-top: 1.25rem;
+    border-radius: 100%;
+    /* background-image: url("../img/testimonial/Kartik\ Dhar\ Project\ ECHO.jfi f"); */
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1200px){
+  #testimonialSection.flex-row-block{
+      height: 62rem !important;
+    }
+    #Network.flex-row-block{
+      height: 41rem !important;
+    }
+    .testimonial img {
+      width: 7.8125rem;
+      height: 7.8125rem;
+      object-fit: cover;
+}
+}
