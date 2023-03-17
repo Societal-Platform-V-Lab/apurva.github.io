@@ -1462,9 +1462,9 @@ canvas {
     top: 0;
     height: 7rem;
   }
-  @media screen and (min-width: 901px){.bottom-nav {
+  /* @media screen and (min-width: 901px){.bottom-nav {
     padding: 1% 0% 1% 0%;
-}}
+}} */
 
   .header-appear .navbar-top-default {
     height: 7rem;
