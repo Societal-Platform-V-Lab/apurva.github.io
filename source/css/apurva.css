@@ -403,7 +403,7 @@ section.stay-tuned {
 }
 
 .connections.flex-row-block {
-  height: 37rem !important;
+  height: 50rem !important;
 }
 
 /* start */
@@ -1565,7 +1565,7 @@ canvas {
 
 @media screen and (min-width: 1900px) {
   .homePage .flex-row-block {
-    height: 62rem;
+    height: 62rem !important;
   }
 }
 
