@@ -1563,6 +1563,12 @@ canvas {
   height: 65rem !important;
 }
 
+@media screen and (min-width: 1900px) {
+  .homePage .flex-row-block {
+    height: 62rem;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .profileItem .img img {
     max-width: 15rem;
