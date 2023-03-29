@@ -116,7 +116,7 @@ jQuery(function ($) {
 $("#conversationBtn").on("click", function () {
   $("#message").attr(
     "placeholder",
-    'Describe the problem that "Apurva for Conversations" would address for your organization.'
+    'Describe the problem that "Apurva for C0-creation" would address for your organization.'
   );
 
   $(".type").attr("value", "Conversations");
