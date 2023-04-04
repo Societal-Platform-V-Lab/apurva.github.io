@@ -134,7 +134,7 @@ $("#communitiesBtn").on("click", function () {
 $("#queryBtn").on("click", function () {
   $("#message").attr(
     "placeholder",
-    'Describe the problem that "Apurva for Query" would address for your organization.'
+    'Describe the problem that "Apurva for Discovery" would address for your organization.'
   );
 
   $(".type").attr("value", "Query");
