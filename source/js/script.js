@@ -119,7 +119,7 @@ $("#conversationBtn").on("click", function () {
     'Describe the problem that "Apurva for Co-creation" would address for your organization.'
   );
 
-  $(".type").attr("value", "Conversations");
+  $(".type").attr("value", "Co-creation");
 });
 
 $("#communitiesBtn").on("click", function () {
@@ -128,7 +128,7 @@ $("#communitiesBtn").on("click", function () {
     'Describe the problem that "Apurva for Communities" would address for your organization.'
   );
 
-  $(".type").attr("value", "Query");
+  $(".type").attr("value", "Communities");
 });
 
 $("#queryBtn").on("click", function () {
@@ -137,7 +137,7 @@ $("#queryBtn").on("click", function () {
     'Describe the problem that "Apurva for Discovery" would address for your organization.'
   );
 
-  $(".type").attr("value", "Query");
+  $(".type").attr("value", "Discovery");
 });
 
 function sendEmail() {
