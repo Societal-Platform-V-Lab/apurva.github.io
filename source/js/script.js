@@ -312,7 +312,7 @@ function subScribe() {
     $(".subscribe-button-spinner").prop("hidden", false);
     $(".subscribe-button-spinner").show();
     $.ajax({
-      url: "https://apurva-early-access-register-hawt6l52da-el.a.run.app/",
+      url: "https://apurva-updates-subscription-hawt6l52da-el.a.run.app/",
       type: "POST",
       contentType: "application/json",
       data: JSON.stringify({ email: formData }),
