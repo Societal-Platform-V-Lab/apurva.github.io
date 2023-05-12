@@ -1644,8 +1644,8 @@ canvas {
     margin-top: 0rem;
   }
   img.logo-img {
-    max-width: 350px !important;
-    width: 350px;
+    max-width: 250px !important;
+    width: 250px;
     height: auto;
   }
 
