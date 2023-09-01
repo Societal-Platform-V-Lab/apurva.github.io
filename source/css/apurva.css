@@ -45,13 +45,18 @@ body {
   z-index: 0;
   bottom: 0;
 }
-
-section {
+section#about{
   background: url(../img/bgImg.jpg);
   padding: 0 5%;
   position: relative;
 }
-
+section {
+  padding: 0 5%;
+  position: relative;
+}
+.intro{
+  background:white;
+}
 .register-button {
   background: transparent;
   border: 2px solid #93cbff;
@@ -439,21 +444,12 @@ section.stay-tuned {
   color: #f1c30f;
 }
 
-.footer-icons li a:hover,
-.footer-icons li a:focus {
-  color: #ffffff;
-}
+
 
 .footer-icons li a.facebook:hover,
 .footer-icons li a.facebook:focus {
   -webkit-box-shadow: 0 0 15px 30px #4267b2 inset;
   box-shadow: 0 0 15px 30px #4267b2 inset;
-}
-
-.footer-icons li a.twitter:hover,
-.footer-icons li a.twitter:focus {
-  -webkit-box-shadow: 0 0 15px 30px #1da1f2 inset;
-  box-shadow: 0 0 15px 30px #1da1f2 inset;
 }
 
 .footer-icons li a.google:hover,
@@ -462,11 +458,7 @@ section.stay-tuned {
   box-shadow: 0 0 15px 30px #db4437 inset;
 }
 
-.footer-icons li a.linkedin:hover,
-.footer-icons li a.linkedin:focus {
-  -webkit-box-shadow: 0 0 15px 30px #0077b5 inset;
-  box-shadow: 0 0 15px 30px #0077b5 inset;
-}
+ 
 
 .footer-icons li a.instagram:hover,
 .footer-icons li a.instagram:focus {
@@ -514,9 +506,20 @@ section.stay-tuned {
   bottom: auto;
 }
 
-.introTitle h2 {
+.introTitle{
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #FFFFFF;
+  letter-spacing: -0.03em !important;
+  text-align: left;
+  max-width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.01em !important;
+  font-weight: 600;
+}
+.founding h2{ 
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
   letter-spacing: -0.03em !important;
   text-align: left;
   max-width: 100%;
@@ -620,7 +623,7 @@ img.logo-img {
 }
 a.underline {
   text-decoration: underline !important;
-  color: #fff;
+  color:#000000;
 }
 
 .title {
@@ -1241,7 +1244,11 @@ icon start
 }
 
 .text p {
-  color: #fff;
+  color: #000000;
+}
+.founding {
+  background-color: white;
+  
 }
 
 .profileItem {
@@ -1254,14 +1261,14 @@ icon start
 
 .profileItem p.name {
   font-size: 1.5rem;
-  color: #fff;
+  color:#1C1C1C;
   font-weight: 600;
   margin-top: 1.5rem;
   text-align: center;
 }
 
 .profileItem p.designation {
-  color: #9fffac;
+  color: #49785E;
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
@@ -1588,7 +1595,7 @@ canvas {
 
   .found.introTitle h2 {
     margin-top: 0;
-    margin-left: 2rem;
+    margin-left: -2rem;
   }
   .circle {
     opacity: 1;
