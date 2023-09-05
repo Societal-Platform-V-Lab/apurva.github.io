@@ -4,7 +4,7 @@ html {
 
 body {
   color: #fff;
-  background: #000;
+  background: white;
   font-family: "Montserrat", sans-serif;
   height: 100%;
 }
@@ -45,18 +45,23 @@ body {
   z-index: 0;
   bottom: 0;
 }
-section#about{
+
+section#about,
+section#libraryabout {
   background: url(../img/bgImg.jpg);
   padding: 0 5%;
   position: relative;
 }
+
 section {
   padding: 0 5%;
   position: relative;
 }
-.intro{
-  background:white;
+
+.intro {
+  background: white;
 }
+
 .register-button {
   background: transparent;
   border: 2px solid #93cbff;
@@ -90,9 +95,11 @@ section#home {
 #contact {
   padding: 0 5%;
 }
+
 .p-0 {
   padding: 0;
 }
+
 .green {
   color: #9fffac;
 }
@@ -403,6 +410,7 @@ section.stay-tuned {
 .homePage .flex-row-block {
   height: 50rem;
 }
+
 #knowledgeone.flex-row-block {
   height: 45rem !important;
 }
@@ -458,7 +466,7 @@ section.stay-tuned {
   box-shadow: 0 0 15px 30px #db4437 inset;
 }
 
- 
+
 
 .footer-icons li a.instagram:hover,
 .footer-icons li a.instagram:focus {
@@ -506,7 +514,7 @@ section.stay-tuned {
   bottom: auto;
 }
 
-.introTitle{
+.introTitle {
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   letter-spacing: -0.03em !important;
@@ -517,7 +525,8 @@ section.stay-tuned {
   letter-spacing: -0.01em !important;
   font-weight: 600;
 }
-.founding h2{ 
+
+.founding h2 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
   letter-spacing: -0.03em !important;
@@ -621,9 +630,10 @@ img.logo-img {
   /* max-width: 47.25rem; */
   text-align: left;
 }
+
 a.underline {
   text-decoration: underline !important;
-  color:#000000;
+  color: #000000;
 }
 
 .title {
@@ -1221,9 +1231,11 @@ icon start
 .mt200 {
   margin-top: 3rem;
 }
+
 .mt {
   margin-top: 2rem;
 }
+
 /* .img_padding {
   padding-top: 15rem;
   margin-left: -6rem;
@@ -1243,12 +1255,14 @@ icon start
   }
 }
 
-.text p {
+.text p,
+.responsible p {
   color: #000000;
 }
+
 .founding {
   background-color: white;
-  
+
 }
 
 .profileItem {
@@ -1261,7 +1275,7 @@ icon start
 
 .profileItem p.name {
   font-size: 1.5rem;
-  color:#1C1C1C;
+  color: #1C1C1C;
   font-weight: 600;
   margin-top: 1.5rem;
   text-align: center;
@@ -1458,6 +1472,7 @@ canvas {
 #testimonialSection .dropdown-divider {
   border-top: 0.0625rem solid #9fffac;
 }
+
 .carousel-inner {
   min-height: 32rem !important;
   height: 43.75rem;
@@ -1467,6 +1482,7 @@ canvas {
 #testimonialSection .introTitle {
   transform: translateX(0%);
 }
+
 .testimonial img {
   width: 11.875rem;
   /* height: 11.875rem; */
@@ -1504,9 +1520,11 @@ canvas {
   border: 1px solid #fff;
   margin-top: 0.6rem;
 }
+
 .carousel-indicators li img {
   width: 100%;
 }
+
 .carousel-indicators li.active img {
   border-radius: 50%;
   margin: 8px;
@@ -1517,10 +1535,7 @@ canvas {
   overflow: auto;
   max-height: 30rem;
 } */
-.iconItem {
-  /*  border-radius: 50%;
-  overflow: hidden; */
-}
+
 
 .logos {
   display: flex;
@@ -1581,6 +1596,13 @@ canvas {
     max-width: 15rem;
   }
 }
+@media screen and (max-width: 768px) {
+  /* Your CSS rules for screens with a width of 768 pixels or less go here */
+  .profileItem .img img {
+    max-width: 12rem;
+    /* Your styles for images in this media query */
+  }
+}
 
 @media screen and (min-width: 901px) {
   #testimonialSection .carousel-inner {
@@ -1597,6 +1619,7 @@ canvas {
     margin-top: 0;
     margin-left: -2rem;
   }
+
   .circle {
     opacity: 1;
   }
@@ -1630,6 +1653,7 @@ canvas {
   .secParagraph {
     max-width: 70%;
   }
+
   #rev_slider_8_1 {
     padding: 1.5% 10% 0 10%;
   }
@@ -1637,19 +1661,24 @@ canvas {
   .noRightMargin {
     margin-right: 0 !important;
   }
+
   .modal-content .contact-btn {
     font-size: 1rem;
     display: flex;
   }
+
   .weAreHiringAccordion .card-header .card-link {
     padding: 1rem 0;
   }
+
   .weAreHiringAccordion .introTitle h2 {
     font-size: 2rem;
   }
+
   .headerText {
     margin-top: 0rem;
   }
+
   img.logo-img {
     max-width: 250px !important;
     width: 250px;
@@ -1659,6 +1688,7 @@ canvas {
   .profileItem .img {
     align-items: center;
   }
+
   .profileItem .img img {
     max-width: 13rem;
   }
@@ -1666,30 +1696,38 @@ canvas {
   .mt200 {
     margin-top: 6.25rem;
   }
+
   .profileItem {
     margin-top: 5rem;
     margin-bottom: 0;
   }
+
   .profile-img {
     max-width: 20rem;
   }
+
   .profileItem p.name {
     margin-top: 2rem;
   }
+
   .profileItem p.designation {
     font-size: 1.5rem;
     margin-top: 1.5rem;
   }
+
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
+
   .register-button {
     font-size: 1.5625rem;
   }
+
   .topline {
     height: auto;
     flex-grow: 0.2;
   }
+
   #home .flex-row-block {
     flex-direction: row;
     justify-content: space-between;
@@ -1700,27 +1738,35 @@ canvas {
     width: 100%;
     margin-top: 0;
   }
+
   .br {
     display: inline-block;
   }
+
   .modal-content {
     max-width: 31.25rem;
   }
+
   #home .flex-column-block {
     margin-top: 12rem;
   }
+
   .forcefullwidth_wrapper_tp_banner {
     padding-top: 1.2rem;
   }
+
   .introLogo {
     padding: 0 9%;
   }
+
   .line-container {
     margin-right: 2rem;
   }
+
   #home .line-container {
     margin-top: 2rem;
   }
+
   .homePage .textColumn {
     padding-top: 7rem;
   }
@@ -1732,6 +1778,7 @@ canvas {
   .p-half {
     padding: 3.75rem 0;
   }
+
   .homePage .flex-row-block {
     padding: 0 10%;
     height: 58rem;
@@ -1742,7 +1789,7 @@ canvas {
   }
 
   #about.section,
-  #weAreHiring.section {
+  #weAreHiring.section #libraryabout.section {
     padding: 6rem 8%;
     margin-top: 7rem;
   }
@@ -1750,6 +1797,7 @@ canvas {
   #contact {
     padding: 0 10%;
   }
+
   .bottom-nav {
     padding: 1% 8% 1% 8%;
     top: 0;
@@ -1759,73 +1807,91 @@ canvas {
   .header-appear .navbar-top-default {
     height: 7rem;
   }
+
   .nav-item {
     align-items: center;
     display: flex;
   }
+
   .intro-block {
     padding: 3% 0% !important;
   }
+
   .contact-btn.small {
     width: 200px;
     font-size: 1.5rem;
     height: 2.875rem;
   }
+
   .icon-round {
     max-width: 100px;
     width: 100%;
     height: 100px;
   }
+
   .icon-round i {
     font-size: 64px;
   }
+
   .icon-round-box:before {
     content: "";
     width: 400px;
     top: 30%;
   }
+
   .icon-round-box p {
     font-size: 1.5rem;
   }
+
   .icon-round-box {
     margin: 0;
   }
+
   .icons .bottomline {
     margin-top: 2.7%;
   }
+
   .icon-round-box:nth-child(1)::before {
     width: 165%;
   }
+
   .introTitle h2 {
     font-size: 2.5rem;
     line-height: 3rem !important;
   }
+
   #home .introTitle h2,
   #about .innnerPageTitle h2,
   #weAreHiring .innnerPageTitle h2 {
     font-size: 4.0625rem;
     line-height: 70px !important;
   }
+
   #about .innnerPageTitle h2,
   #weAreHiring .innnerPageTitle h2 {
     font-weight: 600;
   }
+
   #weAreHiring .innnerPageTitle h2 {
     margin-top: 1rem;
   }
+
   #about .introTitle .collapsed h2 {
     color: #c4c4c4;
     font-weight: 300;
     transition: all 0.3s ease;
   }
+
   .weAreHiringAccordion .introTitle h2 {
     color: #9fffac;
     font-weight: 600;
   }
+
   .weAreHiringAccordion .introTitle .collapsed h2 {
     color: #fff;
     font-weight: 400;
   }
+
   #js-rotating_prospective,
   #js-rotating_tools,
   #js-rotating_makes,
@@ -1846,24 +1912,30 @@ canvas {
   .introTitle .introText {
     margin-top: 2rem;
   }
+
   #about .list-item {
     margin: 30px 0 30px 10px;
   }
+
   #about .list-item li {
     list-style-type: disc;
   }
+
   #about .list-item li:not(:last-child) {
     margin-bottom: 10px;
   }
+
   .card-body p {
     margin-bottom: 20px;
   }
+
   .card-header .card-link:before {
     margin-top: 15px;
   }
 }
 
 @media screen and (max-width: 896px) {
+
   #about .innnerPageTitle h2 br,
   #weAreHiring .innnerPageTitle h2 br {
     display: none;
@@ -1875,6 +1947,7 @@ canvas {
     text-align: left;
     margin: 5% 2% 2% 3%;
   }
+
   .introTitle {
     text-align: left;
   }
@@ -1882,53 +1955,66 @@ canvas {
   .icon-round-box:before {
     right: 66%;
   }
+
   .tp-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     margin-bottom: 3rem;
   }
+
   .contact-form {
     margin-bottom: 2rem;
   }
+
   .footer-icons {
     margin-bottom: 0 !important;
   }
+
   #home,
   .line-container {
     min-height: 825px;
   }
+
   .contact-form .row {
     flex-direction: column;
   }
+
   .contact-form .contact-btn {
     margin: 0 auto;
   }
+
   .contact-form .introText {
     text-align: center;
   }
+
   .textArea {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5rem;
   }
+
   section,
   .section-padding,
   .pricing-padding {
     padding-bottom: 0;
     padding-top: 0;
   }
+
   .about-img-small {
     top: initial;
     width: 30% !important;
     height: auto;
   }
+
   .pl-6 {
     text-align: right;
   }
+
   .icons .bottomline {
     margin-top: 4%;
   }
+
   .icon-round-box p {
     font-size: 1rem;
   }
@@ -1940,24 +2026,29 @@ canvas {
     line-height: 35px !important;
     min-width: 18.75rem;
   }
+
   #home .tp-parallax-wrap .introText {
     margin-top: 8rem;
   }
+
   .card-body {
     padding-left: 0;
     padding-right: 0;
     text-align: left;
   }
+
   .introTitle h2 {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
+
   .card-header .card-link:before,
   .card-header .card-link.collapsed:before {
     width: 30px;
     height: 20px;
     margin-top: 12px;
   }
+
   #about .innnerPageTitle h2 br,
   #weAreHiring .innnerPageTitle h2 br {
     display: none;
@@ -1970,30 +2061,38 @@ canvas {
     background-size: cover;
     background-attachment: fixed;
   }
+
   #home {
     min-height: 100vh;
   }
+
   .modal-content .contact-btn {
     margin-right: 12px;
   }
+
   /* #about .introTitle.found span {
     display: block;
   }*/
   .navbar {
     padding: 0.5rem 1rem 0.5rem 0.5rem;
   }
+
   .about-img-small {
     width: 100% !important;
   }
+
   .icon-round-box:before {
     right: 20%;
   }
+
   .icons .bottomline {
     margin-top: 8%;
   }
+
   .icon-round-box p {
     font-size: 0.75rem;
   }
+
   .rightNavContainer .contact-btn {
     display: none !important;
   }
@@ -2001,34 +2100,43 @@ canvas {
   .navbar a.text {
     margin-right: 0;
   }
+
   #home {
     min-height: 725px;
   }
+
   .icon-block img {
     margin-top: 1.5rem;
   }
+
   .introText {
     font-size: 1.3rem;
   }
+
   .subscribe {
     flex-direction: column;
     height: auto;
   }
+
   .subscribe input {
     border-radius: 0;
     margin-bottom: 1.2rem;
   }
+
   .register-button {
     font-size: 1rem;
     padding: 4px 37px;
   }
+
   .introLogo {
     text-align: left;
     margin: 6% 2% 3%;
   }
+
   .introTitle {
     text-align: left;
   }
+
   .subscribe {
     align-items: normal;
     overflow: visible;
@@ -2083,4 +2191,11 @@ ul.social_icon li a {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.responsible {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
 }

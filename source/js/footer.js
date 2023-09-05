@@ -75,7 +75,7 @@ const section_footer =
   <div class="container-footer">
     <div class="row">
       <!-- Address (Left-aligned) -->
-      <div class="col-sm-4 mb-20 address-container">
+      <div class="col-sm-6 mb-20 address-container">
         <p class="alt-color">
           <strong class="white">EkStep Foundation</strong><br>
         </p>
@@ -93,7 +93,7 @@ const section_footer =
       </div>
       <!-- Address -->
       <!-- Copyright (Right-aligned) -->
-      <div class="col-sm-4 mb-19 app-promotion">
+      <div class="col-sm-6 mb-19 app-promotion">
         <ul>
           <strong class="white underline">
             <li><a href="">Copyrights</a></li>
@@ -108,7 +108,8 @@ const section_footer =
 
       </div>
     </div>
-   
+   <br>
+   <br>
     <div class="row">
       <div class="col-lg-12 col-md-12 text-center">
         <p class="green">Follow us on</p>
