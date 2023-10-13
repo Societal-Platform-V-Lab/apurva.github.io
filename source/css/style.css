@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900"); */
 
 .font-primary {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
 }
 .font-secondary {
   font-family: "Source Sans Pro", sans-serif;
@@ -14,7 +14,7 @@
 ====================================== */
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Poppins;
   font-size: 15px;
   color: #212622;
   font-weight: 300;
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
 }
 h1,
 h2,
@@ -181,7 +181,7 @@ i::after {
   background-color: #f1c30f;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f1c30f;
+  background: #75c475;
 }
 
 .pt-10px {
@@ -912,7 +912,7 @@ nav .btn-setting {
 }
 /* logo */
 .logo {
-  max-width: 140px;
+  max-width: 250px;
 }
 .logo img {
   vertical-align: middle;
@@ -953,7 +953,7 @@ nav .btn-setting {
 }
 
 .navbar-top-default .navbar-nav .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: Poppins;
   font-size: 15px;
   font-weight: 700;
   color: #ffffff;

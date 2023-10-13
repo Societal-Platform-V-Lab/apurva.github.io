@@ -4,20 +4,15 @@ const section_header = `  <header class="cursor-light">
 >
   <div class="container-fluid">
     <a class="logo nav-link" href="index.html">
-      <img
-        src="source/img/Apurva-logo-final.png"
-        alt="apurva.ai"
-        title="apurva.ai"
-        class="logo-img"
-      />
+      <img src="source/img/Apurva-logo-final.png" alt="apurva.ai" title="apurva.ai" class="logo-img" />
     </a>
     <div class="collapse navbar-collapse d-none d-lg-block">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a href="about-us.html" class="scroll nav-link">About</a>
+          <a href="about-us.html" class="scroll nav-link apurva-about">About</a>
         </li>
         <li class="nav-item">
-          <a href="Apurva-Library.html" class="scroll nav-link">
+          <a href="Apurva-Library.html" class="scroll nav-link apurva-library">
           Apurva Library</a>
         </li>
 
@@ -26,7 +21,7 @@ const section_header = `  <header class="cursor-light">
             link
             type="button"
             class="btn btn-medium btn-rounded btn-yellow hide contact-btn small"
-            href="index.html#contact">
+            href="Apurva-Experience.html">
             Apurva Experience
           </a>
         </li>
@@ -59,27 +54,23 @@ const section_header = `  <header class="cursor-light">
     <nav class="side-nav m-0">
       <ul class="navbar-nav flex-lg-row">
         <li class="nav-item">
-          <a href="about-us.html" class="scroll nav-link">About</a>
+          <a href="about-us.html" class="scroll nav-link apurva-about-mobile">About</a>
         </li>
         <li class="nav-item">
-          <a href="we-are-hiring.html" class="scroll nav-link"
+          <a href="Apurva-Library.html" class="scroll nav-link apurva-library-mobile"
             >Apurva Library</a>
         </li>
-        <!-- <li class="nav-item">
-          <a
-            link
-            type="button"
-            class="btn btn-medium btn-rounded btn-yellow hide contact-btn small"
-            href="index.html#contact">
-            Apurva Experience
-          </a>
-        </li> -->
+        <li class="nav-item">
+          <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"
+            >Apurva Experience</a>
+        </li>
+        
       </ul>
     </nav>
   </div>
 </div>
 <a id="close_side_menu" href="javascript:void(0);"></a>
 <!--Side Menu-->
-</header>`
+</header>`;
 
 document.getElementById("headers").innerHTML = section_header;

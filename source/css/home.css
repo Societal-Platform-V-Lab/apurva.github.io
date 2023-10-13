@@ -1,0 +1,1328 @@
+.featurehead {
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-group {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.featurebody {
+  height: 226px;
+  background-color: #EFEFEF;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem 25px 0 25px;
+
+}
+
+#testimonial-carousel {
+  height: 350px;
+}
+
+.featuredheader {
+  margin-top: -3rem;
+  color: #000;
+}
+
+.featuretext {
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: underline;
+}
+
+.featuretext a {
+  font-size: 17px;
+  color: #000;
+
+}
+
+.featurecarousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  gap: 10px;
+}
+
+/* Style for the cards */
+.featurecards {
+  background-color: white;
+  height: 420px;
+  border-radius: 1.25rem;
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+  /* Optional: add border and padding to the cards */
+  border: 1px solid #ccc;
+  border-radius: 1.25rem;
+
+  margin: 10px;
+}
+
+/* Style for the slide featureindicators */
+.featureindicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.featureindicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Style for the active slide featureindicator */
+.featureindicator.active {
+  background-color: #333;
+}
+
+/* Style for the featurearrow controls */
+.featurearrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.featurearrow.left {
+  left: 10px;
+}
+
+.featurearrow.right {
+  right: 10px;
+}
+
+/* Style for the featurearrow icons */
+.featurearrow-icon {
+  height: 20px;
+  width: 20px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(-45deg);
+}
+
+/* Style for the featurearrow icon on hover */
+.featurearrow:hover .featurearrow-icon {
+  border-color: #fff;
+}
+
+/* Style for the featurearrow icon on active */
+.featurearrow.active .featurearrow-icon {
+  border-color: #fff;
+}
+
+/* Style for the featurearrow icon on disabled */
+.featurearrow.disabled .featurearrow-icon {
+  border-color: #ccc;
+}
+
+
+.close {
+  margin-left: 25rem;
+}
+
+.blackheading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.blackAi {
+  word-wrap: break-word;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.experience h2 {
+  font-family: Poppins;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.green-network-names {
+  color: #9fffac;
+  font-size: 30px;
+  font-family: Poppins;
+  line-height: 75px;
+}
+
+.greenexp {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#why-Apurva {
+  margin-top: 3rem;
+}
+
+.coming h2 {
+  margin-top: -5rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.circle_comingsoon {
+  margin-left: 9rem;
+  margin-top: -47rem;
+  height: 850px;
+  width: 850px;
+  /* background-image: linear-gradient(to bottom, white black); */
+
+  background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+  filter: blur(200px);
+}
+
+.greenhome {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.small-box {
+  width: 61px;
+  height: 61px;
+  background-color: #9fffac;
+}
+
+.found {
+  margin-bottom: 20px;
+}
+
+
+
+.intro-Title h2 {
+  font-size: 60px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 73.14px;
+  text-align: left;
+}
+
+.readmore {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.readmore a {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #000000;
+}
+
+.greenintro {
+  color: #9fffac;
+  font-size: 60px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+
+.intro-Text {
+  width: 1000px;
+  height: 130px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.why {
+  margin-top: 10px;
+  margin-bottom: 9rem;
+}
+
+.why p {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.what h2 {
+  margin-top: 35px;
+}
+
+.card-what {
+  width: 398px;
+  height: 210px;
+  background: linear-gradient(0deg, #49785e, #49785e);
+  text-align: center;
+  border-radius: 1.25rem;
+  margin-top: 35px;
+}
+
+.cardtitle {
+  color: white;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.responsibleDesc {
+  margin-bottom: 5rem;
+}
+
+.responsibleDesc p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.responsible h2 {
+  width: 1343px;
+  height: 75px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.responsible p {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.greencontact {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 91px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+section#testimonialSection,
+section#Featured {
+  background: url(../img/Starry-Bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#responsibleAI,
+section#responsibleAImedium {
+  background: linear-gradient(0deg,
+      rgba(159, 255, 172, 0.25),
+      rgba(159, 255, 172, 0.25));
+  height: 25rem !important;
+}
+
+section#Featured {
+  height: 48rem !important;
+}
+
+section#why-Apurva {
+  height: 142rem !important;
+}
+
+section#Network {
+  height: 55rem !important;
+}
+
+section#contact {
+  height: 30rem !important;
+}
+
+.list-group-horizontal {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.list-group-horizontal .list-group-item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex: 0 0 calc(10% - 10px);
+  border: none;
+  background: none;
+  color: black;
+}
+
+.list-group-item.special {
+  color: #49785e;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 1600px;
+  /* Set your desired width */
+}
+
+.carouselfeatured {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  /* transition: transform 0.5s ease-in-out; */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 100%;
+  /* max-width: 393px; */
+  height: 420px;
+  border-radius: 1.25rem;
+  margin-left: 0px;
+  margin-right: 30px;
+  /* margin: 1rem; */
+}
+
+.card-head {
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  height: 226px;
+  background-color: #EFEFEF;
+  border-radius: 0 0 1.25rem 1.25rem;
+  text-align: center;
+
+}
+
+
+
+.ourcolor {
+  width: 290px;
+  height: 45px;
+}
+
+.ourcolor h2 {
+  color: #49785e;
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.value p {
+  /* padding-right: 3rem; */
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.ai {
+  margin-top: 5rem;
+}
+
+.Our-Values {
+  margin-top: 11rem;
+}
+
+.trust {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  height: 4.375rem;
+  overflow: hidden;
+  margin-top: 1.625rem;
+  width: 57.5rem;
+}
+
+.sub {
+  text-align: center;
+  width: 285px;
+  height: 60px;
+  border-radius: 1rem;
+  background-color: #9fffac;
+  border: 2px solid #9fffac;
+}
+
+.stay-tuned .register-button {
+  width: 36rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 2px solid #9fffac;
+  border-radius: 1rem;
+}
+
+.modal-content {
+  width: 661px;
+  min-height: 670px;
+  border-radius: 20px
+}
+
+.email-textbox {
+  width: 535px;
+  height: 60px;
+  background-color: #EFEFEF;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.des-textbox {
+  width: 635px;
+  height: 217px;
+  background-color: #EFEFEF;
+
+  border-radius: 20px;
+  margin: 0;
+}
+
+
+
+.email-textbox::placeholder {
+  font-size: 15px;
+}
+
+.subscribe-button-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.subscribe-button-texthome {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.subscribe input {
+  margin: 0;
+  flex-grow: 1;
+  height: 100%;
+  background-color: transparent;
+  padding-top: 17px;
+  color: #fff;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-radius: 1.25rem 0 0 1.25rem;
+  border: 2px solid #9fffac;
+}
+
+.ourimg img {
+  width: auto;
+  height: auto;
+}
+
+.carousel-controls {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.carousel-control {
+  margin-right: 2rem;
+  height: 40px;
+  width: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-control img {
+  width: 20px;
+  height: 20px;
+}
+
+.carddeck {
+  display: flex;
+  margin-bottom: -11px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  line-height: 40px;
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+
+}
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 50%;
+  height: auto;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+.carousel-feat {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (max-width: 1779px) {
+  .featurebody {
+    padding: 1rem 25px 0 25px;
+  }
+
+
+  section#Network {
+    height: 65rem !important;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  .featuretext a {
+    font-size: 15px;
+
+
+  }
+
+  .featurebody {
+    padding: 1rem 25px 0 25px;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .experience h2,
+  .greenexp {
+    font-size: 50px;
+  }
+
+  .coming h2 {
+    font-size: 50px;
+  }
+
+  .card-what {
+    width: 368px;
+    height: 210px;
+  }
+
+  .blackAi {
+    font-size: 53px;
+  }
+
+  section#responsibleAI {
+    height: 30rem !important;
+  }
+
+  .greencontact {
+    font-size: 55px;
+  }
+
+  .subscribe {
+    width: 47.5rem;
+  }
+
+  .stay-tuned .register-button {
+    border-color: #9fffac;
+    font-size: 29px;
+    font-weight: 600;
+  }
+
+  section#Network {
+    height: 70rem !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section#why-Apurva {
+    height: 130rem !important;
+  }
+
+  .experience h2,
+  .greenexp {
+    font-size: 40px;
+  }
+
+  .coming h2 {
+    font-size: 40px;
+  }
+
+  .testimonial-item {
+    width: 8rem;
+    height: 8rem;
+
+  }
+
+  .greencontact {
+    font-size: 35px;
+  }
+
+  .subscribe {
+    width: 37.5rem;
+  }
+
+  .stay-tuned .register-button {
+    width: 19rem;
+    height: 4rem;
+    font-size: 19px;
+  }
+
+  section#responsibleAI {
+    height: 35rem !important;
+  }
+
+  section#Network {
+    height: 90rem !important;
+  }
+
+  .blackheading {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .greenhome {
+    font-size: 45px;
+  }
+
+  .blackAi {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .ourcolor {
+    width: 230px;
+    height: 45px;
+  }
+
+  .ourcolor h2 {
+    font-size: 26px;
+  }
+
+  .value p {
+    font-size: 16px;
+  }
+
+  .card-what {
+    width: 258px;
+    height: 200px;
+  }
+
+  .what h2 {
+    width: 190px;
+    height: 99px;
+    margin-top: 35px;
+    font-size: 35px;
+  }
+
+  .cardtitle {
+    font-size: 20px;
+  }
+
+  .intro-Title h2,
+  .greenintro {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+
+  .intro-Text {
+    width: 650px;
+    height: 120px;
+  }
+
+  .ai {
+    margin-top: 6rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #testimonial-carousel {
+    height: 510px;
+  }
+
+  .featuretext a {
+    font-size: 17px;
+
+
+  }
+
+  .featurebody {
+    padding: 1rem 25px 0 25px;
+  }
+
+  .close {
+    margin-left: 23rem;
+  }
+
+  .modal-content {
+    width: 461px;
+    min-height: 674px;
+    border-radius: 20px
+  }
+
+  .circle_comingsoon {
+    margin-top: -24rem;
+    height: 350px;
+    width: 350px;
+    background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+    filter: blur(160px);
+  }
+
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 7rem;
+  }
+
+  .greenexp {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .coming h2 {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: -6rem;
+  }
+
+  .blackheading {
+    font-size: 40px;
+  }
+
+  .greenhome {
+    font-size: 40px;
+  }
+
+  .card-what {
+    width: 190px;
+    height: 150px;
+  }
+
+  .cardtitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .responsibleDesc {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .close {
+    margin-left: 13rem;
+  }
+
+  .sub {
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: #9fffac;
+    border: 2px solid #9fffac;
+  }
+
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0%;
+  }
+
+
+
+  .modal-content {
+    width: 291px;
+    min-height: 474px;
+    border-radius: 20px
+  }
+
+  .email-textbox {
+    width: 335px;
+    height: 50px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+  }
+
+  #testimonialSection.flex-row-block {
+    height: 103rem !important;
+  }
+
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 7rem;
+  }
+
+  .greenexp {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .coming h2 {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .col-xs-6 {
+    width: 49%;
+  }
+
+  .green-network-names {
+    color: #9fffac;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 75px;
+  }
+
+  .cardtitle {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .Our-Values {
+    margin-top: 2rem;
+  }
+
+  .ourcolor {
+    width: 100%;
+    height: auto;
+  }
+
+  .ourcolor h2 {
+    font-size: 20px;
+  }
+
+  .value p {
+    margin-top: -1rem;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .small-box {
+    margin-top: -1rem;
+    width: 31px;
+    height: 31px;
+  }
+
+  .whatcard {
+    margin-top: -4rem;
+  }
+
+  .what-Apurva {
+    margin-top: -5rem;
+  }
+
+  .why {
+    margin-bottom: 5rem;
+  }
+
+  .why p {
+    line-height: 27px;
+    font-size: 14px;
+  }
+
+  .card-what {
+    width: 150px;
+    height: 125px;
+  }
+
+  .responsibleDesc {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  section#why-Apurva {
+    height: 77rem !important;
+    margin-top: 1rem;
+  }
+
+  section#Network {
+    height: 50rem !important;
+  }
+
+  section#responsibleAI {
+    height: 20rem !important;
+  }
+
+  section#Featured {
+    height: 30rem !important;
+  }
+
+  .blackheading {
+    font-size: 19px;
+  }
+
+  .blackAi {
+    font-size: 19px;
+    margin-bottom: 1rem;
+  }
+
+  .greenhome {
+    font-size: 19px;
+  }
+
+  .ai {
+    margin-top: 2rem;
+  }
+
+  .responsibleDesc p {
+    font-family: Poppins;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .responsibleDesc {
+    margin-bottom: 1rem;
+  }
+
+  .readmore a {
+    display: flex;
+    justify-self: start;
+    font-size: 15px;
+  }
+
+  .responsible h2 {
+    width: 323px;
+    height: 65px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 2px;
+  }
+
+  .responsible p {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem !important;
+    margin-top: 1rem;
+    text-align: left;
+    hyphens: auto;
+  }
+
+  .intro-Title h2,
+  .greenintro {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+
+  .intro-Text {
+    width: 299px;
+    height: 40px;
+
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .greencontact {
+    font-size: 22px;
+  }
+
+  .subscribe {
+    align-items: normal;
+    overflow: visible;
+    width: 16.5rem;
+  }
+
+  .subscribe {
+    margin-top: -2rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .subscribe-button-texthome {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .subscribe input {
+    padding-top: 10px;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .subscribe-button-text {
+    text-align: center;
+    font-size: 10px;
+    color: #000;
+  }
+
+  .subscribe .register-button {
+    height: 41px;
+    border-radius: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 268px;
+    height: 260px;
+    border-radius: 1.25rem;
+    margin: 15px;
+  }
+
+  .card-head {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-head img {
+    width: 104px;
+    height: 88px;
+  }
+
+  .card-body {
+    height: 100px;
+    background-color: #d9d9d9;
+    border-radius: 0 0 1.25rem 1.25rem;
+    text-align: center;
+
+  }
+
+  .stay-tuned .register-button {
+    width: 15rem;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email-textbox::placeholder {
+    font-size: 10px;
+  }
+
+  .des-textbox::placeholder {
+    font-size: 10px;
+  }
+
+  .subscribe-button {
+    font-size: 12px;
+  }
+
+  .featuretext a {
+    font-size: 17px;
+    color: #000;
+
+  }
+
+  .featurebody {
+
+    padding: 1rem;
+  }
+
+  .carousel-controls {
+
+    margin-top: 15px;
+  }
+
+  #testimonial-carousel {
+    height: 662px;
+  }
+}
+
+
+
+@media screen and (max-width: 386px) {
+  .homePage .textColumn {
+    padding-top: 10rem;
+  }
+
+
+  .stay-tuned .register-button {
+    width: 15rem;
+    height: 35px;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+  }
+
+  .intro-Title h2,
+  .greenintro {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+
+  .card-what {
+    width: 140px;
+    height: 125px;
+  }
+
+  section#responsibleAI {
+    height: 22rem !important;
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: initial;
+    opacity: 1;
+  }
+
+  .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    border: 1px;
+    margin-top: 0.6rem;
+    background-color: #9fffac;
+  }
+
+  section#testimonialSection,
+  section#Featured {
+    background: url(../img/Starry-Bg.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+}
+
+/* @media (max-width: 415px) {
+
+  
+  .carouselfeatured {
+    display: none;
+  }
+}
+
+@media (min-width: 415px) {
+
+ 
+  .carouselslide {
+    display: none;
+  }
+} */
