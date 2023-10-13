@@ -657,10 +657,16 @@ section#contact {
     padding: 1rem 25px 0 25px;
   }
 
-
+  .card-what {
+    width: 350px;
+    height: 200px;
+  }
   section#Network {
     height: 65rem !important;
   }
+  section#why-Apurva {
+    height: 120rem !important;
+}
 }
 
 @media screen and (max-width: 1510px) {
@@ -692,10 +698,24 @@ section#contact {
   }
 
   .card-what {
-    width: 317px;
+    width: 280px;
     height: 200px;
   }
 
+
+.cardtitle {
+  color: white;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   .blackAi {
     font-size: 45px;
   }
