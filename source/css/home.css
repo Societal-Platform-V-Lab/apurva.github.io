@@ -664,6 +664,10 @@ section#contact {
 }
 
 @media screen and (max-width: 1510px) {
+
+  section#why-Apurva {
+    height: 115rem !important;
+}
   .featuretext a {
     font-size: 15px;
 
@@ -688,12 +692,12 @@ section#contact {
   }
 
   .card-what {
-    width: 368px;
-    height: 210px;
+    width: 317px;
+    height: 200px;
   }
 
   .blackAi {
-    font-size: 53px;
+    font-size: 45px;
   }
 
   section#responsibleAI {
@@ -701,9 +705,11 @@ section#contact {
   }
 
   .greencontact {
-    font-size: 55px;
+    font-size: 45px;
   }
-
+  .stay-tuned .register-button {
+    width: 29rem;
+  }
   .subscribe {
     width: 47.5rem;
   }
