@@ -10,7 +10,13 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
+p.build{
+  text-align: center;font-style: italic;
+}
+.blogs-content{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
 section#blog {
   background-image: url(../img/Apurva-Websit-Design.png);
   height: 35rem;
@@ -21,6 +27,9 @@ section#blog {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.seat{
+  margin-top: 3rem;
 }
 .share{
   font-size: 19px;
@@ -42,6 +51,7 @@ section#blog {
 }
 .row{
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .footer-icon .twitter-container,
@@ -142,6 +152,15 @@ section#blog {
   text-align: center;
 }
 
+p.Center {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 p.Centered {
   font-family: Poppins;
   font-size: 28px;
@@ -219,6 +238,10 @@ a.underline.blue {
 
 .row{
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p.build{
+  text-align: center;font-style: italic;
 }
 }
 @media (max-width: 768px) {
@@ -269,9 +292,15 @@ a.underline.blue {
     text-align: center;
 
   }
+  .seat{
+    margin-top: 1rem;
+  }
 }
 
 @media(max-width: 425px) {
+  .blogs-content{
+    margin-top: 0rem;
+  }
   section#blog {
     height: 25vh;
   }
@@ -279,7 +308,10 @@ a.underline.blue {
   .text-overlay {
     margin-top: -16rem;
   }
-
+  p.build{
+   
+    text-align: center;font-style: italic;
+  }
 
   .blog-content {
     margin-top: 305px;
@@ -294,7 +326,13 @@ a.underline.blue {
     margin-top: 1rem;
 
   }
-
+  p.Center {
+    
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+  }
   p.Centered {
     
     font-size: 9px !important;

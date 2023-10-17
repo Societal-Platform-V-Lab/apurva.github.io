@@ -953,9 +953,11 @@ section#contact {
     background-color: #efefef;
     border-radius: 20px;
   }
-
+.feature{
+  margin-top: 9rem;
+}
   #testimonialSection.flex-row-block {
-    height: 103rem !important;
+    height: 110rem !important;
   }
 
   .experience h2 {

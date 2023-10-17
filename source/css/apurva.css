@@ -1532,7 +1532,7 @@ canvas {
 .carousel-indicators {
   margin: 0;
   top: auto;
-  bottom: -6.25rem;
+  bottom: -18.25rem;
 }
 
 .carousel-indicators li {
@@ -2642,7 +2642,7 @@ ul.social_icon li a {
   }
 
   .carousel-inner {
-    height: 44.75rem;
+    height: 112.75rem;
   }
 
   .apurva-explains-card-body {
