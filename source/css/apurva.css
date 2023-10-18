@@ -1532,7 +1532,7 @@ canvas {
 .carousel-indicators {
   margin: 0;
   top: auto;
-  bottom: -18.25rem;
+  bottom: -6.25rem;
 }
 
 .carousel-indicators li {
@@ -2102,6 +2102,11 @@ canvas {
 }
 
 @media screen and (max-width: 414px) {
+  .carousel-indicators {
+    margin: 0;
+    top: auto;
+    bottom: -18.25rem;
+  }
   .mainContainer {
     background: url(../img/mobile_bg.jpg) no-repeat right top #000;
     background-size: cover;
