@@ -21,6 +21,9 @@ $(document).ready(function () {
     const apurvaExperience = document.querySelectorAll(
       ".apurva-experience-mobile"
     );
+    const apurvaHome = document.querySelectorAll(
+      ".apurva-home"
+    );
 
     // Remove "active" class from all elements
     apurvAbout.forEach((item) => item.classList.remove("active"));
@@ -33,6 +36,9 @@ $(document).ready(function () {
       apurvaLibrary.forEach((item) => item.classList.add("active"));
     } else if (path === "/Apurva-Experience.html") {
       apurvaExperience.forEach((item) => item.classList.add("active"));
+    }
+    else if (path === "/index.html") {
+      apurvaHome.forEach((item) => item.classList.add("active"));
     }
   }
 
