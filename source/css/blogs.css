@@ -10,13 +10,20 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-p.build{
-  text-align: center;font-style: italic;
+
+.center {
+  text-align: center;
 }
-.blogs-content{
+p.build {
+  text-align: center;
+  font-style: italic;
+}
+
+.blogs-content {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
+
 section#blog {
   background-image: url(../img/Apurva-Websit-Design.png);
   height: 35rem;
@@ -28,12 +35,15 @@ section#blog {
   align-items: center;
   position: relative;
 }
-.seat{
+
+.seat {
   margin-top: 3rem;
 }
-.share{
+
+.share {
   font-size: 19px;
 }
+
 .footer-icon .twitter-icon {
   color: #fff;
   font-size: 20px;
@@ -45,11 +55,15 @@ section#blog {
 .footer-icon .twitter-icon {
   width: 55px;
   height: 55px;
-  top: 2170px; /* Adjust the top position as needed */
-  left: 663px; /* Adjust the left position as needed */
-  font-size: 32px; /* Increase the font size as needed */
+  top: 2170px;
+  /* Adjust the top position as needed */
+  left: 663px;
+  /* Adjust the left position as needed */
+  font-size: 32px;
+  /* Increase the font size as needed */
 }
-.row{
+
+.row {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -63,18 +77,22 @@ section#blog {
   width: 40px;
   height: 40px;
 }
+
 .footer-icon .linkedin-icon {
   color: #fff;
   font-size: 20px;
   background-color: #0077b5;
 }
-.footer-icon .linkedin-icon, .footer-icon .twitter-icon {
+
+.footer-icon .linkedin-icon,
+.footer-icon .twitter-icon {
   width: 40px;
   height: 40px;
   top: 2170px;
   left: 663px;
   font-size: 25px;
 }
+
 .footer-icon strong {
 
   /* Increase the font size of "Share on" */
@@ -141,11 +159,51 @@ section#blog {
   font-weight: 300;
   line-height: 2rem !important;
   letter-spacing: 0em;
-  
+
+}
+
+.rowimg {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-right: 3rem;
+  margin-left: -1rem;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.rowimgs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: -1rem;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.darkgreen {
+  color: #49785E;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+.famimgs{
+margin-top: 35px;
+}
+.points {
+  margin-top: -5px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem !important;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
 }
 
 .networkcard {
-  
+
   border-radius: 40px;
   background: #9FFFAC40;
   padding: 2rem 7%;
@@ -184,21 +242,24 @@ p.Centered {
 a.underline.blue {
   color: #0E76A8;
 }
-.hilights{
+
+.hilights {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
 @media screen and (min-width: 1024px) {
   #blog.section {
     padding: 6rem 8%;
     margin-top: 7rem;
   }
 }
+
 @media (max-width: 1555px) {
   .text-overlay p {
     font-size: 25px;
   }
-    
+
 }
 
 @media (max-width: 1339px) {
@@ -206,44 +267,52 @@ a.underline.blue {
     font-size: 20px;
   }
 }
+
 @media (max-width: 1070px) {
   .text-overlay p {
     font-size: 19px;
   }
+
   .blog-content {
     max-width: 1300px;
     margin: 0 auto;
     padding: 50px;
     margin-top: 728px;
     color: #000000;
-}
+  }
 }
 
-@media screen and (max-width: 844px){
-.footer-icon {
+@media screen and (max-width: 844px) {
+  .footer-icon {
     margin-bottom: 0 !important;
     text-align: left;
-}
-.footer-icon .linkedin-icon, .footer-icon .twitter-icon {
-  width: 29px;
-  height: 28px;
-  top: 2885px;
-  left: 187px;
-  font-size: 16px;
-}
-.hilights{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  }
+
+  .footer-icon .linkedin-icon,
+  .footer-icon .twitter-icon {
+    width: 29px;
+    height: 28px;
+    top: 2885px;
+    left: 187px;
+    font-size: 16px;
+  }
+
+  .hilights {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p.build {
+    text-align: center;
+    font-style: italic;
+  }
 }
 
-.row{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-p.build{
-  text-align: center;font-style: italic;
-}
-}
 @media (max-width: 768px) {
   #blog.section {
     padding: 6rem 8%;
@@ -263,10 +332,11 @@ p.build{
     margin-bottom: 10px;
     text-align: left;
   }
+
   .blog-content {
     max-width: 708px;
     margin-top: 535px;
-}
+  }
 
   .image_rectangle {
     width: 50%;
@@ -292,15 +362,17 @@ p.build{
     text-align: center;
 
   }
-  .seat{
+
+  .seat {
     margin-top: 1rem;
   }
 }
 
 @media(max-width: 425px) {
-  .blogs-content{
+  .blogs-content {
     margin-top: 0rem;
   }
+
   section#blog {
     height: 25vh;
   }
@@ -308,37 +380,92 @@ p.build{
   .text-overlay {
     margin-top: -16rem;
   }
-  p.build{
-   
-    text-align: center;font-style: italic;
+
+  p.build {
+
+    text-align: center;
+    font-style: italic;
   }
 
   .blog-content {
     margin-top: 305px;
     padding: 14px;
   }
-.blog-content p {
+
+  .points li{
+    text-align: left;
+  }
+
+  .blog-content p {
     font-family: "Poppins";
     font-weight: 300;
-    
+
     font-size: 1rem;
     line-height: 2rem !important;
     margin-top: 1rem;
 
   }
+  .points{
+    font-size: 1rem;
+  }
+
+  .darkgreen {
+    color: #49785E;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+}
+.rowimg {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  justify-content: space-evenly;
+  margin-bottom: -20px;
+}
+.rowimgs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 0rem;
+  justify-content: space-evenly;
+  margin-bottom: -20px;
+}
+.center {
+  text-align: center;
+  margin-bottom: -20px;
+}
+.famimg{
+  width: 22rem;
+  height: 17rem;
+}
+.famimgs{
+  width: 22rem;
+  height: 17rem;
+  margin-top: -5px;
+  margin-bottom: -3rem;
+  }
   p.Center {
-    
+
     font-size: 15px;
     font-weight: 700;
     line-height: 10px;
     text-align: center;
   }
+
   p.Centered {
-    
+
     font-size: 9px !important;
     font-weight: 700;
     line-height: 10px;
   }
+
   .text-overlay p {
     font-family: Poppins;
     font-size: 7px;
@@ -352,11 +479,13 @@ p.build{
 
     margin-top: -3rem;
   }
-.share{
-  font-size: 16px;
-}
+
+  .share {
+    font-size: 16px;
+  }
+
   .footer-icon strong {
-   
+
     margin-right: 5px;
     /* Add space between "Share on" and icons */
   }
@@ -372,13 +501,13 @@ p.build{
     margin-top: 250px;
     padding: 14px;
   }
-  
+
 
 }
-@media (max-width: 375px){
+
+@media (max-width: 375px) {
   .blog-content {
     margin-top: 290px;
     padding: 14px;
+  }
 }
-}
-
