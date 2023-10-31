@@ -319,7 +319,7 @@ section.stay-tuned {
 } */
 
 .mainContainer {
-  background: url(../img/home-bg-final.png) no-repeat right top #000;
+  background: url(../img/Blue-Tinge-Website-Homepage.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1664,9 +1664,9 @@ canvas {
     max-width: 100%;
   }
 
-  .mainContainer {
+  /* .mainContainer {
     background-size: contain;
-  }
+  } */
 
   .carousel-indicators li {
     margin-right: 1rem;
@@ -2108,7 +2108,7 @@ canvas {
     bottom: -18.25rem;
   }
   .mainContainer {
-    background: url(../img/mobile_bg.jpg) no-repeat right top #000;
+    background: url(../img/Blue\ Tinge\ Mobile\ View\ Homepage\ Bg.png) no-repeat right top #000;
     background-size: cover;
     background-attachment: fixed;
   }
