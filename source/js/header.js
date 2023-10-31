@@ -3,16 +3,13 @@ const section_header = `  <header class="cursor-light">
   class="navbar navbar-top-default navbar-expand-lg black bottom-nav nav-box-shadow no-animation"
 >
   <div class="container-fluid">
-    <a class="logo nav-link" href="">
+    <a class="logo nav-link" href="index.html">
       <img src="source/img/Apurva-logo-final.png" alt="apurva.ai" title="apurva.ai" class="logo-img" />
     </a>
     <div class="collapse navbar-collapse d-none d-lg-block">
       <ul class="nav navbar-nav">
-      <li class="nav-item">
-      <a href="index.html" class="scroll nav-link apurva-home">Home</a>
-    </li>
         <li class="nav-item">
-          <a href="about-us.html" class="scroll nav-link apurva-about">Our Mission</a>
+          <a href="about-us.html" class="scroll nav-link apurva-about">About</a>
         </li>
         <li class="nav-item">
           <a href="Apurva-Library.html" class="scroll nav-link apurva-library">
