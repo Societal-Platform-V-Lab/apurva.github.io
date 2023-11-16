@@ -14,6 +14,7 @@ body {
 .center {
   text-align: center;
 }
+
 p.build {
   text-align: center;
   font-style: italic;
@@ -173,6 +174,7 @@ section#blog {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+
 .rowimgs {
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +185,7 @@ section#blog {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+
 .darkgreen {
   color: #49785E;
   font-style: italic;
@@ -190,9 +193,11 @@ section#blog {
   font-size: 22px;
   line-height: 32px;
 }
-.famimgs{
-margin-top: 35px;
+
+.famimgs {
+  margin-top: 35px;
 }
+
 .points {
   margin-top: -5px;
   font-size: 1.2rem;
@@ -247,6 +252,25 @@ a.underline.blue {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+ol.c {
+  list-style-type: decimal;
+  line-height: 2rem !important;
+}
+.References {
+  font-style: italic;
+  font-size: 19px;
+}
+.References li{
+margin-left: 12px;
+}
+.References a {
+  text-decoration: underline;
+  color:black; 
+}
+
+
+
 
 @media screen and (min-width: 1024px) {
   #blog.section {
@@ -392,7 +416,7 @@ a.underline.blue {
     padding: 14px;
   }
 
-  .points li{
+  .points li {
     text-align: left;
   }
 
@@ -405,7 +429,8 @@ a.underline.blue {
     margin-top: 1rem;
 
   }
-  .points{
+
+  .points {
     font-size: 1rem;
   }
 
@@ -415,42 +440,48 @@ a.underline.blue {
     font-weight: 600;
     font-size: 19px;
     line-height: 30px;
-}
-.rowimg {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-right: 0rem;
-  margin-left: 0rem;
-  justify-content: space-evenly;
-  margin-bottom: -20px;
-}
-.rowimgs {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-left: 0rem;
-  justify-content: space-evenly;
-  margin-bottom: -20px;
-}
-.center {
-  text-align: center;
-  margin-bottom: -20px;
-}
-.famimg{
-  width: 22rem;
-  height: 17rem;
-}
-.famimgs{
-  width: 22rem;
-  height: 17rem;
-  margin-top: -5px;
-  margin-bottom: -3rem;
   }
+
+  .rowimg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    justify-content: space-evenly;
+    margin-bottom: -20px;
+  }
+
+  .rowimgs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 0rem;
+    justify-content: space-evenly;
+    margin-bottom: -20px;
+  }
+
+  .center {
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .famimg {
+    width: 22rem;
+    height: 17rem;
+  }
+
+  .famimgs {
+    width: 22rem;
+    height: 17rem;
+    margin-top: -5px;
+    margin-bottom: -3rem;
+  }
+
   p.Center {
 
     font-size: 15px;
