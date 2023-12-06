@@ -55,7 +55,7 @@ const section_footer =
         <br>
         <br>
         <div class="white underline">
-          <a href="" class="alt-back">Terms of Use</a>
+        <a href="Apurva_Terms.pdf" target="_blank">Terms of Use </a>
         </div>
         <p class="greencopy">&copy; 2023 EkStep Foundation</p>
 
@@ -113,7 +113,7 @@ const section_footer =
       <div class="col-lg-12 col-md-12 text-center copy">
         <!-- Copyrights -->
         <span class="white underline">
-      <a href="">Terms of Use</a>
+      <a href="Apurva_Terms.pdf" target="_blank">Terms of Use </a>
       <br>
       <br>
       <br>
@@ -135,4 +135,6 @@ const section_footer =
 </footer>
 
 `;
+
+
 document.getElementById("footer").innerHTML = section_footer;
