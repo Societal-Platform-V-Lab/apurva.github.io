@@ -55,7 +55,7 @@ const section_footer =
         <br>
         <br>
         <div class="white underline">
-        <a href="Apurva_Terms.pdf" target="_blank">Terms of Use </a>
+        <a href="Apurva_Terms.html" target="_blank">Terms of Use </a>
         </div>
         <p class="greencopy">&copy; 2023 EkStep Foundation</p>
 
