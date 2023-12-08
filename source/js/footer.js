@@ -113,7 +113,7 @@ const section_footer =
       <div class="col-lg-12 col-md-12 text-center copy">
         <!-- Copyrights -->
         <span class="white underline">
-      <a href="Apurva_Terms.pdf" target="_blank">Terms of Use </a>
+      <a href="Apurva_Terms.html" target="_blank">Terms of Use </a>
       <br>
       <br>
       <br>
