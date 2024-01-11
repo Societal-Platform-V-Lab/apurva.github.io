@@ -129,7 +129,7 @@ section#blog {
   text-align: center;
   color: white;
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 80px;
   letter-spacing: 0em;
@@ -281,7 +281,7 @@ margin-left: 12px;
 
 @media (max-width: 1555px) {
   .text-overlay p {
-    font-size: 25px;
+    font-size: 21px;
   }
 
 }
@@ -294,7 +294,7 @@ margin-left: 12px;
 
 @media (max-width: 1070px) {
   .text-overlay p {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .blog-content {
