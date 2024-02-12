@@ -64,7 +64,7 @@
       "title": "How Apurva’s Co-create is emerging as a powerful capability for organisations",
       "URL": "How-Apurva’s-Co-create-is-emerging-as-a-powerful-capability-for-organisations.html"
     },
-   
+
     {
       "category": "From the network",
       "imagePath": "./source/img/Blog 1 Cover.png",
@@ -96,8 +96,15 @@
       "readTime": "5 MIN READ",
       "title": "How Project ECHO’s knowledge hub is enhanced with Apurva.ai’s roots in collective wisdom",
       "URL": "How-Project-ECHO’s-knowledge-hub-is-enhanced-with-Apurva.ai’s-roots-in-collective-wisdom.html"
+    },
+    {
+      "category": "From the network",
+      "imagePath": "./source/img/network5Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "6 MIN READ",
+      "title": "How Catalyst Management Services is enroute to collective impact with Apurva.ai",
+      "URL": "How-Catalyst-Management-Services-is-enroute-to-collective-impact-with-Apurva.ai.html"
     }
-   
   ],
   "apurvaExplains": [
     {
@@ -130,7 +137,6 @@
       "btnTitle": "Localized Networks",
       "apurvaExplainsContent": "These networks, often seen in community settings, thrive on a more informal and contextual basis. They don't always lean on a central authority or organization or coordination, but rather, they harness the collective strength of their members. It's a testament to the power of community and shared resources."
     }
-   
   ],
   "featurecards": [
     {
