@@ -162,7 +162,17 @@ section#blog {
   letter-spacing: 0em;
 
 }
-
+.row-img {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  /* margin-right: 3rem;
+  margin-left: -1rem; */
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
 .rowimg {
   display: -ms-flexbox;
   display: flex;
@@ -540,5 +550,9 @@ margin-left: 12px;
   .blog-content {
     margin-top: 290px;
     padding: 14px;
+  }
+  ol.c {
+    font-size: 15px;
+    line-height: 1.5rem !important;
   }
 }

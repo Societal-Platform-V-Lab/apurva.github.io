@@ -919,8 +919,22 @@ section#contact {
     margin-bottom: 1rem;
   }
 }
-
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 425px) {
+  .intro-Title h2,
+  .greenintro {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+  .intro-Text {
+    width: 299px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+}
+} */
+@media screen and (max-width: 530px) {
   .close {
     margin-left: 13rem;
   }
@@ -953,9 +967,9 @@ section#contact {
     background-color: #efefef;
     border-radius: 20px;
   }
-.feature{
-  margin-top: 9rem;
-}
+  .feature {
+    margin-top: 9rem;
+  }
   #testimonialSection.flex-row-block {
     height: 110rem !important;
   }
