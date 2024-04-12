@@ -218,11 +218,40 @@ section#blog {
 }
 
 .networkcard {
-
   border-radius: 40px;
   background: #9FFFAC40;
   padding: 2rem 7%;
   text-align: center;
+}
+.gif {
+  border-radius: 40px;
+  background: #9FFFAC40;
+  padding: 2rem 9%;
+  text-align: left;
+}
+.gif ul {
+  list-style-type: disc;
+}
+.gif li {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem !important;
+  letter-spacing: 0em;
+
+}
+.gifimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes up the full height */
+}
+
+.gifimage img {
+  max-width: 22rem; 
+  max-height: 17rem; 
 }
 
 p.Center {
@@ -439,7 +468,15 @@ margin-left: 12px;
     margin-top: 1rem;
 
   }
-
+  .gif li {
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem !important;
+    letter-spacing: 0em;
+}
   .points {
     font-size: 1rem;
   }
