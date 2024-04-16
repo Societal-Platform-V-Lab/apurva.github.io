@@ -24,6 +24,50 @@ p.build {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
+.explore-contact-buttons {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+
+.contact-button {
+  width: 150px; /* Set the width to the same value for both buttons */
+  padding: 10px 0;
+  margin: 10px;
+  background-color: #9fffac; /* Green */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.contact-button:hover {
+  background-color: #9fffac; 
+}
+.explore-button {
+  width: 150px;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: black; /* Change background color to black */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.explore-button:hover {
+  background-color: black; 
+  color: white;
+}
 
 section#blog {
   background-image: url(../img/Apurva-Websit-Design.png);
@@ -50,10 +94,15 @@ section#blog {
   font-size: 20px;
   background-color: #1da1f2;
 }
-
+.footer-icon .youtube-icon {
+  color: #fff;
+  font-size: 20px;
+  background-color:red;
+}
 
 .footer-icon.linkedin-icon,
-.footer-icon .twitter-icon {
+.footer-icon .twitter-icon,
+.footer-icon .youtube-icon{
   width: 55px;
   height: 55px;
   top: 2170px;
@@ -278,7 +327,11 @@ p.Centered {
   width: 100%;
   margin-top: 20px;
 }
-
+.image_rectangle1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
 .underline {
   text-decoration: underline;
 }
@@ -352,7 +405,9 @@ margin-left: 12px;
   }
 
   .footer-icon .linkedin-icon,
-  .footer-icon .twitter-icon {
+  .footer-icon .twitter-icon,
+  .footer-icon .youtube-icon
+   {
     width: 29px;
     height: 28px;
     top: 2885px;
