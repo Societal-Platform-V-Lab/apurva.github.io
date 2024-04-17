@@ -1,4 +1,7 @@
-const section_footer = ` <footer class="footer with-background desktop-footer">
+const section_footer = ` 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<footer class="footer with-background desktop-footer">
   <div class="container-footer">
     <div class="row">
       <!-- Address (Left-aligned) -->
@@ -24,8 +27,15 @@ const section_footer = ` <footer class="footer with-background desktop-footer">
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/apurva_ai" target="_blank" class="social-icon-container twitter-icon">
-              <i class="fab fa-twitter"></i>
+          <a href="https://twitter.com/apurva_ai" target="_blank" class="social-icon-container twitter-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>
+        </a>
+          </li>
+          <li>
+          <a href="https://www.youtube.com/@apurvadotai" target="_blank" class="social-icon-container youtube-icon" >
+                <i class="fa fa-youtube"></i>
             </a>
           </li>
         </ul>
@@ -53,7 +63,7 @@ const section_footer = ` <footer class="footer with-background desktop-footer">
         <br>
         <br>
         <div class="white underline">
-        <a href="Apurva_Terms.html" target="_blank">Terms of Use </a>
+        <a href="Apurva_Terms.html" target="_blank" style="font-size: 20px;">Terms of Use</a>
         </div>
         <p class="greencopy">&copy; 2024 C4EC Foundation</p>
 
@@ -99,8 +109,14 @@ const section_footer = ` <footer class="footer with-background desktop-footer">
             class="social-icon-container linkedin-icon">
             <i class="fab fa-linkedin-in"></i>
           </a>
-            <a href="https://twitter.com/apurva_ai" target="_blank" class="social-icon-container twitter-icon">
-                <i class="fab fa-twitter"></i>
+          <a href="https://twitter.com/apurva_ai" target="_blank" class="social-icon-container twitter-icon">
+          <!-- Replace the existing <i> tag with the SVG code -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@apurvadotai" target="_blank" class="social-icon-container youtube-icon" >
+                <i class="fa fa-youtube"></i>
             </a>
         </ul>
         <br>

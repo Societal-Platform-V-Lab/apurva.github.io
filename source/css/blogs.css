@@ -29,7 +29,6 @@ p.build {
   margin-top: 20px; /* Adjust as needed */
 }
 
-
 .contact-button {
   width: 150px; /* Set the width to the same value for both buttons */
   padding: 10px 0;
@@ -45,9 +44,8 @@ p.build {
   border-radius: 5px;
 }
 
-
 .contact-button:hover {
-  background-color: #9fffac; 
+  background-color: #9fffac;
 }
 .explore-button {
   width: 150px;
@@ -65,7 +63,7 @@ p.build {
 }
 
 .explore-button:hover {
-  background-color: black; 
+  background-color: black;
   color: white;
 }
 
@@ -97,12 +95,11 @@ section#blog {
 .footer-icon .youtube-icon {
   color: #fff;
   font-size: 20px;
-  background-color:red;
+  background-color: red;
 }
 
 .footer-icon.linkedin-icon,
-.footer-icon .twitter-icon,
-.footer-icon .youtube-icon{
+.footer-icon .twitter-icon {
   width: 55px;
   height: 55px;
   top: 2170px;
@@ -112,7 +109,16 @@ section#blog {
   font-size: 32px;
   /* Increase the font size as needed */
 }
-
+.footer-icon .youtube-icon {
+  width: 55px;
+  height: 55px;
+  top: 2170px;
+  /* Adjust the top position as needed */
+  left: 663px;
+  /* Adjust the left position as needed */
+  font-size: 25px;
+  /* Increase the font size as needed */
+}
 .row {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -135,7 +141,8 @@ section#blog {
 }
 
 .footer-icon .linkedin-icon,
-.footer-icon .twitter-icon {
+.footer-icon .twitter-icon,
+.footer-icon.youtube-icon {
   width: 40px;
   height: 40px;
   top: 2170px;
@@ -144,7 +151,6 @@ section#blog {
 }
 
 .footer-icon strong {
-
   /* Increase the font size of "Share on" */
   margin-right: 10px;
   /* Add space between "Share on" and icons */
@@ -161,13 +167,11 @@ section#blog {
   left: 0;
   right: 0;
   margin: auto;
-
 }
 
 .text-overlay {
   position: relative;
   margin-top: -35rem;
-
 }
 
 .text-overlay p {
@@ -190,7 +194,6 @@ section#blog {
   padding: 50px;
   margin-top: 800px;
   color: #000000;
-
 }
 
 .bl {
@@ -209,7 +212,6 @@ section#blog {
   font-weight: 300;
   line-height: 2rem !important;
   letter-spacing: 0em;
-
 }
 .row-img {
   display: -ms-flexbox;
@@ -246,7 +248,7 @@ section#blog {
 }
 
 .darkgreen {
-  color: #49785E;
+  color: #49785e;
   font-style: italic;
   font-weight: 600;
   font-size: 22px;
@@ -268,13 +270,13 @@ section#blog {
 
 .networkcard {
   border-radius: 40px;
-  background: #9FFFAC40;
+  background: #9fffac40;
   padding: 2rem 7%;
   text-align: center;
 }
 .gif {
   border-radius: 40px;
-  background: #9FFFAC40;
+  background: #9fffac40;
   padding: 2rem 9%;
   text-align: left;
 }
@@ -289,7 +291,6 @@ section#blog {
   font-weight: 300;
   line-height: 2rem !important;
   letter-spacing: 0em;
-
 }
 .gifimage {
   display: flex;
@@ -299,8 +300,8 @@ section#blog {
 }
 
 .gifimage img {
-  max-width: 22rem; 
-  max-height: 17rem; 
+  max-width: 22rem;
+  max-height: 17rem;
 }
 
 p.Center {
@@ -319,7 +320,6 @@ p.Centered {
   line-height: 80px;
   letter-spacing: 0em;
   text-align: center;
-
 }
 
 .image_rectangle {
@@ -337,7 +337,7 @@ p.Centered {
 }
 
 a.underline.blue {
-  color: #0E76A8;
+  color: #0e76a8;
 }
 
 .hilights {
@@ -353,16 +353,13 @@ ol.c {
   font-style: italic;
   font-size: 19px;
 }
-.References li{
-margin-left: 12px;
+.References li {
+  margin-left: 12px;
 }
 .References a {
   text-decoration: underline;
-  color:black; 
+  color: black;
 }
-
-
-
 
 @media screen and (min-width: 1024px) {
   #blog.section {
@@ -375,7 +372,6 @@ margin-left: 12px;
   .text-overlay p {
     font-size: 21px;
   }
-
 }
 
 @media (max-width: 1339px) {
@@ -406,8 +402,7 @@ margin-left: 12px;
 
   .footer-icon .linkedin-icon,
   .footer-icon .twitter-icon,
-  .footer-icon .youtube-icon
-   {
+  .footer-icon .youtube-icon {
     width: 29px;
     height: 28px;
     top: 2885px;
@@ -459,7 +454,6 @@ margin-left: 12px;
   .image_rectangle {
     width: 50%;
     margin: auto;
-
   }
 
   .text-overlay p {
@@ -471,14 +465,12 @@ margin-left: 12px;
     text-align: center;
   }
 
-
   p.Centered {
     font-size: 18px;
     font-weight: 700;
     line-height: 70px;
     letter-spacing: 0em;
     text-align: center;
-
   }
 
   .seat {
@@ -486,7 +478,7 @@ margin-left: 12px;
   }
 }
 
-@media(max-width: 425px) {
+@media (max-width: 425px) {
   .blogs-content {
     margin-top: 0rem;
   }
@@ -500,7 +492,6 @@ margin-left: 12px;
   }
 
   p.build {
-
     text-align: center;
     font-style: italic;
   }
@@ -521,7 +512,6 @@ margin-left: 12px;
     font-size: 1rem;
     line-height: 2rem !important;
     margin-top: 1rem;
-
   }
   .gif li {
     margin-bottom: 20px;
@@ -531,13 +521,13 @@ margin-left: 12px;
     font-weight: 300;
     line-height: 2rem !important;
     letter-spacing: 0em;
-}
+  }
   .points {
     font-size: 1rem;
   }
 
   .darkgreen {
-    color: #49785E;
+    color: #49785e;
     font-style: italic;
     font-weight: 600;
     font-size: 19px;
@@ -585,7 +575,6 @@ margin-left: 12px;
   }
 
   p.Center {
-
     font-size: 15px;
     font-weight: 700;
     line-height: 10px;
@@ -593,7 +582,6 @@ margin-left: 12px;
   }
 
   p.Centered {
-
     font-size: 9px !important;
     font-weight: 700;
     line-height: 10px;
@@ -609,7 +597,6 @@ margin-left: 12px;
   }
 
   .image_1 {
-
     margin-top: -3rem;
   }
 
@@ -618,7 +605,6 @@ margin-left: 12px;
   }
 
   .footer-icon strong {
-
     margin-right: 5px;
     /* Add space between "Share on" and icons */
   }
@@ -629,13 +615,11 @@ margin-left: 12px;
   }
 }
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
   .blog-content {
     margin-top: 250px;
     padding: 14px;
   }
-
-
 }
 
 @media (max-width: 375px) {

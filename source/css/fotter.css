@@ -64,7 +64,8 @@
 }
 
 .footer-icons .twitter-container,
-.footer-icons .social-icon-container {
+.footer-icons .social-icon-container,
+.footer-icons .youtube-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -84,13 +85,20 @@
   font-size: 20px;
   background-color: #0077b5;
 }
+
+.footer-icons .youtube-icon {
+  color: #fff;
+  font-size: 20px;
+  background-color:red;
+}
 .footer-icons .linkedin-icon,
-.footer-icons .twitter-icon {
+.footer-icons .twitter-icon,
+.footer-icons .youtube-icon {
   width: 55px;
   height: 55px;
   top: 2170px; /* Adjust the top position as needed */
   left: 663px; /* Adjust the left position as needed */
-  font-size: 32px; /* Increase the font size as needed */
+  font-size: 25px; /* Increase the font size as needed */
 }
 .write p{
   margin-left: 20rem;
@@ -203,7 +211,8 @@ margin-top: -2rem;
   }
 
   .footer-icons .linkedin-icon,
-  .footer-icons .twitter-icon {
+  .footer-icons .twitter-icon,
+  .footer-icons .youtube-icon {
     width: 29px;
     height: 28px;
     top: 2885px; 
