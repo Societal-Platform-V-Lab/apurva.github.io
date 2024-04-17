@@ -1,17 +1,15 @@
-const section_footer =
-  ` <footer class="footer with-background desktop-footer">
+const section_footer = ` <footer class="footer with-background desktop-footer">
   <div class="container-footer">
     <div class="row">
       <!-- Address (Left-aligned) -->
       <div class="col-sm-4 mb-20 address-container">
         <p class="alt-color">
-          <strong class="white">EkStep Foundation</strong><br>
+          <strong class="white">C4EC Foundation</strong><br>
         </p>
         <p class="alt-back">
-          Quorum, No. 85, 7th Cross,<br>
-          4th Block Koramangala,<br>
-          Bangalore-560 034<br>
-          Karnataka, India<br>
+        # 86 Kumar's 7th Cross Road,<br> 
+        4th ‘B’ Block, Koramangala,<br> 
+        Bengaluru 560034
         </p>
       </div>
       <!-- Address -->
@@ -57,7 +55,7 @@ const section_footer =
         <div class="white underline">
         <a href="Apurva_Terms.html" target="_blank">Terms of Use </a>
         </div>
-        <p class="greencopy">&copy; 2023 EkStep Foundation</p>
+        <p class="greencopy">&copy; 2024 C4EC Foundation</p>
 
         <!-- Copyrights -->
         <div class="licensed">
@@ -78,13 +76,12 @@ const section_footer =
       <!-- Address (Left-aligned) -->
       <div class="col-sm-6 mb-20 address-container">
         <p class="alt-color">
-          <strong class="white">EkStep Foundation</strong><br>
+          <strong class="white">C4EC Foundationn</strong><br>
         </p>
         <p class="alt-back">
-          Quorum, No. 85, 7th Cross,<br>
-          4th Block Koramangala,<br>
-          Bangalore-560 034<br>
-          Karnataka, India<br>
+        # 86 Kumar's 7th Cross Road,<br> 
+        4th ‘B’ Block, Koramangala,<br> 
+        Bengaluru 560034<br>
           <br>
           Write to us at<br>
         </p>
@@ -118,7 +115,7 @@ const section_footer =
       <br>
       <br>
       </span>
-      <p class="green" style="line-height: 29px;">&copy; 2023 EkStep Foundation</p>
+      <p class="green" style="line-height: 29px;">&copy; 2024 C4EC Foundation</p>
       </div>
       <!-- Copyright -->
       <div class="licensed">
@@ -135,6 +132,5 @@ const section_footer =
 </footer>
 
 `;
-
 
 document.getElementById("footer").innerHTML = section_footer;
