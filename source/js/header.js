@@ -13,7 +13,7 @@ const section_header = `  <header class="cursor-light">
         </li>
         <li class="nav-item">
           <a href="Apurva-Library.html" class="scroll nav-link apurva-library">
-          Apurva Library</a>
+           Blogs</a>
         </li>
 
         <li class="nav-item">
@@ -58,7 +58,7 @@ const section_header = `  <header class="cursor-light">
         </li>
         <li class="nav-item">
           <a href="Apurva-Library.html" class="scroll nav-link apurva-library-mobile"
-            >Apurva Library</a>
+            >Blogs</a>
         </li>
         <li class="nav-item">
           <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"

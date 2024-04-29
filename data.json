@@ -1,140 +1,159 @@
 {
   "apurvaStories": [
     {
-      "category": "Blogs",
-      "imagePath": "./source/img/Blog-1-Cover.png",
-      "author": "ANAND RAJAN",
-      "readTime": "2 MIN READ",
-      "title": "Harnessing Collective Wisdom : Role of Generative AI in Societal Transformation",
-      "URL": "Harnessing-Collective-Wisdom.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "./source/img/Blog 2 Cover.png",
-      "author": "ANAND RAJAN",
-      "readTime": "3 MIN READ",
-      "title": "The Exponential Gap: Balancing the Pros and Cons of AI",
-      "URL": "The-Exponential-Gap.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "./source/img/Blog 3 Cover .png",
-      "author": "ANAND RAJAN",
-      "readTime": "4 MIN READ",
-      "title": "Beyond Interactions: Sustaining and Sharing Collective Wisdom",
-      "URL": "Beyond-Interactions.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/from_the_network/Blog 4 Header.png",
-      "author": "ROSHNI GANESH",
-      "readTime": "4 MIN READ",
-      "title": "A Day of Validated Learnings with the Farmers of Tamilnadu",
-      "URL": "A-Day-of-Validated-Learnings-with-the-Farmers-of-Tamilnadu.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog6Cover.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
-      "readTime": "3 MIN READ",
-      "title": "Perceiving Collective Wisdom",
-      "URL": "Perceiving-Collective-Wisdom.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog8Cover.png",
-      "author": "ANAND RAJAN ",
-      "readTime": "7 MIN READ",
-      "title": "Reimagining AI: Ethical Shifts in the Generative Era",
-      "URL": "Reimagining-AI-Ethical-Shifts-in-the-Generative-Era.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog10 Cover.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
-      "readTime": "5 MIN READ",
-      "title": "Reimagining the Collective Wisdom of Climate Change",
-      "URL": "Reimagining the Collective-Wisdom-of-Climate-Change-and-Migration-with-Apurva.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog-8Cover.png",
-      "author": "SANCHITA CHAPAGAIN",
-      "readTime": "4 MIN READ",
-      "title": "How Apurva’s Co-create is emerging as a powerful capability for organisations",
-      "URL": "How-Apurva’s-Co-create-is-emerging-as-a-powerful-capability-for-organisations.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog9Cover.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
-      "readTime": "7 MIN READ",
-      "title": "Trusted information and trusted sources in health",
-      "URL": "Trusted_information_and trusted_sources_in_health.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog10Cover.png",
-      "author": "ANAGA SIVARAMAKRISHNAN & ROSHNI GANESH",
-      "readTime": "2 MIN READ",
-      "title": "The Magic Woven through Collective Wisdom",
-      "URL": "The-Magic-Woven-through-Collective-Wisdom.html"
-    },
-    {
-      "category": "Blogs",
-      "imagePath": "source/img/Blog11.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
-      "readTime": "7 MIN READ",
-      "title": "Inspiring stories of Collective Wisdom in folds of Mother Nature",
-      "URL": "Inspiring-stories-of-Collective-Wisdom-in-folds-of-Mother-Nature.html"
-    },
-    {
-      "category": "Blogs",
+      "category": "Articles",
       "imagePath": "source/img/Blog12.png",
       "author": "ANAGA SIVARAMAKRISHNAN & ROSHNI GANESH",
       "readTime": "4 MIN READ",
+      "date": "16.4.2024",
       "title": "Apurva.ai - A year since launch!",
       "URL": "Apurva.ai-A-year-since-launch!.html"
     },
     {
-      "category": "From the network",
-      "imagePath": "./source/img/Blog 1 Cover.png",
+      "category": "Articles",
+      "imagePath": "source/img/Blog11.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "7 MIN READ",
+      "date": "12.4.2024",
+      "title": "Inspiring stories of Collective Wisdom in folds of Mother Nature",
+      "URL": "Inspiring-stories-of-Collective-Wisdom-in-folds-of-Mother-Nature.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "source/img/Blog10Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN & ROSHNI GANESH",
+      "readTime": "2 MIN READ",
+      "date": "14.3.2024",
+      "title": "The Magic Woven through Collective Wisdom",
+      "URL": "The-Magic-Woven-through-Collective-Wisdom.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "source/img/Blog9Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "7 MIN READ",
+      "date": "28.2.2024",
+      "title": "Trusted information and trusted sources in health",
+      "URL": "Trusted_information_and trusted_sources_in_health.html"
+    },
+    {
+      "category": "Stories",
+      "imagePath": "./source/img/network5Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "6 MIN READ",
-      "title": "How SELCO Foundation is being ‘transformational’ with Apurva.ai",
-      "URL": "How-SELCO-Foundation-is-being-‘transformational’-with-Apurva.ai.html"
+      "date": "12.02.2024",
+      "title": "How Catalyst Management Services is enroute to collective impact with Apurva.ai",
+      "URL": "How-Catalyst-Management-Services-is-enroute-to-collective-impact-with-Apurva.ai.html"
     },
+
     {
-      "category": "From the network",
-      "imagePath": "./source/img/Planet-Read-Early-Journey-Series.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
-      "readTime": "5 MIN READ",
-      "title": "How Planet Read is bridging perspectives of intersections with Apurva.ai",
-      "URL": "How-Planet-Read-is-bridging-perspectives-of-intersections-with-Apurva.ai.html"
-    },
-    {
-      "category": "From the network",
-      "imagePath": "./source/img/Resonating_with_the_Voice_of_Farmers.png",
-      "author": "ANAGA SIVARAMAKRISHNAN",
+      "category": "Articles",
+      "imagePath": "source/img/Blog-8Cover.png",
+      "author": "SANCHITA CHAPAGAIN",
       "readTime": "4 MIN READ",
-      "title": "Resonating with the voice of farmers",
-      "URL": "Resonating_with_the_Voice_of_Farmers.html"
+      "date": "6.2.2024",
+      "title": "How Apurva’s Co-create is emerging as a powerful capability for organisations",
+      "URL": "How-Apurva’s-Co-create-is-emerging-as-a-powerful-capability-for-organisations.html"
     },
     {
-      "category": "From the network",
+      "category": "Stories",
       "imagePath": "./source/img/Blog11Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "5 MIN READ",
+      "date": "11.01.2024",
       "title": "How Project ECHO’s knowledge hub is enhanced with Apurva.ai’s roots in collective wisdom",
       "URL": "How-Project-ECHO’s-knowledge-hub-is-enhanced-with-Apurva.ai’s-roots-in-collective-wisdom.html"
     },
     {
-      "category": "From the network",
-      "imagePath": "./source/img/network5Cover.png",
+      "category": "Articles",
+      "imagePath": "source/img/Blog10 Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "5 MIN READ",
+      "date": "3.1.2024",
+      "title": "Reimagining the Collective Wisdom of Climate Change",
+      "URL": "Reimagining the Collective-Wisdom-of-Climate-Change-and-Migration-with-Apurva.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "source/img/Blog8Cover.png",
+      "author": "ANAND RAJAN ",
+      "readTime": "7 MIN READ",
+      "date": "21.12.2023",
+      "title": "Reimagining AI: Ethical Shifts in the Generative Era",
+      "URL": "Reimagining-AI-Ethical-Shifts-in-the-Generative-Era.html"
+    },
+    {
+      "category": "Stories",
+      "imagePath": "./source/img/Resonating_with_the_Voice_of_Farmers.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "4 MIN READ",
+      "date": "11.12.2023",
+      "title": "Resonating with the voice of farmers",
+      "URL": "Resonating_with_the_Voice_of_Farmers.html"
+    },
+    {
+      "category": "Stories",
+      "imagePath": "./source/img/Planet-Read-Early-Journey-Series.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "5 MIN READ",
+      "date": "1.12.2023",
+      "title": "How Planet Read is bridging perspectives of intersections with Apurva.ai",
+      "URL": "How-Planet-Read-is-bridging-perspectives-of-intersections-with-Apurva.ai.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "source/img/Blog6Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "3 MIN READ",
+      "date": "16.11.2023",
+      "title": "Perceiving Collective Wisdom",
+      "URL": "Perceiving-Collective-Wisdom.html"
+    },
+
+    {
+      "category": "Articles",
+      "imagePath": "source/img/from_the_network/Blog 4 Header.png",
+      "author": "ROSHNI GANESH",
+      "readTime": "4 MIN READ",
+      "date": "30.10.2023",
+      "title": "A Day of Validated Learnings with the Farmers of Tamilnadu",
+      "URL": "A-Day-of-Validated-Learnings-with-the-Farmers-of-Tamilnadu.html"
+    },
+    {
+      "category": "Stories",
+      "imagePath": "./source/img/Blog 1 Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "6 MIN READ",
-      "title": "How Catalyst Management Services is enroute to collective impact with Apurva.ai",
-      "URL": "How-Catalyst-Management-Services-is-enroute-to-collective-impact-with-Apurva.ai.html"
+      "date": "16.10.2023",
+      "title": "How SELCO Foundation is being ‘transformational’ with Apurva.ai",
+      "URL": "How-SELCO-Foundation-is-being-‘transformational’-with-Apurva.ai.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "./source/img/Blog 3 Cover .png",
+      "author": "ANAND RAJAN",
+      "readTime": "4 MIN READ",
+      "date": "18.06.2023",
+      "title": "Beyond Interactions: Sustaining and Sharing Collective Wisdom",
+      "URL": "Beyond-Interactions.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "./source/img/Blog 2 Cover.png",
+      "author": "ANAND RAJAN",
+      "readTime": "3 MIN READ",
+      "date": "11.05.2023",
+      "title": "The Exponential Gap: Balancing the Pros and Cons of AI",
+      "URL": "The-Exponential-Gap.html"
+    },
+    {
+      "category": "Articles",
+      "imagePath": "./source/img/Blog-1-Cover.png",
+      "author": "ANAND RAJAN",
+      "readTime": "2 MIN READ",
+      "date": "26.04.2023",
+      "title": "Harnessing Collective Wisdom : Role of Generative AI in Societal Transformation",
+      "URL": "Harnessing-Collective-Wisdom.html"
     }
   ],
   "apurvaExplains": [

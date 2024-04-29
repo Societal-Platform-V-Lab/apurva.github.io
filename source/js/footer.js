@@ -10,7 +10,7 @@ const section_footer = `
           <strong class="white">C4EC Foundation</strong><br>
         </p>
         <p class="alt-back">
-        # 86 Kumar's 7th Cross Road,<br> 
+        No.86, 7th Cross Road,<br> 
         4th ‘B’ Block, Koramangala,<br> 
         Bengaluru 560034
         </p>
@@ -89,7 +89,7 @@ const section_footer = `
           <strong class="white">C4EC Foundationn</strong><br>
         </p>
         <p class="alt-back">
-        # 86 Kumar's 7th Cross Road,<br> 
+        No.86,7th Cross Road,<br> 
         4th ‘B’ Block, Koramangala,<br> 
         Bengaluru 560034<br>
           <br>
