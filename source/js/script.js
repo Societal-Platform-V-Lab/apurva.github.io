@@ -17,27 +17,27 @@ $(document).ready(function () {
     const apurvaLibrary = document.querySelectorAll(
       ".apurva-library, .apurva-library-mobile"
     );
-
+    const joinus = document.querySelectorAll(".join-us, .join-us-mobile");
     const apurvaExperience = document.querySelectorAll(
       ".apurva-experience-mobile"
     );
-    const apurvaHome = document.querySelectorAll(
-      ".apurva-home"
-    );
+    const apurvaHome = document.querySelectorAll(".apurva-home");
 
     // Remove "active" class from all elements
     apurvAbout.forEach((item) => item.classList.remove("active"));
     apurvaLibrary.forEach((item) => item.classList.remove("active"));
+    joinus.forEach((item) => item.classList.remove("active"));
 
     // Add "active" class to the appropriate elements
     if (path === "/about-us.html") {
       apurvAbout.forEach((item) => item.classList.add("active"));
-    } else if (path === "/Apurva-Library.html") {
+    } else if (path === "/Blog.html") {
       apurvaLibrary.forEach((item) => item.classList.add("active"));
+    } else if (path === "/Join-us.html") {
+      joinus.forEach((item) => item.classList.add("active"));
     } else if (path === "/Apurva-Experience.html") {
       apurvaExperience.forEach((item) => item.classList.add("active"));
-    }
-    else if (path === "/index.html") {
+    } else if (path === "/index.html") {
       apurvaHome.forEach((item) => item.classList.add("active"));
     }
   }

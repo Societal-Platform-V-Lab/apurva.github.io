@@ -12,10 +12,13 @@ const section_header = `  <header class="cursor-light">
           <a href="about-us.html" class="scroll nav-link apurva-about">About</a>
         </li>
         <li class="nav-item">
-          <a href="Apurva-Library.html" class="scroll nav-link apurva-library">
+          <a href="Blog.html" class="scroll nav-link apurva-library">
            Blogs</a>
         </li>
-
+        <li class="nav-item">
+        <a href="Join-us.html" class="scroll nav-link join-us">
+         Join Us</a>
+      </li>
         <li class="nav-item">
           <a
             link
@@ -57,9 +60,13 @@ const section_header = `  <header class="cursor-light">
           <a href="about-us.html" class="scroll nav-link apurva-about-mobile">About</a>
         </li>
         <li class="nav-item">
-          <a href="Apurva-Library.html" class="scroll nav-link apurva-library-mobile"
+          <a href="Blog.html" class="scroll nav-link apurva-library-mobile"
             >Blogs</a>
         </li>
+        <li class="nav-item">
+        <a href="Join-us.html" class="scroll nav-link join-us-mobile"
+          >Join Us</a>
+      </li>
         <li class="nav-item">
           <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"
             >Apurva Experience</a>
