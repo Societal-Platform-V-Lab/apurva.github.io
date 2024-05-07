@@ -2,6 +2,15 @@
   "apurvaStories": [
     {
       "category": "Articles",
+      "imagePath": "source/img/Blog 14Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "2 MIN READ",
+      "date": "6.5.2024",
+      "title": "Sum of parts, whole and emergence",
+      "URL": "Sum-of-parts-whole-and-emergence.html"
+    },
+    {
+      "category": "Articles",
       "imagePath": "source/img/Blog 13Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "4 MIN READ",
