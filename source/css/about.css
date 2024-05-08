@@ -53,3 +53,36 @@
   text-align: center;
   margin-bottom: 1rem;
 }
+@media (max-width: 425px) {
+  .profileItem p.designation {
+    color: #49785e;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .profileItem p.name {
+    font-size: 12px;
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.greenteam {
+  color: #49785e;
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+.close {
+  color: #000;
+  text-align: right;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 19rem;
+}
+}
