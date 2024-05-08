@@ -1,0 +1,55 @@
+.blackheading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.greenteam {
+  color: #49785e;
+  font-size: 60px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+#team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-content {
+  width: 661px;
+  min-height: 670px;
+  border-radius: 20px;
+}
+.button {
+  margin-right: 1rem;
+}
+.close {
+  color: #000;
+  text-align: right;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 24rem;
+}
+.modal-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-img img {
+  width: 186px;
+  height: 186px;
+}
+.designation {
+  color: #49785e;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
