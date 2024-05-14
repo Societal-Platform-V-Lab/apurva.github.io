@@ -1,0 +1,171 @@
+section#experience,
+section#experiencepages {
+  position: relative;
+  background: #01051c;
+  padding: 0px 5%;
+}
+
+#experience.section,
+#experiencepages.section {
+  padding: 6rem 8%;
+  margin-top: 7rem;
+}
+.greenquery {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.querytext {
+  color: #9fffac; /* Set color for "QUERYABLE WISDOM" */
+  text-align: center;
+  font-size: 30px;
+}
+section#experience {
+  height: 95rem !important;
+}
+section#experiencepages {
+  height: 156rem !important;
+}
+.queryp {
+  color: white; /* Set default color for remaining text */
+  text-align: center;
+  font-size: 30px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 392px;
+  height: 422px;
+  border-radius: 1.25rem;
+  margin-left: 0px;
+  margin-right: 30px;
+  border: none;
+}
+.card-body-apu {
+  height: 422px;
+  background-color: #2e4c45;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 345px;
+  height: 309px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 35px;
+}
+.card::before {
+  content: attr(data-card-number);
+  position: absolute;
+  top: 3px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #9fffac;
+  z-index: 1;
+  margin-left: -0.25em;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  font-size: 4.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.card-content {
+  position: relative; /* Ensure proper stacking */
+  z-index: 2; /* Ensure it's above the pseudo-elements */
+}
+.experience p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  width: 1051px;
+}
+
+.coming img {
+  margin-top: -14rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-left: 249px;
+}
+
+.br {
+  margin-top: 66px;
+}
+
+@media (max-width: 1440px) {
+  .experience p {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    width: 746px;
+  }
+  .coming img {
+    margin-top: -12rem;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-left: 172px;
+  }
+  .queryp {
+    line-height: 39px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .experience h2,
+  .greenexp {
+    font-size: 40px;
+    line-height: 43px;
+  }
+  .experience p {
+    width: 538px;
+  }
+  .coming img {
+    margin-left: 105px;
+    margin-top: -8rem;
+  }
+  #experiencepages.section {
+    padding: 6rem 8%;
+    margin-top: 3rem;
+  }
+  .card {
+    width: 273px;
+  }
+  .card-text {
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 250px;
+    height: 309px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 35px;
+}
+}

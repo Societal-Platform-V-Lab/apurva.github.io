@@ -1646,6 +1646,7 @@ canvas {
   }
 }
 
+
 @media screen and (min-width: 901px) {
   #testimonialSection .carousel-inner {
     height: auto;
@@ -1831,7 +1832,6 @@ canvas {
   }
 
   #about.section,
-  #experience.section,
   #weAreHiring.section #libraryabout.section {
     padding: 6rem 8%;
     margin-top: 7rem;
@@ -3008,14 +3008,14 @@ ul.social_icon li a {
   }
   section#white-background-join {
     text-align: left;
-}
+  }
   .join-us-title {
     color: #002152;
     font-family: Poppins;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
-}
+  }
   .joinus-li ul {
     list-style-type: disc;
     color: #161515;

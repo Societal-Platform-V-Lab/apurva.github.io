@@ -193,17 +193,6 @@
   margin-top: 3rem;
 }
 
-.coming h2 {
-  margin-top: -5rem;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 0em;
-  text-align: right;
-}
-
 .circle_comingsoon {
   margin-left: 9rem;
   margin-top: -47rem;
@@ -253,7 +242,7 @@
   font-weight: 600;
   line-height: 73.14px;
 }
-.testimonial img {
+.greenimg img {
   width: 60.875rem;
   height: 60.875rem;
 }
@@ -277,12 +266,12 @@
 }
 
 .centrescreen {
-  margin-top: 100px;
+  margin-top: -50px;
   text-align: center;
   margin-left: 118px;
 }
 
-.gif{
+.gif {
   text-align: center;
 }
 .gif img {
@@ -468,9 +457,11 @@ section#why-Apurva {
 }
 
 section#Network {
-  height: 55rem !important;
+  height: 65rem !important;
 }
-
+#newscreen.flex-row-block {
+  height: 195rem !important;
+}
 section#contact {
   height: 30rem !important;
 }
@@ -716,7 +707,29 @@ section#contact {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
+@media screen and (max-width: 1805px) {
+  .gif img {
+    width: 468px;
+    height: 468px;
+  }
+  .centrescreen h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+  .greenintrogreen {
+    color: #9fffac;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
 
+  section#newscreen {
+    height: 150rem !important;
+  }
+}
 @media screen and (max-width: 1779px) {
   .featurebody {
     padding: 1rem 25px 0 25px;
@@ -735,6 +748,9 @@ section#contact {
 }
 
 @media screen and (max-width: 1510px) {
+  section#newscreen {
+    height: 155rem !important;
+  }
   section#why-Apurva {
     height: 120rem !important;
   }
@@ -800,9 +816,14 @@ section#contact {
     font-size: 29px;
     font-weight: 600;
   }
-
+  #newscreen.flex-row-block {
+    height: 160rem !important;
+  }
   section#Network {
-    height: 70rem !important;
+    height: 75rem !important;
+  }
+  .homePage .flex-row-block {
+    height: 199rem !important;
   }
 }
 
@@ -842,7 +863,9 @@ section#contact {
   section#responsibleAI {
     height: 35rem !important;
   }
-
+  #newscreen.flex-row-block {
+    height: 155rem !important;
+  }
   section#Network {
     height: 90rem !important;
   }
@@ -909,6 +932,9 @@ section#contact {
 }
 
 @media screen and (max-width: 768px) {
+  section#newscreen {
+    height: 175rem !important;
+  }
   #testimonial-carousel {
     height: 510px;
   }
@@ -1011,6 +1037,37 @@ section#contact {
 @media screen and (max-width: 530px) {
   .close {
     margin-left: 13rem;
+  }
+  .greenintrogreen {
+    font-size: 22px;
+  }
+  .centrescreen h2 {
+    font-size: 22px;
+    margin-left: -104px;
+  }
+  .greenimg img {
+    width: 30.875rem;
+    height: 30.875rem;
+    margin-left: -72px;
+  }
+  .key h2 {
+    font-size: 22px;
+    margin-left: -43px;
+    margin-top: 53px;
+    margin-bottom: -166px;
+  }
+  .key {
+    margin-top: -385px;
+    margin-bottom: 305px;
+    margin-left: -72px;
+  }
+  .gif img {
+    margin-left: -104px;
+    width: 250px;
+    height: 250px;
+  }
+  section#newscreen {
+    height: 90rem !important;
   }
 
   .sub {
@@ -1154,7 +1211,7 @@ section#contact {
   }
 
   section#Network {
-    height: 50rem !important;
+    height: 67rem !important;
   }
 
   section#responsibleAI {
@@ -1342,7 +1399,23 @@ section#contact {
     height: 662px;
   }
 }
-
+@media screen and (max-width: 390px) {
+  section#newscreen {
+    height: 87rem !important;
+  }
+  .greenintrogreen {
+    font-size: 15px;
+  }
+  .centrescreen h2 {
+    font-size: 15px;
+    margin-left: -104px;
+  }
+  .key h2 {
+    font-size: 15px;
+    margin-left: -47px;
+    line-height: 49.14px;
+  }
+}
 @media screen and (max-width: 386px) {
   .homePage .textColumn {
     padding-top: 10rem;
@@ -1417,3 +1490,8 @@ section#contact {
     display: none;
   }
 } */
+@media screen and (min-width: 1900px) {
+  .homePage .flex-row-block {
+    height: 199rem !important;
+  }
+}
