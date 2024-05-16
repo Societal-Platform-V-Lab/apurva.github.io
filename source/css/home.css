@@ -217,9 +217,11 @@
 .small-box {
   width: 61px;
   height: 61px;
-  background-color: #9fffac;
+ 
 }
-
+.small-box img{
+  height: 3.875rem;
+}
 .found {
   margin-bottom: 20px;
 }
@@ -232,6 +234,7 @@
   text-align: center; /* Center text within the link */
   color: white;
   font-size: 84px; /* Adjust the font size as needed */
+  margin-top: 191px;
 }
 .scroll-down-link:hover {
   color: white; /* Change color to white on hover */
@@ -244,15 +247,15 @@
 }
 .greenimg img {
   width: 60.875rem;
-  height: 60.875rem;
+  /* height: 60.875rem; */
 }
 .container {
   position: relative;
   width: 100%;
 }
 .key {
-  margin-top: -559px;
-  margin-bottom: 305px;
+  margin-top: -702px;
+  margin-bottom: 35px;
 }
 
 .image {
@@ -281,7 +284,7 @@
 .greenintrogreen {
   color: #9fffac;
   font-size: 60px;
-  font-family: Poppins;
+  font-style: italic;
   font-weight: 600;
   line-height: 73.14px;
 }
@@ -325,6 +328,25 @@
   line-height: 73.14px;
 }
 
+/* Hide span elements initially */
+.intro-Title h2 span {
+  opacity: 0;
+}
+
+/* Animation for typewriter effect */
+.intro-Title h2 span {
+  animation: typing 3s steps(40) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: auto;
+  }
+}
 .intro-Text {
   width: 1000px;
   height: 130px;
@@ -340,7 +362,9 @@
   margin-top: 10px;
   margin-bottom: 9rem;
 }
-
+.vector img{
+  max-width: 100%;
+}
 .why p {
   font-family: Poppins;
   font-size: 25px;
@@ -348,6 +372,7 @@
   line-height: 37px;
   letter-spacing: 0em;
   text-align: left;
+  color: #fff;
 }
 
 .what h2 {
@@ -425,13 +450,13 @@
   letter-spacing: 0em;
   text-align: left;
 }
-section#newscreen {
+section#newscreen,
+section#testimonialSection {
   background: #01051c;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section#testimonialSection,
 section#Featured {
   background: url(../img/Starry-Bg.png);
   background-repeat: no-repeat;
@@ -455,7 +480,9 @@ section#Featured {
 section#why-Apurva {
   height: 142rem !important;
 }
-
+section#contacts {
+  height: 17rem !important;
+}
 section#Network {
   height: 65rem !important;
 }
@@ -593,7 +620,7 @@ section#contact {
 
 .modal-content {
   width: 661px;
-  min-height: 670px;
+  min-height: 408px;
   border-radius: 20px;
 }
 
@@ -953,7 +980,7 @@ section#contact {
 
   .modal-content {
     width: 461px;
-    min-height: 674px;
+    min-height: 413px;
     border-radius: 20px;
   }
 
@@ -1064,7 +1091,7 @@ section#contact {
   .gif img {
     margin-left: -104px;
     width: 250px;
-    height: 250px;
+    height: 232px;
   }
   section#newscreen {
     height: 90rem !important;
@@ -1088,7 +1115,7 @@ section#contact {
 
   .modal-content {
     width: 291px;
-    min-height: 474px;
+    min-height: 333px;
     border-radius: 20px;
   }
 
@@ -1209,7 +1236,9 @@ section#contact {
     height: 77rem !important;
     margin-top: 1rem;
   }
-
+  #newscreen.flex-row-block {
+    height: 85rem !important;
+  }
   section#Network {
     height: 67rem !important;
   }

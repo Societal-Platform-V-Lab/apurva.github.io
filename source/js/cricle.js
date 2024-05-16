@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Auto rotate every 1 second
-  let rotationInterval = setInterval(autoRotate, 20000);
+  let rotationInterval = setInterval(autoRotate, 2000);
 
   // Stop auto rotation on mouse enter
   document
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".container")
     .addEventListener("mouseleave", function () {
-      rotationInterval = setInterval(autoRotate, 20000);
+      rotationInterval = setInterval(autoRotate, 2000);
     });
 
   // Event listener for clicking on cards

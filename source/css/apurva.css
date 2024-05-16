@@ -46,19 +46,19 @@ body {
 }
 
 section#about {
-  background: url(../img/Starry-Bg.png) no-repeat;
+  background: #01051c;
   padding: 0 5%;
   position: relative;
   background-size: cover;
 }
 section#experience {
-  background: url(../img/Starry-Bg.png) no-repeat;
+  background: #01051c;
   padding: 0 5%;
   position: relative;
   background-size: cover;
 }
 section#libraryabout {
-  background: url(../img/Starry-Bg.png) no-repeat;
+  background: #01051c;
   padding: 5% 8% 5%;
   margin-top: 110px;
   background-size: cover;
@@ -314,7 +314,8 @@ section.communities {
 }
 
 section.stay-tuned {
-  background-image: url(../img/stay-tuned-bg.svg), url(../img/Starry-Bg.png);
+  /* background-image: url(../img/stay-tuned-bg.svg), url(../img/Starry-Bg.png); */
+  background: #01051c;
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
   background-size: auto, cover; /* Adjust this line */
@@ -484,16 +485,7 @@ section.stay-tuned {
   font-weight: 600;
 }
 
-#founding h2 {
-  font-family: "Poppins";
-  color: #000000;
-  letter-spacing: -0.03em !important;
-  text-align: left;
-  max-width: 100%;
-  font-size: 55px;
-  line-height: 2.5rem;
-  font-weight: 500;
-}
+
 
 .weAreHiringAccordion .card-header .card-link {
   padding: 0.5rem 0;
@@ -1755,7 +1747,9 @@ canvas {
 
   .profileItem p.designation {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 50px;
+    margin-top: 17px;
+
   }
 
   .navbar-expand-lg .navbar-collapse {

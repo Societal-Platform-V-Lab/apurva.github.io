@@ -3,23 +3,35 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 55px;
   letter-spacing: 0em;
   text-align: left;
 }
-.name {
+
+.names {
   font-size: 1.5rem;
   color: #1c1c1c;
   font-weight: 600;
   margin-top: 1.5rem;
   text-align: center;
+  margin-bottom: 15px;
 }
 .greenteam {
   color: #49785e;
-  font-size: 60px;
+  font-size: 55px;
   font-family: Poppins;
-  font-weight: 600;
-  line-height: 73.14px;
+  font-weight: 700;
+  line-height: 55px;
+}
+#founding h2 {
+  font-family: "Poppins";
+  color: #000000;
+  letter-spacing: -0.03em !important;
+  text-align: left;
+  max-width: 100%;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
 }
 #team {
   display: flex;
@@ -75,21 +87,21 @@
     font-weight: 600;
     margin-top: 1.5rem;
     text-align: center;
-}
-.greenteam {
-  color: #49785e;
-  font-size: 26px;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 73.14px;
-}
-.close {
-  color: #000;
-  text-align: right;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  margin-left: 19rem;
-}
+  }
+  .greenteam {
+    color: #49785e;
+    font-size: 26px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+  .close {
+    color: #000;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 19rem;
+  }
 }

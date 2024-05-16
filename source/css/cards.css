@@ -1,165 +1,210 @@
-
 /* Your existing CSS styles */
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
-    width: 800px;
-    height: 800px;
-    margin-top: 800px;
-    margin-left: 721px;
-    position: relative;
+  width: 800px;
+  height: 800px;
+  margin-top: 800px;
+  margin-left: 638px;
+  position: relative;
 }
 
 .half-circle.right {
-    width: 1125px;
-    height: 520px;
-    border-top-left-radius: 520px;
-    border-top-right-radius: 520px;
-    border: 2px solid #9fffac;
-    margin: 20px;
-    position: absolute;
-    overflow: hidden;
-    border-bottom: none;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 1125px;
+  height: 520px;
+  border-top-left-radius: 520px;
+  border-top-right-radius: 520px;
+  border: 2px solid #9fffac;
+  margin: 20px;
+  position: absolute;
+  overflow: hidden;
+  border-bottom: none;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* transform: translate(21px, -189.506px); */
 .half-circle-inner {
-    margin-left: 128px;
-    width: 860px;
-    height: 406px;
-    border-top-left-radius: 408px;
-    border-top-right-radius: 408px;
-    border: 2px solid #9fffac;
-    position: absolute;
-    overflow: hidden;
-    bottom: -6px;
+  margin-left: 128px;
+  width: 860px;
+  height: 406px;
+  border-top-left-radius: 408px;
+  border-top-right-radius: 408px;
+  border: 2px solid #9fffac;
+  position: absolute;
+  overflow: hidden;
+  bottom: -6px;
 }
 
 .cards {
-    border: 2px solid #9fffac;
-    margin-left: 40px;
-    background-color: #01051c;
-    width: 207px;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    text-align: center;
-    transition: transform 0.5s ease-in-out;
+  border: 2px solid #9fffac;
+  margin-left: 40px;
+  background-color: #01051c;
+  width: 207px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cards.active {
-    background-color: rgba(178, 242, 186, 0.2);
-    transform: translateX(0);
-    border-color: #9fffac;
-    height: 296px;
-    width: 256px;
-    left: -23px;
-    top: -19px;
+  background-color: rgba(178, 242, 186, 0.2);
+  transform: translateX(0);
+  border-color: #9fffac;
+  height: 296px;
+  width: 256px;
+  left: -23px;
+  top: -19px;
 }
 
 button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .card-desc {
-    display: none;
-    margin-left: -150px;
-    width: 555px;
-    height: 87px;
-    text-align: center;
+  display: none;
+  margin-left: -150px;
+  width: 555px;
+  height: 87px;
+  text-align: center;
 }
 
 .card-desc p {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 9px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 9px;
 }
 
-.card.active+.card-desc {
-    display: block;
+.card.active + .card-desc {
+  display: block;
 }
 
 .explore-btn {
-    text-align: center;
-    width: 142px;
-    font-size: 15px;
-    background: transparent;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid #9fffac;
-    height: auto;
-    margin-top: -59px
+  text-align: center;
+  width: 142px;
+  font-size: 15px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #9fffac;
+  height: auto;
+  margin-top: -59px;
 }
 
 .explore-btn.active {
-    background-color: #9fffac;
-    margin-top: -59px
+  background-color: #9fffac;
+  margin-top: -59px;
 }
 
 .cards img {
-    margin-top: -78px;
-    opacity: 0.2;
+  margin-top: -78px;
+  opacity: 0.2;
 }
 
 .cards p {
-    margin-top: 8px;
-    font-size: 25px;
-    color: white;
-    margin-bottom: 10px;
+  margin-top: 8px;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .cardgreen {
-    color: #9fffac;
+  color: #9fffac;
 }
 
 .cards.card-1 {
-    margin-left: -18px;
-    top: -103px;
+  margin-left: -18px;
+  top: -103px;
 }
 
 .cards.card-2 {
-    margin-left: 175px;
-    top: -263px;
+  margin-left: 175px;
+  top: -263px;
 }
 
 .cards.card-4 {
-    margin-left: -104px;
-    top: -265px;
+  margin-left: -104px;
+  top: -265px;
 }
 
 .cards.card-5 {
-    margin-left: 98px;
-    top: -109px;
+  margin-left: 98px;
+  top: -109px;
 }
 
 .cards.card-6 {
-    margin-left: 40px;
-    top: 12px;
+  margin-left: 40px;
+  top: 12px;
 }
-#experiencecricle.section{
-    padding: 6rem 8%;
-   
-}
-section#experiencecricle {
-    position: relative;
-    background: #01051c;
-    padding: 0px 5%;
+#experiencecricle.section {
+  padding: 6rem 8%;
 }
 section#experiencecricle {
-    height: 55rem !important;
+  position: relative;
+  background: #01051c;
+  padding: 0px 5%;
 }
+section#experiencecricle {
+  height: 55rem !important;
+}
+@media (min-width: 2560px) {
+  .container {
+    margin-left: 943px;
+  }
+}
+@media (max-width: 1805px) {
+  .container {
+    margin-left: 623px;
+  }
+}
+@media (max-width: 1440px) {
+    .container {
+        margin-left: 464px;
+    }
+    .half-circle-inner {
+        margin-left: 81px;
+        width: 794px;
+        height: 406px;
+        border-top-left-radius: 408px;
+        border-top-right-radius: 408px;
+        border: 2px solid #9fffac;
+        position: absolute;
+        overflow: hidden;
+        bottom: -6px;
+    }
+    .cards.card-4 {
+        margin-left: -63px;
+        top: -265px;
+    }
+    .cards.card-2 {
+        margin-left: 152px;
+        top: -263px;
+    }
+    .half-circle.right {
+        width: 952px;
+        height: 520px;
+        border-top-left-radius: 520px;
+        border-top-right-radius: 520px;
+        border: 2px solid #9fffac;
+        margin: 20px;
+        position: absolute;
+        overflow: hidden;
+        border-bottom: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }

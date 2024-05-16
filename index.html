@@ -92,13 +92,17 @@
               <div id="js-rotating01">
                 <div class="intro-Title ">
                   <h2>
-                    <span class="greenintro">Create, Nurture</span> and <span class="greenintro">Sustain</span> the
-                    <span class="greenintro"> Collective Wisdom</span> of your ecosystem.
+                    <span class="greenintro">Create, Nurture</span> <span>and</span>
+                    <span class="greenintro">Sustain</span>
+                    <span>the</span>
+                    <span class="greenintro"> Collective Wisdom</span>
+                    <span>of your ecosystem.</span>
+
                   </h2>
                   <br>
                   <br>
                   <a href="#newscreen" class="scroll-down-link">
-                    <i class="bi bi-arrow-down"></i>
+                    <img src="source/img/Arrow 1.png" alt="Client Image" class="img-fluid" />
                     <p>SCROLL DOWN</p>
                   </a>
                 </div>
@@ -119,7 +123,66 @@
       <div class="greenimg">
         <img src="source/img/nav.png" class="">
         <div class="key">
-          <h2> Description / Key Messaging / Value Prop Explainer Video</h2>
+          <div class="row">
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vectorshape.png" class="">
+              </div>
+              <div class="why">
+                <p> Rooted in
+                  Community Voices</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vector1.png" class="">
+              </div>
+              <div class="why">
+                <p> Amplify
+                  Network Knowledge  
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vector2.png" class="">
+              </div>
+              <div class="why">
+                <p> Ensure Complete Transparency 
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vector3.png" class="">
+              </div>
+              <div class="why">
+                <p> Offer
+                  Diverse Choices
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vectorshape.png" class="">
+              </div>
+              <div class="why">
+                <p> Foster Combinatorial Innovation
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 mb-2">
+              <div class="small-box">
+                <img src="source/img/Vector3.png" class="">
+              </div>
+              <div class="why">
+                <p> Evolve and
+                  Measure continuously
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -144,8 +207,6 @@
 
       </div>
     </div>
-
-
   </section>
   <!-- testimonial Section start -->
   <section id="testimonialSection" class="section testimonial flex-row-block .flex-row-block">
@@ -166,7 +227,6 @@
 
               </h2>
               <br>
-
             </div>
           </div>
         </div>
@@ -516,6 +576,7 @@
           </div>
         </div>
       </div>
+
       <!-- <div class="featurecarousel" id="featurecarousel-card">
 
       </div> -->
@@ -798,13 +859,13 @@
               <span class="validation-message" id="org-validation" style="display: none; color: red;">Organization is
                 required</span>
             </div>
-            <div class="sub-group">
+            <!-- <div class="sub-group">
               <textarea class="des-textbox" id="des"
                 placeholder="Describe the problem that 'Apurva' would address for your organization." required
                 style="color: black;"></textarea>
               <span class="validation-message" id="des-validation" style="display: none; color: red;">Description is
                 required</span>
-            </div>
+            </div> -->
 
 
             <button onclick="validateEmail()" class="sub mx-auto d-block" type="button" id="subscribeButton">
@@ -852,6 +913,26 @@
         $('html, body').animate({
           scrollTop: $("#newscreen").offset().top
         }, 1000); // Adjust the speed as needed
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var spans = document.querySelectorAll(".intro-Title h2 span");
+      var allChars = [];
+      spans.forEach(function (span) {
+        var text = span.textContent.trim();
+        span.textContent = ""; // Clear the original content
+        text.split('').forEach(function (char) {
+          var spanElement = document.createElement("span");
+          spanElement.textContent = char === ' ' ? '\u00A0' : char; // Replace space with non-breaking space
+          allChars.push(spanElement);
+          span.appendChild(spanElement);
+        });
+      });
+
+      allChars.forEach(function (char, index) {
+        char.style.animationDelay = (index * 0.1) + "s"; // Adjust the delay between letters
       });
     });
   </script>
