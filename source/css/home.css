@@ -1480,6 +1480,9 @@ section#contactstest {
   }
 }
 @media screen and (max-width: 390px) {
+  #prev {
+    margin-left: 108px;
+}
   section#newscreen {
     height: 87rem !important;
   }
@@ -1549,7 +1552,7 @@ section#contactstest {
 
   section#testimonialSection,
   section#Featured {
-    background: url(../img/Starry-Bg.png);
+  
     /* background-repeat: no-repeat; */
     background-size: cover;
   }

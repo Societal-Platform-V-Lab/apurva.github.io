@@ -1,0 +1,79 @@
+
+/* General styles for the mobile card */
+.mobile-section {
+    display: flex;
+    justify-content: flex-start; /* Aligns the card to the left */
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .mobile-cardgreen {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .mobile-card-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
+  
+  .mobile-explore-btn {
+    font-size: 9px;
+    text-align: center;
+    width: 57px;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background: #9fffac;
+    color: #000;
+    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    min-width: max-content;
+    margin-top: 10px; 
+  }
+  
+  .additional-text p {
+    color: white !important;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  .mobile-card-white {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .mobile-card-green {
+    color: #9fffac;
+    font-weight: bold;
+  }
+  .mobile-card-inside {
+    font-size: 20px; /* Adjust as needed */
+    display: inline;
+  }
+  
+  .mobile-card-outside {
+    font-size: 30px; /* Adjust as needed */
+    display: inline;
+  }
+  
+  .queryable-text {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .wisdom-text {
+    color: #9fffac;
+    font-weight: bold;
+  }
+  .cardtext{
+    color: white;
+    text-align: left;
+    font-size: 10px;
+  }
+  .mobile-section .blog {
+    display: block;
+    width: 100%; /* Adjust as needed */
+  }
+  
