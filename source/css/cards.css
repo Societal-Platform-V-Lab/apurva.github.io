@@ -107,6 +107,7 @@ button {
 
 .explore-btn.active {
   background-color: #9fffac;
+  color: #01051c;
   margin-top: -59px;
 }
 

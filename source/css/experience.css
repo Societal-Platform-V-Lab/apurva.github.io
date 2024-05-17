@@ -1,7 +1,9 @@
 section#experience,
 section#experiencepages {
   position: relative;
-  background: #01051c;
+  background-image: url(../img/Frame.png);
+  background-size: cover; /* Adjust background image size */
+  background-position: center; /* Center the background image */
   padding: 0px 5%;
 }
 
@@ -24,8 +26,12 @@ section#experiencepages {
   text-align: center;
   font-size: 30px;
 }
+.experienceimg {
+  margin-top: -289px;
+  text-align: center;
+}
 section#experience {
-  height: 95rem !important;
+  height: 130rem !important;
 }
 section#experiencepages {
   height: 156rem !important;
@@ -92,7 +98,7 @@ section#experiencepages {
   font-style: normal;
   font-weight: 300;
   line-height: 40px;
-  width: 1051px;
+  width: 800px;
 }
 
 .coming img {

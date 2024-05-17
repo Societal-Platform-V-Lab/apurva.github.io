@@ -65,6 +65,7 @@
             </h2><br>
             <p>Here you can place your mission at the center, reimagine the possibilities with Apurva, and understand
               how Apurva can power up your problem-solving</p>
+
           </div>
 
         </div>
@@ -77,6 +78,10 @@
 
         </div>
       </div>
+      <a href="#experiencecricle" class="scroll-down-link" style="text-align: center;">
+        <img src="source/img/Arrow 1.png" alt="Client Image" class="img-fluid" />
+        <p>SCROLL DOWN</p>
+      </a>
       <div class="br"> </div>
       <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
         <!-- carousel-indicators Section start -->
@@ -104,8 +109,16 @@
           </div>
         </div>
       </div>
-  </section>
+      <div class="experienceimg" id="experienceimg">
+        <img src="source/img/Apurva Experience.gif" alt="Client Image" class="img-fluid" />
+      </div>
 
+    </div>
+  </section>
+  <div style="background-color: #01051c;">
+
+    <p class="greenquery">Deep dive into Apurva’s Building Blocks</p>
+  </div>
 
   <section id="experiencecricle" class="section flex-row-block">
     <div class="wrapper">
@@ -219,6 +232,15 @@
   <script src="source/js/script.js"></script>
   <script src="source/js/particles.js"></script>
   <script src="source/js/cricle.js"></script>
+
+  <!-- Scroll down script -->
+  <script>
+    document.querySelector('.scroll-down-link').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('experienceimg').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
 </body>
 
 </html>

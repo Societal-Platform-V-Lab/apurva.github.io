@@ -485,8 +485,6 @@ section.stay-tuned {
   font-weight: 600;
 }
 
-
-
 .weAreHiringAccordion .card-header .card-link {
   padding: 0.5rem 0;
 }
@@ -1470,9 +1468,9 @@ canvas {
   border: 0.2rem solid #fff;
 }
 
-#testimonialSection.flex-row-block {
+/* #testimonialSection.flex-row-block {
   min-height: 42.25rem !important;
-}
+} */
 
 #testimonialSection .dropdown-divider {
   border-top: 0.0625rem solid #9fffac;
@@ -1610,9 +1608,9 @@ canvas {
   margin-bottom: 5rem;
 }
 
-#testimonialSection.flex-row-block {
+/* #testimonialSection.flex-row-block {
   height: 100rem !important;
-}
+} */
 
 @media screen and (min-width: 1900px) {
   .homePage .flex-row-block {
@@ -1627,10 +1625,16 @@ canvas {
 }
 
 @media screen and (max-width: 768px) {
+  #testimonialSectionfeature.flex-row-block {
+    height: 32rem !important;
+}
   /* Your CSS rules for screens with a width of 768 pixels or less go here */
   .profileItem .img img {
     max-width: 12rem;
     /* Your styles for images in this media query */
+  }
+  #testimonialSection.flex-row-block {
+    height: 600px !important;
   }
 
   .responsible h2 {
@@ -1638,18 +1642,20 @@ canvas {
   }
 }
 
-
 @media screen and (min-width: 901px) {
-  #testimonialSection .carousel-inner {
+  #testimonialSection .carousel-inner,
+  #testimonialSectionfeature .carousel-inner {
     height: auto;
     overflow: hidden;
     min-height: inherit !important;
   }
 
   #testimonialSection.flex-row-block {
-    height: 97rem !important;
+    height: 447px !important;
   }
-
+  #testimonialSectionfeature.flex-row-block {
+    height: 30rem !important;
+  }
   .found.introTitle h2 {
     margin-top: 0;
     margin-left: -2rem;
@@ -1749,7 +1755,6 @@ canvas {
     font-size: 1.5rem;
     margin-bottom: 50px;
     margin-top: 17px;
-
   }
 
   .navbar-expand-lg .navbar-collapse {
@@ -2929,6 +2934,7 @@ ul.social_icon li a {
   section#white-background-join {
     margin-top: 100px;
   }
+
   .join-us-title {
     color: #002152;
     font-family: Poppins;
@@ -3207,6 +3213,7 @@ ul.social_icon li a {
     margin-right: auto;
     margin-left: auto;
   }
+
   .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item,
   .multi-item-carousel
     .carousel-inner

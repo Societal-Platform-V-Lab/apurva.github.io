@@ -217,9 +217,8 @@
 .small-box {
   width: 61px;
   height: 61px;
- 
 }
-.small-box img{
+.small-box img {
   height: 3.875rem;
 }
 .found {
@@ -256,6 +255,7 @@
 .key {
   margin-top: -702px;
   margin-bottom: 35px;
+  margin-left: 80px;
 }
 
 .image {
@@ -362,7 +362,7 @@
   margin-top: 10px;
   margin-bottom: 9rem;
 }
-.vector img{
+.vector img {
   max-width: 100%;
 }
 .why p {
@@ -451,7 +451,8 @@
   text-align: left;
 }
 section#newscreen,
-section#testimonialSection {
+section#testimonialSection,
+section#testimonialSectionfeature {
   background: #01051c;
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,12 +488,20 @@ section#Network {
   height: 65rem !important;
 }
 #newscreen.flex-row-block {
-  height: 195rem !important;
+  height: 196rem !important;
 }
 section#contact {
   height: 30rem !important;
 }
-
+section#contactstest {
+  height: 17rem !important;
+  background-color: #01051c;
+}
+section#contactstest {
+  background: #01051c;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .list-group-horizontal {
   display: flex;
   flex-direction: row;
@@ -693,7 +702,9 @@ section#contact {
   align-items: center;
   cursor: pointer;
 }
-
+#prev {
+  margin-left: 746px;
+}
 .carousel-control img {
   width: 20px;
   height: 20px;
@@ -734,7 +745,18 @@ section#contact {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
+@media screen and (min-width: 1805px) {
+  #prev {
+    margin-left: 753px;
+  }
+}
 @media screen and (max-width: 1805px) {
+  #newscreen.flex-row-block {
+    height: 158rem !important;
+}
+  #prev {
+    margin-left: 649px;
+  }
   .gif img {
     width: 468px;
     height: 468px;
@@ -837,7 +859,9 @@ section#contact {
   .subscribe {
     width: 47.5rem;
   }
-
+  #prev {
+    margin-left: 547px;
+  }
   .stay-tuned .register-button {
     border-color: #9fffac;
     font-size: 29px;
@@ -855,6 +879,15 @@ section#contact {
 }
 
 @media screen and (max-width: 1024px) {
+  #prev {
+    margin-left: 369px;
+  }
+
+  .key {
+    margin-top: -534px;
+    margin-bottom: 35px;
+    margin-left: -89px;
+  }
   section#why-Apurva {
     height: 130rem !important;
   }
@@ -891,7 +924,7 @@ section#contact {
     height: 35rem !important;
   }
   #newscreen.flex-row-block {
-    height: 155rem !important;
+    height: 150rem !important;
   }
   section#Network {
     height: 90rem !important;
@@ -959,6 +992,17 @@ section#contact {
 }
 
 @media screen and (max-width: 768px) {
+  #newscreen.flex-row-block {
+    height: 165rem !important;
+  }
+  .key {
+    margin-top: -423px;
+    margin-bottom: 35px;
+    margin-left: -89px;
+  }
+  #prev {
+    margin-left: 288px;
+  }
   section#newscreen {
     height: 175rem !important;
   }
@@ -1062,6 +1106,12 @@ section#contact {
 }
 } */
 @media screen and (max-width: 530px) {
+  section#contactstest {
+    margin-top: -21px;
+  }
+  #prev {
+    margin-left: 123px;
+  }
   .close {
     margin-left: 13rem;
   }
@@ -1073,8 +1123,8 @@ section#contact {
     margin-left: -104px;
   }
   .greenimg img {
-    width: 30.875rem;
-    height: 30.875rem;
+    /* width: 30.875rem;
+    height: 30.875rem; */
     margin-left: -72px;
   }
   .key h2 {
@@ -1084,8 +1134,8 @@ section#contact {
     margin-bottom: -166px;
   }
   .key {
-    margin-top: -385px;
-    margin-bottom: 305px;
+    margin-top: -78px;
+    margin-bottom: 0px;
     margin-left: -72px;
   }
   .gif img {
@@ -1129,7 +1179,7 @@ section#contact {
     margin-top: 9rem;
   }
   #testimonialSection.flex-row-block {
-    height: 110rem !important;
+    height: 62rem !important;
   }
 
   .experience h2 {
@@ -1201,8 +1251,8 @@ section#contact {
 
   .small-box {
     margin-top: -1rem;
-    width: 31px;
-    height: 31px;
+    /* width: 31px;
+    height: 31px; */
   }
 
   .whatcard {
@@ -1220,6 +1270,7 @@ section#contact {
   .why p {
     line-height: 27px;
     font-size: 14px;
+    margin-left: -32px;
   }
 
   .card-what {
@@ -1237,7 +1288,7 @@ section#contact {
     margin-top: 1rem;
   }
   #newscreen.flex-row-block {
-    height: 85rem !important;
+    height: 105rem !important;
   }
   section#Network {
     height: 67rem !important;
