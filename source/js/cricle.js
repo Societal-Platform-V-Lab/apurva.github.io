@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Stop auto rotation on mouse enter
   document
-    .querySelector(".container")
+    .querySelector(".containercricle")
     .addEventListener("mouseenter", function () {
       clearInterval(rotationInterval);
     });
 
   // Resume auto rotation on mouse leave
   document
-    .querySelector(".container")
+    .querySelector(".containercricle")
     .addEventListener("mouseleave", function () {
       rotationInterval = setInterval(autoRotate, 20000);
     });

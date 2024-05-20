@@ -7,13 +7,15 @@
   overflow: hidden;
 }
 
-.container {
+.containercricle {
   width: 800px;
   height: 800px;
   margin-top: 800px;
-  margin-left: 723px;
+  /* padding: 3rem 16%; */
+  margin-left: 33.1%;
   position: relative;
 }
+
 
 .half-circle.right {
   width: 1125px;
@@ -26,7 +28,7 @@
   overflow: hidden;
   border-bottom: none;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52.1%);
 }
 
 /* transform: translate(21px, -189.506px); */
@@ -168,6 +170,7 @@ section#experiencecricle {
 #Knowledge {
   margin-top: -48px;
 }
+
 
 @media (min-width: 2560px) {
   .container {
