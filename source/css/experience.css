@@ -34,7 +34,7 @@ section#experience {
   height: 130rem !important;
 }
 section#experiencepages {
-  height: 156rem !important;
+  height: 200rem !important;
 }
 .queryp {
   color: white; /* Set default color for remaining text */
@@ -173,5 +173,131 @@ section#experiencepages {
     align-items: center;
     font-size: 18px;
     line-height: 35px;
+  }
+  .greenquery {
+    font-size: 20px;
+  }
 }
+@media screen and (max-width: 768px) {
+  .coming img {
+    margin-left: 177px;
+    margin-top: -25rem;
+    opacity: 0.2;
+  }
+  #experience.section {
+    padding: 6rem 8%;
+    margin-top: 4rem;
+  }
+  #exprow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 160px;
+  }
+  .circle_comingsoon {
+    margin-top: -28rem;
+    height: 350px;
+    width: 350px;
+    background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+    filter: blur(160px);
+    margin-left: 294px;
+  }
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -2rem;
+  }
+  .experience p {
+    width: 641px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .coming img {
+    margin-left: 72px;
+    margin-top: -44rem;
+    opacity: 0.2;
+  }
+  #experiencepages.section {
+    padding: 6rem 0%;
+    margin-top: 3rem;
+  }
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -2rem;
+  }
+  .experience p {
+    width: 376px;
+    font-size: 18px;
+    text-align: start;
+    word-break: break-all;
+  }
+  .greenquery {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #testimonial-carousel {
+    height: 222px;
+    margin-top: 56px;
+  }
+  .queryp {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  .querytext {
+    color: #9fffac;
+    text-align: center;
+    font-size: 18px;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0px;
+  }
+  #exprow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 42px;
+  }
+  #experience.section {
+    padding: 6rem 0%;
+    margin-top: 4rem;
+  }
+  .experienceimg {
+    margin-top: -63px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  .experience p {
+    width: 343px;
+    font-size: 18px;
+    text-align: start;
+    word-break: break-all;
+}
+  section#experiencecricle {
+    height: 146rem !important;
+  }
 }

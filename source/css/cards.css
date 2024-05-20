@@ -11,7 +11,7 @@
   width: 800px;
   height: 800px;
   margin-top: 800px;
-  margin-left: 638px;
+  margin-left: 723px;
   position: relative;
 }
 
@@ -162,6 +162,13 @@ section#experiencecricle {
 section#experiencecricle {
   height: 55rem !important;
 }
+#power {
+  margin-top: -65px;
+}
+#Knowledge {
+  margin-top: -48px;
+}
+
 @media (min-width: 2560px) {
   .container {
     margin-left: 943px;
@@ -173,39 +180,206 @@ section#experiencecricle {
   }
 }
 @media (max-width: 1440px) {
-    .container {
-        margin-left: 464px;
-    }
-    .half-circle-inner {
-        margin-left: 81px;
-        width: 794px;
-        height: 406px;
-        border-top-left-radius: 408px;
-        border-top-right-radius: 408px;
-        border: 2px solid #9fffac;
-        position: absolute;
-        overflow: hidden;
-        bottom: -6px;
-    }
-    .cards.card-4 {
-        margin-left: -63px;
-        top: -265px;
-    }
-    .cards.card-2 {
-        margin-left: 152px;
-        top: -263px;
-    }
-    .half-circle.right {
-        width: 952px;
-        height: 520px;
-        border-top-left-radius: 520px;
-        border-top-right-radius: 520px;
-        border: 2px solid #9fffac;
-        margin: 20px;
-        position: absolute;
-        overflow: hidden;
-        border-bottom: none;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  #experiencecricle.section {
+    padding: 6rem 6%;
   }
+  .container {
+    margin-left: 464px;
+  }
+  .cards.card-5 {
+    margin-left: 113px;
+    top: -95px;
+  }
+  .cards.card-1 {
+    margin-left: -17px;
+    top: -93px;
+  }
+  .half-circle-inner {
+    margin-left: 81px;
+    width: 794px;
+    height: 406px;
+    border-top-left-radius: 408px;
+    border-top-right-radius: 408px;
+    border: 2px solid #9fffac;
+    position: absolute;
+    overflow: hidden;
+    bottom: -6px;
+  }
+  .cards.card-4 {
+    margin-left: -63px;
+    top: -265px;
+  }
+  .cards.card-2 {
+    margin-left: 152px;
+    top: -263px;
+  }
+  .half-circle.right {
+    width: 952px;
+    height: 520px;
+    border-top-left-radius: 520px;
+    border-top-right-radius: 520px;
+    border: 2px solid #9fffac;
+    margin: 20px;
+    position: absolute;
+    overflow: hidden;
+    border-bottom: none;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 1024px) {
+  .half-circle.right {
+    width: 766px;
+    height: 392px;
+  }
+  .half-circle-inner {
+    width: 611px;
+    height: 328px;
+    margin-left: 75px;
+  }
+  .cards p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  #power {
+    margin-top: -44px;
+  }
+  #Knowledge {
+    margin-top: -44px;
+  }
+  .cards img {
+    margin-top: -60px;
+    opacity: 0.2;
+  }
+  .cards.card-4 {
+    margin-left: 68px;
+    top: -254px;
+  }
+  .cards.card-5 {
+    margin-left: 198px;
+    top: -33px;
+  }
+  .cards.card-2 {
+    margin-left: 41px;
+    top: -253px;
+  }
+  .cards.card-6 {
+    margin-left: 86px;
+    top: 133px;
+  }
+  .cards.card-1 {
+    margin-left: -90px;
+    top: -33px;
+  }
+  .cards {
+    width: 143px;
+    height: 191px;
+  }
+  .cards.active {
+    width: 143px;
+    height: 191px;
+  }
+  .explore-btn {
+    text-align: center;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #9fffac;
+    width: 117px;
+    height: 20px;
+    margin-top: 3px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    padding-top: 2px; /* Adjust this value as needed */
+    margin-left: 12px;
+  }
+  .explore-btn.active {
+    margin-top: 2px;
+  }
+  .Explore {
+    font-size: 11px;
+    line-height: 1; /* Adjust line-height if needed */
+    margin-top: -2px; /* Negative margin to move the text up */
+  }
+
+  .container {
+    margin-left: 308px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-left: 309px;
+  }
+  #experiencecricle.section {
+    padding: 1rem 1%;
+  }
+  section#experience {
+    height: 92rem !important;
+  }
+  .half-circle.right {
+    width: 625px;
+    height: 296px;
+  }
+  .half-circle-inner {
+    width: 463px;
+    height: 232px;
+    margin-left: 75px;
+  }
+  .cards.card-5 {
+    margin-left: 184px;
+    top: -9px;
+  }
+  .cards.card-6 {
+    margin-left: 13px;
+    top: 180px;
+  }
+  .cards.card-1 {
+    margin-left: -221px;
+    top: -9px;
+  }
+  .cards.card-2 {
+    margin-left: -106px;
+    top: -253px;
+  }
+  .card-desc {
+    display: none;
+    margin-left: -150px;
+    width: 407px;
+    height: 87px;
+    text-align: center;
+  }
+  .card-desc p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .scroll-down-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 84px;
+    margin-top: 86px;
+    margin-bottom: 20px;
+  }
+  section#experiencecricle {
+    height: 117rem !important;
+  }
+  section#experience {
+    height: 70rem !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  section#experiencecricle {
+    height: 124rem !important;
+  }
+}

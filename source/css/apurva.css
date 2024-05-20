@@ -1627,7 +1627,7 @@ canvas {
 @media screen and (max-width: 768px) {
   #testimonialSectionfeature.flex-row-block {
     height: 32rem !important;
-}
+  }
   /* Your CSS rules for screens with a width of 768 pixels or less go here */
   .profileItem .img img {
     max-width: 12rem;
@@ -2965,8 +2965,7 @@ ul.social_icon li a {
     height: 70rem !important;
   }
   section#about {
-    background: url(../img/bgImg.jpg);
-    padding: 0 5%;
+    padding: 77px 5%;
     position: relative;
     height: 30rem;
     margin-top: 2rem;
@@ -3050,7 +3049,7 @@ ul.social_icon li a {
   }
 
   section#about {
-    background: url(../img/bgImg.jpg);
+   
     padding: 5% 8% 5%;
     position: relative;
     height: 20rem;
