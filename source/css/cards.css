@@ -16,7 +16,6 @@
   position: relative;
 }
 
-
 .half-circle.right {
   width: 1125px;
   height: 520px;
@@ -170,7 +169,6 @@ section#experiencecricle {
 #Knowledge {
   margin-top: -48px;
 }
-
 
 @media (min-width: 2560px) {
   .container {
@@ -361,7 +359,14 @@ section#experiencecricle {
     margin-bottom: 9px;
   }
 }
-
+@media (max-width: 467px) {
+  section#experience {
+    height: 77rem !important;
+  }
+  section#experiencecricle {
+    height: 118rem !important;
+  }
+}
 @media screen and (max-width: 425px) {
   .scroll-down-link {
     display: flex;
@@ -383,6 +388,12 @@ section#experiencecricle {
 }
 @media screen and (max-width: 390px) {
   section#experiencecricle {
-    height: 124rem !important;
+    height: 130rem !important;
   }
+  #mobiletext {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 1px;
+}
 }

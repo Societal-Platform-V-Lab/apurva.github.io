@@ -96,6 +96,39 @@
     font-size: 35px;
   }
 }
+@media (max-width: 467px) {
+  .profileItem p.designation {
+    color: #49785e;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .modal-body {
+    text-align: start;
+  }
+  .img p {
+    width: 206px;
+  }
+  .profileItem p.name {
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .close {
+    color: #000;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 19rem;
+  }
+}
 @media (max-width: 425px) {
   .profileItem p.designation {
     color: #49785e;
@@ -108,7 +141,7 @@
   .modal-body {
     text-align: start;
   }
-  .img p{
+  .img p {
     width: 200px;
   }
   .profileItem p.name {

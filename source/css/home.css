@@ -452,7 +452,8 @@
 }
 section#newscreen,
 section#testimonialSection,
-section#testimonialSectionfeature {
+section#testimonialSectionfeature,
+section#testimonialSections {
   background: #01051c;
   background-repeat: no-repeat;
   background-size: cover;
@@ -747,13 +748,13 @@ section#contactstest {
 }
 @media screen and (min-width: 1805px) {
   #prev {
-    margin-left: 753px;
+    margin-left: 666px;
   }
 }
 @media screen and (max-width: 1805px) {
   #newscreen.flex-row-block {
     height: 158rem !important;
-}
+  }
   #prev {
     margin-left: 649px;
   }
@@ -1288,7 +1289,7 @@ section#contactstest {
     margin-top: 1rem;
   }
   #newscreen.flex-row-block {
-    height: 107rem !important;
+    height: 110rem !important;
   }
   section#Network {
     height: 67rem !important;
@@ -1482,7 +1483,7 @@ section#contactstest {
 @media screen and (max-width: 390px) {
   #prev {
     margin-left: 108px;
-}
+  }
   section#newscreen {
     height: 87rem !important;
   }
@@ -1552,7 +1553,6 @@ section#contactstest {
 
   section#testimonialSection,
   section#Featured {
-  
     /* background-repeat: no-repeat; */
     background-size: cover;
   }
@@ -1576,5 +1576,16 @@ section#contactstest {
 @media screen and (min-width: 1900px) {
   .homePage .flex-row-block {
     height: 199rem !important;
+  }
+}
+@media (max-width: 467px) {
+  section#contactstest {
+    height: 7rem !important;
+  }
+  #testimonialSection.flex-row-block {
+    height: 50rem !important;
+  }
+  #testimonialSections.flex-row-block {
+    height: 7rem !important;
   }
 }

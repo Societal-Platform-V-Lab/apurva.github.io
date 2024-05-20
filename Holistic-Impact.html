@@ -24,19 +24,30 @@
   <link rel="stylesheet" href="source/css/experience.css" />
   <style>
     @media screen and (max-width: 425px) {
-    .circle_comingsoon {
+      .circle_comingsoon {
         margin-top: -43rem;
         height: 350px;
         width: 350px;
         background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
         filter: blur(160px);
-    }
-    .coming img {
+      }
+
+      .coming img {
         margin-left: 72px;
         margin-top: -21rem;
         opacity: 0.2;
+      }
     }
-}
+    @media (max-width: 467px) {
+      #exprow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 25px;
+      }
+    }
   </style>
 
   <!-- Link to the CSS file for card styling -->
@@ -138,7 +149,7 @@
       <br>
       <br>
       <br>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="exprow">
         <div class="row mt-5">
           <div class="col-lg-4 mb-4">
             <div class="card" data-card-number="1">

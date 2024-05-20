@@ -38,13 +38,23 @@
         opacity: 0.2;
       }
 
-      @media screen and (max-width: 425px) {
-        .queryp {
-          color: white;
-          text-align: center;
-          font-size: 18px;
-          margin-top: 90px;
-        }
+      .queryp {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 90px;
+      }
+
+    }
+
+    @media (max-width: 467px) {
+      #exprow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 25px;
       }
     }
   </style>
@@ -138,7 +148,7 @@
       <br>
       <br>
       <br>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="exprow">
         <div class="row mt-5">
           <div class="col-lg-4 mb-4">
             <div class="card" data-card-number="1">

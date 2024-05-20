@@ -217,6 +217,67 @@ section#experiencepages {
     width: 641px;
   }
 }
+
+@media (max-width: 467px) {
+  #testimonial-carousel {
+    height: 240px;
+  }
+  #experiencepages.section {
+    padding: 6rem 2%;
+    margin-top: 3rem;
+  }
+  section#experiencecricle {
+    height: 115rem !important;
+  }
+  #deep {
+    margin-top: 0px;
+    font-size: 17px;
+  }
+  #experience.section {
+    padding: 6rem 2%;
+    margin-top: 4rem;
+  }
+  .experience p {
+    width: 350px;
+    text-align: start;
+    font-size: 23px;
+  }
+  .greenquery {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 27px;
+  }
+  section#experience {
+    height: 77rem !important;
+  }
+  .experienceimg {
+    margin-top: -147px;
+    text-align: center;
+  }
+  .queryp {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  .querytext {
+    color: #9fffac;
+    text-align: center;
+    font-size: 18px;
+  }
+  #exprow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 61px;
+  }
+}
 @media screen and (max-width: 425px) {
   .coming img {
     margin-left: 72px;
@@ -279,7 +340,7 @@ section#experiencepages {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: 42px;
+    margin-left: 46px;
   }
   #experience.section {
     padding: 6rem 0%;
@@ -291,13 +352,35 @@ section#experiencepages {
   }
 }
 @media screen and (max-width: 390px) {
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .experience p {
-    width: 343px;
+    width: 336px;
     font-size: 18px;
     text-align: start;
     word-break: break-all;
-}
+  }
   section#experiencecricle {
     height: 146rem !important;
+  }
+
+  .experienceimg {
+    margin-top: -98px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 365px) {
+  #exprow {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: 35px;
   }
 }

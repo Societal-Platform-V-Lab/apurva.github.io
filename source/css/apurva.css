@@ -1653,6 +1653,9 @@ canvas {
   #testimonialSection.flex-row-block {
     height: 447px !important;
   }
+  #testimonialSections.flex-row-block {
+    height: 230px !important;
+  }
   #testimonialSectionfeature.flex-row-block {
     height: 30rem !important;
   }
@@ -2871,6 +2874,9 @@ ul.social_icon li a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  #testimonialSections.flex-row-block {
+    height: 150px !important;
+  }
   .btn-primary {
     width: 110px;
     height: 50px;
@@ -3049,7 +3055,6 @@ ul.social_icon li a {
   }
 
   section#about {
-   
     padding: 5% 8% 5%;
     position: relative;
     height: 20rem;
@@ -3149,6 +3154,10 @@ ul.social_icon li a {
   .homePage .textColumn {
     padding-top: 10rem;
   }
+  #eco {
+    padding-top: 0rem;
+  }
+
   .nav-item #pills-home-tab {
     font-size: 20px;
     padding: 0px 8px;
