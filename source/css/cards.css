@@ -75,7 +75,12 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
-
+.large-font {
+  font-size: 24px;
+}
+.medium-font {
+  font-size: 18px;
+}
 .card-desc {
   display: none;
   margin-left: -150px;
@@ -83,10 +88,21 @@ button {
   height: 87px;
   text-align: center;
 }
-
-.card-desc p {
+.desc {
   color: white;
+  font-size: 25px;
+  margin-bottom: 9px;
+}
+.headcard p {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 13px;
+}
+.cardcont p {
   font-size: 20px;
+  color: white;
+}
+.card-desc {
   margin-bottom: 9px;
 }
 
@@ -110,6 +126,7 @@ button {
   background-color: #9fffac;
   color: #01051c;
   margin-top: -59px;
+  font-weight: 600;
 }
 
 .cards img {
@@ -174,6 +191,14 @@ section#experiencecricle {
   .container {
     margin-left: 943px;
   }
+  .containercricle {
+    width: 800px;
+    height: 800px;
+    margin-top: 800px;
+    /* padding: 3rem 16%; */
+    margin-left: 23.5%;
+    position: relative;
+  }
 }
 @media (max-width: 1805px) {
   .container {
@@ -181,6 +206,17 @@ section#experiencecricle {
   }
 }
 @media (max-width: 1440px) {
+  section#experience {
+    height: 97rem !important;
+  }
+  .containercricle {
+    width: 800px;
+    height: 800px;
+    margin-top: 896px;
+    /* padding: 3rem 16%; */
+    margin-left: 37.9%;
+    position: relative;
+  }
   #experiencecricle.section {
     padding: 6rem 6%;
   }
@@ -226,12 +262,21 @@ section#experiencecricle {
     border-bottom: none;
     left: 48%;
     transform: translateX(-50%);
+    margin-top: 109px;
   }
 }
 @media (max-width: 1024px) {
   .half-circle.right {
     width: 766px;
     height: 392px;
+  }
+  .containercricle {
+    width: 800px;
+    height: 800px;
+    margin-top: 896px;
+    /* padding: 3rem 16%; */
+    margin-left: 35.9%;
+    position: relative;
   }
   .half-circle-inner {
     width: 611px;
@@ -312,6 +357,14 @@ section#experiencecricle {
   }
 }
 @media (max-width: 768px) {
+  .containercricle {
+    width: 800px;
+    height: 800px;
+    margin-top: 896px;
+    /* padding: 3rem 16%; */
+    margin-left: 42.9%;
+    position: relative;
+  }
   .container {
     margin-left: 309px;
   }
@@ -343,7 +396,7 @@ section#experiencecricle {
     top: -9px;
   }
   .cards.card-2 {
-    margin-left: -106px;
+    margin-left: -104px;
     top: -253px;
   }
   .card-desc {
@@ -395,5 +448,5 @@ section#experiencecricle {
     width: 100%;
     padding-right: 15px;
     padding-left: 1px;
-}
+  }
 }

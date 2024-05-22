@@ -6,7 +6,10 @@ section#experiencepages {
   background-position: center; /* Center the background image */
   padding: 0px 5%;
 }
-
+#myCarousel {
+  text-align: -webkit-center;
+  height: 186px;
+}
 #experience.section,
 #experiencepages.section {
   padding: 6rem 8%;
@@ -14,6 +17,15 @@ section#experiencepages {
 }
 .greenquery {
   color: #9fffac;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.greenquerys {
+  color: white;
   font-family: Poppins;
   font-size: 35px;
   font-weight: 700;
@@ -31,7 +43,7 @@ section#experiencepages {
   text-align: center;
 }
 section#experience {
-  height: 130rem !important;
+  height: 112rem !important;
 }
 section#experiencepages {
   height: 200rem !important;
@@ -100,7 +112,10 @@ section#experiencepages {
   line-height: 40px;
   width: 800px;
 }
-
+.img-fluid {
+  max-width: 66%;
+  height: auto;
+}
 .coming img {
   margin-top: -14rem;
   color: #fff;
@@ -111,6 +126,7 @@ section#experiencepages {
   letter-spacing: 0em;
   text-align: right;
   margin-left: 249px;
+  opacity: 0.2;
 }
 
 .br {
