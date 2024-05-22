@@ -53,12 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     addClasses(card6Positions, "card-6");
   }
 
-  function slideCards(direction) {
-    if (direction === "next") {
-      currentIndex = (currentIndex + 1) % cardCount;
-    } else if (direction === "prev") {
-      currentIndex = (currentIndex - 1 + cardCount) % cardCount;
-    }
+  function slideCards() {
+    currentIndex = (currentIndex + 1) % cardCount;
     cards.forEach((card, index) => {
       const angle =
         index * angleIncrement - currentIndex * angleIncrement - initialAngle; // Adjusting initial angle
@@ -71,11 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function autoRotate() {
-    slideCards("next");
+    slideCards();
   }
 
-  // Auto rotate every 1 second
-  let rotationInterval = setInterval(autoRotate, 20000);
+  // Auto rotate every 5 seconds
+  let rotationInterval = setInterval(autoRotate, 5000);
 
   // Stop auto rotation on mouse enter
   document
@@ -88,15 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".containercricle")
     .addEventListener("mouseleave", function () {
-      rotationInterval = setInterval(autoRotate, 20000);
+      rotationInterval = setInterval(autoRotate, 5000);
     });
 
   // Event listener for clicking on cards
   cards.forEach((card) => {
     card.addEventListener("click", function () {
-      const index = parseInt(card.getAttribute("data-index"));
-      currentIndex = index;
-      slideCards("next");
+      slideCards();
     });
   });
 
