@@ -23,6 +23,9 @@
   font-weight: 700;
   line-height: 55px;
 }
+#founding {
+  margin-bottom: -25px; /* Adjust as needed */
+}
 #founding h2 {
   font-family: "Poppins";
   color: #000000;
@@ -83,6 +86,7 @@
   .greenteam {
     font-size: 47px;
   }
+
   #founding h2 {
     font-size: 47px;
   }

@@ -133,6 +133,17 @@ section#experiencepages {
 .br {
   margin-top: 66px;
 }
+@media only screen and (max-width: 1536px) {
+  .experience p {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    width: 654px;
+  }
+}
 
 @media (max-width: 1440px) {
   .experience p {
@@ -142,7 +153,7 @@ section#experiencepages {
     font-style: normal;
     font-weight: 300;
     line-height: 40px;
-    width: 746px;
+    width: 655px;
   }
   .coming img {
     margin-top: -12rem;
@@ -166,7 +177,7 @@ section#experiencepages {
     line-height: 43px;
   }
   .experience p {
-    width: 538px;
+    width: 427px;
   }
   .coming img {
     margin-left: 105px;
@@ -393,11 +404,11 @@ section#experiencepages {
 }
 @media screen and (max-width: 365px) {
   #exprow {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: 35px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 35px;
   }
 }
