@@ -52,6 +52,7 @@ section#experiencepages {
   color: white; /* Set default color for remaining text */
   text-align: center;
   font-size: 30px;
+  line-height: 45px;
 }
 
 .card {
@@ -110,7 +111,7 @@ section#experiencepages {
   font-style: normal;
   font-weight: 300;
   line-height: 40px;
-  width: 800px;
+  width: 756px;
 }
 .img-fluid {
   max-width: 66%;

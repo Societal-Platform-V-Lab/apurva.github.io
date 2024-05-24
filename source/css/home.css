@@ -271,11 +271,12 @@
 .centrescreen {
   margin-top: -50px;
   text-align: center;
-  margin-left: 118px;
+  margin-left: 319px;
 }
 
 .gif {
   text-align: center;
+  /* margin-left: 136px; */
 }
 .gif img {
   width: 700px;
@@ -289,7 +290,8 @@
   line-height: 73.14px;
 }
 .centrescreen h2 {
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 95px;
+  /* margin-left: 204px; */
 }
 
 .scroll-down-link p {
@@ -489,7 +491,7 @@ section#Network {
   height: 65rem !important;
 }
 #newscreen.flex-row-block {
-  height: 196rem !important;
+  height: 153rem !important;
 }
 section#contact {
   height: 30rem !important;
@@ -753,7 +755,12 @@ section#contactstest {
 }
 @media screen and (max-width: 1805px) {
   #newscreen.flex-row-block {
-    height: 158rem !important;
+    height: 113rem !important;
+  }
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 489px;
   }
   #prev {
     margin-left: 649px;
@@ -869,7 +876,7 @@ section#contactstest {
     font-weight: 600;
   }
   #newscreen.flex-row-block {
-    height: 160rem !important;
+    height: 113rem !important;
   }
   section#Network {
     height: 75rem !important;
@@ -878,12 +885,22 @@ section#contactstest {
     height: 199rem !important;
   }
 }
-
+@media screen and (max-width: 1805px) {
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 291px;
+  }
+}
 @media screen and (max-width: 1024px) {
   #prev {
     margin-left: 369px;
   }
-
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 105px;
+  }
   .key {
     margin-top: -534px;
     margin-bottom: 35px;
@@ -925,7 +942,7 @@ section#contactstest {
     height: 35rem !important;
   }
   #newscreen.flex-row-block {
-    height: 150rem !important;
+    height: 112rem !important;
   }
   section#Network {
     height: 90rem !important;
@@ -994,7 +1011,12 @@ section#contactstest {
 
 @media screen and (max-width: 768px) {
   #newscreen.flex-row-block {
-    height: 165rem !important;
+    height: 112rem !important;
+  }
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 57px;
   }
   .key {
     margin-top: -423px;
@@ -1109,6 +1131,11 @@ section#contactstest {
 @media screen and (max-width: 530px) {
   section#contactstest {
     margin-top: -21px;
+  }
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 118px;
   }
   #prev {
     margin-left: 123px;
@@ -1289,7 +1316,7 @@ section#contactstest {
     margin-top: 1rem;
   }
   #newscreen.flex-row-block {
-    height: 110rem !important;
+    height: 73rem !important;
   }
   section#Network {
     height: 67rem !important;
@@ -1588,4 +1615,27 @@ section#contactstest {
   #testimonialSections.flex-row-block {
     height: 7rem !important;
   }
+}
+@media only screen and (max-width: 1536px) {
+  section#Network {
+    height: 75rem !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .gif img {
+    margin-left: -104px;
+    width: 298px;
+    height: 201px;
+  }
+  .centrescreen h2 {
+    margin-top: 49px;
+    /* margin-left: 204px; */
+  }
+  #newscreen.flex-row-block {
+    height: 59rem !important;
+  }
+  section#Network {
+    height: 64rem !important;
+}
+
 }

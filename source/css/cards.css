@@ -146,13 +146,13 @@ button {
 }
 
 .cards.card-1 {
-  margin-left: -18px;
-  top: -103px;
+  margin-left: -28px;
+  top: -108px;
 }
 
 .cards.card-2 {
-  margin-left: 175px;
-  top: -263px;
+  margin-left: 173px;
+  top: -265px;
 }
 
 .cards.card-4 {
@@ -185,6 +185,25 @@ section#experiencecricle {
 }
 #Knowledge {
   margin-top: -48px;
+}
+@media only screen and (max-width: 1536px) {
+  .containercricle {
+    width: 800px;
+    height: 800px;
+    margin-top: 945px;
+    /* padding: 3rem 16%; */
+    margin-left: 37.9%;
+    position: relative;
+  }
+  .half-circle.right {
+    top: 257px;
+  }
+  section#experience {
+    height: 99rem !important;
+  }
+  #experiencecricle.section {
+    padding: 6rem 6%;
+  }
 }
 
 @media (min-width: 2560px) {
