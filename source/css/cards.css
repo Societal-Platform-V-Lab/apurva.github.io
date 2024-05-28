@@ -1,56 +1,53 @@
-/* Your existing CSS styles */
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+section#experiencecricle {
+  height: 55rem !important;
+}
+section#experiencecricle {
+  position: relative;
+  background: #01051c;
+  padding: 0 5%;
+}
+.half-circle.right {
+  width: 64.3125rem;
+  height: 32.5rem;
+  border-top-left-radius: 32.5rem;
+  border-top-right-radius: 32.5rem;
+  border: 2px solid #9fffac;
+  position: absolute;
+  top: 65%; /* Adjust this value accordingly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-bottom: none;
+  padding: 0 0.9375rem;
+}
+
+.half-circle-inner {
+  width: 46.75rem;
+  height: 25.375rem;
+  border-top-left-radius: 25.5rem;
+  border-top-right-radius: 25.5rem;
+  border: 2px solid #9fffac;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
 .containercricle {
-  width: 800px;
-  height: 800px;
-  margin-top: 800px;
-  /* padding: 3rem 16%; */
-  margin-left: 33.1%;
-  position: relative;
-}
-
-.half-circle.right {
-  width: 1125px;
-  height: 520px;
-  border-top-left-radius: 520px;
-  border-top-right-radius: 520px;
-  border: 2px solid #9fffac;
-  margin: 20px;
-  position: absolute;
-  overflow: hidden;
-  border-bottom: none;
-  left: 50%;
-  transform: translateX(-52.1%);
-}
-
-/* transform: translate(21px, -189.506px); */
-.half-circle-inner {
-  margin-left: 128px;
-  width: 860px;
-  height: 406px;
-  border-top-left-radius: 408px;
-  border-top-right-radius: 408px;
-  border: 2px solid #9fffac;
-  position: absolute;
-  overflow: hidden;
-  bottom: -6px;
+  padding: 38.3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .cards {
   border: 2px solid #9fffac;
-  margin-left: 40px;
+  /* margin-left: 2.5rem; */
   background-color: #01051c;
-  width: 207px;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 12.9375rem;
+  height: 15.625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   position: absolute;
   text-align: center;
   transition: transform 0.5s ease-in-out;
@@ -60,50 +57,54 @@
   background-color: rgba(178, 242, 186, 0.2);
   transform: translateX(0);
   border-color: #9fffac;
-  height: 296px;
-  width: 256px;
-  left: -23px;
-  top: -19px;
+  height: 17.875rem;
+  width: 15.375rem;
 }
 
 button {
   background-color: #3498db;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.3125rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
+
 .large-font {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
+
 .medium-font {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
+
 .card-desc {
   display: none;
-  margin-left: -150px;
-  width: 555px;
-  height: 87px;
+  /* margin-left: -9.375rem; */
+  width: 34.6875rem;
   text-align: center;
 }
+
 .desc {
   color: white;
-  font-size: 25px;
-  margin-bottom: 9px;
+  font-size: 1.5625rem;
+  margin-bottom: 0.5625rem;
 }
+
 .headcard p {
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: white;
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
 }
+
 .cardcont p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
 }
+
 .card-desc {
-  margin-bottom: 9px;
+  margin-bottom: 0.5625rem;
 }
 
 .card.active + .card-desc {
@@ -112,33 +113,33 @@ button {
 
 .explore-btn {
   text-align: center;
-  width: 142px;
-  font-size: 15px;
+  width: 8.875rem;
+  font-size: 0.9375rem;
   background: transparent;
   color: white;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border: 2px solid #9fffac;
   height: auto;
-  margin-top: -59px;
+  margin-top: -3.6875rem;
 }
 
 .explore-btn.active {
   background-color: #9fffac;
   color: #01051c;
-  margin-top: -59px;
+  margin-top: -3.6875rem;
   font-weight: 600;
 }
 
 .cards img {
-  margin-top: -78px;
+  margin-top: -4.875rem;
   opacity: 0.2;
 }
 
 .cards p {
-  margin-top: 8px;
-  font-size: 25px;
+  margin-top: 0.5rem;
+  font-size: 1.5625rem;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .cardgreen {
@@ -146,326 +147,110 @@ button {
 }
 
 .cards.card-1 {
-  margin-left: -28px;
-  top: -108px;
+  margin-left: 11rem;
+  top: 48.75rem;
 }
 
 .cards.card-2 {
-  margin-left: 173px;
-  top: -265px;
+  margin-left: -10.3875rem;
+  top: 2.4375rem;
 }
-
 .cards.card-4 {
-  margin-left: -104px;
-  top: -265px;
+  margin-left: 10.5rem;
+  top: 2.4375rem;
 }
 
 .cards.card-5 {
-  margin-left: 98px;
-  top: -109px;
-}
-
-.cards.card-6 {
-  margin-left: 40px;
-  top: 12px;
-}
-#experiencecricle.section {
-  padding: 6rem 8%;
-}
-section#experiencecricle {
-  position: relative;
-  background: #01051c;
-  padding: 0px 5%;
-}
-section#experiencecricle {
-  height: 55rem !important;
-}
-#power {
-  margin-top: -65px;
+  margin-left: -11.2rem;
+  top: 48.8125rem;
 }
 #Knowledge {
   margin-top: -48px;
 }
-@media only screen and (max-width: 1536px) {
-  .containercricle {
-    width: 800px;
-    height: 800px;
-    margin-top: 945px;
-    /* padding: 3rem 16%; */
-    margin-left: 37.9%;
-    position: relative;
-  }
-  .half-circle.right {
-    top: 257px;
-  }
-  section#experience {
-    height: 99rem !important;
-  }
-  #experiencecricle.section {
-    padding: 6rem 6%;
-  }
-}
-
-@media (min-width: 2560px) {
-  .container {
-    margin-left: 943px;
-  }
-  .containercricle {
-    width: 800px;
-    height: 800px;
-    margin-top: 800px;
-    /* padding: 3rem 16%; */
-    margin-left: 23.5%;
-    position: relative;
-  }
-}
-@media (max-width: 1805px) {
-  .container {
-    margin-left: 623px;
-  }
-}
-@media (max-width: 1440px) {
-  section#experience {
-    height: 97rem !important;
-  }
-  .containercricle {
-    width: 800px;
-    height: 800px;
-    margin-top: 896px;
-    /* padding: 3rem 16%; */
-    margin-left: 37.9%;
-    position: relative;
-  }
-  #experiencecricle.section {
-    padding: 6rem 6%;
-  }
-  .container {
-    margin-left: 464px;
-  }
-  .cards.card-5 {
-    margin-left: 113px;
-    top: -95px;
-  }
-  .cards.card-1 {
-    margin-left: -17px;
-    top: -93px;
-  }
-  .half-circle-inner {
-    margin-left: 81px;
-    width: 794px;
-    height: 406px;
-    border-top-left-radius: 408px;
-    border-top-right-radius: 408px;
-    border: 2px solid #9fffac;
-    position: absolute;
-    overflow: hidden;
-    bottom: -6px;
-  }
-  .cards.card-4 {
-    margin-left: -63px;
-    top: -265px;
-  }
-  .cards.card-2 {
-    margin-left: 152px;
-    top: -263px;
-  }
-  .half-circle.right {
-    width: 952px;
-    height: 520px;
-    border-top-left-radius: 520px;
-    border-top-right-radius: 520px;
-    border: 2px solid #9fffac;
-    margin: 20px;
-    position: absolute;
-    overflow: hidden;
-    border-bottom: none;
-    left: 48%;
-    transform: translateX(-50%);
-    margin-top: 109px;
-  }
+#power {
+  margin-top: -65px;
 }
 @media (max-width: 1024px) {
   .half-circle.right {
-    width: 766px;
-    height: 392px;
-  }
-  .containercricle {
-    width: 800px;
-    height: 800px;
-    margin-top: 896px;
-    /* padding: 3rem 16%; */
-    margin-left: 35.9%;
-    position: relative;
-  }
-  .half-circle-inner {
-    width: 611px;
-    height: 328px;
-    margin-left: 75px;
-  }
-  .cards p {
-    margin-top: 8px;
-    font-size: 18px;
-    color: white;
-    margin-bottom: 10px;
-  }
-  #power {
-    margin-top: -44px;
-  }
-  #Knowledge {
-    margin-top: -44px;
-  }
-  .cards img {
-    margin-top: -60px;
-    opacity: 0.2;
-  }
-  .cards.card-4 {
-    margin-left: 68px;
-    top: -254px;
-  }
-  .cards.card-5 {
-    margin-left: 198px;
-    top: -33px;
-  }
-  .cards.card-2 {
-    margin-left: 41px;
-    top: -253px;
-  }
-  .cards.card-6 {
-    margin-left: 86px;
-    top: 133px;
-  }
-  .cards.card-1 {
-    margin-left: -90px;
-    top: -33px;
-  }
-  .cards {
-    width: 143px;
-    height: 191px;
-  }
-  .cards.active {
-    width: 143px;
-    height: 191px;
-  }
-  .explore-btn {
-    text-align: center;
-    font-size: 15px;
-    background: transparent;
-    color: white;
-    border-radius: 10px;
-    border: 2px solid #9fffac;
-    width: 117px;
-    height: 20px;
-    margin-top: 3px;
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    justify-content: center;
-    padding-top: 2px; /* Adjust this value as needed */
-    margin-left: 12px;
-  }
-  .explore-btn.active {
-    margin-top: 2px;
-  }
-  .Explore {
-    font-size: 11px;
-    line-height: 1; /* Adjust line-height if needed */
-    margin-top: -2px; /* Negative margin to move the text up */
+    width: 57.3125rem;
+    height: 28.5rem;
   }
 
-  .container {
-    margin-left: 308px;
+  .half-circle-inner {
+    width: 40.75rem;
+    height: 20.375rem;
+    border-top-left-radius: 25.5rem;
+    border-top-right-radius: 25.5rem;
+    border: 2px solid #9fffac;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .cards {
+    border: 2px solid #9fffac;
+    /* margin-left: 2.5rem; */
+    background-color: #01051c;
+    width: 10.9375rem;
+    height: 13.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  .cards.active {
+    margin-top: 3.7rem;
+    background-color: rgba(178, 242, 186, 0.2);
+    transform: translateX(0);
+    border-color: #9fffac;
+    height: 15.875rem;
+    width: 13.375rem;
+  }
+  .cards.card-1 {
+    margin-left: 3rem;
+    top: 48.75rem;
+  }
+  .cards.card-2 {
+    margin-left: -14.3875rem;
+    top: 6rem;
+  }
+  .cards.card-4 {
+    margin-left: 14.5rem;
+    top: 6rem;
+  }
+  .cards.card-5 {
+    margin-left: -3rem;
+    top: 48.8125rem;
+  }
+  #voice {
+    margin-top: -100px;
   }
 }
 @media (max-width: 768px) {
-  .containercricle {
-    width: 800px;
-    height: 800px;
-    margin-top: 896px;
-    /* padding: 3rem 16%; */
-    margin-left: 42.9%;
-    position: relative;
-  }
-  .container {
-    margin-left: 309px;
-  }
-  #experiencecricle.section {
-    padding: 1rem 1%;
-  }
-  section#experience {
-    height: 92rem !important;
-  }
-  .half-circle.right {
-    width: 625px;
-    height: 296px;
-  }
-  .half-circle-inner {
-    width: 463px;
-    height: 232px;
-    margin-left: 75px;
-  }
-  .cards.card-5 {
-    margin-left: 184px;
-    top: -9px;
-  }
-  .cards.card-6 {
-    margin-left: 13px;
-    top: 180px;
-  }
-  .cards.card-1 {
-    margin-left: -221px;
-    top: -9px;
-  }
-  .cards.card-2 {
-    margin-left: -104px;
-    top: -253px;
-  }
-  .card-desc {
-    display: none;
-    margin-left: -150px;
-    width: 407px;
-    height: 87px;
+  .experienceimg {
+    margin-top: -189px;
     text-align: center;
   }
-  .card-desc p {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 9px;
-  }
-}
-@media (max-width: 467px) {
   section#experience {
-    height: 77rem !important;
+    height: 87rem !important;
   }
-  section#experiencecricle {
-    height: 118rem !important;
+  .img-fluid {
+    max-width: 81%;
+    height: auto;
   }
 }
-@media screen and (max-width: 425px) {
-  .scroll-down-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 490px) {
+  section#experience {
+    height: 83rem !important;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .experienceimg {
+    margin-top: -152px;
     text-align: center;
-    color: white;
-    font-size: 84px;
-    margin-top: 86px;
-    margin-bottom: 20px;
-  }
-  section#experiencecricle {
-    height: 122rem !important;
-  }
-  section#experience {
-    height: 70rem !important;
-  }
-}
-@media screen and (max-width: 390px) {
-  section#experiencecricle {
-    height: 130rem !important;
-  }
-  #mobiletext {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 1px;
   }
 }

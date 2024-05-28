@@ -43,7 +43,7 @@ section#experiencepages {
   text-align: center;
 }
 section#experience {
-  height: 112rem !important;
+  height: 115rem !important;
 }
 section#experiencepages {
   height: 200rem !important;
@@ -111,8 +111,9 @@ section#experiencepages {
   font-style: normal;
   font-weight: 300;
   line-height: 40px;
-  width: 756px;
+  hyphens: auto;
 }
+
 .img-fluid {
   max-width: 66%;
   height: auto;
@@ -133,28 +134,8 @@ section#experiencepages {
 .br {
   margin-top: 66px;
 }
-@media only screen and (max-width: 1536px) {
-  .experience p {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px;
-    width: 654px;
-  }
-}
 
 @media (max-width: 1440px) {
-  .experience p {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px;
-    width: 655px;
-  }
   .coming img {
     margin-top: -12rem;
     color: #fff;
@@ -176,9 +157,7 @@ section#experiencepages {
     font-size: 40px;
     line-height: 43px;
   }
-  .experience p {
-    width: 427px;
-  }
+
   .coming img {
     margin-left: 105px;
     margin-top: -8rem;
@@ -241,9 +220,6 @@ section#experiencepages {
     text-align: left;
     margin-top: -2rem;
   }
-  .experience p {
-    width: 641px;
-  }
 }
 
 @media (max-width: 467px) {
@@ -260,13 +236,13 @@ section#experiencepages {
   #deep {
     margin-top: 0px;
     font-size: 17px;
+    line-height: 34px;
   }
   #experience.section {
     padding: 6rem 2%;
     margin-top: 4rem;
   }
   .experience p {
-    width: 350px;
     text-align: start;
     font-size: 23px;
   }
@@ -326,7 +302,6 @@ section#experiencepages {
     margin-top: -2rem;
   }
   .experience p {
-    width: 376px;
     font-size: 18px;
     text-align: start;
     word-break: break-all;
@@ -336,7 +311,7 @@ section#experiencepages {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
-    line-height: 43px;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: center;
   }
@@ -388,7 +363,6 @@ section#experiencepages {
     margin-left: auto;
   }
   .experience p {
-    width: 336px;
     font-size: 18px;
     text-align: start;
     word-break: break-all;

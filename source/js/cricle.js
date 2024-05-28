@@ -17,44 +17,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showCard(index) {
     cards.forEach((card) => {
-      card.classList.remove("active");
-      card.classList.remove(`card-1`);
-      card.classList.remove(`card-2`);
-      card.classList.remove(`card-3`);
-      card.classList.remove(`card-4`);
-      card.classList.remove(`card-5`);
-      card.classList.remove(`card-6`);
+      card.classList.remove(
+        "active",
+        "card-1",
+        "card-2",
+        "card-3",
+        "card-4",
+        "card-5",
+        "card-6"
+      );
       card.querySelector(".explore-btn").classList.remove("active"); // Remove active class from all buttons
       card.style.backgroundColor = ""; // Reset background color
     });
+
     document.querySelectorAll(".card-desc").forEach((desc) => {
       desc.style.display = "none"; // Hide all descriptions
     });
+
     cards[index].classList.add("active");
-    const card1Positions = [(index + 1) % cardCount];
-    const card2Positions = [(index + 2) % cardCount];
-    const card3Positions = [(index + 3) % cardCount];
-    const card4Positions = [(index + 4) % cardCount];
-    const card5Positions = [(index + 5) % cardCount];
-    const card6Positions = [(index + 6) % cardCount];
-    cards[index].querySelector(".explore-btn").classList.add("active"); 
+    cards[index].querySelector(".explore-btn").classList.add("active");
     cards[index].nextElementSibling.style.display = "block"; // Show description of the active card
+
+    const cardPositions = Array.from(
+      { length: cardCount },
+      (_, i) => (index + i) % cardCount
+    );
+
     function addClasses(positions, className) {
       positions.forEach((pos) => {
         cards[pos].classList.add(className);
       });
     }
 
-    addClasses(card1Positions, "card-1");
-    addClasses(card2Positions, "card-2");
-    addClasses(card3Positions, "card-3");
-    addClasses(card4Positions, "card-4");
-    addClasses(card5Positions, "card-5");
-    addClasses(card6Positions, "card-6");
+    addClasses([cardPositions[1]], "card-1");
+    addClasses([cardPositions[2]], "card-2");
+    addClasses([cardPositions[3]], "card-3");
+    addClasses([cardPositions[4]], "card-4");
+    addClasses([cardPositions[5]], "card-5");
+    addClasses([cardPositions[6]], "card-6");
   }
-
   function slideCards() {
-    currentIndex = (currentIndex + 1) % cardCount;
     cards.forEach((card, index) => {
       const angle =
         index * angleIncrement - currentIndex * angleIncrement - initialAngle; // Adjusting initial angle
@@ -66,12 +68,25 @@ document.addEventListener("DOMContentLoaded", function () {
     showCard(currentIndex);
   }
 
+  // Event listener for clicking on cards
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const clickedIndex = parseInt(card.getAttribute("data-index"));
+      const difference = (clickedIndex - currentIndex + cardCount) % cardCount;
+      currentIndex = clickedIndex;
+      for (let i = 0; i < difference; i++) {
+        autoRotate(); // Move cards one by one to the center
+      }
+    });
+  });
+
   function autoRotate() {
+    currentIndex = (currentIndex + 1) % cardCount;
     slideCards();
   }
 
   // Auto rotate every 5 seconds
-  let rotationInterval = setInterval(autoRotate, 5000);
+  let rotationInterval = setInterval(autoRotate, 3000);
 
   // Stop auto rotation on mouse enter
   document
@@ -84,15 +99,18 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".containercricle")
     .addEventListener("mouseleave", function () {
-      rotationInterval = setInterval(autoRotate, 5000);
+      rotationInterval = setInterval(autoRotate, 3000);
     });
 
   // Event listener for clicking on cards
   cards.forEach((card) => {
     card.addEventListener("click", function () {
+      currentIndex = parseInt(card.getAttribute("data-index"));
       slideCards();
     });
   });
 
   showCard(currentIndex);
 });
+
+// JavaScript

@@ -909,7 +909,9 @@ section#contactstest {
   section#why-Apurva {
     height: 130rem !important;
   }
-
+  section#Network {
+    height: 86rem !important;
+  }
   .experience h2,
   .greenexp {
     font-size: 40px;
@@ -1010,6 +1012,9 @@ section#contactstest {
 }
 
 @media screen and (max-width: 768px) {
+  section#Network {
+    height: 98rem !important;
+  }
   #newscreen.flex-row-block {
     height: 112rem !important;
   }
@@ -1616,7 +1621,7 @@ section#contactstest {
     height: 7rem !important;
   }
 }
-@media only screen and (max-width: 1536px) {
+@media screen and (min-width: 1536px) {
   section#Network {
     height: 75rem !important;
   }
@@ -1636,6 +1641,5 @@ section#contactstest {
   }
   section#Network {
     height: 64rem !important;
-}
-
+  }
 }
