@@ -98,11 +98,12 @@
 }
 @media (max-width: 467px) {
   .mobile-explore-btn {
+    height: 31px;
     font-size: 9px;
     text-align: center;
     width: 57px;
     border: 1px solid #000;
-    border-radius: 1rem;
+    border-radius: 13px;
     background: #9fffac;
     color: #000;
     padding: 5px 10px;
@@ -113,14 +114,15 @@
     margin-top: 10px;
   }
   section#experiencecriclemobile {
-    height: 117rem !important;
+    height: 99rem !important;
   }
   .cardtext {
     margin-left: 2px;
     color: white;
     text-align: left;
     font-size: 12px;
-    line-height: 26px;
+    line-height: 20px;
+    margin-top: 15px;
   }
   #mobiletext {
     position: relative;
@@ -144,11 +146,17 @@
 }
 @media (max-width: 390px) {
   section#experiencecriclemobile {
-    height: 126rem !important;
+    height: 94rem !important;
   }
 }
 @media (max-width: 375px) {
   section#experiencecriclemobile {
     height: 126rem !important;
   }
+}
+@media (max-width: 432px) {
+  section#experiencecriclemobile {
+    height: 105rem !important;
+}
+  
 }

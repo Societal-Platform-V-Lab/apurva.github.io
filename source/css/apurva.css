@@ -886,7 +886,10 @@ a.underline {
 .navbar .logo-default {
   width: 350px;
 }
-
+.navbar .contact-btn.small.active {
+  background: none; /* Remove green fill */
+  color: #9fffac; /* Change text color to white or any desired color */
+}
 .navbar .contact-btn.small {
   width: 250px;
   font-size: 20px;
@@ -1573,7 +1576,7 @@ canvas {
 }
 
 .logos .logoItem {
-  margin-right: 2%;
+  margin-right: 4%;
   margin-bottom: 2%;
   max-width: calc(50% - 5%);
   display: flex;
@@ -2382,7 +2385,7 @@ ul.social_icon li a {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 26px;
 }
 
 .card-img-top {
@@ -2481,10 +2484,9 @@ ul.social_icon li a {
 .joinus-content p {
   color: #161515;
   font-family: Poppins;
-
   font-style: normal;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 30px;
 }
 .joinus-li {
   margin-bottom: 20px;
@@ -2501,13 +2503,6 @@ ul.social_icon li a {
 .joinus-li li {
   margin-left: 40px;
 }
-
-/* .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1%;
-} */
 
 .card-header {
   position: relative;
@@ -2641,13 +2636,15 @@ ul.social_icon li a {
   }
   .apurva-library-title {
     font-size: 35px;
+    text-align: left;
   }
 
   .library-content p {
     font-size: 18px;
     line-height: 35px;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
+    /* word-break: break-all; */
   }
 }
 
@@ -2686,7 +2683,7 @@ ul.social_icon li a {
   }
 
   .btn-success {
-    width: 140px;
+    width: 80px;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -3004,6 +3001,7 @@ ul.social_icon li a {
   .joinus-content {
     padding: 0rem 0%;
   }
+
   .dropdown-toggles {
     display: block;
   }
@@ -3032,7 +3030,7 @@ ul.social_icon li a {
     text-align: left;
   }
   .dropdown-icon {
-    margin-left: 1.989rem;
+    margin-left: 16.989rem;
   }
   .ourmission h1 {
     font-family: Poppins;

@@ -6,8 +6,23 @@ section#experiencepages {
   background-position: center; /* Center the background image */
   padding: 0px 5%;
 }
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: pre-line; 
+  margin: 0 auto;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.typewriter::after {
+  content: "|"; 
+  display: inline-block;
+  color: rgb(250, 248, 248);
+  margin-left: 3px;
+}
+
 #myCarousel {
-  text-align: -webkit-center;
   height: 186px;
 }
 #experience.section,
@@ -82,7 +97,7 @@ section#experiencepages {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 35px;
 }
 .card::before {
@@ -112,6 +127,9 @@ section#experiencepages {
   font-weight: 300;
   line-height: 40px;
   hyphens: auto;
+  margin-left: -14px;
+  word-break: break-all;
+
 }
 
 .img-fluid {
@@ -154,7 +172,7 @@ section#experiencepages {
 @media screen and (max-width: 1024px) {
   .experience h2,
   .greenexp {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 43px;
   }
 
@@ -292,6 +310,12 @@ section#experiencepages {
     padding: 6rem 0%;
     margin-top: 3rem;
   }
+  .card {
+   
+    width: 392px;
+    height: 361px;
+   
+}
   .experience h2 {
     font-family: Poppins;
     font-size: 30px;
@@ -304,7 +328,8 @@ section#experiencepages {
   .experience p {
     font-size: 18px;
     text-align: start;
-    word-break: break-all;
+    /* word-break: break-all; */
+    line-height: 27px;
   }
   .greenquery {
     color: #9fffac;
@@ -365,7 +390,7 @@ section#experiencepages {
   .experience p {
     font-size: 18px;
     text-align: start;
-    word-break: break-all;
+    /* word-break: break-all; */
   }
   section#experiencecricle {
     height: 146rem !important;

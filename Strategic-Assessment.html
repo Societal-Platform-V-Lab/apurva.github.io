@@ -15,7 +15,7 @@
       name="keywords"
       content="Sustainable Development Goals, Innovation, Platform, Conversation, Connections, Query, Solver, Funder, Network, Artificial Intelligence, Technology, Problem"
     />
-    <title>Power of Co-Creation</title>
+    <title>Strategic Assessment</title>
     <link rel="icon" href="source/img/favicon.png" />
     <link rel="stylesheet" href="source/css/bundle.min.css" />
     <link rel="stylesheet" href="source/css/settings.css" />
@@ -27,10 +27,34 @@
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
     <style>
-      #testimonial-carousel {
-        height: 224px;
+      @media screen and (max-width: 425px) {
+        .circle_comingsoon {
+          margin-top: -43rem;
+          height: 350px;
+          width: 350px;
+          background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+          filter: blur(160px);
+        }
+
+        .coming img {
+          margin-left: 72px;
+          margin-top: -21rem;
+          opacity: 0.2;
+        }
+      }
+      @media (max-width: 467px) {
+        #exprow {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          margin-left: 25px;
+        }
       }
     </style>
+
+    <!-- Link to the CSS file for card styling -->
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -76,25 +100,30 @@
         <div class="row">
           <div class="col-lg-7 mb-lg-0">
             <div class="experience">
-              <h2>Power of<br /><span class="greenexp">Co-Creation</span></h2>
+              <h2>Strategic <br /><span class="greenexp">Assessment</span></h2>
               <br />
-              <p>
-                A vibrant network is one where the network members constantly
-                interact with one another and accrue value.
-              </p>
-              <br />
-              <p>
-                Being a network orchestrator, the change leader strives to
-                create as many opportunities as possible for curating spaces to
-                enable such value-adding conversations in the network.
-              </p>
+              <div class="col-lg-10 mb-lg-0">
+                <p>
+                  Strategic Assessment evaluates the effectiveness of program
+                  activities, ensuring they meet real objectives and advance the
+                  overall mission, including assessing needs, programs, impact,
+                  change, and narratives. 
+                </p>
+                <br />
+                <p>
+                  Despite their community connections, social entrepreneurs
+                  often lack the tools to perform these assessments effectively.
+                  Equipping them with these resources is crucial for unlocking
+                  insights, driving meaningful change, and maximising impact!
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
               <img
-                src="source/img/Iconography/Power of Co-Creation.png"
+                src="source/img/Iconography/360 Degree Impact.png"
                 class=""
               />
             </div>
@@ -107,34 +136,26 @@
           data-ride="carousel"
           data-interval="4000"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="greenquery">
-                How do you co-create and curate knowledge with every such
-                conversation by synthesizing actionable insights instantly?
-              </p>
-            </div>
-            <div class="carousel-item">
-              <p class="greenquery">
-                How do you ensure that such knowledge co-created with every
-                conversation does not stay only within closed doors but is made
-                available to the rest of the network?
-              </p>
-            </div>
-          </div>
+          <p
+            class="greenquery typewriter"
+            id="typewriter-text"
+            data-texts='[
+              "Transform qualitative surveys into quantitative graphs and reports",
+              "Gain deep understanding and insights, and go beyond vanity measures"
+           ]'
+          ></p>
         </div>
 
         <br />
         <br />
         <p class="queryp">
-          With "<span class="querytext">POWER OF CO-CREATION</span>", powered by
-          Apurva, you can now make it possible! 
+          With "<span class="querytext">STRATEGIC ASSESSMENT</span>", it gets
+          real!
         </p>
         <br />
         <br />
         <br />
         <br />
-
         <div class="row mt-5 justify-content-center" id="exprow">
           <!-- Added justify-content-center -->
           <div class="col-lg-4 mb-4">
@@ -142,8 +163,8 @@
               <div class="card-body-apu">
                 <div class="card-content">
                   <p class="card-text">
-                    Unlock valuable insights from your virtual or in-person
-                    conversations, instantly.
+                    Foster a culture of validated learnings and continuous
+                    improvement
                   </p>
                 </div>
               </div>
@@ -155,7 +176,7 @@
               <div class="card-body-apu">
                 <div class="card-content">
                   <p class="card-text">
-                    Amplify the effects of your co-creation process.
+                    Conduct assessments at scale and in multiple languages
                   </p>
                 </div>
               </div>
@@ -164,7 +185,7 @@
         </div>
       </div>
     </section>
-    <section></section>
+
     <div id="footer"></div>
     <!--Animated Cursor-->
     <div id="animated-cursor">
@@ -181,5 +202,6 @@
     <script src="source/js/footer.js"></script>
     <script src="source/js/script.js"></script>
     <script src="source/js/particles.js"></script>
+    <script src="source/js/typewriter.js"></script>
   </body>
 </html>

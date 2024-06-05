@@ -8,7 +8,7 @@ let cardWidth;
 function setCardWidth() {
   if (window.innerWidth <= 760) {
     cardWidth = window.innerWidth;
-    cardWidth = cardWidth + 100
+    cardWidth = cardWidth + 60
 
   } else if (window.innerWidth <= 900) {
     

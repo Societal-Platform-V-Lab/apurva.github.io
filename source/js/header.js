@@ -20,13 +20,14 @@ const section_header = `  <header class="cursor-light">
          Join Us</a>
       </li>
         <li class="nav-item">
-          <a
-            link
-            type="button"
-            class="btn btn-medium btn-rounded btn-yellow hide contact-btn small"
-            href="Apurva-Experience.html">
-            Apurva Experience
-          </a>
+        <a
+        id="apurva-experience-btn"
+        link
+        type="button"
+        class="btn btn-medium btn-rounded btn-yellow hide contact-btn small Experience"
+        href="Apurva-Experience.html">
+        Apurva Experience
+    </a>
         </li>
       </ul>
     </div>

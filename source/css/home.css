@@ -43,7 +43,28 @@
   font-size: 17px;
   color: #000;
 }
+#whyenables {
+  margin-top: 115px;
+}
+.enablesgreen {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
+.enables p {
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .featurecarousel {
   display: flex;
   overflow-x: hidden;
@@ -448,7 +469,7 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 91px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -491,10 +512,14 @@ section#Network {
   height: 65rem !important;
 }
 #newscreen.flex-row-block {
-  height: 153rem !important;
+  height: 156rem !important;
 }
 section#contact {
   height: 30rem !important;
+}
+section#enables {
+  height: 39rem !important;
+  background-color: #01051c;
 }
 section#contactstest {
   height: 17rem !important;
@@ -763,7 +788,7 @@ section#contactstest {
     margin-left: 489px;
   }
   #prev {
-    margin-left: 649px;
+    margin-left: 565px;
   }
   .gif img {
     width: 468px;
@@ -868,7 +893,7 @@ section#contactstest {
     width: 47.5rem;
   }
   #prev {
-    margin-left: 547px;
+    margin-left: 442px;
   }
   .stay-tuned .register-button {
     border-color: #9fffac;
@@ -879,7 +904,7 @@ section#contactstest {
     height: 113rem !important;
   }
   section#Network {
-    height: 75rem !important;
+    height: 81rem !important;
   }
   .homePage .flex-row-block {
     height: 199rem !important;
@@ -1134,11 +1159,14 @@ section#contactstest {
 }
 } */
 @media screen and (max-width: 530px) {
+  .enables p {
+    font-size: 14px;
+  }
   section#contactstest {
     margin-top: -21px;
   }
   .centrescreen {
-    margin-top: -50px;
+    margin-top: 7px;
     text-align: center;
     margin-left: 118px;
   }
@@ -1152,9 +1180,12 @@ section#contactstest {
     font-size: 22px;
   }
   .centrescreen h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin-left: -104px;
   }
+  .centrescreen h2 {
+    margin-top: 22px;
+}
   .greenimg img {
     /* width: 30.875rem;
     height: 30.875rem; */
@@ -1321,10 +1352,23 @@ section#contactstest {
     margin-top: 1rem;
   }
   #newscreen.flex-row-block {
-    height: 73rem !important;
+    height: 70rem !important;
+  }
+  .enablesgreen {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  section#enables {
+    height: 53rem !important;
+    background-color: #01051c;
   }
   section#Network {
-    height: 67rem !important;
+    height: 73rem !important;
   }
 
   section#responsibleAI {
@@ -1512,7 +1556,12 @@ section#contactstest {
     height: 662px;
   }
 }
+
 @media screen and (max-width: 390px) {
+  section#enables {
+    height: 59rem !important;
+    background-color: #01051c;
+  }
   #prev {
     margin-left: 108px;
   }
@@ -1589,6 +1638,12 @@ section#contactstest {
     background-size: cover;
   }
 }
+@media screen and (max-width: 360px) {
+  section#enables {
+      height: 67rem !important;
+      background-color: #01051c;
+  }
+}
 
 /* @media (max-width: 415px) {
 
@@ -1622,8 +1677,12 @@ section#contactstest {
   }
 }
 @media screen and (min-width: 1536px) {
+  section#enables {
+    height: 42rem !important;
+    background-color: #01051c;
+  }
   section#Network {
-    height: 75rem !important;
+    height: 82rem !important;
   }
 }
 @media screen and (max-width: 390px) {
@@ -1637,7 +1696,7 @@ section#contactstest {
     /* margin-left: 204px; */
   }
   #newscreen.flex-row-block {
-    height: 59rem !important;
+    height: 66rem !important;
   }
   section#Network {
     height: 64rem !important;

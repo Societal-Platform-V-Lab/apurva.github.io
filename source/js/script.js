@@ -27,7 +27,7 @@ $(document).ready(function () {
     apurvAbout.forEach((item) => item.classList.remove("active"));
     apurvaLibrary.forEach((item) => item.classList.remove("active"));
     joinus.forEach((item) => item.classList.remove("active"));
-
+    $(".contact-btn").removeClass("active");
     // Add "active" class to the appropriate elements
     if (path === "/about-us.html") {
       apurvAbout.forEach((item) => item.classList.add("active"));
@@ -36,7 +36,7 @@ $(document).ready(function () {
     } else if (path === "/Join-us.html") {
       joinus.forEach((item) => item.classList.add("active"));
     } else if (path === "/Apurva-Experience.html") {
-      apurvaExperience.forEach((item) => item.classList.add("active"));
+      $(".contact-btn").addClass("active");
     } else if (path === "/index.html") {
       apurvaHome.forEach((item) => item.classList.add("active"));
     }

@@ -51,6 +51,7 @@ function renderCards(data) {
                <div class ="category">
                  <h6> ${category} </h6>
                  <h5>${readTime}</h5>
+                 <h5>${date}</h5>
                 </div>
                 
                

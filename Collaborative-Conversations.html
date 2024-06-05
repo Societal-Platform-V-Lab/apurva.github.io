@@ -15,7 +15,7 @@
       name="keywords"
       content="Sustainable Development Goals, Innovation, Platform, Conversation, Connections, Query, Solver, Funder, Network, Artificial Intelligence, Technology, Problem"
     />
-    <title>Holistic Impact</title>
+    <title>Collaborative Conversations</title>
     <link rel="icon" href="source/img/favicon.png" />
     <link rel="stylesheet" href="source/css/bundle.min.css" />
     <link rel="stylesheet" href="source/css/settings.css" />
@@ -27,34 +27,10 @@
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
     <style>
-      @media screen and (max-width: 425px) {
-        .circle_comingsoon {
-          margin-top: -43rem;
-          height: 350px;
-          width: 350px;
-          background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
-          filter: blur(160px);
-        }
-
-        .coming img {
-          margin-left: 72px;
-          margin-top: -21rem;
-          opacity: 0.2;
-        }
-      }
-      @media (max-width: 467px) {
-        #exprow {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          margin-right: -15px;
-          margin-left: 25px;
-        }
+      #testimonial-carousel {
+        height: 224px;
       }
     </style>
-
-    <!-- Link to the CSS file for card styling -->
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -100,27 +76,30 @@
         <div class="row">
           <div class="col-lg-7 mb-lg-0">
             <div class="experience">
-              <h2>Holistic<br /><span class="greenexp">Impact</span></h2>
+              <h2>
+                Collaborative <br /><span class="greenexp">Conversations</span>
+              </h2>
               <br />
-              <p>
-                Impact is a very vast and subjective concept. A change leader is
-                the one best placed to gauge the impact created by his/her work
-                in the communities and society at large, given the vantage point
-                he/she is at.
-              </p>
-              <br />
-              <p>
-                More often than not, the traditional ways of impact assessment
-                falls short or stops at measuring a few vanity metrics that may
-                or may not indicate the real impact created on the ground.
-              </p>
+              <div class="col-lg-10 mb-lg-0">
+                <p>
+                  Conversations and dialogues are fundamental to human
+                  interaction, forming the bedrock for understanding,
+                  collaboration, and innovation!
+                </p>
+                <br />
+                <p>
+                  They enable us to exchange knowledge, build trust, spark
+                  creativity, resolve conflicts, make informed decisions, and
+                  empower every voice to be heard and contribute.
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
               <img
-                src="source/img/Iconography/360 Degree Impact.png"
+                src="source/img/Iconography/Power of Co-Creation.png"
                 class=""
               />
             </div>
@@ -133,47 +112,50 @@
           data-ride="carousel"
           data-interval="4000"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="greenquery">How about attempting to get real?</p>
-            </div>
-            <div class="carousel-item">
-              <p class="greenquery">
-                How about designing for measuring a holistic impact assessment
-                that is bias free and transparent?
-              </p>
-            </div>
-            <div class="carousel-item">
-              <p class="greenquery">
-                What if you can make this information available and accessible
-                to the funders and others across the network in an easy and
-                simple way?
-              </p>
-            </div>
-          </div>
+          <p
+            class="greenquery typewriter"
+            id="typewriter-text"
+            data-texts='[
+              "Generate real-time insights from the collective wisdom of participants",
+              "Gain deeper understanding by combining insights from multiple conversations"
+           ]'
+          ></p>
         </div>
+
         <br />
         <br />
         <p class="queryp">
-          With "<span class="querytext">HOLISTIC IMPACT</span>", powered by
-          Apurva, it gets real! 
+          With "<span class="querytext">COLLABORATIVE CONVERSATIONS</span>", you
+          can gain more from every interaction!
         </p>
         <br />
         <br />
         <br />
         <br />
-        <div class="row justify-content-center" id="exprow">
-          <div class="row mt-5">
-            <div class="col-lg-4 mb-4">
-              <div class="card" data-card-number="1">
-                <div class="card-body-apu">
-                  <div class="card-content">
-                    <p class="card-text">
-                      Measure the real impact by sensing and incorporating the
-                      feedback across the communities you care about and
-                      networks that you work with. 
-                    </p>
-                  </div>
+
+        <div class="row mt-5 justify-content-center" id="exprow">
+          <!-- Added justify-content-center -->
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-card-number="1">
+              <div class="card-body-apu">
+                <div class="card-content">
+                  <p class="card-text">
+                    Instantly unlock valuable insights from your virtual or
+                    in-person conversations
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <!-- Added column for the second card -->
+            <div class="card" data-card-number="2">
+              <div class="card-body-apu">
+                <div class="card-content">
+                  <p class="card-text">
+                    Identify patterns and interconnections across conversations
+                    and see the bigger picture
+                  </p>
                 </div>
               </div>
             </div>
@@ -181,7 +163,7 @@
         </div>
       </div>
     </section>
-
+    <section></section>
     <div id="footer"></div>
     <!--Animated Cursor-->
     <div id="animated-cursor">
@@ -198,5 +180,6 @@
     <script src="source/js/footer.js"></script>
     <script src="source/js/script.js"></script>
     <script src="source/js/particles.js"></script>
+    <script src="source/js/typewriter.js"></script>
   </body>
 </html>

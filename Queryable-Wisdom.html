@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="source/css/home.css" />
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
-    <!-- Link to the CSS file for card styling -->
+
+    <!-- CSS for the typewriter effect -->
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -74,17 +76,13 @@
             <div class="experience">
               <h2>Queryable<br /><span class="greenexp">Wisdom</span></h2>
               <br />
-              <p>
-                With every interaction in your network, the knowledge
-                continuously gets created, and the collective insights grow by
-                the minute.
-              </p>
-              <br />
-              <p>
-                Imagine that you can curate these insights from multiple sources
-                and pockets of expertise across your network continuously into
-                your network's digital brain.
-              </p>
+              <div class="col-lg-10 mb-lg-0">
+                <p>
+                  Knowledge continuously evolves with every interaction in your
+                  ecosystem. Harness the curated insights at scale by
+                  integrating diverse knowledge sources!
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
@@ -101,24 +99,18 @@
           data-ride="carousel"
           data-interval="4000"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="greenquery">
-                How do you tap into this ever-growing collective wisdom of your
-                network?
-              </p>
-            </div>
-            <div class="carousel-item">
-              <p class="greenquery">
-                How do you query and get the relevant, trusted answers in your
-                context that are traceable to the source?
-              </p>
-            </div>
-          </div>
+          <p
+            class="greenquery typewriter"
+            id="typewriter-text"
+            data-texts='[
+                "Tap into the collective wisdom of your ecosystem",
+                "Query to gain trustworthy responses that can be traced back to their sources"
+             ]'
+          ></p>
         </div>
         <p class="queryp">
-          With the "<span class="querytext">QUERYABLE WISDOM</span>", powered by
-          Apurva, you can do more than that!
+          With the "<span class="querytext">QUERYABLE WISDOM</span>", you can do
+          much more!
         </p>
         <br />
         <br />
@@ -131,7 +123,8 @@
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
-                      Delve into your network's digital brain and explore
+                      Break down siloed knowledge and harness your ecosystem’s
+                      wisdom
                     </p>
                   </div>
                 </div>
@@ -142,9 +135,8 @@
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
-                      Ask questions and get relevant insights and perspectives
-                      across languages and various sources of knowledge viz.
-                      text, audios and videos
+                      Ask questions and unearth unique perspectives across
+                      geographies and languages
                     </p>
                   </div>
                 </div>
@@ -155,8 +147,8 @@
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
-                      Explore, uncover, analyse, reimagine, simplify and reframe
-                      the insights with ‘ENHANCE’ option
+                      Leverage in-built systems thinking tools to uncover deeper
+                      insights
                     </p>
                   </div>
                 </div>
@@ -183,5 +175,6 @@
     <script src="source/js/footer.js"></script>
     <script src="source/js/script.js"></script>
     <script src="source/js/particles.js"></script>
+    <script src="source/js/typewriter.js"></script>
   </body>
 </html>

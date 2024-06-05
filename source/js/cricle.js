@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addClasses([cardPositions[5]], "card-5");
     addClasses([cardPositions[6]], "card-6");
   }
+
   function slideCards() {
     cards.forEach((card, index) => {
       const angle =
@@ -73,20 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
     card.addEventListener("click", function () {
       const clickedIndex = parseInt(card.getAttribute("data-index"));
       const difference = (clickedIndex - currentIndex + cardCount) % cardCount;
-      currentIndex = clickedIndex;
-      for (let i = 0; i < difference; i++) {
-        autoRotate(); // Move cards one by one to the center
+      if (difference > cardCount / 2) {
+        currentIndex =
+          (currentIndex - (cardCount - difference) + cardCount) % cardCount;
+      } else {
+        currentIndex = (currentIndex + difference) % cardCount;
       }
+      slideCards();
     });
   });
 
+  // function autoRotate() {
+  //   currentIndex = (currentIndex - 1 + cardCount) % cardCount; // Rotate anticlockwise
+  //   slideCards();
+  // }
   function autoRotate() {
-    currentIndex = (currentIndex + 1) % cardCount;
+    currentIndex = (currentIndex + 1) % cardCount; // Rotate anticlockwise
     slideCards();
   }
-
-  // Auto rotate every 5 seconds
-  let rotationInterval = setInterval(autoRotate, 3000);
+  // Auto rotate every 3 seconds
+  let rotationInterval = setInterval(autoRotate, 5000);
 
   // Stop auto rotation on mouse enter
   document
@@ -99,18 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".containercricle")
     .addEventListener("mouseleave", function () {
-      rotationInterval = setInterval(autoRotate, 3000);
+      rotationInterval = setInterval(autoRotate, 5000);
     });
-
-  // Event listener for clicking on cards
-  cards.forEach((card) => {
-    card.addEventListener("click", function () {
-      currentIndex = parseInt(card.getAttribute("data-index"));
-      slideCards();
-    });
-  });
 
   showCard(currentIndex);
 });
-
-// JavaScript

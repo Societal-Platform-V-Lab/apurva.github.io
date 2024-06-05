@@ -3,44 +3,44 @@ const jsonData = [
   {
     title: "Queryable Wisdom",
     subtitle:
-      "What would you do differently if you could ask questions and get trustworthy and traceable answers from the collective wisdom of your network at your fingertips?",
+      "What would you do differently if you had access to trustworthy, traceable responses from the collective wisdom of your network?",
     image: "source/img/Iconography/Queryable Wisdom.png",
     link: "Queryable-Wisdom.html",
   },
   {
     title: "Voice of Communities",
     subtitle:
-      "Wouldn’t it be super helpful if you had a simple way to include the voice of the communities that you work with, in your decision-making and programme design processes?",
+      "Wouldn’t it be magical if the voices of community become a sense-making infrastructure that guides your mission?",
     image: "source/img/Iconography/Voice of Communities.png",
     link: "Voice-Communities.html",
   },
   {
-    title: "Power of Co-Creation",
+    title: "Collaborative Conversations",
     subtitle:
-      "How cool would it be if you are able to unlock valuable and actionable insights instantly every time you co-create knowledge with your network through virtual or in-person conversations?",
+      "Can you imagine all your conversations transforming into valuable and actionable insights?",
     image: "source/img/Iconography/Power of Co-Creation.png",
-    link: "Power-of.html",
+    link: "Collaborative-Conversations.html",
   },
   {
     title: "Knowledge Curation",
     subtitle:
-      "Do you want to know how to consolidate and synthesize the knowledge across your organization and network to create an emerging, ever-growing digital brain?",
+      "What if you could combine diverse knowledge sources to identify intersectional insights?",
     image: "source/img/Iconography/Knowledge Curation.png",
     link: "Knowledge-Curation.html",
   },
   {
-    title: "Holistic Impact",
+    title: "Strategic Assessment",
     subtitle:
-      "Isn’t it more effective when you are able to turn around, listen and sense all across your network of diverse stakeholders, when you are assessing the impact that your work has created?",
+      "What if assessments could be done at scale and offer deep insights and comprehensive understanding?",
     image: "source/img/Iconography/360 Degree Impact.png",
-    link: "Holistic-Impact.html",
+    link: "Strategic-Assessment.html",
   },
   {
-    title: "Discover Connections",
+    title: "Ecosystem Connection",
     subtitle:
-      "Is there a way for you to speed up the process of discovering other change leaders across the world, who are working on similar issues, solving with similar approaches, who care about similar communities, funders who fund similar work etc.?",
+      "Can you imagine the possibility of visualising the ecosystem through the lens of problems, solutions, or the communities being served?",
     image: "source/img/Iconography/Discover Connections.png",
-    link: "Discover-Connections.html",
+    link: "Ecosystem-Connections.html",
   },
 ];
 
@@ -51,7 +51,7 @@ function generateHTML(item) {
         <div class="blog d-lg-none d-sm-block d-md-block border-bottom">
           <h6 class="card-title text-left">
             <span class="queryable-text">${item.title}</span>
-            <span class="wisdom-text">Wisdom</span>
+            <span class="wisdom-text"></span>
           </h6>
           <div class="blogcontent">
             <div class="row">
@@ -74,7 +74,6 @@ function generateHTML(item) {
 
 // Function to render the HTML
 function renderHTML() {
-  console.log("calling");
   const section = document.getElementById("experiencecriclemobile");
   const row = section.querySelector(".row");
 
