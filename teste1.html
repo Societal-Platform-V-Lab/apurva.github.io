@@ -1,167 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll Animation Example</title>
-    <link rel="stylesheet" href="source/css/bundle.min.css">
-    <link rel="stylesheet" href="source/css/settings.css">
-    <link rel="stylesheet" href="source/css/style.css">
-    <link rel="stylesheet" href="source/css/apurva.css">
-    <link rel="stylesheet" href="source/css/custom.css">
-    <link rel="stylesheet" href="source/css/fotter.css">
-    <link rel="stylesheet" href="source/css/home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="source/css/bundle.min.css" />
+    <link rel="stylesheet" href="source/css/settings.css" />
+    <link rel="stylesheet" href="source/css/style.css" />
+    <link rel="stylesheet" href="source/css/apurva.css" />
+    <link rel="stylesheet" href="source/css/custom.css" />
+    <link rel="stylesheet" href="source/css/fotter.css" />
+    <link rel="stylesheet" href="source/css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPJ848CKT6"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MPJ848CKT6"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-MPJ848CKT6');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MPJ848CKT6");
     </script>
     <style>
-        .break {
-            margin-top: 1rem;
-        }
-        .typewriter {
-            display: inline-block;
-            overflow: hidden;
-            white-space: pre-line;
-            margin: 0 auto;
-            animation: blink-caret 0.75s step-end infinite;
-        }
-        .typewriter::after {
-            content: "|";
-            display: inline-block;
-            color: rgb(209, 73, 40);
-            margin-left: 3px;
-        }
-        .Arrow {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 23%;
-            transform: translateY(-50%);
-            text-align: center;
-            width: 100%;
-        }
-        .white-word {
-            color: white;
-        }
-        .image-container {
-            position: relative;
-            overflow: hidden;
-            height: 100vh; /* Full height of the viewport */
-        }
-        .scroll-image {
-            position: absolute;
-            width: 100%;
-            transition: transform 1s;
-        }
+      .break {
+        margin-top: 1rem;
+      }
+      .typewriter {
+        display: inline-block;
+        overflow: hidden;
+        white-space: pre-line;
+        margin: 0 auto;
+        animation: blink-caret 0.75s step-end infinite;
+      }
+      .typewriter::after {
+        content: "|";
+        display: inline-block;
+        color: rgb(209, 73, 40);
+        margin-left: 3px;
+      }
+      .Arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 23%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+      }
+      .white-word {
+        color: white;
+      }
+
+      .wisdom {
+        height: auto;
+        overflow: hidden;
+        min-height: inherit !important;
+      }
+      .scroll-image {
+        position: absolute;
+        width: 100%;
+        transition: transform 1s;
+      }
+
+      #Wisdomprev,
+      #Wisdomnext {
+        position: static;
+        display: inline-block;
+        width: auto;
+      }
+      .gifheading h2 {
+        font-weight: 600;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 73.14px;
+      }
+      .gifheadinggreen {
+        color: #9fffac;
+        font-style: italic;
+      }
+      .gifimg {
+        width: 50% !important;
+      }
     </style>
-</head>
-<body data-spy="scroll" class="homePage" data-target=".navbar-nav" data-offset="90">
+  </head>
+  <body
+    data-spy="scroll"
+    class="homePage"
+    data-target=".navbar-nav"
+    data-offset="90"
+  >
     <!-- Loader -->
     <div class="loader" id="loader-fade">
-        <div class="loader-container">
-            <ul class="loader-box">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+      <div class="loader-container">
+        <ul class="loader-box">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
     <div id="headers"></div>
     <div class="mainContainer">
-        <section id="home" class="section cursor-light slide1">
-            <div>
-                <div id="rev_slider_8_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="weone" data-source="gallery">
-                    <div id="rev_slider_8_1" class="rev_slider fullscreenbanner" data-version="5.4.8.1">
-                        <div class="line-container">
-                            <div class="circle"></div>
-                            <div class="topline"></div>
-                        </div>
-                        <div class="intro-block flex-row-block">
-                            <div id="js-rotating01">
-                                <div class="intro-Title">
-                                    <div id="myCarousel" class="intro-Title" data-ride="carousel" data-interval="4000">
-                                        <p class="greenintro typewriter" id="typewriter-text" data-texts='["Create, Nurture  <span class=\"white-word\">and</span> Sustain <span class=\"white-word\">the</span> Collective Wisdom  <span class=\"white-word\">of your ecosystem</span>."]'></p>
-                                    </div>
-                                    <div class="break"></div>
-                                </div>
-                                <div class="Arrow">
-                                    <a href="#newscreen" class="scroll-down-link">
-                                        <img src="source/img/Arrow 1.png" alt="Client Image" class="img-fluid" />
-                                        <p>SCROLL DOWN</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+      <section id="home" class="section cursor-light slide1">
+        <div>
+          <div
+            id="rev_slider_8_1_wrapper"
+            class="rev_slider_wrapper fullscreen-container"
+            data-alias="weone"
+            data-source="gallery"
+          >
+            <div
+              id="rev_slider_8_1"
+              class="rev_slider fullscreenbanner"
+              data-version="5.4.8.1"
+            >
+              <div class="line-container">
+                <div class="circle"></div>
+                <div class="topline"></div>
+              </div>
+              <div class="intro-block flex-row-block">
+                <div id="js-rotating01">
+                  <div class="intro-Title">
+                    <div
+                      id="myCarousel"
+                      class="intro-Title"
+                      data-ride="carousel"
+                      data-interval="4000"
+                    >
+                      <p
+                        class="greenintro typewriter"
+                        id="typewriter-text"
+                        data-texts='["Create, Nurture  <span class=\"white-word\">and</span> Sustain <span class=\"white-word\">the</span> Collective Wisdom  <span class=\"white-word\">of your ecosystem</span>."]'
+                      ></p>
                     </div>
+                    <div class="break"></div>
+                  </div>
+                  <div class="Arrow">
+                    <a href="#newscreen" class="scroll-down-link">
+                      <img
+                        src="source/img/Arrow 1.png"
+                        alt="Client Image"
+                        class="img-fluid"
+                      />
+                      <p>SCROLL DOWN</p>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
     <section id="enables" class="section stay-tuned flex-row-block">
-        <div class="line-container">
-            <div class="topline"></div>
-            <div class="bottomline"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="row" id="whyenables">
-                <div class="col-md-4 col-sm-12">
-                    <div>
-                        <div class="greencontact d-none d-md-block d-lg-block">
-                            Why<br /> Apurva?
-                        </div>
-                        <div class="greencontact d-sm-block d-md-none" id="blackheading-why">
-                            Why Apurva?
-                        </div>
-                        <br />
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-12">
-                    <div class="enables">
-                        <p>
-                            A significant challenge Change Leaders face today is responding effectively to rapidly evolving complex problems.
-                        </p>
-                        <br />
-                        <p>
-                            On one side, there is the need to swiftly understand the voice of their communities, and on the other, the need to integrate knowledge and insights from the broader ecosystem to design effective, contextual solutions.
-                        </p>
-                        <br />
-                        <p><span class="enablesgreen"> Apurva.ai enables both! </span></p>
-                        <br />
-                        <p>
-                            As a sense-making digital infrastructure powered by exponential technologies, Apurva allows Change Leaders to gain a deep and comprehensive understanding of both, their communities and the overall ecosystem.
-                        </p>
-                        <br />
-                        <br />
-                    </div>
-                </div>
+      <div class="line-container">
+        <div class="topline"></div>
+        <div class="bottomline"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row" id="whyenables">
+          <div class="col-md-4 col-sm-12">
+            <div>
+              <div class="greencontact d-none d-md-block d-lg-block">
+                Why<br />
+                Apurva?
+              </div>
+              <div
+                class="greencontact d-sm-block d-md-none"
+                id="blackheading-why"
+              >
+                Why Apurva?
+              </div>
+              <br />
             </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="enables">
+              <p>
+                A significant challenge Change Leaders face today is responding
+                effectively to rapidly evolving complex problems.
+              </p>
+              <br />
+              <p>
+                On one side, there is the need to swiftly understand the voice
+                of their communities, and on the other, the need to integrate
+                knowledge and insights from the broader ecosystem to design
+                effective, contextual solutions.
+              </p>
+              <br />
+              <p><span class="enablesgreen"> Apurva.ai enables both! </span></p>
+              <br />
+              <p>
+                As a sense-making digital infrastructure powered by exponential
+                technologies, Apurva allows Change Leaders to gain a deep and
+                comprehensive understanding of both, their communities and the
+                overall ecosystem.
+              </p>
+              <br />
+              <br />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="newscreen" class="section testimonial flex-row-block">
-        <div class="line-container">
-            <div class="topline"></div>
-            <div class="bottomline"></div>
+    <section
+    id="newscreen"
+    class="section testimonial flex-row-block .flex-row-block"
+  >
+    <div class="line-container">
+      <div class="topline"></div>
+      <div class="bottomline"></div>
+    </div>
+    <div class="centrescreen">
+      <!-- <div class="greenimg">
+      <img src="source/img/nav.png" class="">
+      <div class="key">
+        <div class="row">
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vectorshape.png" class="">
+            </div>
+            <div class="why">
+              <p> Rooted in<br>
+                <strong>Community Voices</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vector1.png" class="">
+            </div>
+            <div class="why">
+              <p> Amplify<br>
+                <strong> Network Knowledge  </strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vector2.png" class="">
+            </div>
+            <div class="why">
+              <p> Ensure Complete<br> <strong>Transparency </strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vector3.png" class="">
+            </div>
+            <div class="why">
+              <p> Offer<br>
+                <strong> Diverse Choices</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vectorshape.png" class="">
+            </div>
+            <div class="why">
+              <p> Foster<br><strong> Combinatorial<br> Innovation</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6 mb-2">
+            <div class="small-box">
+              <img src="source/img/Vector3.png" class="">
+            </div>
+            <div class="why">
+              <p> <strong>Evolve and<br>
+                  Measure </strong><br>continuously
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="centrescreen image-container">
-            <!-- Images for scrolling animation -->
-            <img src="source/img/Defining CW.gif" class="scroll-image" id="image1" />
-            <img src="source/img/Designing CW.gif" class="scroll-image" id="image2" />
-            <img src="source/img/Emerging CW.gif" class="scroll-image" id="image3" />
+
+      </div>
+
+    </div> -->
+
+      <div class="container">
+        <div
+          id="newscreenCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="5000"
+        >
+          <div class="carousels-inner wisdom" id="wisdom">
+            <div class="carousel-item active">
+              <div class="gifheading">
+                <h2>
+                  Defining
+                  <span class="gifheadinggreen">Collective Wisdom</span>
+                </h2>
+                <div class="gifimg">
+                  <img
+                    src="source/img/Defining CW.gif"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gifheading">
+                <h2>
+                  Designing
+                  <span class="gifheadinggreen">Collective Wisdom</span>
+                </h2>
+                <div class="gifimg">
+                  <img
+                    src="source/img/Designing CW.gif"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gifheading">
+                <h2>
+                  Emerging
+                  <span class="gifheadinggreen">Collective Wisdom</span>
+                </h2>
+                <div class="gifimg">
+                  <img
+                    src="source/img/Emerging CW.gif"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            id="Wisdomprev"
+            href="#newscreenCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <img src="source/img/Arrow_3.png" alt="Previous" />
+          </a>
+          <a
+            class="carousel-control-next"
+            id="Wisdomnext"
+            href="#newscreenCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <img src="source/img/Arrow_1.png" alt="Next" />
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
     <div id="footer"></div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -174,113 +379,6 @@
     <script src="source/js/particles.js"></script>
     <script src="source/js/card.js"></script>
     <script src="source/js/contact.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".scroll-down-link").click(function (e) {
-                e.preventDefault();
-                $("html, body").animate({
-                    scrollTop: $("#newscreen").offset().top
-                }, 1000);
-            });
-
-            $(window).on("scroll", function () {
-                var scrollPos = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                var newscreenTop = $("#newscreen").offset().top;
-                var newscreenHeight = $("#newscreen").height();
-                var scrollImage1 = $("#image1");
-                var scrollImage2 = $("#image2");
-                var scrollImage3 = $("#image3");
-
-                if (scrollPos >= newscreenTop - windowHeight && scrollPos <= newscreenTop + newscreenHeight) {
-                    var scrollRatio = (scrollPos - newscreenTop + windowHeight) / (newscreenHeight + windowHeight);
-
-                    if (scrollImage1.length) {
-                        scrollImage1.css("transform", "translateY(" + (scrollRatio * -100) + "px)");
-                    }
-                    if (scrollImage2.length) {
-                        scrollImage2.css("transform", "translateY(" + (scrollRatio * -200) + "px)");
-                    }
-                    if (scrollImage3.length) {
-                        scrollImage3.css("transform", "translateY(" + (scrollRatio * -300) + "px)");
-                    }
-                }
-            });
-
-            const typingElement = document.getElementById("typewriter-text");
-            const texts = JSON.parse(typingElement.getAttribute("data-texts"));
-            const textArray = Array.isArray(texts) ? texts : [texts];
-            let currentIndex = 0;
-
-            function typeText(text, callback) {
-                let i = 0;
-                let htmlContent = "";
-
-                function type() {
-                    if (i < text.length) {
-                        if (text.charAt(i) === "<") {
-                            const tagEndIndex = text.indexOf(">", i);
-                            htmlContent += text.substring(i, tagEndIndex + 1);
-                            i = tagEndIndex + 1;
-                        } else {
-                            htmlContent += text.charAt(i);
-                            i++;
-                        }
-                        typingElement.innerHTML = htmlContent;
-                        setTimeout(type, 100);
-                    } else if (callback) {
-                        setTimeout(callback, 1000); // Pause after typing before deleting
-                    }
-                }
-
-                type();
-            }
-
-            function deleteText(callback) {
-                let text = typingElement.innerHTML; // Get the HTML content
-                let i = text.length;
-                let isTag = false;
-                let tagBuffer = "";
-
-                function del() {
-                    if (i > 0) {
-                        if (text.charAt(i - 1) === ">") {
-                            isTag = true;
-                        }
-                        if (text.charAt(i - 1) === "<") {
-                            isTag = false;
-                            tagBuffer = "";
-                        }
-                        if (isTag) {
-                            tagBuffer = text.charAt(i - 1) + tagBuffer;
-                        }
-                        if (!isTag && tagBuffer !== "") {
-                            typingElement.innerHTML = text.substring(0, i - 1) + tagBuffer;
-                        } else if (!isTag) {
-                            typingElement.innerHTML = text.substring(0, i - 1);
-                        }
-                        i--;
-                        setTimeout(del, 50);
-                    } else if (callback) {
-                        callback();
-                    }
-                }
-
-                del();
-            }
-
-            function startTypingAnimation() {
-                typeText(textArray[currentIndex], function () {
-                    deleteText(function () {
-                        currentIndex = (currentIndex + 1) % textArray.length;
-                        startTypingAnimation();
-                    });
-                });
-            }
-
-            // Call the function to start the animation
-            startTypingAnimation();
-        });
-    </script>
-</body>
+    <script src="source/js/typewriter.js"></script>
+  </body>
 </html>

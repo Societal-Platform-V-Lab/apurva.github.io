@@ -50,12 +50,41 @@
   color: #9fffac;
   font-family: Poppins;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 40px;
   letter-spacing: 0em;
   text-align: left;
 }
+.wisdom {
+  height: auto;
+  overflow: hidden;
+  min-height: inherit !important;
+}
+.scroll-image {
+  position: absolute;
+  width: 100%;
+  transition: transform 1s;
+}
 
+#Wisdomprev,
+#Wisdomnext {
+  position: static;
+  display: inline-block;
+  width: auto;
+}
+.gifheading h2 {
+  font-weight: 600;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+.gifheadinggreen {
+  color: #9fffac;
+  font-style: italic;
+}
+.gifimg {
+  width: 50% !important;
+}
 .enables p {
   color: white;
   font-family: Poppins;
@@ -509,16 +538,16 @@ section#contacts {
   height: 17rem !important;
 }
 section#Network {
-  height: 65rem !important;
+  height: 79rem !important;
 }
 #newscreen.flex-row-block {
-  height: 156rem !important;
+  height: 45rem !important;
 }
 section#contact {
   height: 30rem !important;
 }
 section#enables {
-  height: 39rem !important;
+  height: 47rem !important;
   background-color: #01051c;
 }
 section#contactstest {
@@ -779,9 +808,6 @@ section#contactstest {
   }
 }
 @media screen and (max-width: 1805px) {
-  #newscreen.flex-row-block {
-    height: 113rem !important;
-  }
   .centrescreen {
     margin-top: -50px;
     text-align: center;
@@ -900,11 +926,9 @@ section#contactstest {
     font-size: 29px;
     font-weight: 600;
   }
-  #newscreen.flex-row-block {
-    height: 113rem !important;
-  }
+
   section#Network {
-    height: 81rem !important;
+    height: 65rem !important;
   }
   .homePage .flex-row-block {
     height: 199rem !important;
@@ -920,6 +944,20 @@ section#contactstest {
 @media screen and (max-width: 1024px) {
   #prev {
     margin-left: 369px;
+  }
+  .gifimg {
+    width: 73% !important;
+  }
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+
+  section#enables {
+    height: 54rem !important;
+    background-color: #01051c;
   }
   .centrescreen {
     margin-top: -50px;
@@ -968,9 +1006,7 @@ section#contactstest {
   section#responsibleAI {
     height: 35rem !important;
   }
-  #newscreen.flex-row-block {
-    height: 112rem !important;
-  }
+
   section#Network {
     height: 90rem !important;
   }
@@ -1040,8 +1076,15 @@ section#contactstest {
   section#Network {
     height: 98rem !important;
   }
-  #newscreen.flex-row-block {
-    height: 112rem !important;
+  section#enables {
+    height: 60rem !important;
+    background-color: #01051c;
+  }
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 73.14px;
   }
   .centrescreen {
     margin-top: -50px;
@@ -1185,7 +1228,7 @@ section#contactstest {
   }
   .centrescreen h2 {
     margin-top: 22px;
-}
+  }
   .greenimg img {
     /* width: 30.875rem;
     height: 30.875rem; */
@@ -1351,8 +1394,18 @@ section#contactstest {
     height: 77rem !important;
     margin-top: 1rem;
   }
+  section#enables {
+    height: 60rem !important;
+    background-color: #01051c;
+  }
   #newscreen.flex-row-block {
-    height: 70rem !important;
+    height: 27rem !important;
+  }
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 73.14px;
   }
   .enablesgreen {
     color: #9fffac;
@@ -1364,7 +1417,7 @@ section#contactstest {
     text-align: left;
   }
   section#enables {
-    height: 53rem !important;
+    height: 55rem !important;
     background-color: #01051c;
   }
   section#Network {
@@ -1640,8 +1693,8 @@ section#contactstest {
 }
 @media screen and (max-width: 360px) {
   section#enables {
-      height: 67rem !important;
-      background-color: #01051c;
+    height: 67rem !important;
+    background-color: #01051c;
   }
 }
 
@@ -1678,11 +1731,17 @@ section#contactstest {
 }
 @media screen and (min-width: 1536px) {
   section#enables {
-    height: 42rem !important;
+    height: 45rem !important;
     background-color: #01051c;
   }
   section#Network {
-    height: 82rem !important;
+    height: 79rem !important;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  section#Network {
+    height: 68rem !important;
   }
 }
 @media screen and (max-width: 390px) {

@@ -128,7 +128,7 @@ section#experiencepages {
   line-height: 40px;
   hyphens: auto;
   margin-left: -14px;
-  word-break: break-all;
+  word-break: auto-phrase;
 
 }
 

@@ -1578,7 +1578,7 @@ canvas {
 .logos .logoItem {
   margin-right: 4%;
   margin-bottom: 2%;
-  max-width: calc(50% - 5%);
+  max-width: calc(24% - 5%);
   display: flex;
   align-items: center;
   padding: 8px;
@@ -1644,6 +1644,16 @@ canvas {
     margin-top: 5rem;
   }
 }
+@media screen and (max-width: 1510px) {
+  .logos .logoItem {
+    max-width: 188px;
+  }
+}
+@media screen and (max-width: 901px) {
+  .logos .logoItem {
+    max-width: 245px;
+  }
+}
 
 @media screen and (min-width: 901px) {
   #testimonialSection .carousel-inner,
@@ -1693,10 +1703,7 @@ canvas {
     width: 30%;
   }
 
-  .logos .logoItem {
-    max-width: 245px;
-  }
-
+ 
   .secParagraph {
     max-width: 70%;
   }
