@@ -1399,7 +1399,7 @@ section#contactstest {
     background-color: #01051c;
   }
   #newscreen.flex-row-block {
-    height: 27rem !important;
+    height: 33rem !important;
   }
   .gifheading h2 {
     font-weight: 600;
@@ -1411,13 +1411,12 @@ section#contactstest {
     color: #9fffac;
     font-family: Poppins;
     font-size: 20px;
-    font-weight: 300;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
   }
   section#enables {
-    height: 55rem !important;
+    height: 60rem !important;
     background-color: #01051c;
   }
   section#Network {

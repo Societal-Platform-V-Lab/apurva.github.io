@@ -89,6 +89,20 @@
       .gifimg {
         width: 50% !important;
       }
+
+      /* Custom animation for the first carousel item */
+      .carousel-item:first-child .gifimg {
+        animation: slow-animation 3s ease-in-out;
+      }
+
+      @keyframes slow-animation {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
     </style>
   </head>
   <body
@@ -218,155 +232,87 @@
       </div>
     </section>
     <section
-    id="newscreen"
-    class="section testimonial flex-row-block .flex-row-block"
-  >
-    <div class="line-container">
-      <div class="topline"></div>
-      <div class="bottomline"></div>
-    </div>
-    <div class="centrescreen">
-      <!-- <div class="greenimg">
-      <img src="source/img/nav.png" class="">
-      <div class="key">
-        <div class="row">
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vectorshape.png" class="">
+      id="newscreen"
+      class="section testimonial flex-row-block .flex-row-block"
+    >
+      <div class="line-container">
+        <div class="topline"></div>
+        <div class="bottomline"></div>
+      </div>
+      <div class="centrescreen">
+        <div class="container">
+          <div
+            id="newscreenCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="3000"
+          >
+            <div class="carousels-inner wisdom" id="wisdom">
+              <div class="carousel-item active">
+                <div class="gifheading">
+                  <h2>
+                    Defining
+                    <span class="gifheadinggreen">Collective Wisdom</span>
+                  </h2>
+                  <div class="gifimg">
+                    <img
+                      src="source/img/Defining CW.gif"
+                      class="d-block w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="gifheading">
+                  <h2>
+                    Designing
+                    <span class="gifheadinggreen">Collective Wisdom</span>
+                  </h2>
+                  <div class="gifimg">
+                    <img
+                      src="source/img/Designing CW.gif"
+                      class="d-block w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="gifheading">
+                  <h2>
+                    Emerging
+                    <span class="gifheadinggreen">Collective Wisdom</span>
+                  </h2>
+                  <div class="gifimg">
+                    <img
+                      src="source/img/Emerging CW.gif"
+                      class="d-block w-100"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="why">
-              <p> Rooted in<br>
-                <strong>Community Voices</strong>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vector1.png" class="">
-            </div>
-            <div class="why">
-              <p> Amplify<br>
-                <strong> Network Knowledge  </strong>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vector2.png" class="">
-            </div>
-            <div class="why">
-              <p> Ensure Complete<br> <strong>Transparency </strong>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vector3.png" class="">
-            </div>
-            <div class="why">
-              <p> Offer<br>
-                <strong> Diverse Choices</strong>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vectorshape.png" class="">
-            </div>
-            <div class="why">
-              <p> Foster<br><strong> Combinatorial<br> Innovation</strong>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-xs-6 mb-2">
-            <div class="small-box">
-              <img src="source/img/Vector3.png" class="">
-            </div>
-            <div class="why">
-              <p> <strong>Evolve and<br>
-                  Measure </strong><br>continuously
-              </p>
-            </div>
+            <a
+              class="carousel-control-prev"
+              id="Wisdomprev"
+              href="#newscreenCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <img src="source/img/Arrow_3.png" alt="Previous" />
+            </a>
+            <a
+              class="carousel-control-next"
+              id="Wisdomnext"
+              href="#newscreenCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <img src="source/img/Arrow_1.png" alt="Next" />
+            </a>
           </div>
         </div>
-
       </div>
-
-    </div> -->
-
-      <div class="container">
-        <div
-          id="newscreenCarousel"
-          class="carousel slide"
-          data-ride="carousel"
-          data-interval="5000"
-        >
-          <div class="carousels-inner wisdom" id="wisdom">
-            <div class="carousel-item active">
-              <div class="gifheading">
-                <h2>
-                  Defining
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img
-                    src="source/img/Defining CW.gif"
-                    class="d-block w-100"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="gifheading">
-                <h2>
-                  Designing
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img
-                    src="source/img/Designing CW.gif"
-                    class="d-block w-100"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="gifheading">
-                <h2>
-                  Emerging
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img
-                    src="source/img/Emerging CW.gif"
-                    class="d-block w-100"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            id="Wisdomprev"
-            href="#newscreenCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <img src="source/img/Arrow_3.png" alt="Previous" />
-          </a>
-          <a
-            class="carousel-control-next"
-            id="Wisdomnext"
-            href="#newscreenCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <img src="source/img/Arrow_1.png" alt="Next" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
     <div id="footer"></div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

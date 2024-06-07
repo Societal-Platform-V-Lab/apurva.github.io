@@ -46,11 +46,20 @@ const jsonData = [
 
 // Function to generate HTML for each item
 function generateHTML(item) {
+  let greenWords = {
+    "Queryable Wisdom": "Queryable <span class='green-text'>Wisdom</span>",
+    "Voice of Communities": "Voice of <span class='green-text'>Communities</span>",
+    "Collaborative Conversations": "Collaborative <span class='green-text'>Conversations</span>",
+    "Knowledge Curation": "Knowledge <span class='green-text'>Curation</span>",
+    "Strategic Assessment": "Strategic <span class='green-text'>Assessment</span>",
+    "Ecosystem Connection": "Ecosystem <span class='green-text'>Connections</span>"
+  };
+
   return `
       <div class="col-md-12">
-        <div class="blog d-lg-none d-sm-block d-md-block border-bottom">
+      <div class="blog d-lg-none d-sm-block d-md-block border-bottom green-border">
           <h6 class="card-title text-left">
-            <span class="queryable-text">${item.title}</span>
+            <span class="queryable-text">${greenWords[item.title] || item.title}</span>
             <span class="wisdom-text"></span>
           </h6>
           <div class="blogcontent">

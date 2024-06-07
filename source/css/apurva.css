@@ -59,7 +59,7 @@ section#experience {
 }
 section#libraryabout {
   background: #01051c;
-  padding: 5% 8% 5%;
+  padding: 5% 4% 5%;
   margin-top: 110px;
   background-size: cover;
   /* position: relative; */
@@ -3060,7 +3060,7 @@ ul.social_icon li a {
   }
 
   section#about {
-    padding: 5% 8% 5%;
+    padding: 5% 6% 5%;
     position: relative;
     height: 20rem;
     margin-top: 70px;
