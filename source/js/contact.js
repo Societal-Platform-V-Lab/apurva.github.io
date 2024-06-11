@@ -27,7 +27,7 @@ function showThankYouMessage() {
     setTimeout(function () {
         $('#exampleModalCenter').modal('hide'); // Close the modal
         location.reload();
-    }, 5000);
+    }, 3000);
 }
 
 subscribeButton.addEventListener('click', function () {
