@@ -58,7 +58,7 @@ section#queryable {
 }
 
 .cards.active {
-  background-color: rgba(178, 242, 186, 0.2);
+  background-color: #213738;
   transform: translateX(0);
   border-color: #9fffac;
   height: 17.875rem;

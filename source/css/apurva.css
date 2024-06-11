@@ -59,7 +59,7 @@ section#experience {
 }
 section#libraryabout {
   background: #01051c;
-  padding: 5% 4% 5%;
+  padding: 5% 8% 5%;
   margin-top: 110px;
   background-size: cover;
   /* position: relative; */
@@ -326,7 +326,7 @@ section.stay-tuned {
 } */
 
 .mainContainer {
-  background: url(../img/Blue-Tinge-Website-Homepage.png) no-repeat;
+  background: url(../img/Homepage-Bg.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -900,6 +900,7 @@ a.underline {
   height: auto;
   padding: 10px;
   margin-left: 1rem;
+  margin-right: 3rem;
 }
 
 .navbar a.text {
@@ -1433,7 +1434,8 @@ canvas {
 }
 
 .loader {
-  background: url(../img/Starry-Bg.png);
+  /* background: url(../img/Starry-Bg.png); */
+  background: #01051c;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1574,9 +1576,11 @@ canvas {
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-
+.logoItem img {
+  max-width: 80%;
+}
 .logos .logoItem {
-  margin-right: 4%;
+  margin-right: 2%;
   margin-bottom: 2%;
   max-width: calc(24% - 5%);
   display: flex;
@@ -1703,7 +1707,6 @@ canvas {
     width: 30%;
   }
 
- 
   .secParagraph {
     max-width: 70%;
   }
@@ -2148,12 +2151,12 @@ canvas {
     top: auto;
     bottom: -18.25rem;
   }
-  .mainContainer {
+  /* .mainContainer {
     background: url(../img/Blue\ Tinge\ Mobile\ View\ Homepage\ Bg.png)
       no-repeat right top #000;
     background-size: cover;
     background-attachment: fixed;
-  }
+  } */
 
   #home {
     min-height: 100vh;
@@ -2337,7 +2340,7 @@ ul.social_icon li a {
 }
 
 .btn-success {
-  width: 382px;
+  width: 285px;
   height: 60px;
   border-radius: 50px;
   font-size: 30px;
@@ -2437,7 +2440,7 @@ ul.social_icon li a {
 .library-content p {
   color: #fff;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 40px;
@@ -2505,7 +2508,7 @@ ul.social_icon li a {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
 }
 .joinus-li li {
   margin-left: 40px;
@@ -3370,6 +3373,9 @@ ul.social_icon li a {
 }
 
 @media screen and (max-width: 450px) {
+  section#libraryabout {
+    padding: 5% 4% 5%;
+  }
   section#libraryabout {
     height: 29rem;
   }

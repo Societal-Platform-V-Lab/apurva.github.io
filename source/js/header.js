@@ -8,6 +8,16 @@ const section_header = `  <header class="cursor-light">
     </a>
     <div class="collapse navbar-collapse d-none d-lg-block">
       <ul class="nav navbar-nav">
+          <li class="nav-item">
+        <a
+        id="apurva-experience-btn"
+        link
+        type="button"
+        class="btn btn-medium btn-rounded btn-yellow hide contact-btn small Experience"
+        href="Apurva-Experience.html">
+        Experience Apurva
+    </a>
+        </li>
         <li class="nav-item">
           <a href="about-us.html" class="scroll nav-link apurva-about">About</a>
         </li>
@@ -19,16 +29,7 @@ const section_header = `  <header class="cursor-light">
         <a href="Join-us.html" class="scroll nav-link join-us">
          Join Us</a>
       </li>
-        <li class="nav-item">
-        <a
-        id="apurva-experience-btn"
-        link
-        type="button"
-        class="btn btn-medium btn-rounded btn-yellow hide contact-btn small Experience"
-        href="Apurva-Experience.html">
-        Apurva Experience
-    </a>
-        </li>
+    
       </ul>
     </div>
 
@@ -70,7 +71,7 @@ const section_header = `  <header class="cursor-light">
       </li>
         <li class="nav-item">
           <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"
-            >Apurva Experience</a>
+            >Experience Apurva</a>
         </li>
         
       </ul>

@@ -55,6 +55,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
+
 .wisdom {
   height: auto;
   overflow: hidden;
@@ -84,6 +85,7 @@
 }
 .gifimg {
   width: 50% !important;
+  margin-top: -41px;
 }
 .enables p {
   color: white;
@@ -374,7 +376,7 @@
 
 .greenintro {
   color: #9fffac;
-  font-size: 60px;
+  font-size: 55px;
   font-family: Poppins;
   font-weight: 600;
   line-height: 73.14px;
@@ -541,7 +543,7 @@ section#Network {
   height: 79rem !important;
 }
 #newscreen.flex-row-block {
-  height: 45rem !important;
+  height: 48rem !important;
 }
 section#contact {
   height: 30rem !important;
@@ -752,7 +754,7 @@ section#contactstest {
   margin-right: 2rem;
   height: 40px;
   width: 40px;
-  background-color: #ccc;
+  background-color:#4B7B60  ;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -777,10 +779,9 @@ section#contactstest {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: #efefef;
+  background-color: #4b7b60;
   border-radius: 50%;
   line-height: 40px;
-  color: white;
   font-size: 24px;
   margin: 0 10px;
 }
@@ -1734,7 +1735,7 @@ section#contactstest {
     background-color: #01051c;
   }
   section#Network {
-    height: 79rem !important;
+    height: 70rem !important;
   }
 }
 

@@ -118,6 +118,17 @@
           <div class="col-lg-5 mb-12 mb-lg-0">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
               <img
                 src="source/img/Iconography/Knowledge Curation.png"
                 class=""
@@ -163,7 +174,7 @@
         <div class="row justify-content-center" id="exprow">
           <div class="row mt-5">
             <div class="col-lg-4 mb-4">
-              <div class="card" data-card-number="1">
+              <div class="card">
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
@@ -174,7 +185,7 @@
               </div>
             </div>
             <div class="col-lg-4 mb-4">
-              <div class="card" data-card-number="2">
+              <div class="card">
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
@@ -185,7 +196,7 @@
               </div>
             </div>
             <div class="col-lg-4 mb-4">
-              <div class="card" data-card-number="3">
+              <div class="card">
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
@@ -201,6 +212,114 @@
       </div>
     </section>
     <section></section>
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <h5 class="modal-title" id="exampleModalCenterTitle">
+            Subscribe for Updates
+          </h5>
+          <button
+            type="button"
+            id="close"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <div class="modal-body">
+            <form class="Subscribe_for_updates" id="subscriptionForm">
+              <div class="sub-group">
+                <input
+                  type="text"
+                  class="email-textbox"
+                  id="name"
+                  placeholder="Name"
+                  required
+                  style="color: black; display: block"
+                />
+                <p
+                  class="validation-message"
+                  id="name-validation"
+                  style="display: none; color: red"
+                >
+                  Name is required
+                </p>
+              </div>
+
+              <div class="sub-group">
+                <input
+                  type="email"
+                  class="email-textbox"
+                  id="email"
+                  placeholder="Email ID"
+                  required
+                  style="color: black"
+                />
+                <span
+                  class="validation-message"
+                  id="email-validation"
+                  style="display: none; color: red"
+                  >Email is required</span
+                >
+              </div>
+              <div class="sub-group">
+                <input
+                  type="text"
+                  class="email-textbox"
+                  id="Organization"
+                  placeholder="Organization Website Link"
+                  required
+                  style="color: black"
+                />
+                <span
+                  class="validation-message"
+                  id="org-validation"
+                  style="display: none; color: red"
+                  >Organization is required</span
+                >
+              </div>
+              <div class="sub-group">
+                <textarea
+                  class="des-textbox"
+                  id="des"
+                  placeholder="Describe the problem that “Apurva for Knowledge Curation” would address for your organization."
+                  required
+                  style="color: black"
+                ></textarea>
+                <span
+                  class="validation-message"
+                  id="des-validation"
+                  style="display: none; color: red"
+                  >Description is required</span
+                >
+              </div>
+
+              <button
+                onclick="validateEmail()"
+                class="sub mx-auto d-block"
+                type="button"
+                id="subscribeButton"
+              >
+                <div class="subscribe-button-text">Subscribe for updates</div>
+              </button>
+
+              <p class="thank-you-message" id="thank-you" style="display: none">
+                Thank you for your interest. Your subscription was successful
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="footer"></div>
     <!--Animated Cursor-->
     <div id="animated-cursor">

@@ -62,6 +62,9 @@
       .break {
         margin-top: 1rem;
       }
+      .white-text {
+        color: white;
+      }
       .typewriter {
         display: inline-block;
         overflow: hidden;
@@ -114,10 +117,10 @@
         }
       }
       @media screen and (max-width: 425px) {
-    .Arrow {
-        top: 9%;
-    }
-}
+        .Arrow {
+          top: 9%;
+        }
+      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script
@@ -195,7 +198,7 @@
                     </div>
                     <div class="break"></div>
                   </div>
-                  <div class="Arrow">
+                  <!-- <div class="Arrow">
                     <a href="#newscreen" class="scroll-down-link">
                       <img
                         src="source/img/Arrow 1.png"
@@ -204,7 +207,7 @@
                       />
                       <p>SCROLL DOWN</p>
                     </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -222,7 +225,8 @@
           <div class="col-md-4 col-sm-12">
             <div>
               <div class="greencontact d-none d-md-block d-lg-block">
-                Why<br />
+                <span class="white-text">Why</span>
+                <br />
                 Apurva?
               </div>
               <div
@@ -263,53 +267,77 @@
         </div>
       </div>
     </section>
-  
-    <section id="newscreen" class="section testimonial flex-row-block">
+
+    <section id="newscreen" class="section stay-tuned flex-row-block">
       <div class="line-container">
         <div class="topline"></div>
         <div class="bottomline"></div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div
-          id="newscreenCarousel"
+          id="carouselExampleIndicators"
           class="carousel slide"
           data-ride="carousel"
-          data-interval="4000"
         >
-          <div class="carousels-inner wisdom" id="wisdom">
+          <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="gifheading">
-                <h2>
-                  Defining
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img src="source/img/Defining CW.gif" class="d-block w-100" />
+              <div class="row" id="whyenables">
+                <div class="col-md-4 col-sm-12">
+                  <div>
+                    <div class="greencontact d-none d-md-block d-lg-block">
+                      <span class="white-text">Defining</span>
+                      <br />Collective<br />
+                      Wisdom
+                    </div>
+                    <div
+                      class="greencontact d-sm-block d-md-none"
+                      id="blackheading-why"
+                    >
+                      <span class="white-text">Defining</span> Collective Wisdom
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-12" id="gifimg">
+                  <div class="gifimg">
+                    <img
+                      src="source/img/Defining CW.gif"
+                      class="d-block w-100"
+                    />
+                  </div>
+                  <br />
+                  <br />
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="gifheading">
-                <h2>
-                  Designing
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img
-                    src="source/img/Designing CW.gif"
-                    class="d-block w-100"
-                  />
+              <div class="row" id="whyenables">
+                <div class="col-md-4 col-sm-12">
+                  <div>
+                    <div class="greencontact d-none d-md-block d-lg-block">
+                      <span class="white-text">Designing</span>
+                      <br />Collective<br />
+                      Wisdom
+                    </div>
+                    <div
+                      class="greencontact d-sm-block d-md-none"
+                      id="blackheading-why"
+                    >
+                      <span class="white-text">Designing</span> Collective
+                      Wisdom
+                    </div>
+                    <br />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="gifheading">
-                <h2>
-                  Emerging
-                  <span class="gifheadinggreen">Collective Wisdom</span>
-                </h2>
-                <div class="gifimg">
-                  <img src="source/img/Emerging CW.gif" class="d-block w-100" />
+                <div class="col-md-8 col-sm-12" id="gifimg">
+                  <div class="gifimg">
+                    <img
+                      src="source/img/Designing CW.gif"
+                      class="d-block w-100"
+                    />
+                  </div>
+                  <br />
+                  <br />
                 </div>
               </div>
             </div>
@@ -317,7 +345,7 @@
           <a
             class="carousel-control-prev"
             id="Wisdomprev"
-            href="#newscreenCarousel"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="prev"
           >
@@ -326,7 +354,7 @@
           <a
             class="carousel-control-next"
             id="Wisdomnext"
-            href="#newscreenCarousel"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="next"
           >
@@ -978,6 +1006,13 @@
             <div class="logos">
               <div class="logoItem">
                 <img
+                  src="source/img/Logos/Ashoka Logo.png"
+                  width="100%"
+                  id="networkimg"
+                />
+              </div>
+              <div class="logoItem">
+                <img
                   src="source/img/Logos/billion-readers.jpg"
                   width="100%"
                   id="networkimg"
@@ -986,20 +1021,6 @@
               <div class="logoItem">
                 <img
                   src="source/img/Logos/CMSLogo.jpg"
-                  width="100%"
-                  id="networkimg"
-                />
-              </div>
-              <div class="logoItem">
-                <img
-                  src="source/img/Logos/Vrutti.jpg"
-                  width="100%"
-                  id="networkimg"
-                />
-              </div>
-              <div class="logoItem">
-                <img
-                  src="source/img/Logos/Swasti Logo 1.png"
                   width="100%"
                   id="networkimg"
                 />
@@ -1023,6 +1044,7 @@
                   src="source/img/Logos/IDR Logo.jpg"
                   width="100%"
                   id="networkimg"
+                  style="max-width: 64%"
                 />
               </div>
               <div class="logoItem">
@@ -1037,6 +1059,14 @@
                   src="source/img/Logos/ECHO-india.jpg"
                   width="100%"
                   id="networkimg"
+                />
+              </div>
+              <div class="logoItem">
+                <img
+                  src="source/img/Logos/Fish Forever Rare.png"
+                  width="100%"
+                  id="networkimg"
+                  style="max-width: 64%"
                 />
               </div>
               <div class="logoItem">
@@ -1273,7 +1303,22 @@
 
     <script src="source/js/particles.js"></script>
     <script src="source/js/card.js"></script>
-    <script src="source/js/contact.js"></script>
+    <script src="source/js/subscription.js"></script>
+    <script>
+      // Wait for the document to be ready
+      $(document).ready(function () {
+        // Get the carousel element
+        var carousel = $("#carouselExampleIndicators");
+
+        // Listen for the slide event
+        carousel.on("slide.bs.carousel", function () {
+          // Delay the transition to the next slide
+          setTimeout(function () {
+            carousel.carousel("next");
+          }, 5000); // Adjust the delay time as needed (4000 milliseconds = 4 seconds)
+        });
+      });
+    </script>
     <script>
       // When the document is ready
       $(document).ready(function () {

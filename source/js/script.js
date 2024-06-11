@@ -35,7 +35,15 @@ $(document).ready(function () {
       apurvaLibrary.forEach((item) => item.classList.add("active"));
     } else if (path === "/Join-us.html") {
       joinus.forEach((item) => item.classList.add("active"));
-    } else if (path === "/Apurva-Experience.html") {
+    } else if (
+      path === "/Apurva-Experience.html" ||
+      path === "/Queryable-Wisdom.html" ||
+      path === "/Knowledge-Curation.html" ||
+      path === "/Strategic-Assessment.html" ||
+      path === "/Ecosystem-Connections.html" ||
+      path === "/Voice-Communities.html" ||
+      path === "/Collaborative-Conversations.html"
+    ) {
       $(".contact-btn").addClass("active");
     } else if (path === "/index.html") {
       apurvaHome.forEach((item) => item.classList.add("active"));

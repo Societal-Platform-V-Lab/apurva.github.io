@@ -23,7 +23,7 @@ function setCardWidth() {
     cardWidth = cardWidth - 180
   } else if (window.innerWidth <= 1779) {
     cardWidth = window.innerWidth / 2;
-    cardWidth = cardWidth - 250
+    cardWidth = cardWidth - 270
   }else if (window.innerWidth <= 2200) {
     cardWidth = window.innerWidth / 3;
     cardWidth = cardWidth 
