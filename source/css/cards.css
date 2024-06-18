@@ -277,12 +277,17 @@ button {
     top: 48.8125rem;
   }
   #voice {
-    margin-top: -100px;
+    margin-top: -25px;
   }
-
+  .cards p {
+    font-size: 13px;
+  }
   #power {
-    margin-top: -89px;
+    margin-top: -39px;
   }
+  #Knowledge {
+    margin-top: -5px;
+}
 }
 @media (max-width: 768px) {
   .experienceimg {

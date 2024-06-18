@@ -48,10 +48,10 @@ section#experiencepages {
   font-size: 20px;
   font-weight: 500;
 }
-#Apurvaexp-tittle{
-  padding: 0% 2% 0% 3%;
+#Apurvaexp-tittle {
+  padding: 0% 2% 0% 0%;
 }
-#Apurva-Experience{
+#Apurva-Experience {
   padding: 0%;
 }
 .reachoutbutton {
@@ -208,7 +208,7 @@ section#experiencepages {
   line-height: 80px;
   letter-spacing: 0em;
   text-align: right;
-  margin-left: 249px;
+  margin-left: 190px;
   opacity: 0.2;
 }
 
@@ -235,7 +235,26 @@ section#experiencepages {
     line-height: 39px;
   }
 }
+
 @media screen and (max-width: 1024px) {
+  #experi {
+    padding: 0% 2% 0% 0%;
+  }
+  .coming img {
+    margin-top: -5rem;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-left: 85px;
+    opacity: 0.2;
+  }
+  section#experience {
+    height: 79rem !important;
+  }
   .experience h2,
   .greenexp {
     font-size: 30px;
@@ -247,7 +266,7 @@ section#experiencepages {
     margin-top: -8rem;
   } */
   #experiencepages.section {
-    padding: 6rem 8%;
+    padding: 6rem 10%;
     margin-top: 3rem;
   }
   .card {
@@ -270,18 +289,37 @@ section#experiencepages {
   }
 }
 @media screen and (max-width: 768px) {
+  .reachoutbutton {
+    margin-bottom: 176px;
+  }
   .cardrow {
     display: block;
     margin-right: 0px;
     margin-left: 0px;
-}
+  }
+  .coming img {
+    margin-top: -9rem;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-left: 380px;
+    opacity: 0.2;
+  }
+  #experiencepages.section {
+    padding: 6rem 2%;
+    margin-top: 3rem;
+  }
   /* .coming img {
     margin-left: 177px;
     margin-top: -25rem;
     opacity: 0.2;
   } */
   #experience.section {
-    padding: 6rem 8%;
+    padding: 6rem 0%;
     margin-top: 4rem;
   }
   img {
@@ -317,8 +355,7 @@ section#experiencepages {
 @media (max-width: 467px) {
   .subscribe-button-texthome {
     margin-left: 0px;
-  
-}
+  }
   #experi {
     padding: 0% 2% 0% 0%;
   }
@@ -467,7 +504,7 @@ section#experiencepages {
     text-align: center;
     font-size: 18px;
   }
-  .cardrow{
+  .cardrow {
     display: block;
     margin-right: 0px;
     margin-left: 0px;
@@ -536,4 +573,9 @@ section#experiencepages {
     margin-right: -15px;
     margin-left: 35px;
   } */
+}
+@media screen and (max-width: 320px) {
+#Apurvaexp-tittle {
+  padding: 0% 2% 0% 3%;
+}
 }

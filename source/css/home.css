@@ -84,7 +84,7 @@
   font-style: italic;
 }
 .gifimg {
-  width: 50% !important;
+  width: 45% !important;
 }
 .enables p {
   color: white;
@@ -949,7 +949,7 @@ section#contactstest {
 
 @media screen and (min-width: 1530px) {
   .logos .logoItem {
-    margin-right: 2%;
+    margin-right: 1%;
     margin-bottom: 2%;
     max-width: calc(24% - 5%);
     display: flex;
@@ -969,7 +969,9 @@ section#contactstest {
   #prev {
     margin-left: 369px;
   }
-
+  #testimonialSection.flex-row-block {
+    height: 38rem !important;
+}
   .gifheading h2 {
     font-weight: 600;
     font-size: 46px;
@@ -1104,6 +1106,14 @@ section#contactstest {
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-indicators {
+    margin: 0;
+    top: auto;
+    bottom: -21.25rem;
+}
+  #testimonialSection.flex-row-block {
+    height: 38rem !important;
+}
   section#Network {
     height: 43rem !important;
   }
@@ -1664,9 +1674,7 @@ section#contactstest {
   }
 }
 
-#testimonialSection.flex-row-block {
-  height: 28rem !important;
-}
+
 @media screen and (max-width: 390px) {
   .carousel-indicators {
     bottom: -10.25rem;
@@ -1802,7 +1810,7 @@ section#contactstest {
 
 @media screen and (min-width: 1536px) {
   section#Network {
-    height: 67rem !important;
+    height: 63rem !important;
   }
 }
 @media screen and (max-width: 390px) {

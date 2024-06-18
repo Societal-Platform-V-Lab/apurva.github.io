@@ -1239,6 +1239,7 @@ icon start
 } */
 
 @media (max-width: 1024px) {
+
   .img_padding {
     padding-top: 8rem;
     margin-left: -6rem;
@@ -1776,7 +1777,7 @@ canvas {
   }
 
   .profileItem p.designation {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 50px;
     margin-top: 17px;
   }
@@ -1832,7 +1833,9 @@ canvas {
   #home .line-container {
     margin-top: 2rem;
   }
-
+  #Stay {
+    padding-top: 9rem;
+  }
   .homePage .textColumn {
     padding-top: 7rem;
   }
@@ -2641,7 +2644,7 @@ ul.social_icon li a {
 @media (min-width: 320px) and (max-width: 770px) {
   section#libraryabout {
     margin-top: 70px;
-    height: 10rem;
+    height: 25rem;
   }
 }
 
@@ -2784,7 +2787,6 @@ ul.social_icon li a {
 
 @media (min-width: 320px) and (max-width: 370px) {
   section#about {
-    
     padding: 5% 8% 5%;
     position: relative;
     height: 30rem;
@@ -2901,6 +2903,14 @@ ul.social_icon li a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-indicators {
+    margin: 0;
+    top: auto;
+    bottom: -16.25rem;
+}
+  #Stay {
+    padding-top: 9rem;
+  }
   #testimonialSections.flex-row-block {
     height: 150px !important;
   }
@@ -3008,7 +3018,7 @@ ul.social_icon li a {
   section#about {
     padding: 77px 5%;
     position: relative;
-    height: 30rem;
+    height: 22rem;
     margin-top: 2rem;
   }
   section#white {

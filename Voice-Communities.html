@@ -49,6 +49,46 @@
           top: -19rem;
         }
       } */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-lg-7,
+      .col-lg-5 {
+        flex: 1;
+      }
+
+      .col-lg-7 {
+        max-width: 58.333333%;
+      }
+
+      .col-lg-5 {
+        max-width: 41.666667%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+      }
+
+      .circle_comingsoon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 850px;
+        width: 850px;
+        background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+        filter: blur(200px);
+      }
+
+      .coming-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.2;
+      }
     </style>
   </head>
   <body
@@ -79,11 +119,11 @@
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7 mb-lg-0" id ="experi">
+          <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Voice of<br /><span class="greenexp">Communities</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id ="experi">
+              <div class="col-lg-10 mb-lg-0" id="experi">
                 <p>
                   Understanding communities is essential for program success.
                   Now, transform community voices into deep, trusted and
@@ -97,11 +137,12 @@
             <div class="coming">
               <img
                 src="source/img/Iconography/Voice of Communities.png"
-                class=""
+                class="coming-img"
               />
             </div>
           </div>
         </div>
+
         <div class="reachoutbutton">
           <button
             type="button"

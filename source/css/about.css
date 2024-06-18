@@ -116,6 +116,9 @@
     top: 43%;
     left: 34%;
   }
+  #nolink {
+    top: 46%;
+  }
 }
 @media (max-width: 1024px) {
   .profileItem p.name {
@@ -363,5 +366,29 @@
   .greenteam {
     font-size: 35px;
     text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .plus-icon {
+    position: absolute;
+    top: 53%;
+    left: 38%;
+  }
+  #racha {
+    top: 51%;
+  }
+  #roshni {
+    top: 51%;
+}
+}
+@media (max-width: 320px) {
+  .plus-icon {
+    position: absolute;
+    top: 44%;
+    left: 28%;
+  }
+  #racha,
+  #roshni {
+    top: 44%;
   }
 }
