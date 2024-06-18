@@ -58,6 +58,10 @@ const section_header = `  <header class="cursor-light">
   <div class="inner-wrapper">
     <nav class="side-nav m-0">
       <ul class="navbar-nav flex-lg-row">
+      <li class="nav-item">
+          <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"
+            >Experience Apurva</a>
+        </li>
         <li class="nav-item">
           <a href="about-us.html" class="scroll nav-link apurva-about-mobile">About</a>
         </li>
@@ -69,10 +73,7 @@ const section_header = `  <header class="cursor-light">
         <a href="Join-us.html" class="scroll nav-link join-us-mobile"
           >Join Us</a>
       </li>
-        <li class="nav-item">
-          <a href="Apurva-Experience.html" class="scroll nav-link apurva-experience-mobile"
-            >Experience Apurva</a>
-        </li>
+        
         
       </ul>
     </nav>

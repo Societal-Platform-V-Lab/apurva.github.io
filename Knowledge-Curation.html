@@ -55,6 +55,24 @@
           opacity: 0.2;
         }
       }
+      @media (max-width: 467px) {
+        .coming img {
+          margin-top: -45rem;
+          margin-left: 191px;
+        }
+        /* #reachout {
+          top: -33.2rem;
+        } */
+      }
+      @media (max-width: 390px) {
+        .coming img {
+          margin-top: -4rem;
+          margin-left: 191px;
+        }
+        /* #reachout {
+          top: -25.2rem;
+        } */
+      }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -100,11 +118,11 @@
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7 mb-lg-0">
+          <div class="col-lg-7 mb-lg-0" id ="experi">
             <div class="experience">
               <h2>Knowledge<br /><span class="greenexp">Curation</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0">
+              <div class="col-lg-10 mb-lg-0" id ="experi">
                 <p>
                   Your organisation is a treasure trove of information and
                   knowledge created by your teams, partners, and communities.
@@ -118,23 +136,25 @@
           <div class="col-lg-5 mb-12 mb-lg-0">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
-              <button
-                type="button"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-                class="register-button subscribe-button"
-                id="reachout"
-              >
-                <div class="subscribe-button-texthome" style="color: black">
-                  Reach Out
-                </div>
-              </button>
               <img
                 src="source/img/Iconography/Knowledge Curation.png"
                 class=""
               />
             </div>
           </div>
+        </div>
+        <div class="reachoutbutton">
+          <button
+            type="button"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+            class="register-button subscribe-button"
+            id="reachout"
+          >
+            <div class="subscribe-button-texthome" style="color: black">
+              Reach Out
+            </div>
+          </button>
         </div>
         <div class="br"></div>
         <div
@@ -172,7 +192,7 @@
         <br />
         <br />
         <div class="row justify-content-center" id="exprow">
-          <div class="row mt-5">
+          <div class="cardrow">
             <div class="col-lg-4 mb-4">
               <div class="card">
                 <div class="card-body-apu">

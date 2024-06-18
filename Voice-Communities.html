@@ -39,7 +39,16 @@
       gtag("config", "G-MPJ848CKT6");
     </script>
     <style>
-      /* Add necessary custom styles */
+      /* @media (max-width: 467px) {
+        #reachout {
+          top: -21rem;
+        }
+      }
+      @media (max-width: 390px) {
+        #reachout {
+          top: -19rem;
+        }
+      } */
     </style>
   </head>
   <body
@@ -70,11 +79,11 @@
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7 mb-lg-0">
+          <div class="col-lg-7 mb-lg-0" id ="experi">
             <div class="experience">
               <h2>Voice of<br /><span class="greenexp">Communities</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0">
+              <div class="col-lg-10 mb-lg-0" id ="experi">
                 <p>
                   Understanding communities is essential for program success.
                   Now, transform community voices into deep, trusted and
@@ -86,17 +95,6 @@
           <div class="col-lg-5 mb-12 mb-lg-0 position-relative">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
-              <button
-                type="button"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-                class="register-button subscribe-button"
-                id="reachout"
-              >
-                <div class="subscribe-button-texthome" style="color: black">
-                  Reach Out
-                </div>
-              </button>
               <img
                 src="source/img/Iconography/Voice of Communities.png"
                 class=""
@@ -104,6 +102,20 @@
             </div>
           </div>
         </div>
+        <div class="reachoutbutton">
+          <button
+            type="button"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+            class="register-button subscribe-button"
+            id="reachout"
+          >
+            <div class="subscribe-button-texthome" style="color: black">
+              Reach Out
+            </div>
+          </button>
+        </div>
+
         <div class="br"></div>
         <div
           id="myCarousel"
@@ -126,7 +138,7 @@
         </p>
         <br /><br /><br /><br />
         <div class="row justify-content-center" id="exprow">
-          <div class="row mt-5">
+          <div class="cardrow">
             <div class="col-lg-4 mb-4">
               <div class="card">
                 <div class="card-body-apu">
@@ -143,7 +155,7 @@
               <div class="card">
                 <div class="card-body-apu">
                   <div class="card-content">
-                    <p class="card-text">Amplify grassroots voices</p>
+                    <p class="card-text">Amplify grassroot voices</p>
                   </div>
                 </div>
               </div>

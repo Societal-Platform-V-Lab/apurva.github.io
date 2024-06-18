@@ -16,7 +16,7 @@ body {
 }
 
 .mainContainer {
-  height: 100%;
+  height: 90%;
 }
 
 .header-appear .navbar-top-default {
@@ -1652,6 +1652,14 @@ canvas {
   .logos .logoItem {
     max-width: 188px;
   }
+  .logos .logoItem {
+    margin-right: 3%;
+    margin-bottom: 2%;
+    max-width: calc(24% - 5%);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
 }
 @media screen and (max-width: 901px) {
   .logos .logoItem {
@@ -1671,7 +1679,7 @@ canvas {
     height: 447px !important;
   }
   #testimonialSections.flex-row-block {
-    height: 230px !important;
+    height: 194px !important;
   }
   #testimonialSectionfeature.flex-row-block {
     height: 30rem !important;
@@ -1768,7 +1776,7 @@ canvas {
   }
 
   .profileItem p.designation {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 50px;
     margin-top: 17px;
   }
@@ -2124,6 +2132,22 @@ canvas {
   }
 }
 @media screen and (max-width: 530px) {
+  .enables {
+    margin-top: -6px;
+  }
+  .mainContainer {
+    height: 67%;
+  }
+  .intro-Title {
+    margin-top: 40px;
+  }
+  .mainContainer {
+    background: url(../img/Homepage-bg-Mobile.png) no-repeat;
+    /* background-image: url(../img/Homepage-0bg-Mobile-min.jpg) no-repeat; */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
+  }
   .testimonial-body {
     font-family: "Poppins";
     font-weight: 300;
@@ -2149,7 +2173,7 @@ canvas {
   .carousel-indicators {
     margin: 0;
     top: auto;
-    bottom: -18.25rem;
+    bottom: -1.25rem;
   }
   /* .mainContainer {
     background: url(../img/Blue\ Tinge\ Mobile\ View\ Homepage\ Bg.png)
@@ -2728,10 +2752,6 @@ ul.social_icon li a {
     font-size: 20px;
   }
 
-  .text-white {
-    color: #9fffac !important;
-  }
-
   .card-title {
     line-height: 80px;
   }
@@ -2764,7 +2784,7 @@ ul.social_icon li a {
 
 @media (min-width: 320px) and (max-width: 370px) {
   section#about {
-    background: url(../img/bgImg.jpg);
+    
     padding: 5% 8% 5%;
     position: relative;
     height: 30rem;
@@ -2944,6 +2964,14 @@ ul.social_icon li a {
 }
 
 @media screen and (max-width: 768px) {
+  .logos .logoItem {
+    margin-right: 6%;
+    margin-bottom: 2%;
+    max-width: calc(24% - 5%);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
   section#white-background-join {
     margin-top: 100px;
   }
@@ -3002,6 +3030,26 @@ ul.social_icon li a {
     text-align: left;
   }
 }
+@media screen and (max-width: 467px) {
+  .dropdown-toggles {
+    display: block;
+  }
+  .dropdown-icon {
+    margin-left: 16.989rem;
+  }
+  .dropdown-toggles {
+    font-size: 18px;
+    margin-bottom: 37px;
+    text-align: left;
+  }
+  .dropdown-content p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .joinus-li ul {
+    text-align: left;
+  }
+}
 
 @media screen and (max-width: 425px) {
   .dropdown-toggles {
@@ -3030,13 +3078,8 @@ ul.social_icon li a {
     font-weight: 700;
   }
   .joinus-li ul {
-    list-style-type: disc;
-    color: #161515;
-    font-family: Poppins;
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 40px;
     text-align: left;
   }
   .dropdown-icon {
@@ -3175,6 +3218,9 @@ ul.social_icon li a {
     font-size: 20px;
     padding: 0px;
   }
+}
+#gifcarousel {
+  margin-bottom: -4rem;
 }
 
 .apurva-explains-card {
@@ -3333,12 +3379,12 @@ ul.social_icon li a {
     font-size: 31px !important;
   }
 
-  .carousel-control-next,
+  /* .carousel-control-next,
   .carousel-control-prev {
     top: 91px !important;
     width: 66px !important;
     height: 65px !important;
-  }
+  } */
 }
 
 @media (min-width: 760px) and (max-width: 768px) {
@@ -3360,12 +3406,12 @@ ul.social_icon li a {
     line-height: 21px;
   }
 
-  .carousel-control-next,
+  /* .carousel-control-next,
   .carousel-control-prev {
     top: 70px !important;
     width: 60px !important;
     height: 60px !important;
-  }
+  } */
 
   .carousel-inner {
     height: 44.75rem;
@@ -3385,8 +3431,10 @@ ul.social_icon li a {
   section#libraryabout {
     height: 33rem;
   }
+  #home {
+    min-height: 72px;
+  }
   section#about {
-    background: url(../img/bgImg.jpg);
     padding: 5% 8% 5%;
     position: relative;
     height: 22rem;

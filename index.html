@@ -233,7 +233,7 @@
                 class="greencontact d-sm-block d-md-none"
                 id="blackheading-why"
               >
-                Why Apurva?
+                <span class="white-text">Why</span> Apurva?
               </div>
               <br />
             </div>
@@ -279,9 +279,9 @@
           class="carousel slide"
           data-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner" id="gifcarousel">
             <div class="carousel-item active">
-              <div class="row" id="whyenables">
+              <div class="row">
                 <div class="col-md-4 col-sm-12">
                   <div>
                     <div class="greencontact d-none d-md-block d-lg-block">
@@ -311,7 +311,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row" id="whyenables">
+              <div class="row">
                 <div class="col-md-4 col-sm-12">
                   <div>
                     <div class="greencontact d-none d-md-block d-lg-block">
@@ -342,6 +342,7 @@
               </div>
             </div>
           </div>
+
           <a
             class="carousel-control-prev"
             id="Wisdomprev"
@@ -1044,7 +1045,7 @@
                   src="source/img/Logos/IDR Logo.jpg"
                   width="100%"
                   id="networkimg"
-                  style="max-width: 64%"
+                  style="max-width: 64%; margin-left: 32%"
                 />
               </div>
               <div class="logoItem">
@@ -1307,15 +1308,19 @@
     <script>
       // Wait for the document to be ready
       $(document).ready(function () {
-        // Get the carousel element
-        var carousel = $("#carouselExampleIndicators");
+        // Get all carousel elements
+        var carousels = $(".carousel");
 
-        // Listen for the slide event
-        carousel.on("slide.bs.carousel", function () {
-          // Delay the transition to the next slide
-          setTimeout(function () {
-            carousel.carousel("next");
-          }, 5000); // Adjust the delay time as needed (4000 milliseconds = 4 seconds)
+        // Listen for the slide event on any carousel
+        carousels.on("slide.bs.carousel", function (event) {
+          // Get the direction and slide index
+          var direction = event.direction;
+          var to = $(event.relatedTarget).index();
+
+          // Move all carousels to the same slide and direction
+          carousels.each(function () {
+            $(this).carousel(direction === "left" ? "next" : "prev", to);
+          });
         });
       });
     </script>
@@ -1340,26 +1345,7 @@
         });
       });
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var spans = document.querySelectorAll(".intro-Title h2 span");
-        var allChars = [];
-        spans.forEach(function (span) {
-          var text = span.textContent.trim();
-          span.textContent = ""; // Clear the original content
-          text.split("").forEach(function (char) {
-            var spanElement = document.createElement("span");
-            spanElement.textContent = char === " " ? "\u00A0" : char; // Replace space with non-breaking space
-            allChars.push(spanElement);
-            span.appendChild(spanElement);
-          });
-        });
 
-        allChars.forEach(function (char, index) {
-          char.style.animationDelay = index * 0.1 + "s"; // Adjust the delay between letters
-        });
-      });
-    </script>
     <script src="source/js/typewriter.js"></script>
   </body>
 </html>

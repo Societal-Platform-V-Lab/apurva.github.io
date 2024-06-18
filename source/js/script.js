@@ -27,6 +27,7 @@ $(document).ready(function () {
     apurvAbout.forEach((item) => item.classList.remove("active"));
     apurvaLibrary.forEach((item) => item.classList.remove("active"));
     joinus.forEach((item) => item.classList.remove("active"));
+    apurvaExperience.forEach((item) => item.classList.remove("activr"));
     $(".contact-btn").removeClass("active");
     // Add "active" class to the appropriate elements
     if (path === "/about-us.html") {
@@ -45,6 +46,7 @@ $(document).ready(function () {
       path === "/Collaborative-Conversations.html"
     ) {
       $(".contact-btn").addClass("active");
+      apurvaExperience.forEach((item) => item.classList.add("active"));
     } else if (path === "/index.html") {
       apurvaHome.forEach((item) => item.classList.add("active"));
     }

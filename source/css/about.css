@@ -67,12 +67,15 @@
 .linkedin-logo {
   margin-top: -52px;
 }
-#nolink{
-  top: 50%;
+#nolink {
+  top: 44%;
+}
+.img a {
+  margin-bottom: 45px;
 }
 .plus-icon {
   position: absolute;
-  top: 47%;
+  top: 41%;
   left: 37%; /* Adjust the left position as needed */
   transform: translateY(-50%);
   display: inline-block;
@@ -96,6 +99,55 @@
   text-align: center;
   margin-bottom: 1rem;
 }
+
+@media (min-width: 2560px) {
+  .plus-icon {
+    left: 40%;
+  }
+}
+@media (max-width: 1286px) {
+  .profileItem p.name {
+    font-size: 1.3rem;
+  }
+  .profileItem p.designation {
+    font-size: 1rem;
+  }
+  .plus-icon {
+    top: 43%;
+    left: 34%;
+  }
+}
+@media (max-width: 1024px) {
+  .profileItem p.name {
+    font-size: 1rem;
+  }
+  .profileItem p.designation {
+    font-size: 14px;
+  }
+  #nolink {
+    top: 46%;
+  }
+}
+@media (max-width: 768px) {
+  .profileItem p.name {
+    font-size: 14px;
+  }
+  .profileItem p.designation {
+    font-size: 11px;
+  }
+  .plus-icon {
+    top: 44%;
+    left: 26%;
+  }
+  #nolink {
+    top: 44%;
+  }
+  .img a {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+  }
+}
 @media (min-width: 768px) {
   .apurva-library-title {
     font-size: 47px;
@@ -113,6 +165,25 @@
   }
 }
 @media (min-width: 370px) and (max-width: 500px) {
+  #nolink {
+    top: 51%;
+  }
+  #roshni {
+    top: 41%;
+  }
+  #racha {
+    top: 47%;
+  }
+  .plus-icon {
+    position: absolute;
+    top: 44%;
+    left: 32%;
+  }
+  .img a {
+    margin-top: 31px;
+    margin-bottom: 0px;
+  }
+
   .apurva-library-title,
   .blackheading,
   .greenteam,
@@ -128,6 +199,16 @@
   /* margin-top: 30px; */
   text-align: left;
   /* word-break: break-all; */
+}
+@media (max-width: 412px) {
+  .plus-icon {
+    position: absolute;
+    top: 47%;
+    left: 32%;
+  }
+  #roshni {
+    top: 47%;
+  }
 }
 @media (max-width: 467px) {
   .profileItem p.designation {
@@ -162,10 +243,43 @@
     margin-left: 19rem;
   }
 }
+@media (max-width: 430px) {
+  .profileItem p.name {
+    font-size: 14px;
+  }
+  .profileItem p.designation {
+    font-size: 11px;
+  }
+  .img a {
+    margin-top: 31px;
+    margin-bottom: 33px;
+  }
+  #nolink,
+  #racha,
+  #roshni {
+    top: 45%;
+  }
+
+  .plus-icon {
+    top: 46%;
+    left: 32%;
+  }
+}
 @media (max-width: 425px) {
+  .plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+  }
+  #racha {
+    top: 50%;
+  }
+  #roshni {
+    top: 49%;
+  }
   .profileItem p.designation {
     color: #49785e;
-    font-size: 18px;
+    font-size: 11px;
     font-weight: 600;
     text-align: center;
     margin-top: 0.5rem;
@@ -178,7 +292,7 @@
     width: 200px;
   }
   .profileItem p.name {
-    font-size: 18px;
+    font-size: 14px;
     color: #1c1c1c;
     font-weight: 600;
     margin-top: 1.5rem;
@@ -193,5 +307,61 @@
     font-weight: bold;
     position: absolute;
     margin-left: 19rem;
+  }
+}
+@media (max-width: 390px) {
+  .plus-icon {
+    position: absolute;
+    top: 47%;
+    left: 28%;
+  }
+  #nolink {
+    top: 49%;
+    left: 29%;
+  }
+  #racha,
+  #roshni {
+    top: 46%;
+  }
+}
+@media (max-width: 375px) {
+  #racha {
+    top: 48%;
+  }
+  #roshni {
+    top: 48%;
+  }
+  .plus-icon {
+    position: absolute;
+    top: 48%;
+    left: 28%;
+  }
+}
+@media (max-width: 360px) {
+  .img a {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+  #nolink {
+    top: 44%;
+    left: 29%;
+  }
+  #racha {
+    top: 40%;
+  }
+  #roshni {
+    top: 40%;
+  }
+  .plus-icon {
+    position: absolute;
+    top: 41%;
+    left: 28%;
+  }
+  .blackheading,
+  .greenteam,
+  #founding h2,
+  .greenteam {
+    font-size: 35px;
+    text-align: left;
   }
 }

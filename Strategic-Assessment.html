@@ -51,6 +51,22 @@
           margin-right: -15px;
           margin-left: 25px;
         }
+        .coming img {
+          margin-left: 175px;
+          margin-top: -89rem;
+        }
+        /* #reachout {
+          top: -55.2rem;
+        } */
+      }
+      @media (max-width: 390px) {
+        .coming img {
+          margin-top: -25rem;
+          margin-left: 193px;
+        }
+        /* #reachout {
+          top: -39.2rem;
+        } */
       }
     </style>
 
@@ -98,11 +114,11 @@
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7 mb-lg-0">
+          <div class="col-lg-7 mb-lg-0"id ="experi">
             <div class="experience">
               <h2>Strategic <br /><span class="greenexp">Assessment</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0">
+              <div class="col-lg-10 mb-lg-0"id ="experi">
                 <p>
                   Strategic Assessment evaluates the effectiveness of program
                   activities, ensuring they meet real objectives and advance the
@@ -122,23 +138,26 @@
           <div class="col-lg-5 mb-12 mb-lg-0">
             <div class="circle_comingsoon rounded-full"></div>
             <div class="coming">
-              <button
-                type="button"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-                class="register-button subscribe-button"
-                id="reachout"
-              >
-                <div class="subscribe-button-texthome" style="color: black">
-                  Reach Out
-                </div>
-              </button>
+              
               <img
                 src="source/img/Iconography/360 Degree Impact.png"
                 class=""
               />
             </div>
           </div>
+        </div>
+        <div class="reachoutbutton">
+          <button
+            type="button"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+            class="register-button subscribe-button"
+            id="reachout"
+          >
+            <div class="subscribe-button-texthome" style="color: black">
+              Reach Out
+            </div>
+          </button>
         </div>
         <div class="br"></div>
         <div
@@ -168,31 +187,34 @@
         <br />
         <br />
         <div class="row mt-5 justify-content-center" id="exprow">
+          <div class="cardrow">
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body-apu">
+                  <div class="card-content">
+                    <p class="card-text">
+                      Foster a culture of validated learnings and continuous
+                      improvement
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <!-- Added column for the second card -->
+              <div class="card">
+                <div class="card-body-apu">
+                  <div class="card-content">
+                    <p class="card-text">
+                      Conduct assessments at scale and in multiple languages
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Added justify-content-center -->
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body-apu">
-                <div class="card-content">
-                  <p class="card-text">
-                    Foster a culture of validated learnings and continuous
-                    improvement
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <!-- Added column for the second card -->
-            <div class="card">
-              <div class="card-body-apu">
-                <div class="card-content">
-                  <p class="card-text">
-                    Conduct assessments at scale and in multiple languages
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

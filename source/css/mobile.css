@@ -1,5 +1,15 @@
 /* General styles for the mobile card */
-
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 0px;
+}
+img {
+  max-width: 70%;
+}
 .mobile-section {
   display: flex;
   justify-content: flex-start;
@@ -65,7 +75,7 @@
   color: #9fffac;
 }
 .green-border {
-  border-color: #49785E !important;
+  border-color: #49785e !important;
 }
 
 @media (max-width: 768px) {
@@ -75,7 +85,7 @@
     margin-top: 53px;
   }
   .cardtext {
-    margin-left: 18px;
+    /* margin-left: 18px; */
     color: #fff;
     font-family: Poppins;
     font-size: 24px;
@@ -83,7 +93,7 @@
     font-weight: 300;
     line-height: 40px;
     hyphens: auto;
-    word-break: auto-phrase
+    word-break: auto-phrase;
   }
   section#experiencecriclemobile {
     height: 175rem !important;
@@ -106,6 +116,12 @@
   }
 }
 @media (max-width: 467px) {
+  section#experiencecriclemobile {
+    height: 84rem !important;
+  }
+}
+
+@media (max-width: 467px) {
   .mobile-explore-btn {
     height: 31px;
     font-size: 9px;
@@ -123,16 +139,16 @@
     margin-top: 10px;
   }
   section#experiencecriclemobile {
-    height: 99rem !important;
+    height: 89rem !important;
   }
   .cardtext {
-    margin-left: 2px;
     color: white;
     text-align: left;
     font-size: 12px;
     line-height: 20px;
     margin-top: 15px;
   }
+
   #mobiletext {
     position: relative;
     width: 100%;
@@ -153,12 +169,15 @@
   }
   section#experiencecriclemobile {
     height: 94rem !important;
+  }
 }
-}
+
 @media (max-width: 432px) {
   section#experiencecriclemobile {
-    height: 100rem !important;
+    height: 91rem !important;
+  }
 }
+
 @media (max-width: 390px) {
   section#experiencecriclemobile {
     height: 94rem !important;
@@ -166,9 +185,11 @@
 }
 @media (max-width: 375px) {
   section#experiencecriclemobile {
-    height: 126rem !important;
+    height: 96rem !important;
   }
 }
-
-  
+@media (max-width: 320px) {
+  section#experiencecriclemobile {
+    height: 100rem !important;
+  }
 }

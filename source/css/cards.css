@@ -289,18 +289,14 @@ button {
     margin-top: -189px;
     text-align: center;
   }
-  section#experience {
-    height: 87rem !important;
-  }
+  
   .img-fluid {
     max-width: 81%;
     height: auto;
   }
 }
 @media (max-width: 490px) {
-  section#experience {
-    height: 83rem !important;
-  }
+  
   #expArrow{
     max-width: 100%;
     height: 70px;
