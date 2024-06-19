@@ -30,26 +30,45 @@
       #testimonial-carousel {
         height: 224px;
       }
-      @media (max-width: 467px) {
-        .coming img {
-          margin-left: 208px;
-          margin-top: -54rem;
-        }
-        /* #reachout {
-          top: -37.8rem;
-          
-        } */
-      }
 
-      @media (max-width: 390px) {
-        .coming img {
-          margin-left: 185px;
-          margin-top: -43rem;
+      @media (min-width: 992px) {
+        .col-lg-4 {
+          -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+          max-width: 55.333333%;
         }
-        /* #reachout {
-          top: -31.8rem;
-          
-        } */
+      }
+      @media (max-width: 900px) {
+        .experience {
+          position: relative;
+          z-index: 1; /* Ensure the main content is above the pseudo-element */
+        }
+
+        .experience::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(source/img/Iconography/Power-of-Co-Creation.png) no-repeat
+            right;
+          background-size: 300px;
+          opacity: 0.1;
+          z-index: -1; /* Ensure the background is behind the main content */
+        }
+        .coming img {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        .experience::before {
+          top: 0;
+          right: -12px;
+          bottom: 113px;
+          left: 0;
+          background-size: 200px;
+        }
       }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -117,28 +136,31 @@
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
-            <div class="circle_comingsoon rounded-full"></div>
+            <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
               <img
-                src="source/img/Iconography/Power of Co-Creation.png"
+                src="source/img/Iconography/Power-of-Co-Creation.png"
                 class=""
               />
             </div>
           </div>
-        </div>
-        <div class="reachoutbutton">
-          <button
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-            class="register-button subscribe-button"
-            id="reachout"
-          >
-            <div class="subscribe-button-texthome" style="color: black">
-              Reach Out
+          <div class="col-12" id="reachoutbutton">
+            <div class="reachoutbutton">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
+
         <div class="br"></div>
         <div
           id="myCarousel"
@@ -187,8 +209,8 @@
                 <div class="card-body-apu">
                   <div class="card-content">
                     <p class="card-text">
-                      Identify patterns and interconnections across conversations
-                      and see the bigger picture
+                      Identify patterns and interconnections across
+                      conversations and see the bigger picture
                     </p>
                   </div>
                 </div>
@@ -196,7 +218,6 @@
             </div>
           </div>
           <!-- Added justify-content-center -->
-          
         </div>
       </div>
     </section>

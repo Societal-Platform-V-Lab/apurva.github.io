@@ -217,12 +217,11 @@ section#home {
 
 .bottomline {
   /* flex-grow: 0; */
-  height: 5rem;
   width: 2px;
   background: linear-gradient(to top, #9fffac 50%, #9fffac 100%);
 }
 
-.icons .bottomline {
+.icons {
   height: 100%;
   margin-top: 8%;
   /* background: linear-gradient(
@@ -234,18 +233,7 @@ section#home {
   ); */
 }
 
-.bottomline {
-  flex-grow: 1;
-  width: 2px;
-  bottom: 0;
-  /* background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #f1c30f 50%,
-    #f1c30f 100%,
-    transparent 0%
-  ); */
-}
+/*  */
 
 #home .topline {
   flex-grow: 1;
@@ -455,13 +443,13 @@ section.stay-tuned {
   color: #fff;
 }
 
-.homePage .textColumn {
+/* .homePage .textColumn {
   padding-top: 6rem;
-}
+} */
 
-#Network .textColumn {
+/* #Network .textColumn {
   padding-top: 3rem;
-}
+} */
 
 .headerText {
   margin-top: 5rem;
@@ -1239,7 +1227,6 @@ icon start
 } */
 
 @media (max-width: 1024px) {
-
   .img_padding {
     padding-top: 8rem;
     margin-left: -6rem;
@@ -1495,11 +1482,11 @@ canvas {
   height: 12px;
   border-radius: 100%;
 }
-.carousel-inner {
+/* .carousel-inner {
   min-height: 32rem !important;
   height: 43.75rem;
   overflow-y: auto;
-}
+} */
 
 #testimonialSection .introTitle {
   transform: translateX(0%);
@@ -1531,11 +1518,11 @@ canvas {
   width: 1.1rem;
   height: 1.1rem;
 }
-.carousel-indicators {
+/* .carousel-indicators {
   margin: 0;
   top: auto;
   bottom: -6.25rem;
-}
+} */
 
 .carousel-indicators li {
   width: 1rem;
@@ -1575,7 +1562,7 @@ canvas {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .logoItem img {
   max-width: 80%;
@@ -1602,11 +1589,10 @@ canvas {
   border-radius: 1.25rem;
 }
 
-#contact.flex-row-block {
+/* #contact.flex-row-block {
   height: 25rem;
-}
+} */
 
-#Network.flex-row-block,
 .connections.flex-row-block {
   height: 50rem;
 }
@@ -1620,11 +1606,11 @@ canvas {
   height: 100rem !important;
 } */
 
-@media screen and (min-width: 1900px) {
+/* @media screen and (min-width: 1900px) {
   .homePage .flex-row-block {
     height: 150rem !important;
   }
-}
+} */
 
 @media screen and (max-width: 1240px) {
   .profileItem .img img {
@@ -1641,9 +1627,9 @@ canvas {
     max-width: 12rem;
     /* Your styles for images in this media query */
   }
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 600px !important;
-  }
+  } */
 
   .responsible h2 {
     margin-top: 5rem;
@@ -1676,9 +1662,9 @@ canvas {
     min-height: inherit !important;
   }
 
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 447px !important;
-  }
+  } */
   #testimonialSections.flex-row-block {
     height: 194px !important;
   }
@@ -1836,13 +1822,13 @@ canvas {
   #Stay {
     padding-top: 9rem;
   }
-  .homePage .textColumn {
+  /* .homePage .textColumn {
     padding-top: 7rem;
-  }
+  } */
 
-  #Network .textColumn {
+  /* #Network .textColumn {
     padding-top: 7rem;
-  }
+  } */
 
   .p-half {
     padding: 3.75rem 0;
@@ -1850,7 +1836,7 @@ canvas {
 
   .homePage .flex-row-block {
     padding: 0 10%;
-    height: 145rem;
+    /* height: 145rem; */
   }
 
   #knowledgeone.flex-row-block {
@@ -1927,9 +1913,9 @@ canvas {
     margin: 0;
   }
 
-  .icons .bottomline {
+  /* .icons .bottomline {
     margin-top: 2.7%;
-  }
+  } */
 
   .icon-round-box:nth-child(1)::before {
     width: 165%;
@@ -2091,9 +2077,9 @@ canvas {
     text-align: right;
   }
 
-  .icons .bottomline {
+  /* .icons .bottomline {
     margin-top: 4%;
-  }
+  } */
 
   .icon-round-box p {
     font-size: 1rem;
@@ -2173,11 +2159,11 @@ canvas {
 }
 
 @media screen and (max-width: 414px) {
-  .carousel-indicators {
+  /* .carousel-indicators {
     margin: 0;
     top: auto;
     bottom: -1.25rem;
-  }
+  } */
   /* .mainContainer {
     background: url(../img/Blue\ Tinge\ Mobile\ View\ Homepage\ Bg.png)
       no-repeat right top #000;
@@ -2208,9 +2194,9 @@ canvas {
     right: 20%;
   }
 
-  .icons .bottomline {
+  /* .icons .bottomline {
     margin-top: 8%;
-  }
+  } */
 
   .icon-round-box p {
     font-size: 0.75rem;
@@ -2776,9 +2762,9 @@ ul.social_icon li a {
     height: 40px !important;
   }
 
-  .carousel-inner {
+  /* .carousel-inner {
     height: 112.75rem;
-  }
+  } */
 
   .apurva-explains-card-body {
     text-align: center;
@@ -2903,11 +2889,11 @@ ul.social_icon li a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .carousel-indicators {
+  /* .carousel-indicators {
     margin: 0;
     top: auto;
     bottom: -16.25rem;
-}
+} */
   #Stay {
     padding-top: 9rem;
   }
@@ -3212,9 +3198,9 @@ ul.social_icon li a {
 }
 
 @media (min-width: 375px) and (max-width: 500px) {
-  .homePage .textColumn {
+  /* .homePage .textColumn {
     padding-top: 10rem;
-  }
+  } */
   #eco {
     padding-top: 0rem;
   }
@@ -3229,9 +3215,9 @@ ul.social_icon li a {
     padding: 0px;
   }
 }
-#gifcarousel {
+/* #gifcarousel {
   margin-bottom: -4rem;
-}
+} */
 
 .apurva-explains-card {
   border-radius: 40px;
@@ -3398,9 +3384,9 @@ ul.social_icon li a {
 }
 
 @media (min-width: 760px) and (max-width: 768px) {
-  section#Network {
+  /* section#Network {
     height: 98rem !important;
-  }
+  } */
   section.stay-tuned {
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
@@ -3423,9 +3409,9 @@ ul.social_icon li a {
     height: 60px !important;
   } */
 
-  .carousel-inner {
+  /* .carousel-inner {
     height: 44.75rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 450px) {

@@ -183,54 +183,29 @@ section#experiencepages {
   max-width: 66%;
   height: auto;
 }
-/* .coming {
-  position: absolute;
-  top: 50%; 
-  left: 20%; 
-  transform: translateY(-50%);
-}
-
-.coming img {
-  font-family: Poppins;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 0em;
-  opacity: 0.2;
-} */
-
-.coming img {
-  margin-top: -14rem;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 0em;
-  text-align: right;
-  margin-left: 190px;
-  opacity: 0.2;
-}
 
 .br {
   margin-top: 66px;
 }
+.coming {
+  text-align: -webkit-right;
+  opacity: 0.2;
+}
 
+#reachoutbutton {
+  padding-left: 20px;
+}
+button {
+  margin: 0;
+}
+#experi {
+  padding-left: 8px;
+}
 @media (max-width: 1440px) {
   section#experience {
     height: 98rem !important;
   }
-  /* .coming img {
-    margin-top: -12rem;
-    color: #fff;
-    font-family: Poppins;
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 80px;
-    letter-spacing: 0em;
-    text-align: right;
-    margin-left: 172px;
-  } */
+
   .queryp {
     line-height: 39px;
   }
@@ -240,18 +215,7 @@ section#experiencepages {
   #experi {
     padding: 0% 2% 0% 0%;
   }
-  .coming img {
-    margin-top: -5rem;
-    color: #fff;
-    font-family: Poppins;
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 80px;
-    letter-spacing: 0em;
-    text-align: right;
-    margin-left: 85px;
-    opacity: 0.2;
-  }
+
   section#experience {
     height: 79rem !important;
   }
@@ -260,11 +224,9 @@ section#experiencepages {
     font-size: 30px;
     line-height: 43px;
   }
-
-  /* .coming img {
-    margin-left: 105px;
-    margin-top: -8rem;
-  } */
+  #reachoutbutton {
+    padding-left: 0px;
+  }
   #experiencepages.section {
     padding: 6rem 10%;
     margin-top: 3rem;
@@ -288,7 +250,28 @@ section#experiencepages {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 960px) {
+  .cardrow {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width: 768px) {
+  /* .coming {
+    margin-top: -221px;
+    text-align: -webkit-right;
+    opacity: 0.2;
+  } */
+  .experience p {
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 25px;
+    /* word-break: break-all; */
+  }
+  #experi {
+    padding: 0% 2% 7% 0%;
+  }
   .reachoutbutton {
     margin-bottom: 176px;
   }
@@ -297,27 +280,12 @@ section#experiencepages {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .coming img {
-    margin-top: -9rem;
-    color: #fff;
-    font-family: Poppins;
-    font-size: 70px;
-    font-weight: 600;
-    line-height: 80px;
-    letter-spacing: 0em;
-    text-align: right;
-    margin-left: 380px;
-    opacity: 0.2;
-  }
+
   #experiencepages.section {
     padding: 6rem 2%;
     margin-top: 3rem;
   }
-  /* .coming img {
-    margin-left: 177px;
-    margin-top: -25rem;
-    opacity: 0.2;
-  } */
+
   #experience.section {
     padding: 6rem 0%;
     margin-top: 4rem;
@@ -330,8 +298,8 @@ section#experiencepages {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* margin-right: -15px;
-    margin-left: 160px; */
+    /* margin-right: -15px; */
+    margin-left: 0px;
   }
   .circle_comingsoon {
     margin-top: -28rem;
@@ -353,12 +321,15 @@ section#experiencepages {
 }
 
 @media (max-width: 467px) {
+  /* .coming {
+    margin-top: -277px;
+    text-align: -webkit-right;
+    opacity: 0.2;
+  } */
   .subscribe-button-texthome {
     margin-left: 0px;
   }
-  #experi {
-    padding: 0% 2% 0% 0%;
-  }
+
   section#experience {
     height: 63rem !important;
   }
@@ -412,29 +383,23 @@ section#experiencepages {
     text-align: center;
     font-size: 18px;
   }
-  /* #exprow {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: 61px;
-  } */
-  /* .coming img {
-    margin-left: 213px;
-    margin-top: -21rem;
-  } */
 
-  /* .subscribe-button-texthome {
-    font-size: 10px;
-    font-weight: 400;
-    margin-top: -12px;
-    margin-left: -15px;
-    margin-right: -15px;
-  } */
   .reachoutbutton {
     margin-bottom: 137px;
     text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* .coming {
+    margin-top: -264px;
+    text-align: -webkit-right;
+    opacity: 0.2;
+  } */
+  .experience p {
+    font-size: 20px;
+    text-align: start;
+    /* word-break: break-all; */
+    line-height: 27px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -446,18 +411,6 @@ section#experiencepages {
     /* word-break: break-all; */
   }
 
-  /* .subscribe-button-texthome {
-    font-size: 10px;
-    font-weight: 400;
-    margin-top: -12px;
-    margin-left: -15px;
-    margin-right: -15px;
-  } */
-  /* .coming img {
-    margin-left: 202px;
-    margin-top: -16rem;
-    opacity: 0.2;
-  } */
   #experiencepages.section {
     padding: 6rem 0%;
     margin-top: 3rem;
@@ -575,7 +528,13 @@ section#experiencepages {
   } */
 }
 @media screen and (max-width: 320px) {
-#Apurvaexp-tittle {
-  padding: 0% 2% 0% 3%;
-}
+  #Apurvaexp-tittle {
+    padding: 0% 2% 0% 3%;
+  }
+
+  /* .coming {
+    margin-top: -344px;
+    text-align: -webkit-right;
+    opacity: 0.2;
+  } */
 }

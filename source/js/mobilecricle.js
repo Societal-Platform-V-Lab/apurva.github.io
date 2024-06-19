@@ -4,42 +4,42 @@ const jsonData = [
     title: "Queryable Wisdom",
     subtitle:
       "What would you do differently if you had access to trustworthy, traceable responses from the collective wisdom of your network?",
-    image: "source/img/Iconography/Queryable Wisdom.png",
+    image: "source/img/Iconography/Queryable-Wisdom.png",
     link: "Queryable-Wisdom.html",
   },
   {
     title: "Voice of Communities",
     subtitle:
       "Wouldn’t it be magical if the voices of community become a sense-making infrastructure that guides your mission?",
-    image: "source/img/Iconography/Voice of Communities.png",
+    image: "source/img/Iconography/Voice-of-Communities.png",
     link: "Voice-Communities.html",
   },
   {
     title: "Collaborative Conversations",
     subtitle:
       "Can you imagine all your conversations transforming into valuable and actionable insights?",
-    image: "source/img/Iconography/Power of Co-Creation.png",
+    image: "source/img/Iconography/Power-of-Co-Creation.png",
     link: "Collaborative-Conversations.html",
   },
   {
     title: "Knowledge Curation",
     subtitle:
       "What if you could combine diverse knowledge sources to identify intersectional insights?",
-    image: "source/img/Iconography/Knowledge Curation.png",
+    image: "source/img/Iconography/Knowledge-Curation.png",
     link: "Knowledge-Curation.html",
   },
   {
     title: "Strategic Assessment",
     subtitle:
       "What if assessments could be done at scale and offer deep insights and comprehensive understanding?",
-    image: "source/img/Iconography/360 Degree Impact.png",
+    image: "source/img/Iconography/360-Degree-Impact.png",
     link: "Strategic-Assessment.html",
   },
   {
     title: "Ecosystem Connection",
     subtitle:
       "Can you imagine the possibility of visualising the ecosystem through the lens of problems, solutions, or the communities being served?",
-    image: "source/img/Iconography/Discover Connections.png",
+    image: "source/img/Iconography/Discover-Connections.png",
     link: "Ecosystem-Connections.html",
   },
 ];

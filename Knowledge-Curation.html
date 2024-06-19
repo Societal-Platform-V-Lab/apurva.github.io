@@ -28,62 +28,37 @@
     <link rel="stylesheet" href="source/css/experience.css" />
     <!-- Link to the CSS file for card styling -->
     <style>
-      .coming img {
-        margin-top: -11rem;
-        color: #fff;
-        font-family: Poppins;
-        font-size: 70px;
-        font-weight: 600;
-        line-height: 80px;
-        letter-spacing: 0em;
-        text-align: right;
-        margin-left: 207px;
-      }
-      @media screen and (max-width: 1024px) {
-        .coming img {
-          margin-top: -7rem;
-          color: #fff;
-          font-family: Poppins;
-          font-size: 70px;
-          font-weight: 600;
-          line-height: 80px;
-          letter-spacing: 0em;
-          text-align: right;
-          margin-left: 99px;
-        }
-      }
-      @media screen and (max-width: 425px) {
-        .circle_comingsoon {
-          margin-top: -43rem;
-          height: 350px;
-          width: 350px;
-          background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
-          filter: blur(160px);
+      @media (max-width: 900px) {
+        .experience {
+          position: relative;
+          z-index: 1; /* Ensure the main content is above the pseudo-element */
         }
 
+        .experience::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(source/img/Iconography/Knowledge-Curation.png)
+            no-repeat right;
+          background-size: 300px;
+          opacity: 0.1;
+          z-index: -1; /* Ensure the background is behind the main content */
+        }
         .coming img {
-          margin-left: 72px;
-          margin-top: -27rem;
-          opacity: 0.2;
+          display: none;
         }
       }
-      @media (max-width: 467px) {
-        .coming img {
-          margin-top: -45rem;
-          margin-left: 191px;
+      @media (max-width: 500px) {
+        .experience::before {
+          top: 0;
+          right: -12px;
+          bottom: 203px;
+          left: 0;
+          background-size: 200px;
         }
-        /* #reachout {
-          top: -33.2rem;
-        } */
-      }
-      @media (max-width: 390px) {
-        .coming img {
-          margin-top: -4rem;
-          margin-left: 191px;
-        }
-        /* #reachout {
-          top: -25.2rem;
-        } */
       }
     </style>
 
@@ -146,28 +121,31 @@
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
-            <div class="circle_comingsoon rounded-full"></div>
+            <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
               <img
-                src="source/img/Iconography/Knowledge Curation.png"
+                src="source/img/Iconography/Knowledge-Curation.png"
                 class=""
               />
             </div>
           </div>
-        </div>
-        <div class="reachoutbutton">
-          <button
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-            class="register-button subscribe-button"
-            id="reachout"
-          >
-            <div class="subscribe-button-texthome" style="color: black">
-              Reach Out
+          <div class="col-12" id="reachoutbutton">
+            <div class="reachoutbutton">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
+
         <div class="br"></div>
         <div
           id="myCarousel"

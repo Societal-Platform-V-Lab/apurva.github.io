@@ -70,7 +70,7 @@ button {
   color: #fff;
   border: none;
   padding: 0.625rem 1.25rem;
-  margin: 0 0.3125rem;
+  margin: 0;
   cursor: pointer;
   border-radius: 0.3125rem;
 }
@@ -316,9 +316,9 @@ button {
   }
 }
 @media (max-width: 432px) {
-  section#experiencecriclemobile {
+  /* section#experiencecriclemobile {
     height: 104rem !important;
-}
+} */
   .experienceimg {
       margin-top: -174px;
       text-align: center;

@@ -26,6 +26,40 @@
     <link rel="stylesheet" href="source/css/home.css" />
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
+    <style>
+      @media (max-width: 900px) {
+        .experience {
+          position: relative;
+          z-index: 1; /* Ensure the main content is above the pseudo-element */
+        }
+
+        .experience::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(source/img/Iconography/Voice-of-Communities.png)
+            no-repeat right;
+          background-size: 300px;
+          opacity: 0.1;
+          z-index: -1; /* Ensure the background is behind the main content */
+        }
+        .coming img {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        .experience::before {
+          top: 0;
+          right: -12px;
+          bottom: 113px;
+          left: 0;
+          background-size: 200px;
+        }
+      }
+    </style>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-MPJ848CKT6"
@@ -38,58 +72,6 @@
       gtag("js", new Date());
       gtag("config", "G-MPJ848CKT6");
     </script>
-    <style>
-      /* @media (max-width: 467px) {
-        #reachout {
-          top: -21rem;
-        }
-      }
-      @media (max-width: 390px) {
-        #reachout {
-          top: -19rem;
-        }
-      } */
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .col-lg-7,
-      .col-lg-5 {
-        flex: 1;
-      }
-
-      .col-lg-7 {
-        max-width: 58.333333%;
-      }
-
-      .col-lg-5 {
-        max-width: 41.666667%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-      }
-
-      .circle_comingsoon {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 850px;
-        width: 850px;
-        background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
-        filter: blur(200px);
-      }
-
-      .coming-img {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0.2;
-      }
-    </style>
   </head>
   <body
     data-spy="scroll"
@@ -133,28 +115,29 @@
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0 position-relative">
-            <div class="circle_comingsoon rounded-full"></div>
+            <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
               <img
-                src="source/img/Iconography/Voice of Communities.png"
+                src="source/img/Iconography/Voice-of-Communities.png"
                 class="coming-img"
               />
             </div>
           </div>
-        </div>
-
-        <div class="reachoutbutton">
-          <button
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-            class="register-button subscribe-button"
-            id="reachout"
-          >
-            <div class="subscribe-button-texthome" style="color: black">
-              Reach Out
+          <div class="col-12" id="reachoutbutton">
+            <div class="reachoutbutton">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
 
         <div class="br"></div>

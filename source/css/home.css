@@ -24,9 +24,9 @@
   padding: 1rem 25px 0 25px;
 }
 
-#testimonial-carousel {
+/* #testimonial-carousel {
   height: 350px;
-}
+} */
 
 .featuredheader {
   margin-top: -3rem;
@@ -43,9 +43,9 @@
   font-size: 17px;
   color: #000;
 }
-#whyenables {
+/* #whyenables {
   margin-top: 115px;
-}
+} */
 .enablesgreen {
   color: #9fffac;
   font-family: Poppins;
@@ -455,9 +455,9 @@
   justify-content: center;
 }
 
-.row {
+/* .row {
   margin-bottom: 20px;
-}
+} */
 
 .responsibleDesc {
   margin-bottom: 5rem;
@@ -517,9 +517,9 @@ section#Featured {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#gifcarousel {
+/* #gifcarousel {
   height: 35.75rem;
-}
+} */
 section#responsibleAI,
 section#responsibleAImedium {
   background: linear-gradient(
@@ -527,7 +527,7 @@ section#responsibleAImedium {
     rgba(159, 255, 172, 0.25),
     rgba(159, 255, 172, 0.25)
   );
-  height: 25rem !important;
+  /* height: 25rem !important; */
 }
 
 section#Featured {
@@ -540,9 +540,9 @@ section#why-Apurva {
 section#contacts {
   height: 17rem !important;
 }
-section#Network {
+/* section#Network {
   height: 79rem !important;
-}
+} */
 #newscreen.flex-row-block {
   height: 35rem !important;
 }
@@ -645,9 +645,9 @@ section#contactstest {
   text-align: left;
 }
 
-.ai {
+/* .ai {
   margin-top: 5rem;
-}
+} */
 
 .Our-Values {
   margin-top: 11rem;
@@ -763,7 +763,7 @@ section#contactstest {
   cursor: pointer;
 }
 #prev {
-  margin-left: 746px;
+  margin-left: 655px;
 }
 .carousel-control img {
   width: 20px;
@@ -808,16 +808,24 @@ section#contactstest {
   #newscreen.flex-row-block {
     height: 58rem !important;
   }
-  #gifcarousel {
+  /* #gifcarousel {
     height: 35.75rem;
     min-height: 50rem !important;
+  } */
+}
+#hstp img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 2560px) {
+  #prev {
+    margin-left: 1020px;
   }
 }
-@media screen and (min-width: 1805px) {
+/* @media screen and (min-width: 1805px) {
   #prev {
     margin-left: 666px;
   }
-}
+} */
 @media screen and (max-width: 1805px) {
   .centrescreen {
     margin-top: -50px;
@@ -859,9 +867,9 @@ section#contactstest {
     width: 350px;
     height: 200px;
   }
-  section#Network {
+  /* section#Network {
     height: 65rem !important;
-  }
+  } */
   section#why-Apurva {
     height: 120rem !important;
   }
@@ -917,9 +925,9 @@ section#contactstest {
     font-size: 45px;
   }
 
-  section#responsibleAI {
+  /* section#responsibleAI {
     height: 30rem !important;
-  }
+  } */
 
   .greencontact {
     font-size: 45px;
@@ -939,12 +947,12 @@ section#contactstest {
     font-weight: 600;
   }
 
-  section#Network {
+  /* section#Network {
     height: 65rem !important;
-  }
-  .homePage .flex-row-block {
+  } */
+  /* .homePage .flex-row-block {
     height: 199rem !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 1530px) {
@@ -969,9 +977,9 @@ section#contactstest {
   #prev {
     margin-left: 369px;
   }
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 38rem !important;
-}
+} */
   .gifheading h2 {
     font-weight: 600;
     font-size: 46px;
@@ -996,9 +1004,9 @@ section#contactstest {
   section#why-Apurva {
     height: 130rem !important;
   }
-  section#Network {
+  /* section#Network {
     height: 86rem !important;
-  }
+  } */
   .experience h2,
   .greenexp {
     font-size: 40px;
@@ -1019,10 +1027,10 @@ section#contactstest {
   .subscribe-button-texthome {
     font-size: 22px;
   }
-  #gifcarousel {
+  /* #gifcarousel {
     height: 25.75rem;
     min-height: 26rem !important;
-  }
+  } */
   #newscreen.flex-row-block {
     height: 25rem !important;
   }
@@ -1036,13 +1044,13 @@ section#contactstest {
     font-size: 19px;
   }
 
-  section#responsibleAI {
+  /* section#responsibleAI {
     height: 35rem !important;
-  }
+  } */
 
-  section#Network {
+  /* section#Network {
     height: 55rem !important;
-  }
+  } */
 
   .blackheading {
     font-size: 45px;
@@ -1100,23 +1108,23 @@ section#contactstest {
     height: 120px;
   }
 
-  .ai {
+  /* .ai {
     margin-top: 6rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-indicators {
+  /* .carousel-indicators {
     margin: 0;
     top: auto;
     bottom: -21.25rem;
-}
-  #testimonialSection.flex-row-block {
+  } */
+  /* #testimonialSection.flex-row-block {
     height: 38rem !important;
-}
-  section#Network {
+} */
+  /* section#Network {
     height: 43rem !important;
-  }
+  } */
   section#enables {
     height: 60rem !important;
     background-color: #01051c;
@@ -1143,9 +1151,9 @@ section#contactstest {
   section#newscreen {
     height: 175rem !important;
   }
-  #testimonial-carousel {
+  /* #testimonial-carousel {
     height: 510px;
-  }
+  } */
 
   .featuretext a {
     font-size: 17px;
@@ -1243,10 +1251,10 @@ section#contactstest {
 }
 } */
 @media screen and (max-width: 530px) {
-  #gifcarousel {
+  /* #gifcarousel {
     height: 21.75rem;
     min-height: 9rem !important;
-  }
+  } */
   #newscreen.flex-row-block {
     height: 29rem !important;
   }
@@ -1333,9 +1341,9 @@ section#contactstest {
   .feature {
     margin-top: 9rem;
   }
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 62rem !important;
-  }
+  } */
 
   .experience h2 {
     font-family: Poppins;
@@ -1467,13 +1475,13 @@ section#contactstest {
     height: 49rem !important;
     background-color: #01051c;
   }
-  section#Network {
+  /* section#Network {
     height: 78rem !important;
-  }
+  } */
 
-  section#responsibleAI {
+  /* section#responsibleAI {
     height: 20rem !important;
-  }
+  } */
 
   section#Featured {
     height: 30rem !important;
@@ -1492,9 +1500,9 @@ section#contactstest {
     font-size: 19px;
   }
 
-  .ai {
+  /* .ai {
     margin-top: 2rem;
-  }
+  } */
 
   .responsibleDesc p {
     font-family: Poppins;
@@ -1650,41 +1658,40 @@ section#contactstest {
     margin-top: 15px;
   }
 
-  #testimonial-carousel {
+  /* #testimonial-carousel {
     height: 693px;
-  }
+  } */
 }
 @media screen and (max-width: 400px) {
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 65rem !important;
-  }
+  } */
 }
 @media screen and (max-width: 414px) {
   section#enables {
     height: 51rem !important;
     background-color: #01051c;
   }
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 60rem !important;
-  }
+  } */
 }
 @media screen and (min-width: 425px) {
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 53rem !important;
-  }
+  } */
 }
 
-
 @media screen and (max-width: 390px) {
-  .carousel-indicators {
+  /* .carousel-indicators {
     bottom: -10.25rem;
-  }
+  } */
   .greencontact {
     font-size: 19px;
   }
-  #testimonialSection.flex-row-block {
+  /* #testimonialSection.flex-row-block {
     height: 57rem !important;
-  }
+  } */
   section#enables {
     height: 54rem !important;
     background-color: #01051c;
@@ -1736,9 +1743,9 @@ section#contactstest {
     height: 125px;
   }
 
-  section#responsibleAI {
+  /* section#responsibleAI {
     height: 22rem !important;
-  }
+  } */
 
   .carousel-indicators li {
     width: 10px;
@@ -1778,11 +1785,11 @@ section#contactstest {
   }
 }
 
-@media screen and (min-width: 1900px) {
+/* @media screen and (min-width: 1900px) {
   .homePage .flex-row-block {
     height: 199rem !important;
   }
-}
+} */
 
 @media (max-width: 467px) {
   #whyenables {
@@ -1803,15 +1810,15 @@ section#contactstest {
     height: 42rem !important;
     background-color: #01051c;
   }
-  section#Network {
+  /* section#Network {
     height: 70rem !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 1536px) {
-  section#Network {
+  /* section#Network {
     height: 63rem !important;
-  }
+  } */
 }
 @media screen and (max-width: 390px) {
   .gif img {
@@ -1826,9 +1833,9 @@ section#contactstest {
   #newscreen.flex-row-block {
     height: 24rem !important;
   }
-  section#Network {
+  /* section#Network {
     height: 73rem !important;
-  }
+  } */
 }
 @media screen and (max-width: 320px) {
   section#enables {
@@ -1838,7 +1845,7 @@ section#contactstest {
   .greencontact {
     font-size: 15px;
   }
-  section#Network {
+  /* section#Network {
     height: 65rem !important;
-  }
+  } */
 }

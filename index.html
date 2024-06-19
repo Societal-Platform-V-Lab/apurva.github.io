@@ -59,66 +59,78 @@
     <link rel="stylesheet" href="source/css/home.css" />
     <!-- Add this line inside the <head> section of your HTML document -->
     <style>
-      .break {
-        margin-top: 1rem;
-      }
-      .white-text {
-        color: white;
-      }
-      .typewriter {
-        display: inline-block;
-        overflow: hidden;
-        white-space: pre-line;
-        margin: 0 auto;
-        animation: blink-caret 0.75s step-end infinite;
-      }
-
       .typewriter::after {
         content: "|";
         display: inline-block;
         color: rgb(250, 248, 248);
         margin-left: 3px;
       }
-      .Arrow {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 23%;
-        transform: translateY(-50%);
-        text-align: center;
-        width: 100%;
-      }
+
       .white-word {
         color: white;
       }
-      @media screen and (min-width: 1530px) {
-        .Arrow {
-          top: 19%;
+      .white-text {
+        color: white;
+      }
+      .spacingtop {
+        margin-top: 115px;
+      }
+      .spacingbottom {
+        margin-bottom: 115px;
+      }
+      .restop {
+        margin-top: 72px;
+      }
+      .resbottom {
+        margin-bottom: 72px;
+      }
+      .networkbottom {
+        margin-bottom: 65px;
+      }
+      #testimonial-carousel {
+        height: 510px;
+      }
+      @media screen and (max-width: 768px) {
+        #testimonial-carousel {
+          height: 650px;
         }
       }
+      @media screen and (max-width: 560px) {
+        .restop {
+          margin-top: 42px;
+        }
+        .resbottom {
+          margin-bottom: 42px;
+        }
+        .textColumn {
+          padding-top: 10rem;
+        }
 
-      @media screen and (max-width: 530px) {
+        .spacingtop {
+          margin-top: 55px;
+        }
+        .spacingbottom {
+          margin-bottom: 55px;
+        }
+        .networkbottom {
+          margin-bottom: 0px;
+        }
+        #testimonial-carousel {
+          height: 850px;
+        }
+        .typewriter {
+          text-align: start;
+        }
         .logos .logoItem {
-          margin-right: 5%;
+          margin-right: 4%;
           margin-bottom: 2%;
           max-width: calc(50% - 5%);
           display: flex;
           align-items: center;
           padding: 8px;
         }
-        #networkimg {
-          max-width: 90%;
-        }
-        .typewriter {
-          text-align: start;
-        }
-        .Arrow {
-          top: 13%;
-        }
-      }
-      @media screen and (max-width: 425px) {
-        .Arrow {
-          top: 9%;
+        .logoItem img {
+          max-width: 80%;
         }
       }
     </style>
@@ -215,12 +227,13 @@
         </div>
       </section>
     </div>
-    <section id="enables" class="section stay-tuned flex-row-block">
+    <section id="wholesection" class="section stay-tuned flex-row-block">
       <div class="line-container">
-        <div class="topline"></div>
+        <!-- <div class="topline"></div> -->
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
+        <div class="spacingtop"></div>
         <div class="row" id="whyenables">
           <div class="col-md-4 col-sm-12">
             <div>
@@ -260,123 +273,117 @@
                 comprehensive understanding of both, their communities and the
                 overall ecosystem.
               </p>
-              <br />
-              <br />
             </div>
+          </div>
+        </div>
+        <div class="spacingbottom"></div>
+        <div class="wisdomDefining">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner" id="gifcarousel">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <div class="greencontact d-none d-md-block d-lg-block">
+                        <span class="white-text">Defining</span>
+                        <br />Collective<br />
+                        Wisdom
+                      </div>
+                      <div
+                        class="greencontact d-sm-block d-md-none"
+                        id="blackheading-why"
+                      >
+                        <span class="white-text">Defining</span> Collective
+                        Wisdom
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12" id="gifimg">
+                    <div class="gifimg">
+                      <img
+                        src="source/img/Defining CW.gif"
+                        class="d-block w-100"
+                      />
+                    </div>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                    <div>
+                      <div class="greencontact d-none d-md-block d-lg-block">
+                        <span class="white-text">Designing</span>
+                        <br />Collective<br />
+                        Wisdom
+                      </div>
+                      <div
+                        class="greencontact d-sm-block d-md-none"
+                        id="blackheading-why"
+                      >
+                        <span class="white-text">Designing</span> Collective
+                        Wisdom
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12" id="gifimg">
+                    <div class="gifimg">
+                      <img
+                        src="source/img/Designing CW.gif"
+                        class="d-block w-100"
+                      />
+                    </div>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev"
+              id="Wisdomprev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <img src="source/img/Arrow_3.png" alt="Previous" />
+            </a>
+            <a
+              class="carousel-control-next"
+              id="Wisdomnext"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <img src="source/img/Arrow_1.png" alt="Next" />
+            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="newscreen" class="section stay-tuned flex-row-block">
+    <section id="ecosystem" class="section stay-tuned flex-row-block">
       <div class="line-container">
-        <div class="topline"></div>
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner" id="gifcarousel">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4 col-sm-12">
-                  <div>
-                    <div class="greencontact d-none d-md-block d-lg-block">
-                      <span class="white-text">Defining</span>
-                      <br />Collective<br />
-                      Wisdom
-                    </div>
-                    <div
-                      class="greencontact d-sm-block d-md-none"
-                      id="blackheading-why"
-                    >
-                      <span class="white-text">Defining</span> Collective Wisdom
-                    </div>
-                    <br />
-                  </div>
-                </div>
-                <div class="col-md-8 col-sm-12" id="gifimg">
-                  <div class="gifimg">
-                    <img
-                      src="source/img/Defining CW.gif"
-                      class="d-block w-100"
-                    />
-                  </div>
-                  <br />
-                  <br />
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4 col-sm-12">
-                  <div>
-                    <div class="greencontact d-none d-md-block d-lg-block">
-                      <span class="white-text">Designing</span>
-                      <br />Collective<br />
-                      Wisdom
-                    </div>
-                    <div
-                      class="greencontact d-sm-block d-md-none"
-                      id="blackheading-why"
-                    >
-                      <span class="white-text">Designing</span> Collective
-                      Wisdom
-                    </div>
-                    <br />
-                  </div>
-                </div>
-                <div class="col-md-8 col-sm-12" id="gifimg">
-                  <div class="gifimg">
-                    <img
-                      src="source/img/Designing CW.gif"
-                      class="d-block w-100"
-                    />
-                  </div>
-                  <br />
-                  <br />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a
-            class="carousel-control-prev"
-            id="Wisdomprev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <img src="source/img/Arrow_3.png" alt="Previous" />
-          </a>
-          <a
-            class="carousel-control-next"
-            id="Wisdomnext"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <img src="source/img/Arrow_1.png" alt="Next" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- testimonial Section start -->
-    <section id="contactstest" class="section stay-tuned flex-row-block">
-      <div class="line-container">
-        <div class="topline"></div>
-        <div class="bottomline"></div>
-      </div>
-      <div class="container-fluid">
+        <div class="spacingtop"></div>
         <div class="row align-items-end">
-          <div class="col-lg-7 mb-7 mb-lg-0 textColumn" id="eco">
+          <div class="col-lg-7 mb-7 mb-lg-0" id="eco">
             <div class="introTitle">
               <h2>
                 <span class="greencontact"> Ecosystem Speaks </span>
               </h2>
+              <br />
+              <br />
             </div>
           </div>
         </div>
@@ -387,8 +394,6 @@
       class="section testimonial flex-row-block .flex-row-block"
     >
       <div class="line-container">
-        <div class="topline"></div>
-
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
@@ -809,18 +814,20 @@
         </div>
       </div>
     </section>
-    <section id="contactstest" class="section stay-tuned flex-row-block">
+    <section id="ecosystem" class="section stay-tuned flex-row-block">
       <div class="line-container">
-        <div class="topline"></div>
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
+        <div class="spacingtop"></div>
         <div class="row align-items-end">
-          <div class="col-lg-7 mb-7 mb-lg-0 textColumn" id="eco">
+          <div class="col-lg-7 mb-7 mb-lg-0" id="eco">
             <div class="introTitle">
               <h2>
                 <span class="greencontact"> Featured </span>
               </h2>
+              <br />
+              <br />
             </div>
           </div>
         </div>
@@ -831,8 +838,6 @@
       class="section testimonial flex-row-block .flex-row-block"
     >
       <div class="line-container">
-        <div class="topline"></div>
-
         <div class="bottomline"></div>
       </div>
       <div class="featurecarousel">
@@ -976,10 +981,26 @@
       class="section testimonial flex-row-block .flex-row-block"
     >
       <div class="line-container">
-        <div class="topline"></div>
-
         <div class="bottomline"></div>
       </div>
+      <!-- <a
+      class="carousel-control-prev"
+      id="prev"
+      href="#featureCarousel"
+      role="button"
+      data-slide="prev"
+    >
+      <img src="source/img/Arrow_3.png" alt="Previous" />
+    </a>
+    <a
+      class="carousel-control-next"
+      id="next"
+      href="#featureCarousel"
+      role="button"
+      data-slide="next"
+    >
+      <img src="source/img/Arrow_1.png" alt="Next" />
+    </a> -->
       <div class="carousel-controls">
         <div class="carousel-control" id="prev">
           <img src="source/img/Arrow_3.png" alt="Previous" />
@@ -989,16 +1010,14 @@
         </div>
       </div>
     </section>
-    <!-- testimonial Section end -->
-    <!-- growing network Section start -->
     <section id="Network" class="section growing flex-row-block">
       <div class="line-container">
-        <div class="topline"></div>
         <div class="bottomline purpleLine"></div>
       </div>
       <div class="container-fluid">
+        <div class="spacingtop"></div>
         <div class="row">
-          <div class="col-lg-12 mb-5 mb-lg-0 textColumn">
+          <div class="col-lg-12 mb-5 mb-lg-0">
             <div class="introTitle pb-5">
               <h2>
                 <span class="blackheading">Apurva’s Growing Ecosystem</span>
@@ -1030,14 +1049,14 @@
                 <img
                   src="source/img/Logos/HSTP Logo 1.png"
                   width="100%"
-                  id="networkimg"
+                  id="hstp"
                 />
               </div>
-              <div class="logoItem">
+              <div class="logoItem"id="hstp">
                 <img
                   src="source/img/Logos/IBJ Logo 1.png"
                   width="100%"
-                  id="networkimg"
+                  id="hstp"
                 />
               </div>
               <div class="logoItem">
@@ -1115,6 +1134,7 @@
             </div>
           </div>
         </div>
+        <div class="networkbottom"></div>
       </div>
     </section>
     <!--ResponsibleAI section start-->
@@ -1127,6 +1147,7 @@
       </div>
 
       <div class="container-fluid">
+        <div class="restop"></div>
         <div class="row ai">
           <div class="col-lg-4 order-lg-1 mb-2 mb-lg-0">
             <div class="blackAi d-none d-md-block d-lg-block">
@@ -1162,16 +1183,16 @@
             </div>
           </div>
         </div>
+        <div class="resbottom"></div>
       </div>
     </section>
     <section id="contact" class="section stay-tuned flex-row-block">
       <div class="line-container">
-        <div class="topline"></div>
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
         <div class="row align-items-end">
-          <div class="col-lg-7 mb-7 mb-lg-0 textColumn"id="Stay">
+          <div class="col-lg-7 mb-7 mb-lg-0 textColumn" id="Stay">
             <div class="introTitle">
               <h2>
                 <span class="greencontact"> Stay tuned for more! </span>
@@ -1184,7 +1205,9 @@
               class="register-button subscribe-button"
               id="subscribe"
             >
-              <div class="subscribe-button-texthome">Subscribe for updates</div>
+              <div class="subscribe-button-texthome" id="subtext">
+                Subscribe for updates
+              </div>
             </button>
           </div>
         </div>
@@ -1291,7 +1314,6 @@
         </div>
       </div>
     </div>
-
     <div id="footer"></div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -1342,6 +1364,28 @@
             },
             1000
           ); // Adjust the speed as needed
+        });
+      });
+    </script>
+    <script>
+      // Wait for the document to load
+      window.addEventListener("load", function () {
+        // Get all section elements
+        const sections = document.querySelectorAll(".section");
+
+        // Loop through each section
+        sections.forEach((section) => {
+          // Get the .bottomline element within the current section
+          const bottomline = section.querySelector(".bottomline");
+
+          // If a .bottomline element is found
+          if (bottomline) {
+            // Calculate the section height
+            const sectionHeight = section.offsetHeight;
+
+            // Set the .bottomline height to match the section height
+            bottomline.style.height = `${sectionHeight}px`;
+          }
         });
       });
     </script>

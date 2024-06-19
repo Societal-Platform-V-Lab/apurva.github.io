@@ -28,20 +28,6 @@
     <link rel="stylesheet" href="source/css/experience.css" />
     <style>
       @media screen and (max-width: 425px) {
-        .circle_comingsoon {
-          margin-top: -48rem;
-          height: 350px;
-          width: 350px;
-          background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
-          filter: blur(160px);
-        }
-
-        .coming img {
-          margin-left: 72px;
-          margin-top: -21rem;
-          opacity: 0.2;
-        }
-
         .queryp {
           color: white;
           text-align: center;
@@ -49,7 +35,38 @@
           margin-top: 90px;
         }
       }
+      @media (max-width: 900px) {
+        .experience {
+          position: relative;
+          z-index: 1; /* Ensure the main content is above the pseudo-element */
+        }
 
+        .experience::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(source/img/Iconography/Discover-Connections.png)
+            no-repeat right;
+          background-size: 300px;
+          opacity: 0.1;
+          z-index: -1; /* Ensure the background is behind the main content */
+        }
+        .coming img {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        .experience::before {
+          top: 0;
+          right: -12px;
+          bottom: 113px;
+          left: 0;
+          background-size: 200px;
+        }
+      }
       @media (max-width: 467px) {
         #exprow {
           display: -ms-flexbox;
@@ -58,16 +75,6 @@
           flex-wrap: wrap;
           margin-right: -15px;
           margin-left: 25px;
-        }
-        .coming img {
-          margin-top: -35rem;
-          margin-left: 191px;
-        }
-      }
-      @media (max-width: 390px) {
-        .coming img {
-          margin-top: 3rem;
-          margin-left: 191px;
         }
       }
     </style>
@@ -129,10 +136,10 @@
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
-            <div class="circle_comingsoon rounded-full"></div>
+            <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
               <img
-                src="source/img/Iconography/Discover Connections.png"
+                src="source/img/Iconography/Discover-Connections.png"
                 class=""
               />
             </div>

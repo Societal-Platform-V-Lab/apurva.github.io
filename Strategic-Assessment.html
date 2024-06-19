@@ -27,46 +27,52 @@
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
     <style>
-      @media screen and (max-width: 425px) {
-        .circle_comingsoon {
-          margin-top: -43rem;
-          height: 350px;
-          width: 350px;
-          background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
-          filter: blur(160px);
+      @media (min-width: 992px) {
+        .col-lg-4 {
+          -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+          max-width: 55.333333%;
+        }
+      }
+
+      .card {
+        margin: 15px;
+        flex: 1;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      @media (max-width: 900px) {
+        .experience {
+          position: relative;
+          z-index: 1; /* Ensure the main content is above the pseudo-element */
         }
 
+        .experience::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(source/img/Iconography/360-Degree-Impact.png)
+            no-repeat right;
+          background-size: 300px;
+          opacity: 0.1;
+          z-index: -1; /* Ensure the background is behind the main content */
+        }
         .coming img {
-          margin-left: 72px;
-          margin-top: -21rem;
-          opacity: 0.2;
+          display: none;
         }
       }
-      @media (max-width: 467px) {
-        #exprow {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          margin-right: -15px;
-          margin-left: 25px;
+      @media (max-width: 500px) {
+        .experience::before {
+          top: 0;
+          right: -12px;
+          bottom: 113px;
+          left: 0;
+          background-size: 200px;
         }
-        .coming img {
-          margin-left: 175px;
-          margin-top: -89rem;
-        }
-        /* #reachout {
-          top: -55.2rem;
-        } */
-      }
-      @media (max-width: 390px) {
-        .coming img {
-          margin-top: -25rem;
-          margin-left: 193px;
-        }
-        /* #reachout {
-          top: -39.2rem;
-        } */
       }
     </style>
 
@@ -114,11 +120,11 @@
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7 mb-lg-0"id ="experi">
+          <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Strategic <br /><span class="greenexp">Assessment</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0"id ="experi">
+              <div class="col-lg-10 mb-lg-0" id="experi">
                 <p>
                   Strategic Assessment evaluates the effectiveness of program
                   activities, ensuring they meet real objectives and advance the
@@ -136,29 +142,31 @@
             </div>
           </div>
           <div class="col-lg-5 mb-12 mb-lg-0">
-            <div class="circle_comingsoon rounded-full"></div>
+            <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
-              
               <img
-                src="source/img/Iconography/360 Degree Impact.png"
+                src="source/img/Iconography/360-Degree-Impact.png"
                 class=""
               />
             </div>
           </div>
-        </div>
-        <div class="reachoutbutton">
-          <button
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-            class="register-button subscribe-button"
-            id="reachout"
-          >
-            <div class="subscribe-button-texthome" style="color: black">
-              Reach Out
+          <div class="col-12" id="reachoutbutton">
+            <div class="reachoutbutton">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
+
         <div class="br"></div>
         <div
           id="myCarousel"
@@ -214,7 +222,6 @@
             </div>
           </div>
           <!-- Added justify-content-center -->
-          
         </div>
       </div>
     </section>
