@@ -320,81 +320,17 @@ button {
   }
 }
 
-@media (max-width: 467px) {
-  /* .coming {
-    margin-top: -277px;
-    text-align: -webkit-right;
-    opacity: 0.2;
-  } */
-  .subscribe-button-texthome {
-    margin-left: 0px;
-  }
-
-  section#experience {
-    height: 63rem !important;
-  }
-  #testimonial-carousel {
-    height: 240px;
-  }
-  #experiencepages.section {
-    padding: 6rem 2%;
-    margin-top: 3rem;
-  }
-  section#experiencecricle {
-    height: 115rem !important;
-  }
-  #deep {
-    margin-top: 0px;
-    font-size: 17px;
-    line-height: 34px;
-  }
-  #experience.section {
-    padding: 6rem 2%;
-    margin-top: 4rem;
-  }
-  .experience p {
-    text-align: start;
-    font-size: 23px;
-  }
-  .greenquery {
-    color: #9fffac;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 43px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: 27px;
-  }
-  section#experience {
-    height: 72rem !important;
-  }
-  .experienceimg {
-    margin-top: -147px;
-    text-align: center;
-  }
-  .queryp {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-  }
-  .querytext {
-    color: #9fffac;
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .reachoutbutton {
-    margin-bottom: 137px;
-    text-align: left;
-  }
-}
 @media screen and (max-width: 480px) {
   /* .coming {
     margin-top: -264px;
     text-align: -webkit-right;
     opacity: 0.2;
   } */
+  .subscribe-button-text {
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+}
   .experience p {
     font-size: 20px;
     text-align: start;
@@ -402,6 +338,7 @@ button {
     line-height: 27px;
   }
 }
+
 @media screen and (max-width: 425px) {
   section#experience {
     height: 63rem !important;

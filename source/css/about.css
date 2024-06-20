@@ -67,24 +67,22 @@
 .linkedin-logo {
   margin-top: -52px;
 }
-#nolink {
-  top: 44%;
-}
+
 .img a {
   margin-bottom: 45px;
 }
 .plus-icon {
   position: absolute;
-  top: 41%;
-  left: 37%; /* Adjust the left position as needed */
-  transform: translateY(-50%);
+  /* top: 0%; */
+  left: 37%;
+  transform: translateY(-170%);
   display: inline-block;
-  width: 25px; /* Adjust the size of the circle */
+  width: 25px;
   height: 25px;
-  line-height: 25px; /* Ensure the icon is vertically centered */
+  line-height: 25px;
   text-align: center;
-  background-color: #4b7b60; /* Set the background color of the circle */
-  color: #fff; /* Set the color of the "+" icon */
+  background-color: #4b7b60;
+  color: #fff;
   border-radius: 50%; /* Make the circle shape */
   font-size: 16px; /* Adjust the size of the "+" icon */
 }
@@ -99,10 +97,26 @@
   text-align: center;
   margin-bottom: 1rem;
 }
-
-@media (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
   .plus-icon {
-    left: 40%;
+    left: 42%;
+  }
+}
+@media (max-width: 900px) {
+  .plus-icon {
+    left: 23%;
+  }
+}
+@media (min-width: 370px) and (max-width: 500px) {
+  .plus-icon {
+    left: 37%;
+    transform: translateY(-122%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .plus-icon {
+    left: 30%;
+    transform: translateY(-164%);
   }
 }
 @media (max-width: 1286px) {
@@ -112,13 +126,6 @@
   .profileItem p.designation {
     font-size: 1rem;
   }
-  .plus-icon {
-    top: 43%;
-    left: 34%;
-  }
-  #nolink {
-    top: 46%;
-  }
 }
 @media (max-width: 1024px) {
   .profileItem p.name {
@@ -126,9 +133,6 @@
   }
   .profileItem p.designation {
     font-size: 14px;
-  }
-  #nolink {
-    top: 46%;
   }
 }
 @media (max-width: 768px) {
@@ -138,13 +142,7 @@
   .profileItem p.designation {
     font-size: 11px;
   }
-  .plus-icon {
-    top: 44%;
-    left: 26%;
-  }
-  #nolink {
-    top: 44%;
-  }
+
   .img a {
     display: flex;
     justify-content: center;
@@ -168,20 +166,6 @@
   }
 }
 @media (min-width: 370px) and (max-width: 500px) {
-  #nolink {
-    top: 51%;
-  }
-  #roshni {
-    top: 41%;
-  }
-  #racha {
-    top: 47%;
-  }
-  .plus-icon {
-    position: absolute;
-    top: 44%;
-    left: 32%;
-  }
   .img a {
     margin-top: 31px;
     margin-bottom: 0px;
@@ -203,16 +187,7 @@
   text-align: left;
   /* word-break: break-all; */
 }
-@media (max-width: 412px) {
-  .plus-icon {
-    position: absolute;
-    top: 47%;
-    left: 32%;
-  }
-  #roshni {
-    top: 47%;
-  }
-}
+
 @media (max-width: 467px) {
   .profileItem p.designation {
     color: #49785e;
@@ -257,29 +232,8 @@
     margin-top: 31px;
     margin-bottom: 33px;
   }
-  #nolink,
-  #racha,
-  #roshni {
-    top: 45%;
-  }
-
-  .plus-icon {
-    top: 46%;
-    left: 32%;
-  }
 }
 @media (max-width: 425px) {
-  .plus-icon {
-    position: absolute;
-    top: 50%;
-    left: 32%;
-  }
-  #racha {
-    top: 50%;
-  }
-  #roshni {
-    top: 49%;
-  }
   .profileItem p.designation {
     color: #49785e;
     font-size: 11px;
@@ -312,54 +266,13 @@
     margin-left: 19rem;
   }
 }
-@media (max-width: 390px) {
-  .plus-icon {
-    position: absolute;
-    top: 47%;
-    left: 28%;
-  }
-  #nolink {
-    top: 49%;
-    left: 29%;
-  }
-  #racha,
-  #roshni {
-    top: 46%;
-  }
-}
-@media (max-width: 375px) {
-  #racha {
-    top: 48%;
-  }
-  #roshni {
-    top: 48%;
-  }
-  .plus-icon {
-    position: absolute;
-    top: 48%;
-    left: 28%;
-  }
-}
+
 @media (max-width: 360px) {
   .img a {
     margin-top: 30px;
     margin-bottom: 45px;
   }
-  #nolink {
-    top: 44%;
-    left: 29%;
-  }
-  #racha {
-    top: 40%;
-  }
-  #roshni {
-    top: 40%;
-  }
-  .plus-icon {
-    position: absolute;
-    top: 41%;
-    left: 28%;
-  }
+
   .blackheading,
   .greenteam,
   #founding h2,
@@ -368,27 +281,15 @@
     text-align: left;
   }
 }
-@media (max-width: 480px) {
-  .plus-icon {
-    position: absolute;
-    top: 53%;
-    left: 38%;
+
+@media (max-width: 463px) {
+  #team {
+    margin-bottom: 18px;
   }
-  #racha {
-    top: 51%;
+  .profileItem p.designation {
+    font-size: 11.7px;
   }
-  #roshni {
-    top: 51%;
-}
-}
-@media (max-width: 320px) {
-  .plus-icon {
-    position: absolute;
-    top: 44%;
-    left: 28%;
-  }
-  #racha,
-  #roshni {
-    top: 44%;
+  .profileItem p.name {
+    font-size: 14px;
   }
 }
