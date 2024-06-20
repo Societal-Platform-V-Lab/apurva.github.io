@@ -170,7 +170,9 @@
     margin-top: 31px;
     margin-bottom: 0px;
   }
-
+  .library-content p {
+    line-height: 27px;
+  }
   .apurva-library-title,
   .blackheading,
   .greenteam,
@@ -179,13 +181,6 @@
     font-size: 35px;
     text-align: left;
   }
-}
-.library-content p {
-  font-size: 18px;
-  line-height: 35px;
-  /* margin-top: 30px; */
-  text-align: left;
-  /* word-break: break-all; */
 }
 
 @media (max-width: 467px) {

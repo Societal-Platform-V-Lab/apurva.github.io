@@ -201,6 +201,11 @@ button {
 #experi {
   padding-left: 8px;
 }
+.subscribe-button-texthome {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
 @media (max-width: 1440px) {
   section#experience {
     height: 98rem !important;
@@ -269,8 +274,11 @@ button {
     margin-bottom: 25px;
     /* word-break: break-all; */
   }
+  #Apurvaexp-tittle {
+    padding: 0% 5% 0% 5%;
+}
   #experi {
-    padding: 0% 2% 7% 0%;
+    padding: 0% 2% 7% 2%;
   }
   .reachoutbutton {
     margin-bottom: 176px;
@@ -330,7 +338,7 @@ button {
     color: black;
     font-size: 10px;
     font-weight: 500;
-}
+  }
   .experience p {
     font-size: 20px;
     text-align: start;

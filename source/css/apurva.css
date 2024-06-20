@@ -2630,7 +2630,7 @@ ul.social_icon li a {
 @media (min-width: 320px) and (max-width: 770px) {
   section#libraryabout {
     margin-top: 70px;
-    height: 25rem;
+   
   }
 }
 
@@ -2664,7 +2664,7 @@ ul.social_icon li a {
 
   .library-content p {
     font-size: 18px;
-    line-height: 35px;
+    line-height: 27px;
     text-align: left;
     margin-top: 30px;
     /* word-break: break-all; */
@@ -2779,9 +2779,7 @@ ul.social_icon li a {
     margin-top: 70px;
   }
 
-  section#libraryabout {
-    height: 33rem;
-  }
+  
   .apurva-library-title {
     font-size: 30px;
   }
@@ -3418,15 +3416,11 @@ ul.social_icon li a {
   section#libraryabout {
     padding: 5% 4% 5%;
   }
-  section#libraryabout {
-    height: 29rem;
-  }
+  
 }
 
 @media screen and (max-width: 360px) {
-  section#libraryabout {
-    height: 33rem;
-  }
+ 
   #home {
     min-height: 72px;
   }
