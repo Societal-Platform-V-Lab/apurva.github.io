@@ -51,8 +51,8 @@
           right: 0;
           bottom: 0;
           left: 0;
-          background: url(source/img/Iconography/Power-of-Co-Creation.png) no-repeat
-            right;
+          background: url(source/img/Iconography/Power-of-Co-Creation.png)
+            no-repeat right;
           background-size: 300px;
           opacity: 0.1;
           z-index: -1; /* Ensure the background is behind the main content */
@@ -63,12 +63,12 @@
       }
       @media (max-width: 500px) {
         .experience::before {
-          top: 0;
-          right: -12px;
-          bottom: 113px;
-          left: 0;
-          background-size: 200px;
-        }
+        top: 0;
+        right: -12px;
+        bottom: 305px;
+        left: 0;
+        background-size: 135px;
+    }
       }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -120,7 +120,7 @@
                 Collaborative <br /><span class="greenexp">Conversations</span>
               </h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id="experi">
+              <div class="col-lg-10 mb-lg-0" style="padding: 0">
                 <p>
                   Conversations and dialogues are fundamental to human
                   interaction, forming the bedrock for understanding,
@@ -132,6 +132,19 @@
                   creativity, resolve conflicts, make informed decisions, and
                   empower every voice to be heard and contribute.
                 </p>
+                <div class="reachoutbutton">
+                  <button
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    class="register-button subscribe-button"
+                    id="reachout"
+                  >
+                    <div class="subscribe-button-texthome" style="color: black">
+                      Reach Out
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -144,24 +157,9 @@
               />
             </div>
           </div>
-          <div class="col-12" id="reachoutbutton">
-            <div class="reachoutbutton">
-              <button
-                type="button"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-                class="register-button subscribe-button"
-                id="reachout"
-              >
-                <div class="subscribe-button-texthome" style="color: black">
-                  Reach Out
-                </div>
-              </button>
-            </div>
-          </div>
         </div>
 
-        <div class="br"></div>
+        <div class="expbottomspacing"></div>
         <div
           id="myCarousel"
           class="carousel slide"
@@ -178,16 +176,12 @@
           ></p>
         </div>
 
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
         <p class="queryp">
           With "<span class="querytext">COLLABORATIVE CONVERSATIONS</span>", you
           can gain more from every interaction!
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
 
         <div class="row mt-5 justify-content-center" id="exprow">
           <div class="cardrow">
@@ -246,12 +240,14 @@
           </button>
 
           <div class="modal-body">
-            <form class="Subscribe_for_updates" id="subscriptionForm">
+            <form class="Subscribe_for_updates" id="reachoutForm">
+              <input type="hidden" name="Product-Line" id="Product-Line" value="Collaborative Conversations" />
               <div class="sub-group">
                 <input
                   type="text"
                   class="email-textbox"
-                  id="name"
+                  id="Name"
+                  name="Name"
                   placeholder="Name"
                   required
                   style="color: black; display: block"
@@ -269,7 +265,8 @@
                 <input
                   type="email"
                   class="email-textbox"
-                  id="email"
+                  id="Email"
+                  name="Email"
                   placeholder="Email ID"
                   required
                   style="color: black"
@@ -285,7 +282,8 @@
                 <input
                   type="text"
                   class="email-textbox"
-                  id="Organization"
+                  id="Organisation"
+                  name="Organisation"
                   placeholder="Organization Website Link"
                   required
                   style="color: black"
@@ -300,9 +298,10 @@
               <div class="sub-group">
                 <textarea
                   class="des-textbox"
-                  id="des"
+                  id="Message"
                   placeholder="Describe the problem that “Apurva for Collaborative Conversations” would address for your organization."
                   required
+                  name="Message"
                   style="color: black"
                 ></textarea>
                 <span
@@ -314,10 +313,10 @@
               </div>
 
               <button
-                onclick="validateEmail()"
+                type="submit"
                 class="sub mx-auto d-block"
                 type="button"
-                id="subscribeButton"
+                id="reachoutformButton"
               >
                 <div class="subscribe-button-text">Subscribe for updates</div>
               </button>
@@ -347,6 +346,6 @@
     <script src="source/js/script.js"></script>
     <script src="source/js/particles.js"></script>
     <script src="source/js/typewriter.js"></script>
-    <script src="source/js/contact.js"></script>
+    <script src="source/js/reachout.js"></script>
   </body>
 </html>

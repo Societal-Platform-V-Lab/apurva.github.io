@@ -27,6 +27,79 @@
     <link rel="stylesheet" href="source/css/experience.css" />
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/mobile.css" />
+    <style>
+      .circlecard {
+        width: 18rem;
+        height: 20rem;
+        background-color: rgb(199, 125, 30);
+        text-align: center;
+        position: relative;
+      }
+      .query-btn:hover {
+        color: #01051c;
+      }
+      #mobile {
+        display: none;
+      }
+      .query-btn .Explore {
+        color: black !important;
+      }
+
+      .query-btn:visited .Explore {
+        color: black !important;
+      }
+
+      .query-btn:active .Explore {
+        color: black !important;
+      }
+
+      .explorebtn {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 2px solid #9fffac;
+        color: white;
+        height: auto;
+        width: 8.875rem;
+        border-radius: 0.625rem;
+      }
+
+      .explorebtn:hover {
+        color: white;
+      }
+      .explorebtn.active {
+        background-color: #9fffac;
+        color: #01051c;
+        font-weight: 600;
+      }
+      .cardsimg img {
+        margin-top: 0px;
+        width: 50%;
+        height: auto;
+        opacity: 0.2;
+      }
+      .expbottomspacinssg {
+        margin-bottom: 9rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        #mobile {
+          display: block;
+        }
+        #web {
+          display: none;
+        }
+        .exptopspacing {
+          margin-top: 1rem;
+        }
+        .expbottomspacinssg {
+          margin-bottom: 4.5rem;
+        }
+      }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -89,21 +162,8 @@
             <div class="coming"></div>
           </div>
         </div>
-        <!-- <a href="#deep" class="scroll-down-link" style="text-align: center">
-          <img
-            src="source/img/Arrow 1.png"
-            alt="Client Image"
-            class="img-fluid"
-            id="expArrow"
-          />
-          <p>SCROLL DOWN</p>
-        </a> -->
-        <div class="br"></div>
-        <div class="br"></div>
-        <div class="br"></div>
-        <br />
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
+
         <div
           id="myCarousel"
           class="carousel slide"
@@ -118,28 +178,30 @@
        ]'
           ></p>
         </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <div class="br"></div>
-
-        <div class="experienceimg" id="experienceimg">
+        <div class="expbottomspacing"></div>
+        <div style="text-align: center">
           <img
             src="source/img/Emerging CW.gif"
             alt="Client Image"
             class="img-fluid"
+            id="web"
           />
+        </div>
+        <img
+          src="source/img/Emerging CW GIF Transparent GIF .gif"
+          alt="Client Image"
+          class="img-fluid"
+          id="mobile"
+        />
+        <div class="expbottomspacinssg"></div>
+        <div>
+          <p class="greenquerys" id="deep">Building Blocks of Apurva</p>
         </div>
       </div>
     </section>
-    <div style="background-color: #01051c">
-      <p class="greenquerys" id="deep">Building Blocks of Apurva</p>
-    </div>
+    <section style="background-color: #01051c; text-align: center">
+      <div class="experienceimg"></div>
+    </section>
 
     <section
       id="experiencecricle"
@@ -149,24 +211,26 @@
         <div class="half-circle right" id="cricle">
           <div class="half-circle-inner"></div>
         </div>
+
         <div class="containercricle">
           <div class="cards card-1 active">
             <p>Voice of <span class="cardgreen">Communities</span></p>
-            <img
-              src="source/img/Iconography/Voice-of-Communities.png"
-              id="voice"
-            />
-            <a href="Voice-Communities.html" target="_blank">
-              <button class="explore-btn">
-                <span class="Explore">Explore More</span>
-              </button>
-            </a>
+            <div class="cardsimg">
+              <img src="source/img/Iconography/Voice-of-Communities.png" />
+              <a
+                href="Voice-Communities.html"
+                target="_blank"
+                class="explorebtn"
+              >
+                Explore More
+              </a>
+            </div>
           </div>
           <div class="desc card-1 card-desc">
             <div class="headcard">
               <strong
                 ><p>
-                  Voice of <span class="cardgreen">Communities</span>
+                  <span class="cardgreen">Voice of Communities</span>
                 </p></strong
               >
             </div>
@@ -180,21 +244,24 @@
 
           <div class="cards card-2">
             <p>Knowledge <span class="cardgreen">Curation</span></p>
-            <img
-              src="source/img/Iconography/Knowledge-Curation.png"
-              id="Knowledge"
-            />
-            <a href="Knowledge-Curation.html" target="_blank">
-              <button class="explore-btn">
-                <span class="Explore">Explore More</span>
-              </button>
-            </a>
+            <div class="cardsimg">
+              <img src="source/img/Iconography/Knowledge-Curation.png" />
+              <a
+                href="Knowledge-Curation.html"
+                target="_blank"
+                class="explorebtn"
+              >
+                Explore More
+              </a>
+            </div>
+
+            <a href="Knowledge-Curation.html" target="_blank"> </a>
           </div>
           <div class="desc card-2 card-desc">
             <div class="headcard">
               <strong
                 ><p>
-                  Knowledge <span class="cardgreen">Curation</span>
+                  <span class="cardgreen"> Knowledge Curation</span>
                 </p></strong
               >
             </div>
@@ -208,18 +275,22 @@
 
           <div class="cards card-3">
             <p>Ecosystem<br /><span class="cardgreen">Connections</span></p>
-            <img src="source/img/Iconography/Discover-Connections.png" />
-            <a href="Ecosystem-Connections.html" target="_blank">
-              <button class="explore-btn">
-                <span class="Explore">Explore More</span>
-              </button>
-            </a>
+            <div class="cardsimg">
+              <img src="source/img/Iconography/Discover-Connections.png" />
+              <a
+                href="Ecosystem-Connections.html"
+                target="_blank"
+                class="explorebtn"
+              >
+                Explore More
+              </a>
+            </div>
           </div>
           <div class="desc card-3 card-desc">
             <div class="headcard">
               <strong
                 ><p>
-                  Ecosystem<span class="cardgreen"> Connections</span>
+                  <span class="cardgreen">Ecosystem Connections</span>
                 </p></strong
               >
             </div>
@@ -236,21 +307,22 @@
             <p>
               Collaborative<br /><span class="cardgreen">Conversations</span>
             </p>
-            <img
-              src="source/img/Iconography/Power-of-Co-Creation.png"
-              id="power"
-            />
-            <a href="Collaborative-Conversations.html" target="_blank">
-              <button class="explore-btn">
-                <span class="Explore">Explore More</span>
-              </button>
-            </a>
+            <div class="cardsimg">
+              <img src="source/img/Iconography/Power-of-Co-Creation.png" />
+              <a
+                href="Collaborative-Conversations.html"
+                target="_blank"
+                class="explorebtn"
+              >
+                Explore More
+              </a>
+            </div>
           </div>
           <div class="desc card-4 card-desc">
             <div class="headcard">
               <strong
                 ><p>
-                  Collaborative <span class="cardgreen">Conversations</span>
+                  <span class="cardgreen">Collaborative Conversations</span>
                 </p></strong
               >
             </div>
@@ -264,18 +336,22 @@
 
           <div class="cards card-5">
             <p>Strategic <br /><span class="cardgreen">Assessment</span></p>
-            <img src="source/img/Iconography/360-Degree-Impact.png" />
-            <a href="Strategic-Assessment.html" target="_blank">
-              <button class="explore-btn">
-                <span class="Explore">Explore More</span>
-              </button>
-            </a>
+            <div class="cardsimg">
+              <img src="source/img/Iconography/360-Degree-Impact.png" />
+              <a
+                href="Strategic-Assessment.html"
+                target="_blank"
+                class="explorebtn"
+              >
+                Explore More
+              </a>
+            </div>
           </div>
           <div class="desc card-5 card-desc">
             <div class="headcard">
               <strong
                 ><p>
-                  Strategic <span class="cardgreen">Assessment</span>
+                  <span class="cardgreen"> Strategic Assessment</span>
                 </p></strong
               >
             </div>
@@ -289,26 +365,42 @@
         </div>
       </div>
     </section>
+
     <section
       id="queryable"
-      class="section flex-row-block d-none d-md-none d-lg-block"
+      style="
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+      class="d-none d-md-none d-lg-flex"
     >
-      <div class="Queryable">
-        <p>Queryable <span class="cardquery"> Wisdom</span></p>
+      <div style="background-color: #01051c; width: 31%">
+        <div class="headcard">
+          <strong>
+            <p>
+              <span class="cardgreen">Queryable Wisdom</span>
+            </p>
+          </strong>
+        </div>
+        <div class="cardssstext">
+          <p>
+            What would you do differently if you had access to trustworthy,
+            traceable responses from the collective wisdom of your network?
+          </p>
+        </div>
+
+        <a href="Queryable-Wisdom.html" target="_blank">
+          <button class="query-btn">
+            <span class="Explore">Explore More</span>
+          </button>
+        </a>
       </div>
-      <div class="carddata">
-        <p>
-          What would you do differently if you had access to trustworthy,
-          traceable responses from the collective wisdom of your network?
-        </p>
-      </div>
-      <a href="Queryable-Wisdom.html" target="_blank">
-        <button class="query-btn">
-          <span class="Explore">Explore More</span>
-        </button>
-      </a>
     </section>
 
+    <!-- class="section flex-row-block d-none d-md-none d-lg-block" -->
     <section
       id="experiencecriclemobile"
       class="mobile-section flex-row-block d-lg-none d-sm-block d-md-block"
@@ -316,6 +408,13 @@
     >
       <div class="row"></div>
     </section>
+    <section
+      class="d-lg-none d-sm-block d-md-block"
+      style="background-color: #01051c"
+    >
+      <div class="expbottomspacing"></div>
+    </section>
+
     <div id="footer"></div>
     <!--Animated Cursor-->
     <div id="animated-cursor">
@@ -336,6 +435,7 @@
     <script src="source/js/mobilecricle.js"></script>
     <script src="source/js/typewriter.js"></script>
     <!-- Scroll down script -->
+
     <script>
       document
         .querySelector(".scroll-down-link")

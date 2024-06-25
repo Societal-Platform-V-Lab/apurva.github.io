@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 1rem 25px 0 25px;
+  padding: 3rem 25px 0 25px;
 }
 
 /* #testimonial-carousel {
@@ -29,11 +29,13 @@
 } */
 
 .featuredheader {
+  text-align: center;
   margin-top: -3rem;
   color: #000;
 }
 
 .featuretext {
+  text-align: center;
   margin-top: 1rem;
   color: #000;
   text-decoration: underline;
@@ -96,6 +98,7 @@
   text-align: left;
 }
 .featurecarousel {
+  margin-left: 15px;
   display: flex;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
@@ -209,7 +212,7 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -537,24 +540,24 @@ section#Featured {
 section#why-Apurva {
   height: 142rem !important;
 }
-section#contacts {
+/* section#contacts {
   height: 17rem !important;
-}
+} */
 /* section#Network {
   height: 79rem !important;
 } */
 #newscreen.flex-row-block {
   height: 35rem !important;
 }
-section#contact {
+/* section#contact {
   height: 30rem !important;
-}
+} */
 section#enables {
   height: 47rem !important;
   background-color: #01051c;
 }
 section#contactstest {
-  height: 17rem !important;
+  /* height: 17rem !important; */
   background-color: #01051c;
 }
 section#contactstest {
@@ -743,12 +746,13 @@ section#contactstest {
 }
 
 .carousel-controls {
+  width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .carousel-control {
@@ -761,10 +765,9 @@ section#contactstest {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 0 10px;
 }
-#prev {
-  margin-left: 655px;
-}
+
 .carousel-control img {
   width: 20px;
   height: 20px;
@@ -808,24 +811,11 @@ section#contactstest {
   #newscreen.flex-row-block {
     height: 58rem !important;
   }
-  /* #gifcarousel {
-    height: 35.75rem;
-    min-height: 50rem !important;
-  } */
 }
 #hstp img {
   max-width: 100%;
 }
-@media only screen and (min-width: 2560px) {
-  #prev {
-    margin-left: 1020px;
-  }
-}
-/* @media screen and (min-width: 1805px) {
-  #prev {
-    margin-left: 666px;
-  }
-} */
+
 @media screen and (max-width: 1805px) {
   .centrescreen {
     margin-top: -50px;
@@ -833,9 +823,6 @@ section#contactstest {
     margin-left: 489px;
   }
 
-  #prev {
-    margin-left: 565px;
-  }
   .gif img {
     width: 468px;
     height: 468px;
@@ -860,16 +847,14 @@ section#contactstest {
 }
 @media screen and (max-width: 1779px) {
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .card-what {
     width: 350px;
     height: 200px;
   }
-  /* section#Network {
-    height: 65rem !important;
-  } */
+
   section#why-Apurva {
     height: 120rem !important;
   }
@@ -887,7 +872,7 @@ section#contactstest {
   }
 
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .card {
@@ -921,38 +906,19 @@ section#contactstest {
     align-items: center;
     justify-content: center;
   }
-  .blackAi {
-    font-size: 45px;
-  }
 
-  /* section#responsibleAI {
-    height: 30rem !important;
-  } */
-
-  .greencontact {
-    font-size: 45px;
-  }
   .stay-tuned .register-button {
     width: 29rem;
   }
   .subscribe {
     width: 47.5rem;
   }
-  #prev {
-    margin-left: 506px;
-  }
+
   .stay-tuned .register-button {
     border-color: #9fffac;
     font-size: 29px;
     font-weight: 600;
   }
-
-  /* section#Network {
-    height: 65rem !important;
-  } */
-  /* .homePage .flex-row-block {
-    height: 199rem !important;
-  } */
 }
 
 @media screen and (min-width: 1530px) {
@@ -974,12 +940,6 @@ section#contactstest {
   }
 }
 @media screen and (max-width: 1024px) {
-  #prev {
-    margin-left: 369px;
-  }
-  /* #testimonialSection.flex-row-block {
-    height: 38rem !important;
-} */
   .gifheading h2 {
     font-weight: 600;
     font-size: 46px;
@@ -1004,9 +964,7 @@ section#contactstest {
   section#why-Apurva {
     height: 130rem !important;
   }
-  /* section#Network {
-    height: 86rem !important;
-  } */
+
   .experience h2,
   .greenexp {
     font-size: 40px;
@@ -1021,16 +979,10 @@ section#contactstest {
     height: 8rem;
   }
 
-  .greencontact {
-    font-size: 35px;
-  }
   .subscribe-button-texthome {
     font-size: 22px;
   }
-  /* #gifcarousel {
-    height: 25.75rem;
-    min-height: 26rem !important;
-  } */
+
   #newscreen.flex-row-block {
     height: 25rem !important;
   }
@@ -1044,14 +996,6 @@ section#contactstest {
     font-size: 19px;
   }
 
-  /* section#responsibleAI {
-    height: 35rem !important;
-  } */
-
-  /* section#Network {
-    height: 55rem !important;
-  } */
-
   .blackheading {
     font-size: 45px;
     line-height: 50px;
@@ -1059,11 +1003,6 @@ section#contactstest {
 
   .greenhome {
     font-size: 45px;
-  }
-
-  .blackAi {
-    font-size: 35px;
-    line-height: 50px;
   }
 
   .ourcolor {
@@ -1089,6 +1028,7 @@ section#contactstest {
     height: 99px;
     margin-top: 35px;
     font-size: 35px;
+    line-height: 40px;
   }
 
   .cardtitle {
@@ -1107,24 +1047,9 @@ section#contactstest {
     width: 650px;
     height: 120px;
   }
-
-  /* .ai {
-    margin-top: 6rem;
-  } */
 }
 
 @media screen and (max-width: 768px) {
-  /* .carousel-indicators {
-    margin: 0;
-    top: auto;
-    bottom: -21.25rem;
-  } */
-  /* #testimonialSection.flex-row-block {
-    height: 38rem !important;
-} */
-  /* section#Network {
-    height: 43rem !important;
-  } */
   section#enables {
     height: 60rem !important;
     background-color: #01051c;
@@ -1145,22 +1070,17 @@ section#contactstest {
     margin-bottom: 35px;
     margin-left: -89px;
   }
-  #prev {
-    margin-left: 288px;
-  }
+
   section#newscreen {
     height: 175rem !important;
   }
-  /* #testimonial-carousel {
-    height: 510px;
-  } */
 
   .featuretext a {
     font-size: 17px;
   }
 
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .close {
@@ -1234,44 +1154,54 @@ section#contactstest {
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
-}
-/* @media screen and (max-width: 425px) {
-  .intro-Title h2,
-  .greenintro {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 30px;
-    letter-spacing: 0em;
-  }
-  .intro-Text {
-    width: 299px;
-    height: 40px;
-    font-size: 18px;
+  .greencontact,
+  .blackAi {
+    font-size: 35px;
     line-height: 40px;
+  }
+  .enables p,
+  .responsibleDesc p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
-} */
+
 @media screen and (max-width: 530px) {
-  /* #gifcarousel {
-    height: 21.75rem;
-    min-height: 9rem !important;
-  } */
+  .featurecarousel {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+  }
+  .featurecards {
+    height: 352px;
+  }
+  .featurehead img {
+    width: 6.875rem;
+  }
+  .featurehead {
+    height: 158px;
+  }
+  .featurebody {
+    height: 191px;
+  }
+  .featuretext a {
+    font-size: 13px;
+    color: #000;
+  }
+  .featuredheader h5 {
+    font-size: 15px;
+  }
+
   #newscreen.flex-row-block {
     height: 29rem !important;
   }
-  .enables p {
-    font-size: 14px;
-  }
-  section#contactstest {
-    margin-top: -21px;
-  }
+
   .centrescreen {
     margin-top: 7px;
     text-align: center;
     margin-left: 118px;
   }
-  #prev {
-    margin-left: 123px;
-  }
+
   .close {
     margin-left: 13rem;
   }
@@ -1311,14 +1241,27 @@ section#contactstest {
   }
 
   .sub {
-    text-align: center;
     width: 160px;
     height: 40px;
     border-radius: 1rem;
     background-color: #9fffac;
     border: 2px solid #9fffac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
   }
-
+  
+  .subscribe-button-text {
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+  }
   .modal-body {
     position: relative;
     -ms-flex: 1 1 auto;
@@ -1341,9 +1284,6 @@ section#contactstest {
   .feature {
     margin-top: 9rem;
   }
-  /* #testimonialSection.flex-row-block {
-    height: 62rem !important;
-  } */
 
   .experience h2 {
     font-family: Poppins;
@@ -1475,13 +1415,6 @@ section#contactstest {
     height: 49rem !important;
     background-color: #01051c;
   }
-  /* section#Network {
-    height: 78rem !important;
-  } */
-
-  /* section#responsibleAI {
-    height: 20rem !important;
-  } */
 
   section#Featured {
     height: 30rem !important;
@@ -1491,26 +1424,12 @@ section#contactstest {
     font-size: 19px;
   }
 
-  .blackAi {
-    font-size: 19px;
-    margin-bottom: 1rem;
-  }
-
   .greenhome {
     font-size: 19px;
   }
 
-  /* .ai {
-    margin-top: 2rem;
-  } */
-
-  .responsibleDesc p {
-    font-family: Poppins;
-    font-size: 13px;
-    line-height: 22px;
-  }
-
   .responsibleDesc {
+    margin-top: 10px;
     margin-bottom: 1rem;
   }
 
@@ -1541,7 +1460,7 @@ section#contactstest {
 
   .intro-Title h2,
   .greenintro {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
@@ -1553,10 +1472,6 @@ section#contactstest {
 
     font-size: 18px;
     line-height: 40px;
-  }
-
-  .greencontact {
-    font-size: 20px;
   }
 
   .subscribe {
@@ -1625,7 +1540,7 @@ section#contactstest {
   .stay-tuned .register-button {
     width: 15rem;
     height: 35px;
-    margin-top: 5px;
+    margin-top: 25px;
     border-radius: 10px;
 
     display: flex;
@@ -1645,63 +1560,33 @@ section#contactstest {
     font-size: 12px;
   }
 
-  .featuretext a {
+  /* .featuretext a {
     font-size: 17px;
     color: #000;
-  }
-
+  } */
   .featurebody {
-    padding: 1rem;
+    padding: 4rem 13px 0px 13px;
   }
 
   .carousel-controls {
     margin-top: 15px;
   }
-
-  /* #testimonial-carousel {
-    height: 693px;
-  } */
 }
 @media screen and (max-width: 400px) {
-  /* #testimonialSection.flex-row-block {
-    height: 65rem !important;
-  } */
 }
 @media screen and (max-width: 414px) {
   section#enables {
     height: 51rem !important;
     background-color: #01051c;
   }
-  /* #testimonialSection.flex-row-block {
-    height: 60rem !important;
-  } */
-}
-@media screen and (min-width: 425px) {
-  /* #testimonialSection.flex-row-block {
-    height: 53rem !important;
-  } */
 }
 
 @media screen and (max-width: 390px) {
-  /* .carousel-indicators {
-    bottom: -10.25rem;
-  } */
-  .greencontact {
-    font-size: 19px;
-  }
-  /* #testimonialSection.flex-row-block {
-    height: 57rem !important;
-  } */
   section#enables {
     height: 54rem !important;
     background-color: #01051c;
   }
-  #prev {
-    margin-left: 108px;
-  }
-  section#newscreen {
-    height: 87rem !important;
-  }
+
   .greenintrogreen {
     font-size: 15px;
   }
@@ -1716,9 +1601,9 @@ section#contactstest {
   }
 }
 @media screen and (max-width: 386px) {
-  .homePage .textColumn {
+  /* .homePage .textColumn {
     padding-top: 10rem;
-  }
+  } */
 
   .stay-tuned .register-button {
     width: 15rem;
@@ -1742,10 +1627,6 @@ section#contactstest {
     width: 140px;
     height: 125px;
   }
-
-  /* section#responsibleAI {
-    height: 22rem !important;
-  } */
 
   .carousel-indicators li {
     width: 10px;
@@ -1777,27 +1658,18 @@ section#contactstest {
     height: 59rem !important;
     background-color: #01051c;
   }
-  .greencontact {
-    font-size: 17px;
-  }
   #eco {
     padding-top: 0rem;
   }
 }
 
-/* @media screen and (min-width: 1900px) {
-  .homePage .flex-row-block {
-    height: 199rem !important;
-  }
-} */
-
 @media (max-width: 467px) {
   #whyenables {
     margin-top: 33px;
   }
-  section#contactstest {
+  /* section#contactstest {
     height: 7rem !important;
-  }
+  } */
   /* #testimonialSection.flex-row-block {
     height: 53rem !important;
   } */
@@ -1810,16 +1682,8 @@ section#contactstest {
     height: 42rem !important;
     background-color: #01051c;
   }
-  /* section#Network {
-    height: 70rem !important;
-  } */
 }
 
-@media screen and (min-width: 1536px) {
-  /* section#Network {
-    height: 63rem !important;
-  } */
-}
 @media screen and (max-width: 390px) {
   .gif img {
     margin-left: -104px;
@@ -1828,24 +1692,14 @@ section#contactstest {
   }
   .centrescreen h2 {
     margin-top: 49px;
-    /* margin-left: 204px; */
   }
   #newscreen.flex-row-block {
     height: 24rem !important;
   }
-  /* section#Network {
-    height: 73rem !important;
-  } */
 }
 @media screen and (max-width: 320px) {
   section#enables {
     height: 66.9rem !important;
     background-color: #01051c;
   }
-  .greencontact {
-    font-size: 15px;
-  }
-  /* section#Network {
-    height: 65rem !important;
-  } */
 }

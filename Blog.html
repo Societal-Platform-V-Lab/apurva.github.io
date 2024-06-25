@@ -26,14 +26,35 @@
     <link rel="stylesheet" href="source/css/apurva.css" />
     <link rel="stylesheet" href="source/css/fotter.css" />
     <style>
+      .apurva-library-title {
+        text-align: left;
+        color: #9fffac;
+        font-family: Poppins;
+        font-size: 55px;
+        line-height: 60px;
+        font-style: normal;
+        font-weight: 700;
+      }
       @media (max-width: 768px) {
         .card-title {
           line-height: 20px;
           margin-bottom: 50px;
           margin-top: 20px;
         }
-        .library-content p {
-          line-height: 27px;
+      }
+      @media screen and (max-width: 900px) {
+        .apurva-library-title {
+          text-align: left;
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        section#white-background-section {
+          padding: 5% 7.4% 5%;
+        }
+        .card-deck {
+          padding: 0% 1.4% 0%;
         }
       }
     </style>

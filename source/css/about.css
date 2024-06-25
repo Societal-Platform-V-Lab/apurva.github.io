@@ -3,9 +3,25 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
+}
+.apurva-library-title {
+  text-align: left;
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 55px;
+  line-height: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+.green-text {
+  color: #49785e;
+}
+.teamnames {
+  text-align: center;
+  margin-bottom: 43px;
 }
 
 .names {
@@ -21,10 +37,10 @@
   font-size: 55px;
   font-family: Poppins;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 60px;
 }
 #founding {
-  margin-top: 27px;
+  margin-top: 28px;
   margin-bottom: -25px;
 }
 #founding h2 {
@@ -34,7 +50,7 @@
   text-align: left;
   max-width: 100%;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 60px;
   font-weight: 700;
 }
 #team {
@@ -50,6 +66,7 @@
 .button {
   margin-right: 1rem;
 }
+
 .close {
   color: #000;
   text-align: right;
@@ -64,12 +81,17 @@
   flex-direction: column;
   align-items: center;
 }
-.linkedin-logo {
-  margin-top: -52px;
+.library-content p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
 }
-
-.img a {
-  margin-bottom: 45px;
+.linkedin-logo {
+  margin-top: 10px;
 }
 .plus-icon {
   position: absolute;
@@ -95,30 +117,16 @@
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1rem;
 }
-@media only screen and (min-width: 2560px) {
-  .plus-icon {
-    left: 42%;
+
+@media screen and (max-width: 900px) {
+  section#about {
+    padding: 77px 5%;
+    position: relative;
+    margin-top: 2rem;
   }
 }
-@media (max-width: 900px) {
-  .plus-icon {
-    left: 23%;
-  }
-}
-@media (min-width: 370px) and (max-width: 500px) {
-  .plus-icon {
-    left: 37%;
-    transform: translateY(-122%);
-  }
-}
-@media only screen and (max-width: 400px) {
-  .plus-icon {
-    left: 30%;
-    transform: translateY(-164%);
-  }
-}
+
 @media (max-width: 1286px) {
   .profileItem p.name {
     font-size: 1.3rem;
@@ -140,70 +148,58 @@
     font-size: 14px;
   }
   .profileItem p.designation {
-    font-size: 11px;
-  }
-
-  .img a {
-    display: flex;
-    justify-content: center;
-    margin-top: 41px;
+    font-size: 18px;
   }
 }
-@media (min-width: 768px) {
-  .apurva-library-title {
-    font-size: 47px;
-    /* text-align: center; */
-  }
-  .blackheading {
-    font-size: 47px;
-  }
-  .greenteam {
-    font-size: 47px;
-  }
 
-  #founding h2 {
-    font-size: 47px;
+@media (max-width: 600px) {
+  .names {
+    font-size: 1rem;
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
   }
-}
-@media (min-width: 370px) and (max-width: 500px) {
-  .img a {
-    margin-top: 31px;
-    margin-bottom: 0px;
+  .designation {
+    color: #49785e;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+  .profileItem p.name {
+    font-size: 18px;
   }
   .library-content p {
-    line-height: 27px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
   }
-  .apurva-library-title,
+
+  .apurva-library-title {
+    text-align: left;
+    font-size: 35px;
+    line-height: 40px;
+  }
   .blackheading,
-  .greenteam,
   #founding h2,
   .greenteam {
     font-size: 35px;
-    text-align: left;
+    line-height: 40px;
   }
 }
-
 @media (max-width: 467px) {
-  .profileItem p.designation {
-    color: #49785e;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-  }
   .modal-body {
     text-align: start;
   }
   .img p {
     width: 206px;
-  }
-  .profileItem p.name {
-    font-size: 18px;
-    color: #1c1c1c;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    text-align: center;
   }
 
   .close {
@@ -216,39 +212,13 @@
     margin-left: 19rem;
   }
 }
-@media (max-width: 430px) {
-  .profileItem p.name {
-    font-size: 14px;
-  }
-  .profileItem p.designation {
-    font-size: 11px;
-  }
-  .img a {
-    margin-top: 31px;
-    margin-bottom: 33px;
-  }
-}
+
 @media (max-width: 425px) {
-  .profileItem p.designation {
-    color: #49785e;
-    font-size: 11px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-  }
   .modal-body {
     text-align: start;
   }
   .img p {
     width: 200px;
-  }
-  .profileItem p.name {
-    font-size: 14px;
-    color: #1c1c1c;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    text-align: center;
   }
 
   .close {
@@ -263,16 +233,12 @@
 }
 
 @media (max-width: 360px) {
-  .img a {
-    margin-top: 30px;
-    margin-bottom: 45px;
-  }
-
   .blackheading,
   .greenteam,
   #founding h2,
   .greenteam {
     font-size: 35px;
+    line-height: 40px;
     text-align: left;
   }
 }
@@ -281,10 +247,40 @@
   #team {
     margin-bottom: 18px;
   }
-  .profileItem p.designation {
-    font-size: 11.7px;
+}
+@media (max-width: 390px) {
+  .close {
+    color: #000;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 17rem;
   }
-  .profileItem p.name {
-    font-size: 14px;
+}
+@media (max-width: 320px) {
+  .names {
+    font-size: 12px;
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .designation {
+    color: #49785e;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+  }
+  .close {
+    color: #000;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 12rem;
   }
 }

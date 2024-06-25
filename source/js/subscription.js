@@ -22,10 +22,10 @@ function sendSubscription(name, email, organization, description) {
 function showThankYouMessage() {
   thankYouMessage.style.display = "inline";
   // Automatically close the modal after 5 seconds
-  setTimeout(function () {
-    $("#exampleModalCenter").modal("hide"); // Close the modal
-    location.reload();
-  }, 5000);
+  // setTimeout(function () {
+  //   $("#exampleModalCenter").modal("hide"); // Close the modal
+  //   location.reload();
+  // }, 5000);
 }
 
 subscribeButton.addEventListener("click", function () {

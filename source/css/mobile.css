@@ -1,12 +1,30 @@
 /* General styles for the mobile card */
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: 0px;
+.newrxp {
+  height: 37px;
+  width: 112px;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-flex; /* Use inline-flex to maintain inline behavior while enabling flex properties */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  background-color: #9fffac; /* Green background */
+  color: rgb(36, 35, 35);
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  border: none;
+  cursor: pointer;
 }
+
+.newrxp:hover {
+  background-color: #8ef0a1; /* Slightly darker green on hover */
+  color: rgb(36, 35, 35);
+  text-decoration: none;
+}
+
 img {
   max-width: 70%;
 }
@@ -14,7 +32,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
 }
 #mobiletext {
   position: relative;
@@ -28,8 +46,11 @@ img {
 }
 
 .mobile-card-img {
-  width: 100%;
+  width: 25%;
+  /* width: 100%; */
   height: auto;
+  margin-top: 24px;
+  margin-bottom: 10px;
   opacity: 0.2;
 }
 
@@ -68,6 +89,7 @@ img {
 }
 
 .mobile-section .blog {
+  text-align: center;
   display: block;
   width: 100%; /* Adjust as needed */
 }
@@ -77,23 +99,19 @@ img {
 .green-border {
   border-color: #49785e !important;
 }
-
+.cardBlockstitle {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
 @media (max-width: 768px) {
-  .card-title {
-    font-size: 30px;
-    margin-bottom: 53px;
-    margin-top: 53px;
-  }
   .cardtext {
-    /* margin-left: 18px; */
-    color: #fff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 40px;
-    hyphens: auto;
-    word-break: auto-phrase;
+    color: white;
+    /* text-align: left; */
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 55px;
   }
   /* section#experiencecriclemobile {
     height: 142rem !important;
@@ -128,7 +146,7 @@ img {
     text-align: center;
     width: 57px;
     border: 1px solid #000;
-    border-radius: 13px;
+    border-radius: 10px;
     background: #9fffac;
     color: #000;
     padding: 5px 10px;
@@ -143,21 +161,17 @@ img {
   } */
   .cardtext {
     color: white;
-    text-align: left;
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: 15px;
+    /* text-align: left; */
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 55px;
   }
 
   #mobiletext {
     position: relative;
     width: 100%;
     padding-right: 15px;
-  }
-  .card-title {
-    font-size: 15px;
-    margin-bottom: 0px;
-    margin-top: 0px;
   }
 }
 @media (max-width: 390px) {
@@ -167,57 +181,24 @@ img {
     padding-right: 15px;
     padding-left: 0px;
   }
-  /* section#experiencecriclemobile {
-    height: 94rem !important;
-  } */
+
 }
 @media (max-width: 480px) {
-  section#experience {
-    height: 67rem !important;
-  }
+  
   #deep {
     margin-top: 0px;
-    font-size: 17px;
-    line-height: 34px;
+    font-size: 25px;
+    line-height: 40px;
   }
-  .card-title {
-    font-size: 15px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  /* section#experiencecriclemobile {
-    height: 90rem !important;
-  } */
+
+ 
   .cardtext {
     color: white;
-    text-align: left;
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: 15px;
+    /* text-align: left; */
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 55px;
   }
 }
-@media (max-width: 432px) {
-  /* section#experiencecriclemobile {
-    height: 91rem !important;
-  } */
-}
 
-@media (max-width: 390px) {
-  /* section#experiencecriclemobile {
-    height: 94rem !important;
-  } */
-}
-@media (max-width: 375px) {
-  /* section#experiencecriclemobile {
-    height: 96rem !important;
-  } */
-}
-
-@media (max-width: 320px) {
-  section#experience {
-    height: 60rem !important;
-  }
-  /* section#experiencecriclemobile {
-    height: 100rem !important;
-  } */
-}

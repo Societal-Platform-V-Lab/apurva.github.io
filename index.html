@@ -59,6 +59,21 @@
     <link rel="stylesheet" href="source/css/home.css" />
     <!-- Add this line inside the <head> section of your HTML document -->
     <style>
+      #wisdomcar {
+        display: inline-block;
+        margin: 0 10px; /* Adjust spacing as needed */
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: inline-block;
+      }
+
+      .carousel-control-prev img,
+      .carousel-control-next img {
+        width: 40px;
+        height: auto;
+      }
       .typewriter::after {
         content: "|";
         display: inline-block;
@@ -66,6 +81,9 @@
         margin-left: 3px;
       }
 
+      .Network {
+        margin-left: 35px;
+      }
       .white-word {
         color: white;
       }
@@ -74,6 +92,12 @@
       }
       .spacingtop {
         margin-top: 115px;
+      }
+      .ecosystemtop {
+        margin-top: 90px;
+      }
+      .arrowbottom {
+        margin-bottom: 168px;
       }
       .spacingbottom {
         margin-bottom: 115px;
@@ -87,25 +111,70 @@
       .networkbottom {
         margin-bottom: 65px;
       }
-      #testimonial-carousel {
-        height: 510px;
+      #aicol {
+        display: flex;
+      }
+      #resDec {
+        padding: 0 0 0 50px;
+      }
+      .readmore {
+        padding: 0 0 0 50px;
       }
       @media screen and (max-width: 768px) {
-        #testimonial-carousel {
-          height: 650px;
+        #aicol {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        #resDec {
+          padding: 0 0 0 0;
+        }
+        .readmore {
+          padding: 0 0 0 0;
         }
       }
       @media screen and (max-width: 560px) {
+        #Wisdomprev,
+        #Wisdomnext {
+          margin: 0px;
+        }
+        .carousel-control-prev img,
+        .carousel-control-next img {
+          width: 20px;
+          height: auto;
+        }
+        .intro-Title h2,
+        .greenintro {
+          font-size: 35px;
+          font-weight: 600;
+          line-height: 52px;
+          letter-spacing: 0em;
+        }
+        .Network {
+          margin-left: 0px;
+        }
+        .introTitle p {
+          padding: 0px 25px 0px 25px;
+        }
         .restop {
           margin-top: 42px;
+        }
+        .enables {
+          margin-top: 10px;
+        }
+        .arrowbottom {
+          margin-bottom: 100px;
+        }
+        .ecosystemtop {
+          margin-top: 32px;
         }
         .resbottom {
           margin-bottom: 42px;
         }
-        .textColumn {
-          padding-top: 10rem;
-        }
 
+        .gifimg {
+          margin-top: 10px;
+          width: 70% !important;
+        }
         .spacingtop {
           margin-top: 55px;
         }
@@ -114,9 +183,6 @@
         }
         .networkbottom {
           margin-bottom: 0px;
-        }
-        #testimonial-carousel {
-          height: 850px;
         }
         .typewriter {
           text-align: start;
@@ -191,35 +257,27 @@
                 <div class="circle"></div>
                 <div class="topline"></div>
               </div>
-              <div class="intro-block flex-row-block">
-                <div id="js-rotating01">
-                  <div class="intro-Title">
-                    <div
-                      id="myCarousel "
-                      class="intro-Title"
-                      data-ride="carousel"
-                      data-interval="4000"
-                    >
-                      <p
-                        class="greenintro typewriter"
-                        id="typewriter-text"
-                        data-texts='[
-                        "Create, Nurture  <span class=\"white-word\">and</span> Sustain <span class=\"white-word\">the</span> Collective Wisdom  <span class=\"white-word\">of your ecosystem</span>"
-                      ]'
-                      ></p>
+              <div class="container-fluid">
+                <div class="intro-block flex-row-block">
+                  <div id="js-rotating01">
+                    <div class="intro-Title">
+                      <div
+                        id="myCarousel "
+                        class="intro-Title"
+                        data-ride="carousel"
+                        data-interval="4000"
+                      >
+                        <p
+                          class="greenintro typewriter"
+                          id="typewriter-text"
+                          data-texts='[
+                          "Create, Nurture  <span class=\"white-word\">and</span> Sustain <span class=\"white-word\">the</span> Collective Wisdom  <span class=\"white-word\">of your ecosystem</span>"
+                        ]'
+                        ></p>
+                      </div>
+                      <div class="break"></div>
                     </div>
-                    <div class="break"></div>
                   </div>
-                  <!-- <div class="Arrow">
-                    <a href="#newscreen" class="scroll-down-link">
-                      <img
-                        src="source/img/Arrow 1.png"
-                        alt="Client Image"
-                        class="img-fluid"
-                      />
-                      <p>SCROLL DOWN</p>
-                    </a>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -229,7 +287,6 @@
     </div>
     <section id="wholesection" class="section stay-tuned flex-row-block">
       <div class="line-container">
-        <!-- <div class="topline"></div> -->
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
@@ -276,7 +333,14 @@
             </div>
           </div>
         </div>
-        <div class="spacingbottom"></div>
+      </div>
+    </section>
+    <section id="" class="section stay-tuned flex-row-block">
+      <div class="line-container">
+        <div class="bottomline"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="spacingtop"></div>
         <div class="wisdomDefining">
           <div
             id="carouselExampleIndicators"
@@ -347,25 +411,44 @@
                 </div>
               </div>
             </div>
-
-            <a
-              class="carousel-control-prev"
-              id="Wisdomprev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <img src="source/img/Arrow_3.png" alt="Previous" />
-            </a>
-            <a
-              class="carousel-control-next"
-              id="Wisdomnext"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <img src="source/img/Arrow_1.png" alt="Next" />
-            </a>
+            <div class="carousel-control" id="wisdomcar">
+              <a
+                class="carousel-control-prev"
+                id="Wisdomprev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <img src="source/img/Arrow_3.png" alt="Previous" />
+              </a>
+            </div>
+            <div class="carousel-control" id="wisdomcar">
+              <a
+                class="carousel-control-next"
+                id="Wisdomnext"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <img src="source/img/Arrow_1.png" alt="Next" />
+              </a>
+            </div>
+            <!-- <div class="carousel-controls">
+              <div
+                class="carousel-control"
+                href="#carouselExampleIndicators"
+                id="prevButton"
+              >
+                <img src="source/img/Arrow_3.png" alt="Previous" />
+              </div>
+              <div
+                class="carousel-control"
+                href="#carouselExampleIndicators"
+                id="nextButton"
+              >
+                <img src="source/img/Arrow_1.png" alt="Next" />
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -389,14 +472,8 @@
         </div>
       </div>
     </section>
-    <section
-      id="testimonialSection"
-      class="section testimonial flex-row-block .flex-row-block"
-    >
-      <div class="line-container">
-        <div class="bottomline"></div>
-      </div>
-      <div class="container-fluid">
+    <section id="testimonialSection" class="section stay-tuned flex-row-block">
+      <div class="container-fluid" style="border-left: 2px solid #9fffac">
         <div class="Network speaks">
           <div
             id="testimonial-carousel"
@@ -490,6 +567,7 @@
                       <p class="content pb-5">
                         <span class="green-network-names"> Rachita Misra </span>
                         <br />Associate Director- Knowledge and Advocacy, SELCO
+                        Foundation
                       </p>
                     </div>
                   </div>
@@ -520,7 +598,7 @@
                         creating knowledge easy and accessible. We believe that
                         the Queryable Insights feature in Apurva can prove a
                         game-changer as far as knowledge management is
-                        concerned.”.
+                        concerned”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
@@ -587,7 +665,7 @@
                         loss platform in terms of expressing sentiments of local
                         populations afflicted by disasters and conveying their
                         wisdom for solutions that are most appropriate for
-                        them.”.
+                        them”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
@@ -626,7 +704,7 @@
                         ECHO are very excited about the potential of combining
                         the knowledge of the trusted human network of Project
                         ECHO with Apurva acting as an AI amplifier to scale the
-                        ECHO movement multi-fold ”.
+                        ECHO movement multi-fold”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
@@ -727,7 +805,7 @@
                         valuable. All these insights became a digital brain
                         available for the organization and their networks to
                         leverage. Excited about the innovation potential Apurva
-                        holds for the development sector at large ”.
+                        holds for the development sector at large”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
@@ -759,7 +837,7 @@
                         “I am thrilled with the results from using Apurva! They
                         have captured the essence of what we were trying to
                         achieve. I can't wait to use it again and help
-                        governments leverage its capabilities.”.
+                        governments leverage its capabilities”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
@@ -797,13 +875,13 @@
                         one stop library or a knowledge centre for the
                         development sector so we stop reinventing, which is one
                         of the most frustrating for me personally from the last
-                        30 years.”.
+                        30 years”.
                       </p>
                       <div class="dropdown-divider"></div>
                       <p class="content pb-5">
                         <span class="green-network-names">Harish Hande</span>
                         <br />
-                        Co-founder, SELCO
+                        Co-founder, SELCO Foundation
                       </p>
                     </div>
                   </div>
@@ -977,30 +1055,13 @@
       </div>
     </section>
     <section
-      id="testimonialSections"
-      class="section testimonial flex-row-block .flex-row-block"
+      id="testimonialSectionfeature"
+      class="section flex-row-block .flex-row-block"
     >
       <div class="line-container">
         <div class="bottomline"></div>
       </div>
-      <!-- <a
-      class="carousel-control-prev"
-      id="prev"
-      href="#featureCarousel"
-      role="button"
-      data-slide="prev"
-    >
-      <img src="source/img/Arrow_3.png" alt="Previous" />
-    </a>
-    <a
-      class="carousel-control-next"
-      id="next"
-      href="#featureCarousel"
-      role="button"
-      data-slide="next"
-    >
-      <img src="source/img/Arrow_1.png" alt="Next" />
-    </a> -->
+
       <div class="carousel-controls">
         <div class="carousel-control" id="prev">
           <img src="source/img/Arrow_3.png" alt="Previous" />
@@ -1008,6 +1069,7 @@
         <div class="carousel-control" id="next">
           <img src="source/img/Arrow_1.png" alt="Next" />
         </div>
+        <div class="arrowbottom"></div>
       </div>
     </section>
     <section id="Network" class="section growing flex-row-block">
@@ -1020,7 +1082,7 @@
           <div class="col-lg-12 mb-5 mb-lg-0">
             <div class="introTitle pb-5">
               <h2>
-                <span class="blackheading">Apurva’s Growing Ecosystem</span>
+                <span class="blackAi">Apurva’s Growing Ecosystem</span>
               </h2>
             </div>
             <div class="logos">
@@ -1052,7 +1114,7 @@
                   id="hstp"
                 />
               </div>
-              <div class="logoItem"id="hstp">
+              <div class="logoItem" id="hstp">
                 <img
                   src="source/img/Logos/IBJ Logo 1.png"
                   width="100%"
@@ -1147,9 +1209,9 @@
       </div>
 
       <div class="container-fluid">
-        <div class="restop"></div>
+        <div class="spacingtop"></div>
         <div class="row ai">
-          <div class="col-lg-4 order-lg-1 mb-2 mb-lg-0">
+          <div class="col-lg-4 order-lg-1 mb-2 mb-lg-0" id="aicol">
             <div class="blackAi d-none d-md-block d-lg-block">
               Responsible <br />AI
             </div>
@@ -1157,7 +1219,10 @@
           </div>
 
           <div class="col-lg-8 order-lg-2 mb-2 mb-lg-0 res">
-            <div class="responsibleDesc d-none d-md-block d-lg-block">
+            <div
+              class="responsibleDesc d-none d-md-block d-lg-block"
+              id="resDec"
+            >
               <p>
                 The vast potential brings with it an equally significant
                 responsibility to develop systems ethically. We, at Apurva.ai,
@@ -1183,14 +1248,17 @@
             </div>
           </div>
         </div>
-        <div class="resbottom"></div>
+        <div class="spacingbottom"></div>
       </div>
     </section>
-    <section id="contact" class="section stay-tuned flex-row-block">
+    <section id="contacts" class="section stay-tuned flex-row-block">
       <div class="line-container">
         <div class="bottomline"></div>
       </div>
       <div class="container-fluid">
+        <br />
+        <br />
+        <div class="spacingtop"></div>
         <div class="row align-items-end">
           <div class="col-lg-7 mb-7 mb-lg-0 textColumn" id="Stay">
             <div class="introTitle">
@@ -1211,6 +1279,9 @@
             </button>
           </div>
         </div>
+        <div class="spacingbottom"></div>
+        <br />
+        <br />
       </div>
     </section>
 
@@ -1243,7 +1314,8 @@
                 <input
                   type="text"
                   class="email-textbox"
-                  id="name"
+                  id="Name"
+                  name="Name"
                   placeholder="Name"
                   required
                   style="color: black; display: block"
@@ -1261,7 +1333,8 @@
                 <input
                   type="email"
                   class="email-textbox"
-                  id="email"
+                  id="Email"
+                  name="Email"
                   placeholder="Email ID"
                   required
                   style="color: black"
@@ -1277,7 +1350,8 @@
                 <input
                   type="text"
                   class="email-textbox"
-                  id="Organization"
+                  id="Organisation"
+                  name="Organisation"
                   placeholder="Organization Website Link"
                   required
                   style="color: black"
@@ -1298,7 +1372,7 @@
             </div> -->
 
               <button
-                onclick="validateEmail()"
+                type="submit"
                 class="sub mx-auto d-block"
                 type="button"
                 id="subscribeButton"
@@ -1326,7 +1400,7 @@
 
     <script src="source/js/particles.js"></script>
     <script src="source/js/card.js"></script>
-    <script src="source/js/subscription.js"></script>
+    <script src="source/js/contact.js"></script>
     <script>
       // Wait for the document to be ready
       $(document).ready(function () {
@@ -1387,6 +1461,34 @@
             bottomline.style.height = `${sectionHeight}px`;
           }
         });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("carouselExampleIndicators");
+        const prevButton = document.getElementById("prevButton");
+        const nextButton = document.getElementById("nextButton");
+        const slides = carousel.querySelectorAll(".carousel-item");
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          slides[currentSlide].classList.remove("active");
+          slides[index].classList.add("active");
+          currentSlide = index;
+        }
+
+        function showNextSlide() {
+          let nextSlide = (currentSlide + 1) % slides.length;
+          showSlide(nextSlide);
+        }
+
+        function showPrevSlide() {
+          let prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(prevSlide);
+        }
+
+        nextButton.addEventListener("click", showNextSlide);
+        prevButton.addEventListener("click", showPrevSlide);
       });
     </script>
 

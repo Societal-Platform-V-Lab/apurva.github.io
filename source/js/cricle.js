@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "card-5",
         "card-6"
       );
-      card.querySelector(".explore-btn").classList.remove("active"); // Remove active class from all buttons
+      card.querySelector(".explorebtn").classList.remove("active"); // Remove active class from all buttons
       card.style.backgroundColor = ""; // Reset background color
     });
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     cards[index].classList.add("active");
-    cards[index].querySelector(".explore-btn").classList.add("active");
+    cards[index].querySelector(".explorebtn").classList.add("active");
     cards[index].nextElementSibling.style.display = "block"; // Show description of the active card
 
     const cardPositions = Array.from(

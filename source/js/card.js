@@ -1,49 +1,36 @@
 const featurecarousel = document.querySelector('.featurecarousel');
 const cards = featurecarousel.querySelectorAll('.featurecards');
 let currentCardIndex = 0;
-let autoSlideInterval;
 let cardWidth;
+
+// Variables to store touch positions
+let startX, endX;
 
 // Set the width of the cards based on the viewport width
 function setCardWidth() {
   if (window.innerWidth <= 760) {
     cardWidth = window.innerWidth;
-    cardWidth = cardWidth + 60
-
+    cardWidth = cardWidth + 30;
   } else if (window.innerWidth <= 900) {
-    
     cardWidth = window.innerWidth / 2;
-    cardWidth = cardWidth + 100
+    cardWidth = cardWidth + 100;
   } else if (window.innerWidth <= 1024) {
-    
     cardWidth = window.innerWidth / 2;
-    cardWidth = cardWidth + 42
+    cardWidth = cardWidth + 42;
   } else if (window.innerWidth <= 1500) {
     cardWidth = window.innerWidth / 2;
-    cardWidth = cardWidth - 180
+    cardWidth = cardWidth - 180;
   } else if (window.innerWidth <= 1779) {
     cardWidth = window.innerWidth / 2;
-    cardWidth = cardWidth - 270
-  }else if (window.innerWidth <= 2200) {
+    cardWidth = cardWidth - 270;
+  } else if (window.innerWidth <= 2200) {
     cardWidth = window.innerWidth / 3;
-    cardWidth = cardWidth 
   } else {
     cardWidth = window.innerWidth / 3;
-    cardWidth = cardWidth - 30
+    cardWidth = cardWidth - 30;
   }
   cards.forEach(featurecards => {
     featurecards.style.width = `${cardWidth - 174}px`;
-  });
-}
-
-// Set the active slide featureindicator
-function setActiveIndicator() {
-  featureindicators.forEach((featureindicator, index) => {
-    if (index === currentCardIndex) {
-      featureindicator.classList.add('active');
-    } else {
-      featureindicator.classList.remove('active');
-    }
   });
 }
 
@@ -66,24 +53,34 @@ function slideToPrevCard() {
   featurecarousel.scrollLeft = cards[currentCardIndex].offsetLeft;
 }
 
-// Start auto slide
-function startAutoSlide() {
-  //autoSlideInterval = setInterval(slideToNextCard, 3000);
+// Touch event handlers
+function handleTouchStart(e) {
+  startX = e.touches[0].clientX;
 }
 
-// Stop auto slide
-function stopAutoSlide() {
-  clearInterval(autoSlideInterval);
+function handleTouchMove(e) {
+  endX = e.touches[0].clientX;
 }
 
-featurecarousel.addEventListener('mouseenter', stopAutoSlide);
-featurecarousel.addEventListener('mouseleave', startAutoSlide);
+function handleTouchEnd() {
+  if (startX - endX > 50) {
+    // Swipe left
+    slideToNextCard();
+  } else if (endX - startX > 50) {
+    // Swipe right
+    slideToPrevCard();
+  }
+}
+
+// Add touch event listeners
+featurecarousel.addEventListener('touchstart', handleTouchStart);
+featurecarousel.addEventListener('touchmove', handleTouchMove);
+featurecarousel.addEventListener('touchend', handleTouchEnd);
 
 const prevArrow = document.getElementById('prev');
 const nextArrow = document.getElementById('next');
 prevArrow.addEventListener('click', slideToPrevCard);
 nextArrow.addEventListener('click', slideToNextCard);
+
 // Initialize
 setCardWidth();
-
-startAutoSlide();

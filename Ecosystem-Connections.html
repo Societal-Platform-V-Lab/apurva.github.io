@@ -35,48 +35,6 @@
           margin-top: 90px;
         }
       }
-      @media (max-width: 900px) {
-        .experience {
-          position: relative;
-          z-index: 1; /* Ensure the main content is above the pseudo-element */
-        }
-
-        .experience::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: url(source/img/Iconography/Discover-Connections.png)
-            no-repeat right;
-          background-size: 300px;
-          opacity: 0.1;
-          z-index: -1; /* Ensure the background is behind the main content */
-        }
-        .coming img {
-          display: none;
-        }
-      }
-      @media (max-width: 500px) {
-        .experience::before {
-          top: 0;
-          right: -12px;
-          bottom: 113px;
-          left: 0;
-          background-size: 200px;
-        }
-      }
-      @media (max-width: 467px) {
-        #exprow {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          margin-right: -15px;
-          margin-left: 25px;
-        }
-      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script
@@ -120,12 +78,12 @@
     <div id="headers"></div>
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-none d-md-none d-lg-flex">
           <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Ecosystem <br /><span class="greenexp">Connections</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id="experi">
+              <div class="col-lg-10 mb-lg-0" style="padding: 0">
                 <p>
                   Access detailed profiles of organisations based on problems,
                   solutions, impact, and communities of interest. Identify key
@@ -145,7 +103,40 @@
             </div>
           </div>
         </div>
-        <div class="br"></div>
+        <div class="d-lg-none d-sm-block d-md-block">
+          <div class="experiencess">
+            <h2>Ecosystem <br /><span class="greenexp">Connections</span></h2>
+            <div class="coming">
+              <img
+                src="source/img/Iconography/Discover-Connections.png"
+                class=""
+                alt="Queryable Wisdom"
+              />
+            </div>
+          </div>
+          <div class="expdec">
+            <p>
+              Access detailed profiles of organisations based on problems,
+              solutions, impact, and communities of interest. Identify key
+              players, explore their approaches, discover connections, and
+              navigate the ecosystem effectively!
+            </p>
+            <div class="reachoutbutton">
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                class="register-button subscribe-button"
+                id="reachout"
+              >
+                <div class="subscribe-button-texthome" style="color: black">
+                  Reach Out
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="expbottomspacing"></div>
         <div
           id="myCarousel"
           class="carousel slide"
@@ -161,15 +152,12 @@
            ]'
           ></p>
         </div>
-
+        <div class="expbottomspacing"></div>
         <p class="queryp">
           With "<span class="querytext">ECOSYSTEM CONNECTIONS</span>", you are
           on a faster path.
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
         <div class="row justify-content-center" id="exprow">
           <div class="cardrow">
             <div class="col-lg-4 mb-4">

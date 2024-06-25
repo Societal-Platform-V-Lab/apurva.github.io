@@ -34,46 +34,6 @@
           max-width: 55.333333%;
         }
       }
-
-      .card {
-        margin: 15px;
-        flex: 1;
-      }
-      .card-content {
-        padding: 20px;
-      }
-      @media (max-width: 900px) {
-        .experience {
-          position: relative;
-          z-index: 1; /* Ensure the main content is above the pseudo-element */
-        }
-
-        .experience::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom:250px;
-          left: 0;
-          background: url(source/img/Iconography/360-Degree-Impact.png)
-            no-repeat right;
-          background-size: 300px;
-          opacity: 0.1;
-          z-index: -1; /* Ensure the background is behind the main content */
-        }
-        .coming img {
-          display: none;
-        }
-      }
-      @media (max-width: 500px) {
-        .experience::before {
-          top: 0;
-          right: -12px;
-          bottom: 113px;
-          left: 0;
-          background-size: 200px;
-        }
-      }
     </style>
 
     <!-- Link to the CSS file for card styling -->
@@ -119,12 +79,12 @@
     <div id="headers"></div>
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-none d-md-none d-lg-flex">
           <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Strategic <br /><span class="greenexp">Assessment</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id="experi">
+              <div class="col-lg-10 mb-lg-0" style="padding: 0">
                 <p>
                   Strategic Assessment evaluates the effectiveness of program
                   activities, ensuring they meet real objectives and advance the
@@ -138,6 +98,19 @@
                   Equipping them with these resources is crucial for unlocking
                   insights, driving meaningful change, and maximising impact!
                 </p>
+                <div class="reachoutbutton">
+                  <button
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    class="register-button subscribe-button"
+                    id="reachout"
+                  >
+                    <div class="subscribe-button-texthome" style="color: black">
+                      Reach Out
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +123,31 @@
               />
             </div>
           </div>
-          <div class="col-12" id="reachoutbutton">
+        </div>
+        <div class="d-lg-none d-sm-block d-md-block">
+          <div class="experiencess">
+            <h2>Strategic <br /><span class="greenexp">Assessment</span></h2>
+            <div class="coming">
+              <img
+                src="source/img/Iconography/360-Degree-Impact.png"
+                class=""
+                alt="Queryable Wisdom"
+              />
+            </div>
+          </div>
+          <div class="expdec">
+            <p>
+              Strategic Assessment evaluates the effectiveness of program
+              activities, ensuring they meet real objectives and advance the
+              overall mission, including assessing needs, programs, impact,
+              change, and narratives. 
+            </p>
+            <p>
+              Despite their community connections, social entrepreneurs
+              often lack the tools to perform these assessments effectively.
+              Equipping them with these resources is crucial for unlocking
+              insights, driving meaningful change, and maximising impact!
+            </p>
             <div class="reachoutbutton">
               <button
                 type="button"
@@ -166,8 +163,7 @@
             </div>
           </div>
         </div>
-
-        <div class="br"></div>
+        <div class="expbottomspacing"></div>
         <div
           id="myCarousel"
           class="carousel slide"
@@ -184,16 +180,12 @@
           ></p>
         </div>
 
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
         <p class="queryp">
           With "<span class="querytext">STRATEGIC ASSESSMENT</span>", it gets
           real!
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
         <div class="row mt-5 justify-content-center" id="exprow">
           <div class="cardrow">
             <div class="col-lg-4 mb-4">
@@ -249,12 +241,14 @@
           </button>
 
           <div class="modal-body">
-            <form class="Subscribe_for_updates" id="subscriptionForm">
+            <form class="Subscribe_for_updates" id="reachoutForm">
+              <input type="hidden" name="Product-Line" id="Product-Line" value="Strategic Assessment" />
               <div class="sub-group">
                 <input
                   type="text"
                   class="email-textbox"
-                  id="name"
+                  id="Name"
+                  name="Name"
                   placeholder="Name"
                   required
                   style="color: black; display: block"
@@ -272,7 +266,8 @@
                 <input
                   type="email"
                   class="email-textbox"
-                  id="email"
+                  id="Email"
+                  name="Email"
                   placeholder="Email ID"
                   required
                   style="color: black"
@@ -288,7 +283,8 @@
                 <input
                   type="text"
                   class="email-textbox"
-                  id="Organization"
+                  id="Organisation"
+                  name="Organisation"
                   placeholder="Organization Website Link"
                   required
                   style="color: black"
@@ -303,9 +299,10 @@
               <div class="sub-group">
                 <textarea
                   class="des-textbox"
-                  id="des"
+                  id="Message"
                   placeholder="Describe the problem that “Apurva for Strategic Assessment” would address for your organization."
                   required
+                  name="Message"
                   style="color: black"
                 ></textarea>
                 <span
@@ -317,10 +314,10 @@
               </div>
 
               <button
-                onclick="validateEmail()"
+                type="submit"
                 class="sub mx-auto d-block"
                 type="button"
-                id="subscribeButton"
+                id="reachoutformButton"
               >
                 <div class="subscribe-button-text">Subscribe for updates</div>
               </button>
@@ -350,6 +347,6 @@
     <script src="source/js/script.js"></script>
     <script src="source/js/particles.js"></script>
     <script src="source/js/typewriter.js"></script>
-    <script src="source/js/contact.js"></script>
+    <script src="source/js/reachout.js"></script>
   </body>
 </html>

@@ -26,40 +26,7 @@
     <link rel="stylesheet" href="source/css/home.css" />
     <link rel="stylesheet" href="source/css/cards.css" />
     <link rel="stylesheet" href="source/css/experience.css" />
-    <style>
-      @media (max-width: 900px) {
-        .experience {
-          position: relative;
-          z-index: 1; /* Ensure the main content is above the pseudo-element */
-        }
 
-        .experience::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: url(source/img/Iconography/Voice-of-Communities.png)
-            no-repeat right;
-          background-size: 300px;
-          opacity: 0.1;
-          z-index: -1; /* Ensure the background is behind the main content */
-        }
-        .coming img {
-          display: none;
-        }
-      }
-      @media (max-width: 500px) {
-        .experience::before {
-          top: 0;
-          right: -12px;
-          bottom: 113px;
-          left: 0;
-          background-size: 200px;
-        }
-      }
-    </style>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-MPJ848CKT6"
@@ -100,17 +67,33 @@
     <div id="headers"></div>
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-none d-md-none d-lg-flex">
           <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Voice of<br /><span class="greenexp">Communities</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id="experi">
+              <div
+                class="col-lg-10 mb-lg-0"
+                style="text-align: left; padding: 0"
+              >
                 <p>
                   Understanding communities is essential for program success.
                   Now, transform community voices into deep, trusted and
                   actionable insights!
                 </p>
+                <div class="reachoutbutton">
+                  <button
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    class="register-button subscribe-button"
+                    id="reachout"
+                  >
+                    <div class="subscribe-button-texthome" style="color: black">
+                      Reach Out
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +106,24 @@
               />
             </div>
           </div>
-          <div class="col-12" id="reachoutbutton">
+        </div>
+        <div class="d-lg-none d-sm-block d-md-block">
+          <div class="experiencess">
+            <h2>Voice of<br /><span class="greenexp">Communities</span></h2>
+            <div class="coming">
+              <img
+                src="source/img/Iconography/Voice-of-Communities.png"
+                class=""
+                alt="Queryable Wisdom"
+              />
+            </div>
+          </div>
+          <div class="expdec">
+            <p>
+              Understanding communities is essential for program success. Now,
+              transform community voices into deep, trusted and actionable
+              insights!
+            </p>
             <div class="reachoutbutton">
               <button
                 type="button"
@@ -140,7 +140,7 @@
           </div>
         </div>
 
-        <div class="br"></div>
+        <div class="expbottomspacing"></div>
         <div
           id="myCarousel"
           class="carousel slide"
@@ -156,11 +156,12 @@
           ]'
           ></p>
         </div>
+        <div class="expbottomspacing"></div>
         <p class="queryp">
           With "<span class="querytext">VOICE OF COMMUNITIES</span>", you can
           literally listen to the on-ground reality!
         </p>
-        <br /><br /><br /><br />
+        <div class="expbottomspacing"></div>
         <div class="row justify-content-center" id="exprow">
           <div class="cardrow">
             <div class="col-lg-4 mb-4">
@@ -224,12 +225,14 @@
           </button>
 
           <div class="modal-body">
-            <form class="Subscribe_for_updates" id="subscriptionForm">
+            <form class="Subscribe_for_updates" id="reachoutForm">
+              <input type="hidden" name="Product-Line" id="Product-Line" value="voice of Communities" />
               <div class="sub-group">
                 <input
                   type="text"
                   class="email-textbox"
-                  id="name"
+                  id="Name"
+                  name="Name"
                   placeholder="Name"
                   required
                   style="color: black; display: block"
@@ -247,7 +250,8 @@
                 <input
                   type="email"
                   class="email-textbox"
-                  id="email"
+                  id="Email"
+                  name="Email"
                   placeholder="Email ID"
                   required
                   style="color: black"
@@ -263,7 +267,8 @@
                 <input
                   type="text"
                   class="email-textbox"
-                  id="Organization"
+                  id="Organisation"
+                  name="Organisation"
                   placeholder="Organization Website Link"
                   required
                   style="color: black"
@@ -278,9 +283,10 @@
               <div class="sub-group">
                 <textarea
                   class="des-textbox"
-                  id="des"
-                  placeholder="Describe the problem that 'Apurva for Voice of Communities' would address for your organization."
+                  id="Message"
+                  placeholder="Describe the problem that “Apurva for Voice of Communities” would address for your organization."
                   required
+                  name="Message"
                   style="color: black"
                 ></textarea>
                 <span
@@ -292,10 +298,10 @@
               </div>
 
               <button
-                onclick="validateEmail()"
+                type="submit"
                 class="sub mx-auto d-block"
                 type="button"
-                id="subscribeButton"
+                id="reachoutformButton"
               >
                 <div class="subscribe-button-text">Subscribe for updates</div>
               </button>
@@ -326,6 +332,6 @@
     <script src="source/js/particles.js"></script>
     <script src="source/js/typewriter.js"></script>
 
-    <script src="source/js/contact.js"></script>
+    <script src="source/js/reachout.js"></script>
   </body>
 </html>

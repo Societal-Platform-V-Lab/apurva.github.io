@@ -29,34 +29,20 @@
     <style>
       @media (max-width: 900px) {
         .experience {
-          position: relative;
-          z-index: 1; /* Ensure the main content is above the pseudo-element */
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
         }
 
-        .experience::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background: url(source/img/Iconography/Queryable-Wisdom.png) no-repeat
-            right;
-          background-size: 300px;
-          opacity: 0.1;
-          z-index: -1; /* Ensure the background is behind the main content */
-        }
         .coming img {
-          display: none;
+          max-width: 100px; 
         }
-      }
-      @media (max-width: 500px) {
-        .experience::before {
-          top: 0;
-          right: -12px;
-          bottom: 113px;
-          left: 0;
-          background-size: 200px;
+        .expdec p {
+          color: white;
+          margin-bottom: 25px;
+          font-size: 16px;
+          text-align: start;
+          line-height: 26px;
         }
       }
     </style>
@@ -104,12 +90,12 @@
     <div id="headers"></div>
     <section id="experiencepages" class="section flex-row-block">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none d-none d-md-none d-lg-flex">
           <div class="col-lg-7 mb-lg-0" id="experi">
             <div class="experience">
               <h2>Queryable<br /><span class="greenexp">Wisdom</span></h2>
               <br />
-              <div class="col-lg-10 mb-lg-0" id="experi">
+              <div class="col-lg-10 mb-lg-0" style="padding: 0">
                 <p>
                   Knowledge continuously evolves with every interaction in your
                   ecosystem. Harness the curated insights at scale by
@@ -125,7 +111,27 @@
             </div>
           </div>
         </div>
-        <div class="br"></div>
+        <div class="d-lg-none d-sm-block d-md-block">
+          <div class="experience">
+            <h2>Queryable<br /><span class="greenexp">Wisdom</span></h2>
+            <div class="coming">
+              <img
+                src="source/img/Iconography/Queryable-Wisdom.png"
+                class=""
+                alt="Queryable Wisdom"
+              />
+            </div>
+          </div>
+          <div class="expdec">
+            <p>
+              Knowledge continuously evolves with every interaction in your
+              ecosystem. Harness the curated insights at scale by integrating
+              diverse knowledge sources!
+            </p>
+          </div>
+        </div>
+
+        <div class="expbottomspacing"></div>
         <div
           id="myCarousel"
           class="carousel slide"
@@ -141,14 +147,12 @@
              ]'
           ></p>
         </div>
+        <div class="expbottomspacing"></div>
         <p class="queryp">
           With the "<span class="querytext">QUERYABLE WISDOM</span>", you can do
           much more!
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="expbottomspacing"></div>
         <div class="row justify-content-center" id="exprow">
           <div class="cardrow">
             <div class="col-lg-4 mb-4">
