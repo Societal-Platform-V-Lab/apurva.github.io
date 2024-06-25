@@ -352,7 +352,7 @@ button {
 }
 @media (max-width: 500px) {
   section#experiencepages {
-    height: 150rem !important;
+    height: 130rem !important;
 }
   .subscribe-button-texthome {
     margin-left: 0px;
