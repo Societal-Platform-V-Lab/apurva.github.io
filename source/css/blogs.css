@@ -10,10 +10,6 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.dis ul {
-  list-style-type: disc;
-  margin-left: 33px;
-}
 
 .center {
   text-align: center;
@@ -94,7 +90,7 @@ section#blog {
 .footer-icon .twitter-icon {
   color: #fff;
   font-size: 20px;
-  background-color: black;
+  background-color:black;
 }
 .footer-icon .youtube-icon {
   color: #fff;
@@ -287,8 +283,7 @@ section#blog {
 .gif ul {
   list-style-type: disc;
 }
-.gif li,
-.dis li {
+.gif li {
   margin-bottom: 20px;
   color: #000000;
   font-family: Poppins;
@@ -431,6 +426,7 @@ ol.c {
   }
 }
 
+
 @media (max-width: 768px) {
   #blog.section {
     padding: 6rem 8%;
@@ -518,8 +514,7 @@ ol.c {
     line-height: 2rem !important;
     margin-top: 1rem;
   }
-  .gif li,
-  .dis li {
+  .gif li {
     margin-bottom: 20px;
     color: #000000;
     font-family: Poppins;

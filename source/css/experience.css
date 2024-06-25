@@ -1,0 +1,501 @@
+section#experience,
+section#experiencepages {
+  position: relative;
+  background-image: url(../img/Frame.png);
+  background-size: cover; /* Adjust background image size */
+  background-position: center; /* Center the background image */
+  padding: 5% 8% 5%;
+  margin-top: 110px;
+}
+.exptopspacing {
+  margin-top: 10rem;
+}
+.expbottomspacing {
+  margin-bottom: 6rem;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: pre-line;
+  margin: 0 auto;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.typewriter::after {
+  content: "|";
+  display: inline-block;
+  color: rgb(250, 248, 248);
+  margin-left: 3px;
+}
+
+.greenquery {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* .subscribe-button-texthome {
+  font-size: 20px;
+  font-weight: 500;
+} */
+.subscribe-button-text {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+#Apurvaexp-tittle {
+  padding: 0% 2% 0% 0%;
+}
+#Apurva-Experience {
+  padding: 0%;
+}
+.reachoutbutton {
+  margin-bottom: 90px;
+  text-align: left;
+  padding: 0%;
+}
+#reachout {
+  position: absolute;
+  /* right: 6%;
+  top: -8%; */
+
+  background: #9fffac;
+  border-radius: 10px;
+  border: 2px solid #9fffac;
+  font-size: 1.2rem;
+  padding: 0.625rem 1.5625rem;
+  font-weight: 400;
+  z-index: 10; /* Ensure the button appears above other elements */
+}
+
+.position-relative {
+  position: relative;
+}
+.greenquerys {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.querytext {
+  color: #9fffac; /* Set color for "QUERYABLE WISDOM" */
+  text-align: center;
+  font-size: 30px;
+}
+.experienceimg {
+  text-align: center;
+}
+/* section#experience {
+  height: 105rem !important;
+} */
+section#experiencepages {
+  height: 200rem !important;
+}
+.queryp {
+  color: white; /* Set default color for remaining text */
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+}
+.cardcont p {
+  margin-top: 50px;
+  font-size: 1.25rem;
+  color: white;
+}
+.cardssstext p {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+.cardssstext p {
+  font-family: Poppins;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  flex: 0 0 auto;
+  width: 380px;
+  height: 400px;
+  border-radius: 1.25rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+}
+.card-body-apu {
+  height: 422px;
+  background-color: #2e4c45;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+.card-text {
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 345px;
+  height: 309px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 35px;
+}
+.card::before {
+  content: attr(data-card-number);
+  position: absolute;
+  top: 3px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #9fffac;
+  z-index: 1;
+  margin-left: -0.25em;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  font-size: 4.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.card-content {
+  position: relative; /* Ensure proper stacking */
+  z-index: 2; /* Ensure it's above the pseudo-elements */
+}
+.cardquery {
+  margin-left: 10px; /* Adjust the value as needed */
+}
+.experience p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  hyphens: auto;
+  /* margin-left: -14px; */
+  word-break: auto-phrase;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+.br {
+  margin-top: 66px;
+}
+.coming {
+  text-align: -webkit-right;
+  opacity: 0.2;
+}
+
+#reachoutbutton {
+  padding-left: 20px;
+}
+button {
+  margin: 0;
+}
+
+.subscribe-button-texthome {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media (max-width: 1440px) {
+  /* section#experience {
+    height: 98rem !important;
+  } */
+  .card {
+    flex: 0 0 auto;
+    width: 363px;
+    height: 384px;
+    border-radius: 1.25rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+}
+  .queryp {
+    line-height: 39px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* section#experience {
+    height: 79rem !important;
+  } */
+  /* .experience h2,
+  .greenexp {
+    font-size: 30px;
+    line-height: 43px;
+  } */
+  #reachoutbutton {
+    padding-left: 0px;
+  }
+
+  .card {
+    width: 247px;
+    height: 334px;
+  }
+  .card-text {
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 250px;
+    height: 309px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .greenquery {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .cardrow {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 800px) {
+  section#experience,
+  section#experiencepages {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#experience,
+  section#experiencepages {
+    margin-top: 70px;
+    padding: 12% 3% 5%;
+  }
+
+  #Apurvaexp-tittle {
+    padding: 5% 5% 5%;
+  }
+
+  .reachoutbutton {
+    margin-bottom: 98px;
+  }
+  .cardrow {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #experience.section {
+    margin-top: 4rem;
+  }
+  img {
+    max-width: 50%;
+  }
+  /* #exprow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  } */
+  .circle_comingsoon {
+    margin-top: -28rem;
+    height: 350px;
+    width: 350px;
+    background-image: radial-gradient(#9fffac 50%, #9fffac 40%);
+    filter: blur(160px);
+    margin-left: 294px;
+  }
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 600px) {
+  .experience p {
+    font-size: 16px;
+    text-align: start;
+    /* word-break: break-all; */
+    line-height: 26px;
+  }
+
+  section#experience {
+    margin-top: 70px;
+    padding: 12% 3% 5%;
+  }
+  section#experiencepages {
+    margin-top: 70px;
+    padding: 16% 5.3% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .subscribe-button-texthome {
+    margin-left: 0px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .reachoutbutton {
+    margin-bottom: 45px;
+  }
+  #reachout {
+    width: 8rem;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .coming {
+    margin-top: -264px;
+    text-align: -webkit-right;
+    opacity: 0.2;
+  } */
+  .subscribe-button-text {
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* section#experience {
+    height: 63rem !important;
+  } */
+  .experience p {
+    margin-bottom: 25px;
+    /* word-break: break-all; */
+  }
+
+  .card {
+    width: 392px;
+    height: 361px;
+  }
+  .experience h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -2rem;
+  }
+  .greenexp{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .greenquery {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  #testimonial-carousel {
+    height: 222px;
+    margin-top: 56px;
+  }
+  .queryp {
+    padding: 0% 4% 0%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  .querytext {
+    color: #9fffac;
+    text-align: center;
+    font-size: 18px;
+  }
+  .cardrow {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #experience.section {
+    margin-top: 4rem;
+  }
+
+  .experienceimg {
+    margin-top: -63px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  section#experiencecricle {
+    height: 146rem !important;
+  }
+
+  .experienceimg {
+    margin-top: -98px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #myCarousel {
+    padding: 0% 4.4% 0%;
+  }
+  .experienceimg {
+    padding: 0% 4.4% 0%;
+  }
+}
+@media (max-width: 490px) {
+  .reachoutbutton {
+    margin-top: 15px;
+    margin-bottom: 155px;
+}
+}
+@media (max-width: 900px) {
+  .experiencess {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .experiencess h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -2rem;
+}
+  .coming img {
+    max-width: 100px; 
+  }
+  .expdec p {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: start;
+    line-height: 26px;
+  }
+}

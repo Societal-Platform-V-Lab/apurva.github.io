@@ -21,19 +21,21 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 1rem 25px 0 25px;
+  padding: 3rem 25px 0 25px;
 }
 
-#testimonial-carousel {
+/* #testimonial-carousel {
   height: 350px;
-}
+} */
 
 .featuredheader {
+  text-align: center;
   margin-top: -3rem;
   color: #000;
 }
 
 .featuretext {
+  text-align: center;
   margin-top: 1rem;
   color: #000;
   text-decoration: underline;
@@ -43,8 +45,60 @@
   font-size: 17px;
   color: #000;
 }
+/* #whyenables {
+  margin-top: 115px;
+} */
+.enablesgreen {
+  color: #9fffac;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
+.wisdom {
+  height: auto;
+  overflow: hidden;
+  min-height: inherit !important;
+}
+.scroll-image {
+  position: absolute;
+  width: 100%;
+  transition: transform 1s;
+}
+
+#Wisdomprev,
+#Wisdomnext {
+  position: static;
+  display: inline-block;
+  width: auto;
+}
+.gifheading h2 {
+  font-weight: 600;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+.gifheadinggreen {
+  color: #9fffac;
+  font-style: italic;
+}
+.gifimg {
+  width: 45% !important;
+}
+.enables p {
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .featurecarousel {
+  margin-left: 15px;
   display: flex;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
@@ -158,7 +212,7 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -193,17 +247,6 @@
   margin-top: 3rem;
 }
 
-.coming h2 {
-  margin-top: -5rem;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 0em;
-  text-align: right;
-}
-
 .circle_comingsoon {
   margin-left: 9rem;
   margin-top: -47rem;
@@ -228,11 +271,85 @@
 .small-box {
   width: 61px;
   height: 61px;
-  background-color: #9fffac;
 }
-
+.small-box img {
+  height: 3.875rem;
+}
 .found {
   margin-bottom: 20px;
+}
+
+.scroll-down-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text within the link */
+  color: white;
+  font-size: 84px; /* Adjust the font size as needed */
+  margin-top: 191px;
+}
+.scroll-down-link:hover {
+  color: white; /* Change color to white on hover */
+}
+.centrescreen h2 {
+  font-size: 60px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+.greenimg img {
+  width: 60.875rem;
+  /* height: 60.875rem; */
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.key {
+  margin-top: -702px;
+  margin-bottom: 35px;
+  margin-left: 80px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+.connect {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.centrescreen {
+  margin-top: -50px;
+  text-align: center;
+  margin-left: 319px;
+}
+
+.gif {
+  text-align: center;
+  /* margin-left: 136px; */
+}
+.gif img {
+  width: 700px;
+  height: 700px;
+}
+.greenintrogreen {
+  color: #9fffac;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 73.14px;
+}
+.centrescreen h2 {
+  margin-top: 95px;
+  /* margin-left: 204px; */
+}
+
+.scroll-down-link p {
+  color: #d9d9d9;
 }
 
 .intro-Title h2 {
@@ -261,12 +378,31 @@
 
 .greenintro {
   color: #9fffac;
-  font-size: 60px;
+  font-size: 55px;
   font-family: Poppins;
   font-weight: 600;
   line-height: 73.14px;
 }
 
+/* Hide span elements initially */
+.intro-Title h2 span {
+  opacity: 0;
+}
+
+/* Animation for typewriter effect */
+.intro-Title h2 span {
+  animation: typing 3s steps(40) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: auto;
+  }
+}
 .intro-Text {
   width: 1000px;
   height: 130px;
@@ -282,7 +418,9 @@
   margin-top: 10px;
   margin-bottom: 9rem;
 }
-
+.vector img {
+  max-width: 100%;
+}
 .why p {
   font-family: Poppins;
   font-size: 25px;
@@ -290,6 +428,7 @@
   line-height: 37px;
   letter-spacing: 0em;
   text-align: left;
+  color: #fff;
 }
 
 .what h2 {
@@ -319,9 +458,9 @@
   justify-content: center;
 }
 
-.row {
+/* .row {
   margin-bottom: 20px;
-}
+} */
 
 .responsibleDesc {
   margin-bottom: 5rem;
@@ -340,7 +479,7 @@
   width: 1343px;
   height: 75px;
   font-family: Poppins;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 75px;
   letter-spacing: 0em;
@@ -351,7 +490,7 @@
 
 .responsible p {
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0em;
@@ -363,18 +502,27 @@
   font-family: Poppins;
   font-size: 55px;
   font-weight: 700;
-  line-height: 91px;
+  line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
 }
-
+section#newscreen,
 section#testimonialSection,
+section#testimonialSectionfeature,
+section#testimonialSections {
+  background: #01051c;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section#Featured {
   background: url(../img/Starry-Bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* #gifcarousel {
+  height: 35.75rem;
+} */
 section#responsibleAI,
 section#responsibleAImedium {
   background: linear-gradient(
@@ -382,7 +530,7 @@ section#responsibleAImedium {
     rgba(159, 255, 172, 0.25),
     rgba(159, 255, 172, 0.25)
   );
-  height: 25rem !important;
+  /* height: 25rem !important; */
 }
 
 section#Featured {
@@ -392,15 +540,31 @@ section#Featured {
 section#why-Apurva {
   height: 142rem !important;
 }
-
-section#Network {
-  height: 55rem !important;
+/* section#contacts {
+  height: 17rem !important;
+} */
+/* section#Network {
+  height: 79rem !important;
+} */
+#newscreen.flex-row-block {
+  height: 35rem !important;
 }
-
-section#contact {
+/* section#contact {
   height: 30rem !important;
+} */
+section#enables {
+  height: 47rem !important;
+  background-color: #01051c;
 }
-
+section#contactstest {
+  /* height: 17rem !important; */
+  background-color: #01051c;
+}
+section#contactstest {
+  background: #01051c;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .list-group-horizontal {
   display: flex;
   flex-direction: row;
@@ -484,9 +648,9 @@ section#contact {
   text-align: left;
 }
 
-.ai {
+/* .ai {
   margin-top: 5rem;
-}
+} */
 
 .Our-Values {
   margin-top: 11rem;
@@ -528,7 +692,7 @@ section#contact {
 
 .modal-content {
   width: 661px;
-  min-height: 670px;
+  min-height: 408px;
   border-radius: 20px;
 }
 
@@ -582,24 +746,26 @@ section#contact {
 }
 
 .carousel-controls {
+  width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .carousel-control {
   margin-right: 2rem;
   height: 40px;
   width: 40px;
-  background-color: #ccc;
+  background-color: #4b7b60;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 0 10px;
 }
 
 .carousel-control img {
@@ -617,10 +783,9 @@ section#contact {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: #efefef;
+  background-color: #4b7b60;
   border-radius: 50%;
   line-height: 40px;
-  color: white;
   font-size: 24px;
   margin: 0 10px;
 }
@@ -642,25 +807,63 @@ section#contact {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
+@media screen and (min-width: 2560px) {
+  #newscreen.flex-row-block {
+    height: 58rem !important;
+  }
+}
+#hstp img {
+  max-width: 100%;
+}
 
+@media screen and (max-width: 1805px) {
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 489px;
+  }
+
+  .gif img {
+    width: 468px;
+    height: 468px;
+  }
+  .centrescreen h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+  .greenintrogreen {
+    color: #9fffac;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+
+  section#newscreen {
+    height: 150rem !important;
+  }
+}
 @media screen and (max-width: 1779px) {
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .card-what {
     width: 350px;
     height: 200px;
   }
-  section#Network {
-    height: 65rem !important;
-  }
+
   section#why-Apurva {
     height: 120rem !important;
   }
 }
 
 @media screen and (max-width: 1510px) {
+  section#newscreen {
+    height: 155rem !important;
+  }
   section#why-Apurva {
     height: 120rem !important;
   }
@@ -669,7 +872,7 @@ section#contact {
   }
 
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .card {
@@ -703,17 +906,7 @@ section#contact {
     align-items: center;
     justify-content: center;
   }
-  .blackAi {
-    font-size: 45px;
-  }
 
-  section#responsibleAI {
-    height: 30rem !important;
-  }
-
-  .greencontact {
-    font-size: 45px;
-  }
   .stay-tuned .register-button {
     width: 29rem;
   }
@@ -726,13 +919,48 @@ section#contact {
     font-size: 29px;
     font-weight: 600;
   }
+}
 
-  section#Network {
-    height: 70rem !important;
+@media screen and (min-width: 1530px) {
+  .logos .logoItem {
+    margin-right: 1%;
+    margin-bottom: 2%;
+    max-width: calc(24% - 5%);
+    display: flex;
+    align-items: center;
+    padding: 8px;
   }
 }
 
+@media screen and (max-width: 1805px) {
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 291px;
+  }
+}
 @media screen and (max-width: 1024px) {
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+
+  section#enables {
+    height: 54rem !important;
+    background-color: #01051c;
+  }
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 105px;
+  }
+  .key {
+    margin-top: -534px;
+    margin-bottom: 35px;
+    margin-left: -89px;
+  }
   section#why-Apurva {
     height: 130rem !important;
   }
@@ -751,10 +979,13 @@ section#contact {
     height: 8rem;
   }
 
-  .greencontact {
-    font-size: 35px;
+  .subscribe-button-texthome {
+    font-size: 22px;
   }
 
+  #newscreen.flex-row-block {
+    height: 25rem !important;
+  }
   .subscribe {
     width: 37.5rem;
   }
@@ -765,14 +996,6 @@ section#contact {
     font-size: 19px;
   }
 
-  section#responsibleAI {
-    height: 35rem !important;
-  }
-
-  section#Network {
-    height: 90rem !important;
-  }
-
   .blackheading {
     font-size: 45px;
     line-height: 50px;
@@ -780,11 +1003,6 @@ section#contact {
 
   .greenhome {
     font-size: 45px;
-  }
-
-  .blackAi {
-    font-size: 35px;
-    line-height: 50px;
   }
 
   .ourcolor {
@@ -810,6 +1028,7 @@ section#contact {
     height: 99px;
     margin-top: 35px;
     font-size: 35px;
+    line-height: 40px;
   }
 
   .cardtitle {
@@ -820,7 +1039,7 @@ section#contact {
   .greenintro {
     font-size: 40px;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 56px;
     letter-spacing: 0em;
   }
 
@@ -828,15 +1047,32 @@ section#contact {
     width: 650px;
     height: 120px;
   }
-
-  .ai {
-    margin-top: 6rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  #testimonial-carousel {
-    height: 510px;
+  section#enables {
+    height: 60rem !important;
+    background-color: #01051c;
+  }
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+  .centrescreen {
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 57px;
+  }
+  .key {
+    margin-top: -423px;
+    margin-bottom: 35px;
+    margin-left: -89px;
+  }
+
+  section#newscreen {
+    height: 175rem !important;
   }
 
   .featuretext a {
@@ -844,7 +1080,7 @@ section#contact {
   }
 
   .featurebody {
-    padding: 1rem 25px 0 25px;
+    padding: 3rem 25px 0 25px;
   }
 
   .close {
@@ -853,7 +1089,7 @@ section#contact {
 
   .modal-content {
     width: 461px;
-    min-height: 674px;
+    min-height: 413px;
     border-radius: 20px;
   }
 
@@ -918,36 +1154,114 @@ section#contact {
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
-}
-/* @media screen and (max-width: 425px) {
-  .intro-Title h2,
-  .greenintro {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 30px;
-    letter-spacing: 0em;
-  }
-  .intro-Text {
-    width: 299px;
-    height: 40px;
-    font-size: 18px;
+  .greencontact,
+  .blackAi {
+    font-size: 35px;
     line-height: 40px;
+  }
+  .enables p,
+  .responsibleDesc p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
-} */
+
 @media screen and (max-width: 530px) {
+  .featurecarousel {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+  }
+  .featurecards {
+    height: 352px;
+  }
+  .featurehead img {
+    width: 6.875rem;
+  }
+  .featurehead {
+    height: 158px;
+  }
+  .featurebody {
+    height: 191px;
+  }
+  .featuretext a {
+    font-size: 13px;
+    color: #000;
+  }
+  .featuredheader h5 {
+    font-size: 15px;
+  }
+
+  #newscreen.flex-row-block {
+    height: 29rem !important;
+  }
+
+  .centrescreen {
+    margin-top: 7px;
+    text-align: center;
+    margin-left: 118px;
+  }
+
   .close {
     margin-left: 13rem;
   }
+  .greenintrogreen {
+    font-size: 22px;
+  }
+  .centrescreen h2 {
+    font-size: 20px;
+    margin-left: -104px;
+  }
+  .centrescreen h2 {
+    margin-top: 22px;
+  }
+  .greenimg img {
+    /* width: 30.875rem;
+    height: 30.875rem; */
+    margin-left: -72px;
+  }
+  .key h2 {
+    font-size: 22px;
+    margin-left: -43px;
+    margin-top: 53px;
+    margin-bottom: -166px;
+  }
+  .key {
+    margin-top: -78px;
+    margin-bottom: 0px;
+    margin-left: -72px;
+  }
+  .gif img {
+    margin-left: -104px;
+    width: 250px;
+    height: 232px;
+  }
+  section#newscreen {
+    height: 90rem !important;
+  }
 
   .sub {
-    text-align: center;
     width: 160px;
     height: 40px;
     border-radius: 1rem;
     background-color: #9fffac;
     border: 2px solid #9fffac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
   }
-
+  
+  .subscribe-button-text {
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+  }
   .modal-body {
     position: relative;
     -ms-flex: 1 1 auto;
@@ -957,7 +1271,7 @@ section#contact {
 
   .modal-content {
     width: 291px;
-    min-height: 474px;
+    min-height: 333px;
     border-radius: 20px;
   }
 
@@ -969,9 +1283,6 @@ section#contact {
   }
   .feature {
     margin-top: 9rem;
-  }
-  #testimonialSection.flex-row-block {
-    height: 110rem !important;
   }
 
   .experience h2 {
@@ -1043,8 +1354,8 @@ section#contact {
 
   .small-box {
     margin-top: -1rem;
-    width: 31px;
-    height: 31px;
+    /* width: 31px;
+    height: 31px; */
   }
 
   .whatcard {
@@ -1062,6 +1373,7 @@ section#contact {
   .why p {
     line-height: 27px;
     font-size: 14px;
+    margin-left: -32px;
   }
 
   .card-what {
@@ -1078,13 +1390,30 @@ section#contact {
     height: 77rem !important;
     margin-top: 1rem;
   }
-
-  section#Network {
-    height: 50rem !important;
+  section#enables {
+    height: 60rem !important;
+    background-color: #01051c;
   }
-
-  section#responsibleAI {
-    height: 20rem !important;
+  #newscreen.flex-row-block {
+    height: 24rem !important;
+  }
+  .gifheading h2 {
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 73.14px;
+  }
+  .enablesgreen {
+    color: #9fffac;
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  section#enables {
+    height: 49rem !important;
+    background-color: #01051c;
   }
 
   section#Featured {
@@ -1095,26 +1424,12 @@ section#contact {
     font-size: 19px;
   }
 
-  .blackAi {
-    font-size: 19px;
-    margin-bottom: 1rem;
-  }
-
   .greenhome {
     font-size: 19px;
   }
 
-  .ai {
-    margin-top: 2rem;
-  }
-
-  .responsibleDesc p {
-    font-family: Poppins;
-    font-size: 13px;
-    line-height: 22px;
-  }
-
   .responsibleDesc {
+    margin-top: 10px;
     margin-bottom: 1rem;
   }
 
@@ -1145,7 +1460,7 @@ section#contact {
 
   .intro-Title h2,
   .greenintro {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
@@ -1157,10 +1472,6 @@ section#contact {
 
     font-size: 18px;
     line-height: 40px;
-  }
-
-  .greencontact {
-    font-size: 22px;
   }
 
   .subscribe {
@@ -1176,7 +1487,6 @@ section#contact {
   }
 
   .subscribe-button-texthome {
-    color: #000;
     margin-left: 10px;
     font-size: 15px;
     font-weight: 500;
@@ -1228,10 +1538,9 @@ section#contact {
   }
 
   .stay-tuned .register-button {
-    background-color: #9fffac;
     width: 15rem;
     height: 35px;
-    margin-top: 5px;
+    margin-top: 25px;
     border-radius: 10px;
 
     display: flex;
@@ -1251,28 +1560,50 @@ section#contact {
     font-size: 12px;
   }
 
-  .featuretext a {
+  /* .featuretext a {
     font-size: 17px;
     color: #000;
-  }
-
+  } */
   .featurebody {
-    padding: 1rem;
+    padding: 4rem 13px 0px 13px;
   }
 
   .carousel-controls {
     margin-top: 15px;
   }
-
-  #testimonial-carousel {
-    height: 662px;
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 414px) {
+  section#enables {
+    height: 51rem !important;
+    background-color: #01051c;
   }
 }
 
-@media screen and (max-width: 386px) {
-  .homePage .textColumn {
-    padding-top: 10rem;
+@media screen and (max-width: 390px) {
+  section#enables {
+    height: 54rem !important;
+    background-color: #01051c;
   }
+
+  .greenintrogreen {
+    font-size: 15px;
+  }
+  .centrescreen h2 {
+    font-size: 15px;
+    margin-left: -104px;
+  }
+  .key h2 {
+    font-size: 15px;
+    margin-left: -47px;
+    line-height: 49.14px;
+  }
+}
+@media screen and (max-width: 386px) {
+  /* .homePage .textColumn {
+    padding-top: 10rem;
+  } */
 
   .stay-tuned .register-button {
     width: 15rem;
@@ -1297,10 +1628,6 @@ section#contact {
     height: 125px;
   }
 
-  section#responsibleAI {
-    height: 22rem !important;
-  }
-
   .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -1322,24 +1649,57 @@ section#contact {
 
   section#testimonialSection,
   section#Featured {
-    background: url(../img/Starry-Bg.png);
     /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }
-
-/* @media (max-width: 415px) {
-
-  
-  .carouselfeatured {
-    display: none;
+@media screen and (max-width: 360px) {
+  section#enables {
+    height: 59rem !important;
+    background-color: #01051c;
+  }
+  #eco {
+    padding-top: 0rem;
   }
 }
 
-@media (min-width: 415px) {
-
- 
-  .carouselslide {
-    display: none;
+@media (max-width: 467px) {
+  #whyenables {
+    margin-top: 33px;
   }
-} */
+  /* section#contactstest {
+    height: 7rem !important;
+  } */
+  /* #testimonialSection.flex-row-block {
+    height: 53rem !important;
+  } */
+  #testimonialSections.flex-row-block {
+    height: 7rem !important;
+  }
+}
+@media screen and (min-width: 1536px) {
+  section#enables {
+    height: 42rem !important;
+    background-color: #01051c;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .gif img {
+    margin-left: -104px;
+    width: 298px;
+    height: 201px;
+  }
+  .centrescreen h2 {
+    margin-top: 49px;
+  }
+  #newscreen.flex-row-block {
+    height: 24rem !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  section#enables {
+    height: 66.9rem !important;
+    background-color: #01051c;
+  }
+}

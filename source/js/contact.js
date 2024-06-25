@@ -1,86 +1,73 @@
-const subscriptionForm = document.getElementById('subscriptionForm');
-const subscribeButton = document.getElementById('subscribeButton');
-const closebtn = document.getElementById('close');
-const thankYouMessage = document.getElementById('thank-you');
-
-function sendSubscription(name, email, organization, description) {
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    };
-    var url = `https://script.google.com/macros/s/AKfycbxDfGjbMiHvo0GxHlmuJZbE1VceYmHgYWtfvixefKa6SfHm-3BKkqAh9mT0BZqRSjgKhQ/exec?Name=${name}&Email=${email}&Organisation=${organization}&Message=${description}`;
-
-    fetch(url, requestOptions)
-        .then(response => response.json())
-        .then(result => {
-            console.log(result);
-            // Handle the result here, such as showing a success message to the user
-
-
-        })
-        .catch(error => console.log('error', error));
-}
+const thankYouMessage = document.getElementById("thank-you");
 
 function showThankYouMessage() {
-    thankYouMessage.style.display = "inline";
-    // Automatically close the modal after 5 seconds
-    setTimeout(function () {
-        $('#exampleModalCenter').modal('hide'); // Close the modal
-        location.reload();
-    }, 5000);
+  thankYouMessage.style.display = "inline";
+  // Automatically close the modal after 5 seconds
+  setTimeout(function () {
+    $("#exampleModalCenter").modal("hide"); // Close the modal
+    // location.reload();
+  }, 3000);
 }
 
-subscribeButton.addEventListener('click', function () {
-    // Validate the form fields
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const organization = document.getElementById('Organization').value;
-    const description = document.getElementById('des').value;
-    const emailValidationMessage = document.getElementById('email-validation');
+// Variable to hold request
+var request;
 
+// Bind to the submit event of our form
+$("#subscriptionForm").submit(function (event) {
+  // Get google script deployed web app url
+  // Change the inner html of the button
+  $("#subscribeButton").text("Sending . . .").attr("disabled", true);
 
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+  // Get the deplyed web app url from google script
+  var webAppUrl =
+    "https://script.google.com/macros/s/AKfycbyGBUrreokwQZgA8mZiRAMOerqAa4Am5oHyi3L5za9Ohk1RCDQHVtxAfdP_2ywvdztB/exec";
 
-    if (!name) {
-        document.getElementById('name-validation').style.display = 'block';
-    } else {
-        document.getElementById('name-validation').style.display = 'none';
-    }
+  // Abort any pending request
+  if (request) {
+    request.abort();
+  }
+  // setup some local variables
+  var $form = $(this);
 
-    if (!email) {
-        document.getElementById('email-validation').style.display = 'inline';
-    } else if (!emailRegex.test(email)) {
-        emailValidationMessage.textContent = 'Invalid email format';
-        emailValidationMessage.style.display = 'block';
-    }
-    else {
-        document.getElementById('email-validation').style.display = 'none';
-    }
+  // Let's select and cache all the fields
+  var $inputs = $form.find("input, select, button, textarea");
 
-    if (!organization) {
-        document.getElementById('org-validation').style.display = 'inline';
-    } else {
-        document.getElementById('org-validation').style.display = 'none';
-    }
+  // Serialize the data in the form
+  var serializedData = $form.serialize();
 
-    if (!description) {
-        document.getElementById('des-validation').style.display = 'inline';
-    } else {
-        document.getElementById('des-validation').style.display = 'none';
-    }
+  // Let's disable the inputs for the duration of the Ajax request.
+  // Note: we disable elements AFTER the form data has been serialized.
+  // Disabled form elements will not be serialized.
+  $inputs.prop("disabled", true);
 
-    if (!name || !email || !organization || !description) {
-        return;
-    }
+  // Fire off the request to /form.php
+  request = $.ajax({
+    url: webAppUrl,
+    type: "GET",
+    data: serializedData,
+  });
 
-    sendSubscription(name, email, organization, description);
-    subscriptionForm.reset();
+  // Callback handler that will be called on success
+  request.done(function (response) {
+    // Log a message to the console
     showThankYouMessage();
-});
+  });
 
-closebtn.addEventListener('click', function () {
-    const validationMessages = document.querySelectorAll('.validation-message');
-    validationMessages.forEach(function (element) {
-        element.style.display = 'none';
-    });
+  // Callback handler that will be called on failure
+  request.fail(function (jqXHR, textStatus, errorThrown) {
+    // Log the error to the console
+
+    $("#subscriptionForm").reset();
+  });
+
+  // Callback handler that will be called regardless
+  // if the request failed or succeeded
+  request.always(function () {
+    // Reenable the inputs
+    $("#subscribeButton").text("Send Message");
+    $inputs.prop("disabled", false);
+  });
+
+  // Prevent default posting of form
+  event.preventDefault();
 });
