@@ -13,7 +13,21 @@ section#experiencepages {
 .expbottomspacing {
   margin-bottom: 6rem;
 }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
 
+.video-container .youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
 .typewriter {
   display: inline-block;
   overflow: hidden;
@@ -95,9 +109,9 @@ section#experiencepages {
 /* section#experience {
   height: 105rem !important;
 } */
-section#experiencepages {
+/* section#experiencepages {
   height: 200rem !important;
-}
+} */
 .queryp {
   color: white; /* Set default color for remaining text */
   text-align: center;
@@ -230,7 +244,7 @@ button {
     margin-left: 5px;
     margin-right: 5px;
     border: none;
-}
+  }
   .queryp {
     line-height: 39px;
   }
@@ -351,9 +365,16 @@ button {
   }
 }
 @media (max-width: 500px) {
-  section#experiencepages {
+  .video-container .youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* section#experiencepages {
     height: 130rem !important;
-}
+  } */
   .subscribe-button-texthome {
     margin-left: 0px;
     font-size: 13px;
@@ -408,7 +429,7 @@ button {
     text-align: left;
     margin-top: -2rem;
   }
-  .greenexp{
+  .greenexp {
     font-size: 35px;
     line-height: 40px;
   }
@@ -474,7 +495,7 @@ button {
   .reachoutbutton {
     margin-top: 15px;
     margin-bottom: 155px;
-}
+  }
 }
 @media (max-width: 900px) {
   .experiencess {
@@ -490,9 +511,9 @@ button {
     letter-spacing: 0em;
     text-align: left;
     margin-top: -2rem;
-}
+  }
   .coming img {
-    max-width: 100px; 
+    max-width: 100px;
   }
   .expdec p {
     color: white;
