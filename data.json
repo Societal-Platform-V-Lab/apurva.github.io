@@ -2,6 +2,15 @@
   "apurvaStories": [
     {
       "category": "Articles",
+      "imagePath": "source/img/Blog 16Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "4 MIN READ",
+      "date": "28.6.2024",
+      "title": "Why community-led solutions for climate change?",
+      "URL": "Why-community-led-solutions-for-climate-change.html"
+    },
+    {
+      "category": "Articles",
       "imagePath": "source/img/Blog 14Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "2 MIN READ",

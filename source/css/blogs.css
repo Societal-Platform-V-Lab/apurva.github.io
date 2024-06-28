@@ -480,6 +480,11 @@ ol.c {
 }
 
 @media (max-width: 425px) {
+  .References {
+    font-style: italic;
+    font-size: 16px;
+    text-align: left;
+  }
   .blogs-content {
     margin-top: 0rem;
   }
