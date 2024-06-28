@@ -47,7 +47,6 @@ img {
 
 .mobile-card-img {
   width: 25%;
-  /* width: 100%; */
   height: auto;
   margin-top: 24px;
   margin-bottom: 10px;
@@ -113,9 +112,7 @@ img {
     line-height: 26px;
     margin-top: 55px;
   }
-  /* section#experiencecriclemobile {
-    height: 142rem !important;
-  } */
+
   .mobile-explore-btn {
     font-size: 21px;
     text-align: center;
@@ -132,11 +129,6 @@ img {
     margin-top: 10px;
     font-weight: 600;
   }
-}
-@media (max-width: 467px) {
-  /* section#experiencecriclemobile {
-    height: 84rem !important;
-  } */
 }
 
 @media (max-width: 467px) {
@@ -156,9 +148,7 @@ img {
     min-width: max-content;
     margin-top: 10px;
   }
-  /* section#experiencecriclemobile {
-    height: 89rem !important;
-  } */
+
   .cardtext {
     color: white;
     /* text-align: left; */
@@ -181,17 +171,14 @@ img {
     padding-right: 15px;
     padding-left: 0px;
   }
-
 }
 @media (max-width: 480px) {
-  
   #deep {
     margin-top: 0px;
     font-size: 25px;
     line-height: 40px;
   }
 
- 
   .cardtext {
     color: white;
     /* text-align: left; */
@@ -201,4 +188,3 @@ img {
     margin-top: 55px;
   }
 }
-

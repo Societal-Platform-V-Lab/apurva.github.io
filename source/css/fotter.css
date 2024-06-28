@@ -7,7 +7,8 @@
   margin: 0;
 }
 
-.licensed p,.licensed a{
+.licensed p,
+.licensed a {
   color: #fff;
   font-size: 20px;
   margin-top: 4rem;
@@ -15,10 +16,10 @@
 
 .container-footer {
   width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .address-container {
@@ -89,7 +90,7 @@
 .footer-icons .youtube-icon {
   color: #fff;
   font-size: 20px;
-  background-color:red;
+  background-color: red;
 }
 .footer-icons .linkedin-icon,
 .footer-icons .twitter-icon,
@@ -100,7 +101,7 @@
   left: 663px; /* Adjust the left position as needed */
   font-size: 21px; /* Increase the font size as needed */
 }
-.write p{
+.write p {
   margin-left: 20rem;
   color: #d4cece;
 }
@@ -108,7 +109,6 @@
 .email {
   display: flex;
   justify-content: right;
-  
 }
 .app-promotion ul {
   list-style: none;
@@ -122,7 +122,7 @@
 .app-promotion a {
   color: white;
   text-decoration: none;
-  margin-right: 3px; 
+  margin-right: 3px;
   font-weight: 500;
 }
 
@@ -139,7 +139,7 @@
 .footer .app-promotion {
   text-align: -webkit-auto;
 }
-.footer .app-promotion ul{
+.footer .app-promotion ul {
   display: flex;
   justify-content: right;
 }
@@ -165,30 +165,29 @@
   color: white;
   width: 100%;
 }
-.white a{
+.white a {
   color: white;
 }
 .with-background .alt-color {
-  color: white; 
+  color: white;
   font-size: 20px;
 }
 
 .with-background .white strong {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
- .underline {
-  text-decoration: underline; 
+.underline {
+  text-decoration: underline;
 }
 
 .alt-back {
-  color:#FFFFFF;
+  color: #ffffff;
   font-size: 20px;
 }
-.copy{
-margin-top: -2rem;
+.copy {
+  margin-top: -2rem;
 }
-
 
 @media screen and (max-width: 768px) {
   .with-background {
@@ -198,16 +197,15 @@ margin-top: -2rem;
 
 @media (max-width: 735px) {
   /* Hide desktop footer */
- 
+
   .desktop-footer {
     display: none;
   }
- 
+
   .footer p,
   .footer strong,
   .footer li {
-
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .footer-icons .linkedin-icon,
@@ -215,17 +213,18 @@ margin-top: -2rem;
   .footer-icons .youtube-icon {
     width: 29px;
     height: 28px;
-    top: 2885px; 
-    left: 187px; 
-    font-size: 16px; 
+    top: 2885px;
+    left: 187px;
+    font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  .licensed p, .licensed a {
+  .licensed p,
+  .licensed a {
     color: #fff;
     font-size: 10px;
     margin-top: 1rem;
-}
+  }
 
   .address-container {
     text-align: center;
@@ -234,30 +233,24 @@ margin-top: -2rem;
     text-align: center;
     margin-top: 10px;
   }
-  .footer .app-promotion ul{
+  .footer .app-promotion ul {
     display: flex;
     justify-content: center;
   }
 }
 
-/* Media query for screens larger than 768px (mobile) */
 @media (min-width: 736px) {
-  /* Hide mobile footer */
   .mobile-footer {
     display: none;
   }
-
-
 }
-@media(min-width: 768px)
-{
+@media (min-width: 768px) {
   #dis {
     display: none;
   }
 }
 
-@media(max-width: 560px)
-{
+@media (max-width: 560px) {
   #hide {
     display: none;
   }

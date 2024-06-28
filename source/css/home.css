@@ -1216,8 +1216,6 @@ section#contactstest {
     margin-top: 22px;
   }
   .greenimg img {
-    /* width: 30.875rem;
-    height: 30.875rem; */
     margin-left: -72px;
   }
   .key h2 {
@@ -1256,7 +1254,7 @@ section#contactstest {
     font-size: 10px;
     font-weight: 500;
   }
-  
+
   .subscribe-button-text {
     color: black;
     font-size: 10px;
@@ -1354,8 +1352,6 @@ section#contactstest {
 
   .small-box {
     margin-top: -1rem;
-    /* width: 31px;
-    height: 31px; */
   }
 
   .whatcard {
@@ -1560,10 +1556,6 @@ section#contactstest {
     font-size: 12px;
   }
 
-  /* .featuretext a {
-    font-size: 17px;
-    color: #000;
-  } */
   .featurebody {
     padding: 4rem 13px 0px 13px;
   }
@@ -1601,10 +1593,6 @@ section#contactstest {
   }
 }
 @media screen and (max-width: 386px) {
-  /* .homePage .textColumn {
-    padding-top: 10rem;
-  } */
-
   .stay-tuned .register-button {
     width: 15rem;
     height: 35px;
@@ -1649,7 +1637,6 @@ section#contactstest {
 
   section#testimonialSection,
   section#Featured {
-    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }
@@ -1667,12 +1654,7 @@ section#contactstest {
   #whyenables {
     margin-top: 33px;
   }
-  /* section#contactstest {
-    height: 7rem !important;
-  } */
-  /* #testimonialSection.flex-row-block {
-    height: 53rem !important;
-  } */
+
   #testimonialSections.flex-row-block {
     height: 7rem !important;
   }

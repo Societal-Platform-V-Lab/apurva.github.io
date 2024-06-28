@@ -2594,7 +2594,6 @@ ul.social_icon li a {
 
   .impact-coming-soon {
     font-size: 35px;
-    
   }
 
   .search-not-found {
@@ -3139,19 +3138,9 @@ ul.social_icon li a {
   .apurva-explains-card-title {
     font-size: 31px !important;
   }
-
-  /* .carousel-control-next,
-  .carousel-control-prev {
-    top: 91px !important;
-    width: 66px !important;
-    height: 65px !important;
-  } */
 }
 
 @media (min-width: 760px) and (max-width: 768px) {
-  /* section#Network {
-    height: 98rem !important;
-  } */
   section.stay-tuned {
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
@@ -3205,25 +3194,12 @@ ul.social_icon li a {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-      -ms-flex-direction: row;
-      flex-direction: row;
-      margin-right: -30px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-right: -30px;
   }
 }
-/* @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  /* .navbar-nav .nav-item {
-    flex: 1;
-    text-align: center;
-  } */
-  /* .navbar-nav .nav-item:last-child {
-    text-align: right;
-  } */
-/* }  */
+
 .navbar-nav .dropdown-menu {
   display: none;
   position: absolute;

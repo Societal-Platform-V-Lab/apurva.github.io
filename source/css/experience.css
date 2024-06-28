@@ -106,12 +106,7 @@ section#experiencepages {
 .experienceimg {
   text-align: center;
 }
-/* section#experience {
-  height: 105rem !important;
-} */
-/* section#experiencepages {
-  height: 200rem !important;
-} */
+
 .queryp {
   color: white; /* Set default color for remaining text */
   text-align: center;
@@ -322,13 +317,7 @@ button {
   img {
     max-width: 50%;
   }
-  /* #exprow {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: 0px;
-  } */
+
   .circle_comingsoon {
     margin-top: -28rem;
     height: 350px;
@@ -351,7 +340,6 @@ button {
   .experience p {
     font-size: 16px;
     text-align: start;
-    /* word-break: break-all; */
     line-height: 26px;
   }
 
@@ -372,9 +360,7 @@ button {
     width: 100%;
     height: 100%;
   }
-  /* section#experiencepages {
-    height: 130rem !important;
-  } */
+
   .subscribe-button-texthome {
     margin-left: 0px;
     font-size: 13px;
@@ -395,11 +381,6 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  /* .coming {
-    margin-top: -264px;
-    text-align: -webkit-right;
-    opacity: 0.2;
-  } */
   .subscribe-button-text {
     color: black;
     font-size: 10px;
@@ -408,12 +389,8 @@ button {
 }
 
 @media screen and (max-width: 425px) {
-  /* section#experience {
-    height: 63rem !important;
-  } */
   .experience p {
     margin-bottom: 25px;
-    /* word-break: break-all; */
   }
 
   .card {
