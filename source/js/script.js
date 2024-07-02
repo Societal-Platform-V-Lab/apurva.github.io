@@ -202,29 +202,29 @@ jQuery(function ($) {
 //              Loading Timeout
 //       ====================================== */
 
-$("#conversationBtn").on("click", function () {
-  $("#message").attr(
-    "placeholder",
-    'Describe the problem that "Apurva for Co-creation" would address for your organization.'
-  );
+// $("#conversationBtn").on("click", function () {
+//   $("#message").attr(
+//     "placeholder",
+//     'Describe the problem that "Apurva for Co-creation" would address for your organization.'
+//   );
 
-  $(".type").attr("value", "Co-creation");
-});
+//   $(".type").attr("value", "Co-creation");
+// });
 
-$("#communitiesBtn").on("click", function () {
-  $("#message").attr(
-    "placeholder",
-    'Describe the problem that "Apurva for Communities" would address for your organization.'
-  );
+// $("#communitiesBtn").on("click", function () {
+//   $("#message").attr(
+//     "placeholder",
+//     'Describe the problem that "Apurva for Communities" would address for your organization.'
+//   );
 
-  $(".type").attr("value", "Communities");
-});
+//   $(".type").attr("value", "Communities");
+// });
 
-$("#queryBtn").on("click", function () {
-  $("#message").attr(
-    "placeholder",
-    'Describe the problem that "Apurva for Discovery" would address for your organization.'
-  );
+// $("#queryBtn").on("click", function () {
+//   $("#message").attr(
+//     "placeholder",
+//     'Describe the problem that "Apurva for Discovery" would address for your organization.'
+//   );
 
-  $(".type").attr("value", "Discovery");
-});
+//   $(".type").attr("value", "Discovery");
+// });
