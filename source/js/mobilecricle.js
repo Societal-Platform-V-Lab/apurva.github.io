@@ -171,7 +171,7 @@ function generateHTML(item, index, totalItems) {
   return `
     <div class="col-md-12">
       <div class="blog d-lg-none d-sm-block d-md-block ${hasGreenBorder ? '' : 'green-border'} ${isLastItem ? '' : 'border-bottom'}">
-        <img src="${item.image}" class="mobile-card-img"/>
+        <img loading="lazy" src="${item.image}" class="mobile-card-img"/>
         <h6 class="cardBlockstitle text-center">
           <span class="queryable-text">${greenWords[item.title] || item.title}</span>
           <span class="wisdom-text"></span>

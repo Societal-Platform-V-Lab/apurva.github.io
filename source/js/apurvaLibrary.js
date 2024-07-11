@@ -25,7 +25,7 @@ function renderCards(data) {
               <div class="card">
                 <div class="card-header">
                   <span class="badge badge-pill badge-info">${category}</span>
-                  <img src="${imagePath}" class="card-img-top" alt="img">
+                  <img loading="lazy" src="${imagePath}" class="card-img-top" alt="img">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">${author} | ${readTime} | ${date}</h5>
@@ -44,7 +44,7 @@ function renderCards(data) {
                      <p class="crad-blogtext">${limitedTitle}</p>
                    </div>
                     <div class="col-5">
-                      <img src="${imagePath}" class="card-blogimg" >
+                      <img loading="lazy" src="${imagePath}" class="card-blogimg" >
                     </div>
                   </div>
                </div>

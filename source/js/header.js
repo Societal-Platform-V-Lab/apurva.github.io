@@ -22,13 +22,13 @@ const section_header = `
 </ul>
 
         </div>
-        <a class="menu_bars d-inline-block menu-bars-setting animated-wrap sidemenu_toggle d-block d-lg-none">
+        <div class="menu_bars d-inline-block menu-bars-setting animated-wrap sidemenu_toggle d-block d-lg-none">
           <div class="menu-lines animated-element">
             <span></span>
             <span></span>
             <span></span>
           </div>
-        </a>
+        </div>
       </div>
     </nav>
     <div class="side-menu">
@@ -58,10 +58,7 @@ const section_header = `
         </nav>
       </div>
     </div>
-    <a id="close_side_menu" href="javascript:void(0);"></a>
   </header>
 `;
 
 document.getElementById("headers").innerHTML = section_header;
-
-
