@@ -2,6 +2,15 @@
   "apurvaStories": [
     {
       "category": "Articles",
+      "imagePath": "source/img/Blog 17 Cover.png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "4 MIN READ",
+      "date": "12.8.2024",
+      "title": "Moving Systems with Narratives",
+      "URL": "Moving-Systems-with-Narratives.html"
+    },
+    {
+      "category": "Articles",
       "imagePath": "source/img/Blog 16Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "4 MIN READ",
