@@ -889,18 +889,11 @@
         const video = document.getElementById("intro-video");
         video.style.display = "none"; // Force hide the video on load
       };
-
-      // Get elements
       const video = document.getElementById("intro-video");
       const cover = document.getElementById("video-cover");
-
-      // When the cover image is clicked
       cover.addEventListener("click", function () {
-        // Hide the cover image
         cover.style.display = "none";
-        // Show the video
         video.style.display = "block";
-        // Set the YouTube video source and enable autoplay
         video.src = " https://www.youtube.com/embed/-4umw3rUWgc?autoplay=1";
       });
     </script>
