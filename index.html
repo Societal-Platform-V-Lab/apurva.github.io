@@ -21,34 +21,13 @@
       Solver, Funder, Network, Artificial Intelligence, Technology, Problem"
     />
     <link rel="icon" href="/source/img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="/source/css/bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/settings.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/apurva.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/footer.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/home.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/source/css/index.css"
-    />
+    <link rel="stylesheet" href="/source/css/bundle.min.css" />
+    <link rel="stylesheet" href="/source/css/settings.css" />
+    <link rel="stylesheet" href="/source/css/style.css" />
+    <link rel="stylesheet" href="/source/css/apurva.css" />
+    <link rel="stylesheet" href="/source/css/footer.css" />
+    <link rel="stylesheet" href="/source/css/home.css" />
+    <link rel="stylesheet" href="/source/css/index.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-MPJ848CKT6"
@@ -61,7 +40,21 @@
       gtag("js", new Date());
       gtag("config", "G-MPJ848CKT6");
     </script>
-    <style></style>
+    <style>
+      .video-container {
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .video-container .youtube-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body
@@ -133,6 +126,33 @@
         </div>
       </section>
     </div>
+    <section id="wholesection" class="section stay-tuned flex-row-block">
+      <div class="container-fluid" style="border-left: 2px solid #9fffac">
+        <div class="spacingtop"></div>
+
+        <!-- Video wrapper with cover image -->
+        <div class="video-container" style="position: relative">
+          <img
+            id="video-cover"
+            src="source/img/Cover for intro video.png"
+            alt="Video Cover"
+            style="cursor: pointer"
+          />
+
+          <!-- Video element (YouTube iframe) -->
+          <div class="video-container">
+            <iframe
+              id="intro-video"
+              style="display: none"
+              class="youtube-video"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="wholesection" class="section stay-tuned flex-row-block">
       <div class="container-fluid" style="border-left: 2px solid #9fffac">
@@ -282,11 +302,7 @@
                 role="button"
                 data-slide="next"
               >
-                <img
-                  loading="lazy"
-                  src="source/img/Arrow_1.png"
-                  alt="Next"
-                />
+                <img loading="lazy" src="source/img/Arrow_1.png" alt="Next" />
               </a>
             </div>
           </div>
@@ -867,6 +883,27 @@
       </div>
     </div>
     <div id="footer"></div>
+    <script>
+      window.onload = function () {
+        // Initially hide the video
+        const video = document.getElementById("intro-video");
+        video.style.display = "none"; // Force hide the video on load
+      };
+
+      // Get elements
+      const video = document.getElementById("intro-video");
+      const cover = document.getElementById("video-cover");
+
+      // When the cover image is clicked
+      cover.addEventListener("click", function () {
+        // Hide the cover image
+        cover.style.display = "none";
+        // Show the video
+        video.style.display = "block";
+        // Set the YouTube video source and enable autoplay
+        video.src = " https://www.youtube.com/embed/-4umw3rUWgc?autoplay=1";
+      });
+    </script>
     <script src="source/min-js/bundle.min.js"></script>
     <script src="source/min-js/header.min.js"></script>
     <script src="source/min-js/footer.min.js"></script>
