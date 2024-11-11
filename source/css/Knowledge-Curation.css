@@ -186,7 +186,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  
   .social-icon {
     width: 14px;
     height: 14px;
@@ -213,6 +212,7 @@ h1 {
   }
   .heading h2 {
     font-size: 35px;
+    padding: 10px;
   }
 
   .head h1 {
@@ -362,9 +362,9 @@ section {
   height: 241px;
 }
 @media (max-width: 800px) {
-    .section-one {
-        margin-top: 71px;
-      }
+  .section-one {
+    margin-top: 71px;
+  }
   .carousel-innerss {
     position: relative;
     width: 100%;
