@@ -362,6 +362,21 @@ section {
   height: 241px;
 }
 @media (max-width: 800px) {
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
   .section-one {
     margin-top: 71px;
   }
@@ -370,6 +385,11 @@ section {
     width: 100%;
     overflow: hidden;
     height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-indicators {
+    bottom: 45px;
   }
 }
 .puzzle-container {
@@ -405,4 +425,23 @@ section {
 
 .overlay-text p {
   margin-top: 0;
+}
+.carousel-inner {
+  position: unset;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-indicators button.active {
+  background-color: #4c7054;
+}
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
