@@ -1,0 +1,447 @@
+@media (max-width: 500px) {
+  .icon-circle-div {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.head1 {
+  margin-top: 13px;
+  margin-bottom: 62px;
+  text-align: center;
+}
+
+.icon-circle {
+  background: #49785e;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+}
+.heading h2 {
+  font-size: 55px;
+  color: black;
+}
+.heading p {
+  margin-top: 20px;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading .knowl-testimonial {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons {
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+  margin-top: 0px;
+}
+.card-who-title {
+  color: black;
+}
+.image img {
+  width: 100%;
+}
+.a-card_image {
+  border-radius: 25px;
+  overflow: hidden;
+}
+.a-card_text {
+  color: black;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 1.4rem;
+  gap: 0.6rem;
+}
+.a-card {
+  text-decoration: none;
+  color: inherit;
+}
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+.sc_text h2,
+h1 {
+  color: black;
+  font-size: 65px;
+}
+
+.head {
+  margin-bottom: 62px;
+  text-align: center;
+}
+.head h2 {
+  font-weight: 600;
+}
+.video-container {
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.video-container .youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+.vs_items {
+  position: relative;
+  max-width: 71.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+.vs-item:first-child .vs-item_text {
+  left: -20.5rem;
+  top: 17.5rem;
+}
+.vs-item_text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  max-width: 23.5rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 1.2rem;
+  font-family: var(--md-sans-serif);
+  font-weight: 500;
+  z-index: 2;
+}
+.vs-item_text .image {
+  max-width: 3rem;
+}
+.vs-item:last-child .vs-item_text {
+  right: -20.5rem;
+  top: 27.5rem;
+}
+.image picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: inherit;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  z-index: 1;
+}
+.phone {
+  display: flex;
+  flex-direction: row; /* Aligns images in a row */
+  justify-content: flex-start;
+}
+
+.phone img {
+  width: 1200px; /* Adjust the width to fit more images side by side */
+  height: auto;
+}
+#designed {
+  padding-bottom: 25px;
+}
+.cardex {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  margin-left: 0;
+  margin-right: 30px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.moving-background:hover {
+  background-position: left; /* Move background image to the left on hover */
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 14px;
+    height: 14px;
+  }
+  #mobileTwitter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mobileTwitter svg {
+    width: 13px; /* Adjust this value to change the icon size */
+    height: 13.9px; /* Adjust this value to change the icon size */
+  }
+}
+
+@media (max-width: 500px) {
+  .cardex {
+    margin: 0rem;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 15px;
+  }
+  .heading h2 {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .head h1 {
+    font-size: 35px;
+  }
+
+  .carousel-control {
+    display: inline-flex; /* Ensure the content inside aligns properly */
+  }
+
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    width: 30px; /* Adjust arrow size */
+    height: auto;
+  }
+
+  .carousel-control-prev-custom img,
+  .carousel-control-next-custom img {
+    background-color: #fff; /* Icon background color */
+    border-radius: 50%; /* Rounded icon background */
+  }
+  .carousel-control-prev-custom.show,
+  .carousel-control-next-custom.show {
+    opacity: 1; /* Show the controls when active */
+  }
+
+  .titles-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone-mobile {
+    display: flex;
+    flex-direction: row; /* Aligns images in a row */
+    justify-content: flex-start;
+  }
+
+  .phone-mobile img {
+    width: 715rem; /* Adjust the width to fit more images side by side */
+    height: auto;
+    margin-right: 10px;
+  }
+}
+section {
+  padding: 0 !important;
+}
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 112px;
+}
+.main-section {
+  background: linear-gradient(135deg, #e7ffea, #e7ffea);
+  color: white;
+  /* border-top-left-radius: 50% 30%;
+          border-top-right-radius: 50% 30%; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* animation: gradientAnimation 10s ease infinite; */
+}
+.main-section-one {
+  background: linear-gradient(135deg, #e7ffea, #e7ffea);
+  color: white;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* animation: gradientAnimation 10s ease infinite; */
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background-container {
+  position: relative;
+  z-index: 1; /* Ensures that content stays above the background */
+  margin-top: -30px; /* Adjust the margin-top as needed */
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("source/img/Design-element03.png") no-repeat;
+  background-position: top;
+  background-size: contain;
+  opacity: 0.75; /* Adjust the opacity for the background image */
+  z-index: -1; /* Places the pseudo-element behind the content */
+}
+.oval-buttons {
+  background-color: #9fffac;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50px;
+}
+/* ul {
+    list-style-type: disc;
+    padding: 0px 0px 0px 35px;
+  } */
+.knowldge-content {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 33px;
+  text-align: center;
+}
+.b2 {
+  margin-top: 12rem;
+}
+@media (max-width: 600px) {
+  .head1 p {
+    padding: 10px;
+  }
+  .heading p {
+    padding: 10px;
+  }
+
+  .b2 {
+    margin-top: 3rem;
+  }
+}
+.carousel-control-prev-custom i,
+.carousel-control-next-custom i {
+  font-size: 28px;
+  margin-top: 5px;
+}
+.carousel-innerss {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 241px;
+}
+@media (max-width: 800px) {
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+  .section-one {
+    margin-top: 71px;
+  }
+  .carousel-innerss {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-indicators {
+    bottom: 45px;
+  }
+}
+.puzzle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.puzzle {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  width: 70%;
+  color: black;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.overlay-text h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  margin-top: 0;
+}
+.carousel-inner {
+  position: unset;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-indicators button.active {
+  background-color: #4c7054;
+}
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
