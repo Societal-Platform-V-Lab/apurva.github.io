@@ -262,8 +262,8 @@
             <form class="Subscribe_for_updates" id="reachoutForm">
               <input
                 type="hidden"
-                name="Product-Line"
-                id="Product-Line"
+                name="Product"
+                id="Product"
                 value="Collaborative Conversations"
               />
               <div class="sub-group">
@@ -308,7 +308,7 @@
                   class="email-textbox"
                   id="Organisation"
                   name="Organisation"
-                  placeholder="Organization Website Link"
+                  placeholder="Organisation"
                   required
                   style="color: black"
                 />
@@ -316,16 +316,16 @@
                   class="validation-message"
                   id="org-validation"
                   style="display: none; color: red"
-                  >Organization is required</span
+                  >Organisation is required</span
                 >
               </div>
               <div class="sub-group">
                 <textarea
                   class="des-textbox"
-                  id="Message"
+                  id="Describe"
                   placeholder="Describe the problem that “Apurva for Collaborative Conversations” would address for your organization."
                   required
-                  name="Message"
+                  name="Describe"
                   style="color: black"
                 ></textarea>
                 <span
@@ -344,7 +344,7 @@
               >
                 <div class="subscribe-button-text">Subscribe for updates</div>
               </button>
-
+              <div id="responseMessage"></div>
               <p class="thank-you-message" id="thank-you" style="display: none">
                 Thank you for your interest. Your subscription was successful
               </p>

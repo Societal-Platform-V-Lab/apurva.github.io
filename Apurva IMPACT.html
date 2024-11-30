@@ -242,7 +242,7 @@
 
           <div class="modal-body">
             <form class="Subscribe_for_updates" id="reachoutForm">
-              <input type="hidden" name="Product-Line" id="Product-Line" value="Strategic Assessment" />
+            
               <div class="sub-group">
                 <input
                   type="text"
@@ -296,13 +296,14 @@
                   >Organization is required</span
                 >
               </div>
+              <input type="hidden" name="Product" id="Product" value="Strategic Assessment" />
               <div class="sub-group">
                 <textarea
                   class="des-textbox"
-                  id="Message"
+                  id="Describe"
                   placeholder="Describe the problem that “Apurva for Strategic Assessment” would address for your organization."
                   required
-                  name="Message"
+                  name="Describe"
                   style="color: black"
                 ></textarea>
                 <span
@@ -321,7 +322,7 @@
               >
                 <div class="subscribe-button-text">Subscribe for updates</div>
               </button>
-
+              <div id="responseMessage"></div>
               <p class="thank-you-message" id="thank-you" style="display: none">
                 Thank you for your interest. Your subscription was successful
               </p>
