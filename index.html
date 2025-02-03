@@ -978,6 +978,47 @@
         video.style.display = "block";
         video.src = " https://www.youtube.com/embed/-4umw3rUWgc?autoplay=1";
       });
+
+      // Form submission tracking
+      document
+        .getElementById("subscriptionForm")
+        .addEventListener("submit", function (event) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "form_submit",
+            form_id: "subscriptionForm",
+            eventCategory: "Form Interaction",
+            eventAction: "Form Submit",
+            eventLabel: "Newsletter Subscription",
+          });
+        });
+
+      // Button click tracking
+      const trackButtonClick = (buttonId, location) => {
+        document
+          .getElementById(buttonId)
+          .addEventListener("click", function (event) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: "subscribe_button_click",
+              button_id: buttonId,
+              button_location: location,
+              eventCategory: "User Engagement",
+              eventAction: "Subscribe Button Click",
+              eventLabel: location,
+            });
+          });
+      };
+
+      // Initialize click tracking for both buttons
+      trackButtonClick("subscribe", "Main Page");
+      trackButtonClick("subscribeButton", "Modal");
+
+      // Debug logging for GTM preview mode
+      if (window.google_tag_manager) {
+        console.log("GTM Triggers initialized");
+        console.log("Tracking events: form_submit, subscribe_button_click");
+      }
     </script>
     <script src="source/min-js/bundle.min.js"></script>
     <script src="source/min-js/header.min.js"></script>
