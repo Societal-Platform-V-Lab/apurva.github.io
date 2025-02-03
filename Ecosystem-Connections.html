@@ -39,7 +39,7 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-REMTSSVGST"
+      src="https://www.googletagmanager.com/gtag/js?id=G-10XJ5FXDD7"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -48,7 +48,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-REMTSSVGST");
+      gtag("config", "G-10XJ5FXDD7");
     </script>
   </head>
 
@@ -194,5 +194,81 @@
     <script src="source/min-js/script.min.js"></script>
     <script src="source/min-js/particles.min.js"></script>
     <script src="source/min-js/typewriter.min.js"></script>
+    <script>
+ 
+      document.addEventListener('DOMContentLoaded', function() {
+         // Track Reach Out button clicks
+         const reachOutButtons = document.querySelectorAll('#reachout');
+         reachOutButtons.forEach(button => {
+             button.addEventListener('click', function() {
+                 window.dataLayer = window.dataLayer || [];
+                 window.dataLayer.push({
+                     'event': 'reach_out_click',
+                     'eventCategory': 'User Engagement',
+                     'eventAction': 'Modal Open',
+                     'eventLabel': 'Strategic Assessment Reach Out',
+                     'buttonLocation': window.location.pathname
+                 });
+             });
+         });
+      
+         // Track form submission
+         const reachoutForm = document.getElementById('reachoutForm');
+         if (reachoutForm) {
+             reachoutForm.addEventListener('submit', function(event) {
+                 // Get form fields
+                 const nameInput = document.getElementById('Name');
+                 const emailInput = document.getElementById('Email');
+                 const orgInput = document.getElementById('Organisation');
+                 const describeInput = document.getElementById('Describe');
+                 const productInput = document.getElementById('Product');
+      
+                 // Validate form fields
+                 const validationErrors = [];
+                 if (!nameInput.value.trim()) validationErrors.push('name');
+                 if (!emailInput.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) validationErrors.push('email');
+                 if (!orgInput.value.trim()) validationErrors.push('organisation');
+                 if (!describeInput.value.trim()) validationErrors.push('description');
+      
+                 // Track validation errors if any
+                 if (validationErrors.length > 0) {
+                     window.dataLayer.push({
+                         'event': 'reach_out_form_error',
+                         'eventCategory': 'Form Interaction',
+                         'eventAction': 'Validation Error',
+                         'eventLabel': 'Strategic Assessment Form',
+                         'errorFields': validationErrors.join(',')
+                     });
+                     return;
+                 }
+      
+                 // Track successful form submission
+                 window.dataLayer.push({
+                     'event': 'reach_out_form_submit',
+                     'eventCategory': 'Form Interaction',
+                     'eventAction': 'Form Submit',
+                     'eventLabel': 'Strategic Assessment Form',
+                     'formData': {
+                         'product': productInput.value,
+                         'organization_provided': orgInput.value ? 'yes' : 'no'
+                     }
+                 });
+             });
+         }
+      
+         // Track modal close
+         const closeButton = document.getElementById('close');
+         if (closeButton) {
+             closeButton.addEventListener('click', function() {
+                 window.dataLayer.push({
+                     'event': 'reach_out_modal_close',
+                     'eventCategory': 'User Interaction',
+                     'eventAction': 'Modal Close',
+                     'eventLabel': 'Strategic Assessment Modal'
+                 });
+             });
+         }
+      });
+          </script>
   </body>
 </html>
