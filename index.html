@@ -990,26 +990,54 @@
       });
       document
         .getElementById("subscriptionForm")
-        .addEventListener("submit", function (event) {
+        .addEventListener("submit", async function (event) {
           event.preventDefault();
 
           const name = document.getElementById("Name").value;
           const email = document.getElementById("Email").value;
           const organization = document.getElementById("Organisation").value;
 
-          // Send GA4 event
-          gtag("event", "subscribe", {
-            event_category: "engagement",
-            event_label: "newsletter_subscription",
-            organization: organization,
-            subscription_status: "successful",
-          });
+          try {
+            // Send form submission event
+            gtag("event", "form_submit", {
+              event_category: "form",
+              event_label: "subscription_form_submit",
+            });
 
-          // Continue with your existing form submission logic
-          // ...
+            // Your existing form submission API call
+            const response = await fetch("/your-api-endpoint", {
+              method: "POST",
+              body: JSON.stringify({ name, email, organization }),
+            });
+
+            if (response.ok) {
+              // Track successful submission
+              gtag("event", "subscription_success", {
+                event_category: "form",
+                event_label: "newsletter_subscription",
+                organization: organization,
+              });
+
+              document.getElementById("thank-you").style.display = "block";
+              document.getElementById("subscriptionForm").reset();
+            } else {
+              // Track failed submission
+              gtag("event", "subscription_error", {
+                event_category: "form",
+                event_label: "subscription_failed",
+                error_type: "api_error",
+              });
+            }
+          } catch (error) {
+            gtag("event", "subscription_error", {
+              event_category: "form",
+              event_label: "subscription_failed",
+              error_type: "network_error",
+            });
+          }
         });
 
-      // Optional: Track button click before form submission
+      // Track initial button click
       document
         .getElementById("subscribe")
         .addEventListener("click", function () {
