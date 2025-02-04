@@ -160,7 +160,8 @@
           <div class="col-lg-5 mb-12 mb-lg-0">
             <!-- <div class="circle_comingsoon rounded-full"></div> -->
             <div class="coming">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="source/img/Iconography/Power-of-Co-Creation.png"
                 class=""
               />
@@ -370,5 +371,16 @@
     <!-- <script src="source/min-js/particles.min.js"></script> -->
     <script src="source/min-js/typewriter.min.js"></script>
     <script src="source/min-js/reachout.min.js"></script>
+    <script>
+      document
+        .getElementById("reachout")
+        .addEventListener("click", function () {
+          gtag("event", "reachout_button_click", {
+            event_category: "collabrative",
+            event_action: "Click",
+            event_label: "Reach Out Button",
+          });
+        });
+    </script>
   </body>
 </html>
