@@ -348,5 +348,16 @@
     <!-- <script src="source/min-js/particles.min.js"></script> -->
     <script src="source/min-js/typewriter.min.js"></script>
     <script src="source/min-js/reachout.min.js"></script>
+    <script>
+      document
+        .getElementById("reachout")
+        .addEventListener("click", function () {
+          gtag("event", "reachout_button_click", {
+            event_category: "apurva_impact",
+            event_action: "Click",
+            event_label: "Reach Out Button",
+          });
+        });
+    </script>
   </body>
 </html>
