@@ -1046,6 +1046,16 @@
             event_label: "subscribe_button_click",
           });
         });
+      document
+        .querySelector(".oval-button")
+        .addEventListener("click", function () {
+          gtag("event", "button_click", {
+            event_category: "engagement",
+            event_label: "try_now_button_click",
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+          });
+        });
     </script>
     <script src="source/min-js/bundle.min.js"></script>
     <script src="source/min-js/header.min.js"></script>
