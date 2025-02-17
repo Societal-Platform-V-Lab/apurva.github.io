@@ -2,6 +2,15 @@
   "apurvaStories": [
     {
       "category": "Articles",
+      "imagePath": "source/img/Blog Cover 1 (1).png",
+      "author": "ANAGA SIVARAMAKRISHNAN",
+      "readTime": "3 MIN READ",
+      "date": "14.2.2025",
+      "title": "Untangling Problems Through a Systems Lens",
+      "URL": "Untangling-Problems-Through-a-Systems-Lens.html"
+    },
+    {
+      "category": "Articles",
       "imagePath": "source/img/Blog 17 Cover.png",
       "author": "ANAGA SIVARAMAKRISHNAN",
       "readTime": "4 MIN READ",
